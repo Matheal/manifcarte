@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+# Données de travail locales (en production elles vivent sur la branche « data »)
+data/store/
+site/public/data/
+.claude/

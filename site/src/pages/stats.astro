@@ -1,0 +1,357 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Statistiques" description="Les mobilisations recensées en chiffres : par jour, par ville et par cause.">
+  <div class="container page">
+    <h1>Statistiques</h1>
+    <p class="lede">Les mobilisations recensées en France ces 30 derniers jours, plus celles annoncées à venir.</p>
+
+    <div class="kpis" id="kpis" aria-live="polite"></div>
+
+    <section class="card chart-card">
+      <div class="chart-head">
+        <h2>Mobilisations par jour</h2>
+        <p class="small muted">Nombre de mobilisations distinctes (une ville = une mobilisation par jour). Survole une barre pour le détail.</p>
+      </div>
+      <div class="chart" id="by-day"></div>
+      <details class="table-view">
+        <summary>Voir les données</summary>
+        <div id="by-day-table"></div>
+      </details>
+    </section>
+
+    <div class="two">
+      <section class="card chart-card">
+        <h2>Villes les plus mobilisées</h2>
+        <p class="small muted">Nombre de jours de mobilisation sur 30 jours.</p>
+        <div id="by-city"></div>
+      </section>
+      <section class="card chart-card">
+        <h2>Causes</h2>
+        <p class="small muted">Part des mobilisations où chaque cause est citée (plusieurs causes possibles).</p>
+        <div id="by-cause"></div>
+      </section>
+    </div>
+
+    <section class="card chart-card">
+      <h2>Dans le monde</h2>
+      <p class="small muted">Pays où GDELT a détecté le plus de mobilisations ces 14 derniers jours (hors France).</p>
+      <div id="by-country"></div>
+    </section>
+
+    <p class="small muted note">
+      Ces chiffres décrivent ce que la presse rapporte, pas la réalité exhaustive du terrain : une ville très
+      médiatisée apparaîtra plus souvent qu'une petite commune. Voir <a href="../a-propos/">la méthode</a>.
+    </p>
+  </div>
+  <div class="tooltip" id="tooltip" role="status" hidden></div>
+</Base>
+
+<script>
+  import { CAUSES, type ManifEvent, addDays, countryFr, escapeHtml, formatDay, formatShort, todayParis } from "../lib/shared";
+  import { loadData } from "../scripts/filters";
+
+  const tip = document.getElementById("tooltip")!;
+
+  function showTip(ev: MouseEvent | FocusEvent, html: string): void {
+    tip.innerHTML = html;
+    tip.hidden = false;
+    const r = (ev.currentTarget as Element).getBoundingClientRect();
+    const x = Math.min(window.innerWidth - tip.offsetWidth - 8, Math.max(8, r.left + r.width / 2 - tip.offsetWidth / 2));
+    tip.style.left = `${x}px`;
+    tip.style.top = `${Math.max(8, r.top - tip.offsetHeight - 8) + window.scrollY}px`;
+  }
+  const hideTip = () => (tip.hidden = true);
+
+  function bindTips(root: Element): void {
+    root.querySelectorAll<SVGElement | HTMLElement>("[data-tip]").forEach((el) => {
+      el.addEventListener("mouseenter", (ev) => showTip(ev, el.dataset.tip!));
+      el.addEventListener("focus", (ev) => showTip(ev, el.dataset.tip!));
+      el.addEventListener("mouseleave", hideTip);
+      el.addEventListener("blur", hideTip);
+    });
+  }
+
+  function kpis(events: ManifEvent[], today: string): void {
+    const fr = events.filter((e) => e.scope === "fr");
+    const recent = fr.filter((e) => e.date >= addDays(today, -30) && e.date <= today);
+    const upcoming = fr.filter((e) => e.date > today);
+    const cities = new Set(recent.map((e) => e.city));
+    const confirmed = recent.filter((e) => e.reliability.level === 3).length;
+    const tiles = [
+      ["Mobilisations (30 j)", recent.length],
+      ["Villes concernées", cities.size],
+      ["Annoncées à venir", upcoming.length],
+      ["Confirmées par 3+ médias", confirmed],
+    ];
+    document.getElementById("kpis")!.innerHTML = tiles
+      .map(([label, n]) => `<div class="kpi card"><b>${n}</b><span>${label}</span></div>`)
+      .join("");
+  }
+
+  function byDay(events: ManifEvent[], today: string): void {
+    const fr = events.filter((e) => e.scope === "fr");
+    const last = fr.reduce((m, e) => (e.date > m ? e.date : m), today);
+    const days: string[] = [];
+    for (let d = addDays(today, -29); d <= last && days.length < 45; d = addDays(d, 1)) days.push(d);
+    const counts = days.map((d) => fr.filter((e) => e.date === d).length);
+    const max = Math.max(1, ...counts);
+    const W = 760, H = 220, padL = 28, padB = 26, padT = 10;
+    const bw = (W - padL) / days.length;
+    const y = (n: number) => H - padB - ((H - padB - padT) * n) / max;
+    const ticks = [0, Math.round(max / 2), max].filter((v, i, a) => a.indexOf(v) === i);
+    const bars = days
+      .map((d, i) => {
+        const n = counts[i];
+        const x = padL + i * bw + 1;
+        const h = H - padB - y(n);
+        const cls = d === today ? "today" : d > today ? "upcoming" : "past";
+        const r = Math.min(4, h / 2, (bw - 2) / 2);
+        // Barre arrondie en haut seulement, posée sur la ligne de base.
+        const path = n
+          ? `M${x},${H - padB}V${y(n) + r}Q${x},${y(n)} ${x + r},${y(n)}H${x + bw - 2 - r}Q${x + bw - 2},${y(n)} ${x + bw - 2},${y(n) + r}V${H - padB}Z`
+          : "";
+        const label = `<b>${formatDay(d)}</b><br>${n} mobilisation${n > 1 ? "s" : ""}${d > today ? " annoncée" + (n > 1 ? "s" : "") : ""}`;
+        return `<g class="bar ${cls}" tabindex="0" data-tip="${escapeHtml(label)}"><rect x="${padL + i * bw}" y="${padT}" width="${bw}" height="${H - padB - padT}" fill="transparent"/>${path ? `<path d="${path}"/>` : ""}</g>`;
+      })
+      .join("");
+    const grid = ticks
+      .map((t) => `<line x1="${padL}" x2="${W}" y1="${y(t)}" y2="${y(t)}" class="grid"/><text x="${padL - 6}" y="${y(t) + 4}" text-anchor="end" class="axis">${t}</text>`)
+      .join("");
+    const todayIdx = days.indexOf(today);
+    const labels = days
+      .map((d, i) => ((i % 5 === 0 && Math.abs(i - todayIdx) > 2) || d === today ? `<text x="${padL + i * bw + bw / 2}" y="${H - 8}" text-anchor="middle" class="axis ${d === today ? "strong" : ""}">${d === today ? "auj." : formatShort(d)}</text>` : ""))
+      .join("");
+    const el = document.getElementById("by-day")!;
+    el.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Histogramme du nombre de mobilisations par jour">${grid}${bars}${labels}</svg>
+      <div class="key small"><span><i class="past"></i>Passées</span><span><i class="today"></i>Aujourd'hui</span><span><i class="upcoming"></i>Annoncées</span></div>`;
+    bindTips(el);
+    document.getElementById("by-day-table")!.innerHTML = `<table><thead><tr><th>Jour</th><th>Mobilisations</th></tr></thead><tbody>${days
+      .map((d, i) => `<tr><td>${formatDay(d)}</td><td>${counts[i]}</td></tr>`)
+      .join("")}</tbody></table>`;
+  }
+
+  function hbars(id: string, rows: [string, number][], total: number, unit: (n: number) => string): void {
+    const el = document.getElementById(id)!;
+    if (!rows.length) {
+      el.innerHTML = `<p class="muted small">Pas encore de données.</p>`;
+      return;
+    }
+    const max = Math.max(...rows.map((r) => r[1]));
+    el.innerHTML = `<ul class="hbars">${rows
+      .map(
+        ([label, n]) => `<li tabindex="0" data-tip="${escapeHtml(`<b>${escapeHtml(label)}</b><br>${unit(n)}${total ? ` · ${Math.round((100 * n) / total)} %` : ""}`)}">
+          <span class="label">${escapeHtml(label)}</span>
+          <span class="track"><span class="fill" style="width:${Math.max(2, (100 * n) / max)}%"></span></span>
+          <span class="value">${n}</span></li>`,
+      )
+      .join("")}</ul>`;
+    bindTips(el);
+  }
+
+  function top<T>(items: T[], key: (t: T) => string[], n: number): [string, number][] {
+    const m = new Map<string, number>();
+    for (const it of items) for (const k of key(it)) m.set(k, (m.get(k) ?? 0) + 1);
+    return [...m].sort((a, b) => b[1] - a[1]).slice(0, n);
+  }
+
+  loadData()
+    .then(({ events }) => {
+      const today = todayParis();
+      kpis(events, today);
+      byDay(events, today);
+      const recentFr = events.filter((e) => e.scope === "fr" && e.date >= addDays(today, -30));
+      hbars("by-city", top(recentFr, (e) => [e.city], 10), 0, (n) => `${n} jour${n > 1 ? "s" : ""} de mobilisation`);
+      hbars(
+        "by-cause",
+        top(recentFr, (e) => e.causes, 8).map(([k, n]) => [CAUSES[k] ?? k, n] as [string, number]),
+        recentFr.length,
+        (n) => `${n} mobilisation${n > 1 ? "s" : ""}`,
+      );
+      hbars("by-country", top(events.filter((e) => e.scope === "world"), (e) => [countryFr(e.country)], 10), 0, (n) => `${n} lieu${n > 1 ? "x" : ""}/jour détectés`);
+    })
+    .catch(() => {
+      document.getElementById("kpis")!.innerHTML = `<p class="muted">Impossible de charger les données.</p>`;
+    });
+</script>
+
+<style>
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin: 24px 0;
+  }
+  :global(.kpi) {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  :global(.kpi b) {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  :global(.kpi span) {
+    color: var(--text-2);
+    font-size: 0.9rem;
+  }
+  .chart-card {
+    margin-bottom: 20px;
+  }
+  .chart-card h2 {
+    margin-bottom: 2px;
+  }
+  .chart {
+    margin-top: 12px;
+  }
+  .two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  :global(#by-day svg) {
+    width: 100%;
+    height: auto;
+    display: block;
+    overflow: visible;
+  }
+  :global(#by-day .grid) {
+    stroke: var(--border);
+    stroke-width: 1;
+  }
+  :global(#by-day .axis) {
+    fill: var(--text-3);
+    font-size: 11px;
+    font-family: var(--font);
+  }
+  :global(#by-day .axis.strong) {
+    fill: var(--text);
+    font-weight: 700;
+  }
+  :global(#by-day .bar path) {
+    fill: var(--past);
+  }
+  :global(#by-day .bar.today path) {
+    fill: var(--today);
+  }
+  :global(#by-day .bar.upcoming path) {
+    fill: var(--upcoming);
+  }
+  :global(#by-day .bar:hover path),
+  :global(#by-day .bar:focus path) {
+    filter: brightness(1.15);
+  }
+  :global(#by-day .bar) {
+    outline: none;
+    cursor: default;
+  }
+  :global(.key) {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+    color: var(--text-2);
+  }
+  :global(.key span) {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  :global(.key i) {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+  }
+  :global(.key .past) {
+    background: var(--past);
+  }
+  :global(.key .today) {
+    background: var(--today);
+  }
+  :global(.key .upcoming) {
+    background: var(--upcoming);
+  }
+  :global(.hbars) {
+    list-style: none;
+    margin: 14px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  :global(.hbars li) {
+    display: grid;
+    grid-template-columns: minmax(90px, 40%) 1fr 32px;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.88rem;
+    outline: none;
+  }
+  :global(.hbars .label) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  :global(.hbars .track) {
+    height: 12px;
+  }
+  :global(.hbars .fill) {
+    display: block;
+    height: 100%;
+    border-radius: 0 4px 4px 0;
+    background: var(--accent);
+  }
+  :global(.hbars li:hover .fill),
+  :global(.hbars li:focus .fill) {
+    filter: brightness(1.15);
+  }
+  :global(.hbars .value) {
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+    color: var(--text-2);
+  }
+  .table-view {
+    margin-top: 12px;
+    font-size: 0.88rem;
+  }
+  .table-view summary {
+    cursor: pointer;
+    color: var(--text-2);
+    font-weight: 600;
+  }
+  :global(.table-view table) {
+    border-collapse: collapse;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 420px;
+  }
+  :global(.table-view td),
+  :global(.table-view th) {
+    text-align: left;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .tooltip {
+    position: absolute;
+    z-index: 60;
+    pointer-events: none;
+    padding: 8px 10px;
+    border-radius: 10px;
+    background: var(--text);
+    color: var(--bg);
+    font-size: 0.82rem;
+    line-height: 1.4;
+    box-shadow: var(--shadow);
+    max-width: 260px;
+  }
+  .note {
+    margin-top: 24px;
+  }
+  @media (max-width: 760px) {
+    .two {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

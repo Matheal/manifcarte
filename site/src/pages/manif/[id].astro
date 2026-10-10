@@ -1,0 +1,336 @@
+---
+import Base from "../../layouts/Base.astro";
+import { loadDataset } from "../../lib/data";
+import { eventCardHtml, reliabilityHtml } from "../../lib/render";
+import {
+  type ManifEvent,
+  SIGNAL_LABEL,
+  formatDay,
+  formatNumber,
+  formatTime,
+  placeLabel,
+  precisionNote,
+  statusOf,
+  STATUS_LABEL,
+  todayParis,
+  withBase,
+} from "../../lib/shared";
+
+export function getStaticPaths() {
+  const { events } = loadDataset();
+  return events.map((event) => ({ params: { id: event.id }, props: { event } }));
+}
+
+interface Props {
+  event: ManifEvent;
+}
+
+const { event: e } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const today = todayParis();
+const status = statusOf(e, today);
+const dateFr = formatDay(e.date);
+const dateLabel = dateFr[0].toUpperCase() + dateFr.slice(1);
+const others = loadDataset()
+  .events.filter((o) => o.id !== e.id && o.city === e.city && o.country === e.country)
+  .slice(0, 6);
+const note = precisionNote(e);
+const fmtPublished = new Intl.DateTimeFormat("fr-FR", {
+  day: "numeric",
+  month: "short",
+  hour: "2-digit",
+  minute: "2-digit",
+  timeZone: "Europe/Paris",
+});
+const description = `${e.title} — ${dateFr}${e.time ? " à " + formatTime(e.time) : ""}, ${placeLabel(e)}. ${e.headline}`;
+const mapUrl = withBase(base) + `?manif=${encodeURIComponent(e.id)}`;
+const directions = `https://www.openstreetmap.org/directions?to=${e.lat}%2C${e.lon}`;
+const reliabilityText: Record<number, string> = {
+  1: "Une seule source (ou des messages publics non vérifiés) mentionne cette mobilisation. Elle reste à confirmer.",
+  2: "Au moins deux médias différents en parlent : la mobilisation est probable.",
+  3: "Au moins trois médias différents en parlent : la mobilisation est confirmée par la presse.",
+};
+---
+
+<Base title={`${e.title}, ${dateFr}`} description={description}>
+  <article class="container page" data-date={e.date}>
+    <a class="back small" href={mapUrl}>← Voir sur la carte</a>
+
+    <header class="head">
+      <div class="badges">
+        <span class={`badge ${status}`} id="status-badge"><span class="dot"></span><span>{STATUS_LABEL[status]}</span></span>
+        {e.scope === "world" && <span class="badge world">Monde · détection GDELT</span>}
+        {e.signals.map((s) => SIGNAL_LABEL[s] && <span class={`badge ${s === "tensions" || s === "interdite" ? "warn" : ""}`}>{SIGNAL_LABEL[s]}</span>)}
+      </div>
+      <h1>{e.title}</h1>
+      <p class="when">
+        <strong>{dateLabel}</strong>{e.time && <> · à partir de {formatTime(e.time)}</>} · {placeLabel(e)}
+      </p>
+    </header>
+
+    {
+      (e.signals.includes("tensions") || e.signals.includes("interdite")) && status !== "past" && (
+        <div class="notice">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 21h22L12 2Zm1 15h-2v-2h2v2Zm0-4h-2V9h2v4Z" /></svg>
+          <div>
+            Des <strong>tensions</strong> ou une <strong>interdiction</strong> sont évoquées dans les articles sur cette
+            mobilisation. Si tu y vas, renseigne-toi auprès des organisateurs et lis nos
+            <a href={withBase(base, "securite/")}>conseils de sécurité</a>.
+          </div>
+        </div>
+      )
+    }
+
+    <div class="layout">
+      <div class="main">
+        <section class="card">
+          <h2>En bref</h2>
+          <blockquote class="headline">« {e.headline} »</blockquote>
+          <dl class="facts">
+            <div><dt>Date</dt><dd>{dateLabel}{note && <span class="hint">{note}</span>}</dd></div>
+            <div><dt>Heure</dt><dd>{e.time ? formatTime(e.time) : <span class="muted">Non précisée</span>}</dd></div>
+            <div>
+              <dt>Lieu</dt>
+              <dd>
+                {placeLabel(e)}
+                {e.geo_precision === "commune" && <span class="hint">Position approximative : centre de la commune</span>}
+              </dd>
+            </div>
+            {
+              e.cause_labels.length > 0 && (
+                <div><dt>Causes</dt><dd class="chips">{e.cause_labels.map((c) => <span class="badge">{c}</span>)}</dd></div>
+              )
+            }
+            {
+              e.participants && (
+                <div><dt>Participants</dt><dd>Jusqu'à {formatNumber(e.participants)} selon la presse<span class="hint">Chiffre le plus élevé cité, toutes sources confondues</span></dd></div>
+              )
+            }
+            <div>
+              <dt>Fiabilité</dt>
+              <dd><Fragment set:html={reliabilityHtml(e)} /><span class="hint">{e.scope === "world" ? `Repérée dans ${e.source_count} article(s) par GDELT, une base de données mondiale automatique.` : reliabilityText[e.reliability.level]}</span></dd>
+            </div>
+          </dl>
+          <div class="actions">
+            <a class="btn btn-primary" href={mapUrl}>Voir sur la carte</a>
+            <button class="btn" type="button" id="ics">Ajouter à mon agenda</button>
+            <button class="btn" type="button" id="share">Partager</button>
+            <a class="btn" href={directions} target="_blank" rel="noopener">Itinéraire</a>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Sources ({e.source_count})</h2>
+          <ul class="sources">
+            {
+              e.sources.map((s) => (
+                <li>
+                  <a href={s.url} target="_blank" rel="noopener nofollow">{s.title}</a>
+                  <span class="muted small">
+                    {s.outlet}{s.kind === "social" && " · message public"} · {fmtPublished.format(new Date(s.published))}
+                  </span>
+                </li>
+              ))
+            }
+          </ul>
+          {e.source_count > e.sources.length && <p class="small muted">Seules les {e.sources.length} sources les plus récentes sont affichées.</p>}
+        </section>
+      </div>
+
+      <aside class="side">
+        <div class="mini-map card" id="mini-map" data-lat={e.lat} data-lon={e.lon} data-zoom={e.geo_precision === "lieu" ? 15 : e.scope === "world" ? 9 : 12.5} aria-label={`Carte : ${placeLabel(e)}`}></div>
+        <p class="small muted">Les informations sont collectées automatiquement et peuvent contenir des erreurs. Vérifie toujours auprès des sources.</p>
+      </aside>
+    </div>
+
+    {
+      others.length > 0 && (
+        <section class="others">
+          <h2>Autres mobilisations à {e.city}</h2>
+          <div class="grid" set:html={others.map((o) => eventCardHtml(o, base, today)).join("")} />
+        </section>
+      )
+    }
+  </article>
+
+  <script is:inline type="application/json" id="event-data" set:html={JSON.stringify(e).replace(/</g, "\\u003c")} />
+</Base>
+
+<script>
+  import { STATUS_LABEL, type ManifEvent, statusOf, toIcs } from "../../lib/shared";
+  import { MAP_STYLES, isDark, loadMapLibre } from "../../scripts/maplib";
+
+  const e = JSON.parse(document.getElementById("event-data")!.textContent!) as ManifEvent;
+
+  // Le statut (aujourd'hui / à venir / passée) est recalculé à l'ouverture de la page.
+  const badge = document.getElementById("status-badge")!;
+  const status = statusOf(e);
+  badge.className = `badge ${status}`;
+  badge.querySelector("span:last-child")!.textContent = STATUS_LABEL[status];
+
+  document.getElementById("ics")!.addEventListener("click", () => {
+    const blob = new Blob([toIcs(e, location.href)], { type: "text/calendar;charset=utf-8" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `${e.id}.ics`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  });
+
+  const shareBtn = document.getElementById("share") as HTMLButtonElement;
+  shareBtn.addEventListener("click", async () => {
+    const data = { title: e.title, text: e.headline, url: location.href };
+    try {
+      if (navigator.share) return await navigator.share(data);
+      await navigator.clipboard.writeText(location.href);
+      shareBtn.textContent = "Lien copié ✓";
+      setTimeout(() => (shareBtn.textContent = "Partager"), 2000);
+    } catch {
+      /* partage annulé */
+    }
+  });
+
+  const el = document.getElementById("mini-map")!;
+  loadMapLibre().then((maplibregl) => {
+    const center: [number, number] = [Number(el.dataset.lon), Number(el.dataset.lat)];
+    const map = new maplibregl.Map({
+      container: el,
+      style: isDark() ? MAP_STYLES.dark : MAP_STYLES.light,
+      center,
+      zoom: Number(el.dataset.zoom),
+      cooperativeGestures: true,
+      attributionControl: { compact: true },
+    });
+    const color = getComputedStyle(document.documentElement).getPropertyValue("--accent").trim();
+    new maplibregl.Marker({ color }).setLngLat(center).addTo(map);
+    window.addEventListener("themechange", () => map.setStyle(isDark() ? MAP_STYLES.dark : MAP_STYLES.light));
+  });
+</script>
+
+<style>
+  .back {
+    display: inline-block;
+    margin-bottom: 18px;
+    text-decoration: none;
+    color: var(--text-2);
+    font-weight: 600;
+  }
+  .head {
+    margin-bottom: 20px;
+  }
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  .when {
+    font-size: 1.05rem;
+    color: var(--text-2);
+    margin: 0;
+  }
+  .notice {
+    margin-bottom: 20px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 360px;
+    gap: 20px;
+    align-items: start;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .side {
+    position: sticky;
+    top: calc(var(--header-h) + 20px);
+  }
+  .mini-map {
+    height: 320px;
+    padding: 0;
+    overflow: hidden;
+  }
+  .headline {
+    margin: 0 0 18px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+    font-size: 1.05rem;
+    font-weight: 550;
+  }
+  .facts {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .facts div {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 12px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border);
+  }
+  .facts dt {
+    color: var(--text-3);
+    font-size: 0.88rem;
+    font-weight: 600;
+  }
+  .facts dd {
+    margin: 0;
+  }
+  .hint {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--text-3);
+    margin-top: 2px;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+  }
+  .sources {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .sources li {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-top: 1px solid var(--border);
+  }
+  .sources a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .sources a:hover {
+    text-decoration: underline;
+  }
+  .others {
+    margin-top: 40px;
+  }
+  .others .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
+    gap: 10px;
+  }
+  @media (max-width: 860px) {
+    .layout {
+      grid-template-columns: 1fr;
+    }
+    .side {
+      position: static;
+      order: -1;
+    }
+    .mini-map {
+      height: 220px;
+    }
+    .facts div {
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+  }
+</style>

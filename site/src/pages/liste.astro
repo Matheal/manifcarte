@@ -1,0 +1,187 @@
+---
+import Base from "../layouts/Base.astro";
+import { CAUSES } from "../lib/shared";
+import { PERIOD_LABEL, SCOPE_LABEL } from "../scripts/filters";
+---
+
+<Base title="Liste des mobilisations" description="Toutes les manifestations, blocus et rassemblements recensés, jour par jour.">
+  <div class="container page">
+    <h1>Liste des mobilisations</h1>
+    <p class="lede">Jour par jour, toutes les mobilisations détectées automatiquement. Filtre par période, zone ou cause.</p>
+
+    <div class="filters card">
+      <label class="visually-hidden" for="q">Rechercher</label>
+      <input id="q" type="search" placeholder="Rechercher une ville, un lycée, un pays…" autocomplete="off" />
+      <div class="chips" role="group" aria-label="Période">
+        {
+          Object.entries(PERIOD_LABEL).map(([k, v]) => (
+            <button class="chip" type="button" data-period={k} aria-pressed="false">
+              {v}
+            </button>
+          ))
+        }
+      </div>
+      <div class="chips" role="group" aria-label="Zone">
+        {
+          Object.entries(SCOPE_LABEL).map(([k, v]) => (
+            <button class="chip" type="button" data-scope={k} aria-pressed="false">
+              {v}
+            </button>
+          ))
+        }
+      </div>
+      <div class="chips" role="group" aria-label="Causes">
+        {
+          Object.entries(CAUSES).map(([k, v]) => (
+            <button class="chip" type="button" data-cause={k} aria-pressed="false">
+              {v}
+            </button>
+          ))
+        }
+      </div>
+      <div class="row">
+        <label class="small muted" for="level">Fiabilité</label>
+        <select id="level">
+          <option value="1">Toutes</option>
+          <option value="2">Probables et confirmées</option>
+          <option value="3">Confirmées seulement</option>
+        </select>
+      </div>
+    </div>
+
+    <p class="count muted" id="count" aria-live="polite">Chargement…</p>
+    <div id="groups"></div>
+  </div>
+</Base>
+
+<script>
+  import { eventCardHtml } from "../lib/render";
+  import { formatDay, relativeDay, todayParis } from "../lib/shared";
+  import { type Filters, applyFilters, loadData, readFilters, writeFilters } from "../scripts/filters";
+
+  const BASE = import.meta.env.BASE_URL;
+  const groupsEl = document.getElementById("groups")!;
+  const countEl = document.getElementById("count")!;
+  // La liste est centrée sur la France par défaut (le monde reste accessible).
+  const DEFAULTS: Partial<Filters> = { scope: "fr" };
+  const filters: Filters = readFilters(DEFAULTS);
+  let all: Awaited<ReturnType<typeof loadData>>["events"] = [];
+
+  function sync(): void {
+    document.querySelectorAll<HTMLButtonElement>("[data-period]").forEach((b) =>
+      b.setAttribute("aria-pressed", String(b.dataset.period === filters.period)),
+    );
+    document.querySelectorAll<HTMLButtonElement>("[data-scope]").forEach((b) =>
+      b.setAttribute("aria-pressed", String(b.dataset.scope === filters.scope)),
+    );
+    document.querySelectorAll<HTMLButtonElement>("[data-cause]").forEach((b) =>
+      b.setAttribute("aria-pressed", String(filters.causes.has(b.dataset.cause!))),
+    );
+    (document.getElementById("level") as HTMLSelectElement).value = String(filters.minLevel);
+    (document.getElementById("q") as HTMLInputElement).value = filters.q;
+  }
+
+  function render(): void {
+    const today = todayParis();
+    const events = applyFilters(all, filters, today);
+    writeFilters(filters, DEFAULTS);
+    sync();
+    countEl.textContent = `${events.length} mobilisation${events.length > 1 ? "s" : ""}`;
+    if (!events.length) {
+      groupsEl.innerHTML = `<div class="empty card"><p><b>Aucune mobilisation</b> ne correspond à ces filtres.</p>
+        <p class="small">Essaie la période « Tout » ou retire des filtres.</p></div>`;
+      return;
+    }
+    // Regroupement par jour (l'ordre de tri est déjà le bon).
+    const groups = new Map<string, typeof events>();
+    for (const e of events) (groups.get(e.date) ?? groups.set(e.date, []).get(e.date)!).push(e);
+    groupsEl.innerHTML = [...groups]
+      .map(([day, list]) => {
+        const rel = relativeDay(day, today);
+        const label = rel === formatDay(day) ? formatDay(day) : `${rel[0].toUpperCase()}${rel.slice(1)} · ${formatDay(day)}`;
+        return `<section class="day"><h2>${label} <span class="muted">${list.length}</span></h2>
+          <div class="grid">${list.map((e) => eventCardHtml(e, BASE, today)).join("")}</div></section>`;
+      })
+      .join("");
+  }
+
+  document.querySelectorAll<HTMLButtonElement>("[data-period]").forEach((b) =>
+    b.addEventListener("click", () => {
+      filters.period = b.dataset.period as Filters["period"];
+      render();
+    }),
+  );
+  document.querySelectorAll<HTMLButtonElement>("[data-scope]").forEach((b) =>
+    b.addEventListener("click", () => {
+      filters.scope = b.dataset.scope as Filters["scope"];
+      render();
+    }),
+  );
+  document.querySelectorAll<HTMLButtonElement>("[data-cause]").forEach((b) =>
+    b.addEventListener("click", () => {
+      const c = b.dataset.cause!;
+      filters.causes.has(c) ? filters.causes.delete(c) : filters.causes.add(c);
+      render();
+    }),
+  );
+  document.getElementById("level")!.addEventListener("change", (ev) => {
+    filters.minLevel = Number((ev.target as HTMLSelectElement).value) as Filters["minLevel"];
+    render();
+  });
+  let t: number | undefined;
+  document.getElementById("q")!.addEventListener("input", (ev) => {
+    clearTimeout(t);
+    t = window.setTimeout(() => {
+      filters.q = (ev.target as HTMLInputElement).value;
+      render();
+    }, 200);
+  });
+
+  loadData()
+    .then((d) => {
+      all = d.events;
+      render();
+    })
+    .catch(() => {
+      countEl.textContent = "Impossible de charger les données pour le moment.";
+    });
+</script>
+
+<style>
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 24px 0 16px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .row select {
+    max-width: 280px;
+  }
+  .count {
+    margin: 0 0 8px;
+    font-weight: 600;
+  }
+  :global(.day) {
+    margin-top: 28px;
+  }
+  :global(.day h2) {
+    font-size: 1.05rem;
+    text-transform: none;
+    margin-bottom: 12px;
+    position: sticky;
+    top: var(--header-h);
+    background: var(--bg);
+    padding: 8px 0;
+    z-index: 1;
+  }
+  :global(.day .grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr));
+    gap: 10px;
+  }
+</style>

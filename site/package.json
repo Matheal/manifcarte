@@ -1,0 +1,16 @@
+{
+  "name": "manifcarte-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node copy-maplibre.mjs",
+    "dev": "astro dev",
+    "prebuild": "node copy-maplibre.mjs",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "7.3.5",
+    "maplibre-gl": "6.11.2"
+  }
+}

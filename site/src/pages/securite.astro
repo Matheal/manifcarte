@@ -1,0 +1,121 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="Sécurité et droits" description="Conseils pratiques pour manifester en sécurité et rappel de tes droits en France.">
+  <div class="container page">
+    <div class="prose">
+      <h1>Manifester en sécurité</h1>
+      <p class="lede">
+        Quelques conseils pratiques, que tu sois lycéen·ne, étudiant·e ou simplement curieux·se. Ces informations sont
+        générales : elles ne remplacent pas l'avis d'un·e avocat·e ni les consignes des organisateurs.
+      </p>
+    </div>
+
+    <div class="emergency card">
+      <h2>Numéros d'urgence</h2>
+      <ul>
+        <li><b>112</b><span>Urgences (partout en Europe)</span></li>
+        <li><b>15</b><span>SAMU, urgence médicale</span></li>
+        <li><b>17</b><span>Police secours</span></li>
+        <li><b>18</b><span>Pompiers</span></li>
+        <li><b>114</b><span>Urgences par SMS, si tu ne peux pas parler</span></li>
+        <li><b>119</b><span>Enfance en danger, gratuit, 24 h/24</span></li>
+      </ul>
+    </div>
+
+    <div class="grid">
+      <section class="card">
+        <h2>Avant de partir</h2>
+        <ul>
+          <li>Vérifie l'information : qui organise, où et quand ça part, et si un parcours a été annoncé.</li>
+          <li><b>Préviens un proche</b> (un parent par exemple) de l'endroit où tu vas.</li>
+          <li><b>Viens à plusieurs</b> et fixez un point de rendez-vous au cas où vous seriez séparés.</li>
+          <li>Prends un téléphone chargé, de l'eau, un en-cas et une pièce d'identité.</li>
+          <li>Note un ou deux numéros importants sur papier, au cas où ton téléphone s'éteindrait.</li>
+          <li>Porte des chaussures confortables. Laisse chez toi tout objet qui pourrait être considéré comme dangereux.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Pendant la manifestation</h2>
+        <ul>
+          <li>Reste avec ton groupe et repère les rues adjacentes pour pouvoir t'éloigner.</li>
+          <li>Suis les consignes du service d'ordre des organisateurs.</li>
+          <li><b>Si la situation se tend, éloigne-toi</b> calmement. Ne cours pas dans une foule dense.</li>
+          <li>Quand les forces de l'ordre font des <b>sommations</b>, c'est l'ordre de se disperser : quitte les lieux.</li>
+          <li>En cas de gaz lacrymogène : éloigne-toi, ne te frotte pas les yeux et rince-les à l'eau claire ou au sérum physiologique.</li>
+          <li>Si quelqu'un est blessé, appelle le <b>15</b> ou le <b>112</b>.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Photos et réseaux sociaux</h2>
+        <ul>
+          <li><b>Ne publie pas de visages reconnaissables</b>, surtout ceux de mineurs, sans leur accord.</li>
+          <li>Floute les visages avant de partager, et évite de dévoiler les noms ou les établissements de chacun.</li>
+          <li>Méfie-toi des rumeurs : une vidéo peut être ancienne ou sortie de son contexte. Vérifie avant de partager.</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Tes droits (en France)</h2>
+        <ul>
+          <li>Manifester est une <b>liberté fondamentale</b>. Les organisateurs doivent déclarer la manifestation à l'avance.</li>
+          <li>Le préfet peut <b>interdire</b> une manifestation. Y participer malgré l'interdiction peut être puni d'une amende.</li>
+          <li><b>Contrôle d'identité</b> : tu peux justifier ton identité par tout moyen. Sinon, une vérification peut durer jusqu'à 4 heures, et tes parents doivent être prévenus si tu es mineur·e.</li>
+          <li><b>Garde à vue</b> : tu as le droit de garder le silence, de faire prévenir un proche, de voir un médecin et d'être assisté·e par un·e avocat·e. Pour un·e mineur·e, les parents sont avertis et l'avocat·e est obligatoire.</li>
+          <li><b>Blocus</b> : il n'est pas encadré comme une manifestation. Le règlement intérieur de ton établissement s'applique.</li>
+        </ul>
+        <p class="small muted">
+          Pour aller plus loin : <a href="https://www.service-public.fr/" rel="noopener">service-public.fr</a> ·
+          <a href="https://www.defenseurdesdroits.fr/" rel="noopener">Défenseur des droits</a>, qui peut être saisi
+          gratuitement, notamment par les mineurs.
+        </p>
+      </section>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .emergency {
+    margin: 24px 0;
+    border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+  }
+  .emergency ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+  .emergency li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .emergency b {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent);
+    min-width: 48px;
+  }
+  .emergency span {
+    font-size: 0.9rem;
+    color: var(--text-2);
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+    gap: 16px;
+  }
+  .grid ul {
+    padding-left: 1.1em;
+    margin: 0 0 1em;
+  }
+  .grid li {
+    margin-bottom: 0.5em;
+  }
+</style>

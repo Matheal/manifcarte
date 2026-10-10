@@ -1,0 +1,16 @@
+---
+import Base from "../layouts/Base.astro";
+import { withBase } from "../lib/shared";
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Page introuvable">
+  <div class="container page" style="text-align:center;padding-top:80px">
+    <h1>Page introuvable</h1>
+    <p class="lede" style="margin:0 auto 24px">
+      Cette mobilisation n'est peut-être plus listée : les fiches de plus de 60 jours sont retirées automatiquement.
+    </p>
+    <a class="btn btn-primary" href={withBase(base)}>Retour à la carte</a>
+  </div>
+</Base>

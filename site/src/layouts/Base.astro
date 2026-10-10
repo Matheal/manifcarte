@@ -1,0 +1,249 @@
+---
+import "../styles/global.css";
+import { withBase } from "../lib/shared";
+
+interface Props {
+  title?: string;
+  description?: string;
+  fullscreen?: boolean;
+}
+
+const { title, description, fullscreen = false } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const siteName = "ManifCarte";
+const fullTitle = title ? `${title} · ${siteName}` : `${siteName} — la carte des mobilisations`;
+const desc =
+  description ??
+  "Carte interactive et mise à jour automatiquement des manifestations, blocus et rassemblements, à Nancy, en France et dans le monde.";
+const path = Astro.url.pathname;
+const nav = [
+  { href: withBase(base), label: "Carte", match: (p: string) => p === withBase(base) },
+  { href: withBase(base, "liste/"), label: "Liste" },
+  { href: withBase(base, "stats/"), label: "Statistiques" },
+  { href: withBase(base, "securite/"), label: "Sécurité" },
+  { href: withBase(base, "a-propos/"), label: "À propos" },
+];
+const isActive = (item: (typeof nav)[number]) => (item.match ? item.match(path) : path.startsWith(item.href));
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={desc} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={desc} />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#e0392b" />
+    <link rel="icon" type="image/svg+xml" href={withBase(base, "favicon.svg")} />
+    <link rel="canonical" href={new URL(path, Astro.site)} />
+    <script is:inline>
+      // Thème choisi par le visiteur (clair/sombre), appliqué avant l'affichage.
+      try {
+        const t = localStorage.getItem("theme");
+        if (t === "light" || t === "dark") document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+    <slot name="head" />
+  </head>
+  <body class:list={{ fullscreen }}>
+    <a class="skip" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <div class="bar">
+        <a class="brand" href={withBase(base)} aria-label="ManifCarte, accueil">
+          <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M16 2C9.9 2 5 6.8 5 12.8 5 21 16 30 16 30s11-9 11-17.2C27 6.8 22.1 2 16 2Z" fill="var(--accent)"></path>
+            <circle cx="16" cy="13" r="4.6" fill="#fff"></circle>
+          </svg>
+          <span>Manif<b>Carte</b></span>
+        </a>
+        <nav aria-label="Navigation principale">
+          <ul>
+            {
+              nav.map((item) => (
+                <li>
+                  <a href={item.href} aria-current={isActive(item) ? "page" : undefined}>
+                    {item.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Changer de thème (clair / sombre)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"
+            ><path
+              fill="currentColor"
+              d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1Z"
+            ></path></svg
+          >
+        </button>
+      </div>
+    </header>
+    <main id="contenu">
+      <slot />
+    </main>
+    {
+      !fullscreen && (
+        <footer class="site-footer">
+          <div class="container">
+            <p>
+              <strong>ManifCarte</strong> recense automatiquement des mobilisations à partir de la presse et de sources
+              publiques. Les informations ne sont <strong>pas officielles</strong> : vérifie toujours auprès des
+              organisateurs et des médias cités.
+            </p>
+            <p class="muted small">
+              Fond de carte © <a href="https://www.openstreetmap.org/copyright">contributeurs OpenStreetMap</a>,
+              <a href="https://openfreemap.org">OpenFreeMap</a> · Données monde : <a href="https://www.gdeltproject.org/">
+                GDELT
+              </a> · Aucun cookie, aucun traceur.
+            </p>
+          </div>
+        </footer>
+      )
+    }
+    <script>
+      const btn = document.querySelector<HTMLButtonElement>(".theme-toggle");
+      btn?.addEventListener("click", () => {
+        const root = document.documentElement;
+        const current =
+          root.dataset.theme ?? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        const next = current === "dark" ? "light" : "dark";
+        root.dataset.theme = next;
+        try {
+          localStorage.setItem("theme", next);
+        } catch {}
+        window.dispatchEvent(new CustomEvent("themechange", { detail: next }));
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  .skip {
+    position: absolute;
+    left: -9999px;
+    top: 8px;
+    z-index: 100;
+    background: var(--surface);
+    padding: 8px 12px;
+    border-radius: 8px;
+  }
+  .skip:focus {
+    left: 8px;
+  }
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: var(--header-h);
+    padding: 0 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 650;
+    letter-spacing: -0.02em;
+    flex: none;
+  }
+  .brand b {
+    font-weight: 850;
+    color: var(--accent);
+  }
+  .brand svg {
+    width: 28px;
+    height: 28px;
+  }
+  nav {
+    flex: 1;
+    min-width: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+  nav ul {
+    display: flex;
+    gap: 2px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav a {
+    display: block;
+    padding: 7px 12px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--text-2);
+    white-space: nowrap;
+  }
+  nav a:hover {
+    color: var(--text);
+    background: var(--surface-2);
+  }
+  nav a[aria-current="page"] {
+    color: var(--text);
+    background: var(--surface-2);
+  }
+  .theme-toggle {
+    flex: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-2);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+  }
+  .theme-toggle svg {
+    width: 18px;
+    height: 18px;
+  }
+  .site-footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 0 40px;
+    font-size: 0.9rem;
+    color: var(--text-2);
+  }
+  body.fullscreen {
+    height: 100dvh;
+    overflow: hidden;
+  }
+  body.fullscreen main {
+    height: calc(100dvh - var(--header-h));
+  }
+  @media (max-width: 640px) {
+    .brand span {
+      display: none;
+    }
+    .bar {
+      gap: 8px;
+    }
+    nav a {
+      padding: 7px 10px;
+      font-size: 0.88rem;
+    }
+  }
+</style>

@@ -1,0 +1,156 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadDataset } from "../lib/data";
+
+const data = loadDataset();
+const repo = import.meta.env.PUBLIC_REPO_URL as string | undefined;
+---
+
+<Base title="À propos et méthode" description="Comment ManifCarte détecte automatiquement les mobilisations, ses sources et ses limites.">
+  <div class="container page">
+    <div class="prose">
+      <h1>À propos</h1>
+      <p class="lede">
+        ManifCarte est une carte <b>gratuite, sans publicité et sans traceur</b> qui recense automatiquement les
+        manifestations, blocus et rassemblements, d'abord à {data.focus.name}, puis en France et dans le monde.
+      </p>
+
+      <h2>Comment ça marche</h2>
+      <ol>
+        <li>
+          <b>Collecte.</b> Toutes les 20 minutes environ, un robot lit les sources publiques : recherches Google News,
+          flux RSS de la presse régionale et nationale, hashtags publics sur Mastodon et la base mondiale GDELT.
+        </li>
+        <li>
+          <b>Tri.</b> Il ne garde que les articles qui parlent d'une mobilisation (« manifestation », « blocus », « grève »,
+          « rassemblement »…) et écarte les faux amis (« défilé de mode », « manifestation culturelle »…).
+        </li>
+        <li>
+          <b>Extraction.</b> Dans chaque titre, il repère la commune (parmi plus de 1 300 villes françaises), la date (« ce
+          jeudi », « demain », « le 15 octobre »), l'heure, le lieu précis (« place Stanislas », « lycée Poincaré ») et la
+          cause.
+        </li>
+        <li>
+          <b>Regroupement.</b> Tous les articles qui parlent de la même ville le même jour forment une seule
+          mobilisation.
+        </li>
+        <li>
+          <b>Fiabilité.</b> Plus il y a de médias différents qui en parlent, plus la mobilisation est jugée fiable :
+          <em>à confirmer</em> (1 source), <em>probable</em> (2 médias), <em>confirmée</em> (3 médias ou plus).
+        </li>
+        <li>
+          <b>Publication.</b> La carte est régénérée et mise en ligne automatiquement sur GitHub Pages.
+        </li>
+      </ol>
+
+      <h2>Limites, à connaître absolument</h2>
+      <ul>
+        <li>
+          Tout est <b>automatique</b> : il peut y avoir des erreurs de date, de lieu ou des doublons. Vérifie toujours
+          auprès des sources citées sur chaque fiche.
+        </li>
+        <li>
+          Une mobilisation annoncée uniquement sur Instagram, TikTok ou dans un groupe privé <b>n'apparaîtra pas</b> tant
+          que la presse ou un message public n'en parle pas.
+        </li>
+        <li>
+          Quand aucun lieu précis n'est trouvé, le point est placé <b>au centre de la commune</b>.
+        </li>
+        <li>
+          Les mobilisations « monde » proviennent de GDELT, une détection automatique à grande échelle : elles sont
+          utiles pour une vue d'ensemble, mais plus imprécises.
+        </li>
+      </ul>
+
+      <h2>Vie privée</h2>
+      <ul>
+        <li>Aucun cookie, aucune statistique de visite, aucun compte.</li>
+        <li>
+          Aucune donnée personnelle n'est collectée sur les manifestant·es : ni nom, ni photo, ni pseudo. Seuls les lieux,
+          dates et liens vers des articles publics sont conservés.
+        </li>
+        <li>Le fond de carte est chargé depuis OpenFreeMap, un service libre et gratuit.</li>
+      </ul>
+
+      <h2>État des sources</h2>
+      <p class="small muted" id="generated"></p>
+    </div>
+    <div class="sources-table card" id="sources"><p class="muted small">Chargement…</p></div>
+
+    <div class="prose">
+      <h2>Code source et contact</h2>
+      <p>
+        Le projet est entièrement libre et gratuit à héberger.
+        {
+          repo ? (
+            <>
+              Le code est sur <a href={repo}>GitHub</a>. Une erreur, une idée ? <a href={`${repo}/issues/new`}>Ouvre un ticket</a>.
+            </>
+          ) : (
+            <>Le code est publié sur GitHub.</>
+          )
+        }
+      </p>
+      <p class="small muted">
+        Fond de carte © contributeurs <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> ·
+        <a href="https://openfreemap.org">OpenFreeMap</a> · Bibliothèque de carte <a href="https://maplibre.org">MapLibre</a>
+        · Données monde <a href="https://www.gdeltproject.org/">GDELT Project</a> · Communes : API Découpage
+        administratif (geo.api.gouv.fr) · Géocodage : Nominatim / OpenStreetMap.
+      </p>
+    </div>
+  </div>
+</Base>
+
+<script>
+  import { SOURCE_LABEL, escapeHtml, formatAgo } from "../lib/shared";
+  import { loadData } from "../scripts/filters";
+
+  loadData()
+    .then((d) => {
+      document.getElementById("generated")!.textContent = `Dernière mise à jour : ${formatAgo(d.generated_at)} (${new Date(
+        d.generated_at,
+      ).toLocaleString("fr-FR")}).`;
+      const rows = Object.entries(SOURCE_LABEL)
+        .map(([key, label]) => {
+          const s = d.sources[key];
+          const state = !s
+            ? `<span class="badge">Pas encore lancée</span>`
+            : s.ok
+              ? `<span class="badge ok">Opérationnelle</span>`
+              : `<span class="badge warn">En panne</span>`;
+          const detail = !s
+            ? ""
+            : s.ok
+              ? `${s.fetched ?? 0} éléments utiles, ${s.added ?? 0} nouveaux · ${formatAgo(s.at)}`
+              : `Dernier succès : ${s.last_ok ? formatAgo(s.last_ok) : "jamais"}`;
+          return `<tr><td><b>${escapeHtml(label)}</b></td><td>${state}</td><td class="muted small">${escapeHtml(detail)}</td></tr>`;
+        })
+        .join("");
+      document.getElementById("sources")!.innerHTML = `<table><tbody>${rows}</tbody></table>`;
+    })
+    .catch(() => {
+      document.getElementById("sources")!.innerHTML = `<p class="muted">Données indisponibles.</p>`;
+    });
+</script>
+
+<style>
+  .sources-table {
+    max-width: 70ch;
+    overflow-x: auto;
+  }
+  :global(.sources-table table) {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  :global(.sources-table td) {
+    padding: 8px 10px 8px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  :global(.sources-table tr:last-child td) {
+    border-bottom: 0;
+  }
+  :global(.badge.ok) {
+    background: color-mix(in srgb, var(--ok) 15%, transparent);
+    color: var(--ok);
+  }
+</style>
