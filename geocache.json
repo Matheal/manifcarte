@@ -9,6 +9,11 @@
 47.20446,
 -1.6091
 ],
+"Lycée privé Saint-Dominique|Saint-Herblain": null,
+"Maison du Peuple|Belfort": [
+47.64147,
+6.85137
+],
 "Nantes Université|Nantes": [
 47.24546,
 -1.55199
@@ -33,6 +38,14 @@
 47.24734,
 -1.5506
 ],
+"centre-ville|Bordeaux": [
+44.84113,
+-0.65678
+],
+"centre-ville|Caen": [
+49.18288,
+-0.36472
+],
 "centre-ville|Nancy": [
 48.68963,
 6.18426
@@ -40,6 +53,10 @@
 "centre-ville|Nantes": [
 47.21484,
 -1.55794
+],
+"centre-ville|Saint-Nazaire": [
+47.27483,
+-2.19795
 ],
 "cité scolaire Beaumont|Redon": [
 47.65578,
@@ -94,6 +111,10 @@
 45.17919,
 5.73067
 ],
+"lycée Pape-Clément|Pessac": [
+44.80912,
+-0.64936
+],
 "lycée Rosa-Parks|Saint-Denis": null,
 "lycée d'Angers|Angers": [
 47.47074,
@@ -117,6 +138,7 @@
 47.65033,
 -2.75857
 ],
+"rectorat et centre-ville|Dijon": null,
 "rue du Rabodeau|Maxéville": [
 48.70196,
 6.1309
