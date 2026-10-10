@@ -1,0 +1,62 @@
+{
+"Rectorat|Dijon": [
+47.3185,
+5.03424
+],
+"Rectorat|Toulouse": [
+43.57765,
+1.44575
+],
+"avenue de l'Amiral Collet|Toulon": [
+43.12886,
+5.92335
+],
+"campus Tertre|Nantes": [
+47.24734,
+-1.5506
+],
+"lycée Albert-Camus|Nantes": [
+47.20446,
+-1.6091
+],
+"lycée Bertran|Périgueux": null,
+"lycée Bonaparte|Toulon": [
+43.12566,
+5.92621
+],
+"lycée Charles Péguy|Orléans": [
+47.88872,
+1.89726
+],
+"lycée Corbière|Morlaix": [
+48.59895,
+-3.81765
+],
+"lycée Loritz|Nancy": [
+48.69118,
+6.19165
+],
+"lycée Léonard|Montpellier": [
+43.62757,
+3.82389
+],
+"lycée Mounier|Grenoble": [
+45.17919,
+5.73067
+],
+"lycée Rosa-Parks|Saint-Denis": null,
+"lycée d'Angers|Angers": [
+47.47074,
+-0.59143
+],
+"lycée des Bourdonnières|Nantes": [
+47.18674,
+-1.52138
+],
+"place Carnot|Nancy": [
+48.69344,
+6.17785
+],
+"place Saint-Anne|Rennes": null,
+"place de l'Opéra|Toulon": null
+}
