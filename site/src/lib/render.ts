@@ -1,6 +1,7 @@
 // Génération HTML des cartes d'événements (utilisée au build ET dans le navigateur).
 import {
   type ManifEvent,
+  SIGNAL_LABEL,
   STATUS_LABEL,
   escapeHtml,
   eventPath,
@@ -33,6 +34,9 @@ export function eventCardHtml(e: ManifEvent, base: string, today = todayParis())
   const when = [status === "today" ? "" : relativeDay(e.date, today), formatTime(e.time)].filter(Boolean).join(" · ");
   const extra: string[] = [];
   if (e.scope === "world") extra.push(`<span class="badge world">Monde</span>`);
+  for (const sig of ["dementi", "non_verifie", "annulee"]) {
+    if (e.signals.includes(sig)) extra.push(`<span class="badge warn">${SIGNAL_LABEL[sig]}</span>`);
+  }
   if (e.signals.includes("tensions")) extra.push(`<span class="badge warn">Tensions signalées</span>`);
   if (e.signals.includes("blocus") && e.kind !== "Blocus") extra.push(`<span class="badge">Blocus</span>`);
   return `<a class="event-card" href="${eventPath(base, e.id)}" data-status="${status}" data-id="${e.id}">
@@ -41,7 +45,7 @@ export function eventCardHtml(e: ManifEvent, base: string, today = todayParis())
     <h3>${escapeHtml(e.title)}</h3>
     <div class="meta">${statusBadge(e, today)}<span>${escapeHtml(when)}</span>${extra.join("")}</div>
     <div class="meta" style="margin-top:4px"><span class="place">${PIN}${escapeHtml(placeLabel(e))}</span>${reliabilityHtml(e)}</div>
-    <p class="headline">${escapeHtml(e.headline)}</p>
+    <p class="headline">${escapeHtml(e.summary || e.headline)}</p>
   </div>
 </a>`;
 }

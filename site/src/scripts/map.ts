@@ -228,7 +228,7 @@ function popupHtml(e: ManifEvent): string {
     <div class="meta">${statusBadge(e, today)}<span>${escapeHtml(when)}</span></div>
     <h3>${escapeHtml(e.title)}</h3>
     <div class="meta">${escapeHtml(placeLabel(e))}</div>
-    <p>${escapeHtml(e.headline)}</p>
+    <p>${escapeHtml(e.summary || e.headline)}</p>
     <div class="meta">${reliabilityHtml(e)}<span>${e.source_count} source${e.source_count > 1 ? "s" : ""}</span></div>
     <a class="more" href="${eventPath(BASE, e.id)}">Voir la fiche →</a>
   </div>`;

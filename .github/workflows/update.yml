@@ -52,6 +52,9 @@ jobs:
       - name: Collecter les mobilisations
         env:
           MANIFCARTE_CONTACT: ${{ github.server_url }}/${{ github.repository }}
+          # Clé gratuite Google AI Studio (Settings > Secrets and variables > Actions).
+          # Sans elle, l'analyse IA est simplement désactivée.
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m collector.main --data-dir store --out site/public/data/events.json
 
       - name: Sauvegarder les données

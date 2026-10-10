@@ -43,6 +43,20 @@ Ensuite, tout est automatique. Les données s'accumulent sur la branche `data` :
 > ⚠️ GitHub met en pause les tâches planifiées d'un dépôt resté **60 jours sans aucun commit**. Si la carte ne se
 > met plus à jour, va dans **Actions** et clique sur **Enable workflow**.
 
+## Analyse par IA (facultative, gratuite)
+
+Une IA (Gemini) lit le titre et le résumé de chaque nouvel article et indique s'il **annonce** une
+mobilisation, en fait le **compte rendu**, ne fait que **rappeler** un fait ancien, est un simple article
+de **contexte**, ou relaie une **rumeur** / un **démenti**. Elle extrait aussi la date, l'heure et le lieu.
+
+1. Crée une clé gratuite sur [aistudio.google.com](https://aistudio.google.com) (**Get API key**).
+   N'active **pas** la facturation : tu restes dans l'offre gratuite, sans aucun frais possible.
+2. Dans le dépôt GitHub : **Settings → Secrets and variables → Actions → New repository secret**,
+   nom `GEMINI_API_KEY`, valeur = ta clé.
+
+Sans clé, ou si le quota gratuit du jour est atteint, le collecteur continue avec les règles classiques.
+Réglages (modèle, nombre d'appels par jour…) dans `collector/config.py`, section « Analyse par IA ».
+
 ## Travailler en local (Mac)
 
 ```bash

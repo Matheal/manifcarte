@@ -62,6 +62,18 @@ GDELT_BACKFILL_FILES = 48           # premier passage : 12 h d'historique
 GDELT_MIN_ARTICLES = 3              # nombre minimal d'articles pour retenir un lieu/jour
 GDELT_EXCLUDE_COUNTRIES = {"FR"}    # la France est couverte par la presse française
 
+# --- Analyse par IA (Gemini, offre gratuite) -------------------------------------
+# Activée seulement si le secret GEMINI_API_KEY est défini dans le dépôt GitHub.
+
+AI_ENABLED = True
+# Essayés dans l'ordre (si un modèle est retiré par Google, on passe au suivant).
+AI_MODELS = ["gemini-3.5-flash-lite", "gemini-flash-lite-latest", "gemini-3.1-flash-lite"]
+AI_BATCH_SIZE = 10                  # articles envoyés par requête
+AI_MAX_CALLS_PER_RUN = 8            # au plus 80 articles analysés par passage
+AI_MAX_CALLS_PER_DAY = 200          # garde-fou, bien en dessous des quotas gratuits
+AI_MIN_SECONDS_BETWEEN_CALLS = 6    # ≤ 10 requêtes par minute
+AI_MAX_AGE_DAYS = 21                # inutile d'analyser les vieux articles
+
 # --- Conservation ------------------------------------------------------------
 
 KEEP_DAYS_FR = 60       # articles français conservés

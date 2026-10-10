@@ -104,6 +104,16 @@ class Gazetteer:
         dem = "|".join(sorted(DEMONYMS, key=len, reverse=True))
         self._dem_re = re.compile(rf"\b({dem})(?:ne|e)?s?\b", re.IGNORECASE)
 
+    def lookup(self, name: str) -> Commune | None:
+        """Commune à partir d'un nom écrit librement (« vandoeuvre les nancy » -> Vandœuvre-lès-Nancy)."""
+        if name in self.by_name:
+            return self.by_name[name]
+        if not hasattr(self, "_by_slug"):
+            self._by_slug = {}
+            for c in sorted(self.by_name.values(), key=lambda c: c.population):
+                self._by_slug[slugify(c.name.replace("œ", "oe"))] = c
+        return self._by_slug.get(slugify(name.replace("œ", "oe")))
+
     def find(self, text: str, limit: int = 6) -> list[Commune]:
         found: list[Commune] = []
         for m in self._re.finditer(text):

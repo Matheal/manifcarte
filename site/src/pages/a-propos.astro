@@ -39,6 +39,13 @@ const repo = import.meta.env.PUBLIC_REPO_URL as string | undefined;
           <em>à confirmer</em> (1 source), <em>probable</em> (2 médias), <em>confirmée</em> (3 médias ou plus).
         </li>
         <li>
+          <b>Analyse par IA.</b> Une IA (Gemini, offre gratuite de Google) lit le titre et le résumé de chaque
+          nouvel article et détermine s'il <em>annonce</em> une mobilisation à venir, s'il en fait le
+          <em>compte rendu</em>, s'il ne fait que <em>rappeler</em> un fait ancien ou s'il s'agit d'un simple article de
+          <em>contexte</em>. Elle signale aussi les <em>rumeurs</em> et les <em>démentis</em>. Les articles de contexte
+          ne créent pas de point sur la carte. Si l'IA est indisponible, les règles ci-dessus prennent le relais.
+        </li>
+        <li>
           <b>Publication.</b> La carte est régénérée et mise en ligne automatiquement sur GitHub Pages.
         </li>
       </ol>
@@ -48,6 +55,10 @@ const repo = import.meta.env.PUBLIC_REPO_URL as string | undefined;
         <li>
           Tout est <b>automatique</b> : il peut y avoir des erreurs de date, de lieu ou des doublons. Vérifie toujours
           auprès des sources citées sur chaque fiche.
+        </li>
+        <li>
+          L'IA ne lit que le titre et le résumé (pas l'article complet) et ne peut pas savoir si une information est
+          vraie : elle repère seulement la façon dont les médias en parlent (conditionnel, rumeur, démenti).
         </li>
         <li>
           Une mobilisation annoncée uniquement sur Instagram, TikTok ou dans un groupe privé <b>n'apparaîtra pas</b> tant
@@ -115,12 +126,16 @@ const repo = import.meta.env.PUBLIC_REPO_URL as string | undefined;
           const s = d.sources[key];
           const state = !s
             ? `<span class="badge">Pas encore lancée</span>`
+            : s.disabled
+              ? `<span class="badge">Désactivée (aucune clé)</span>`
             : s.ok
               ? `<span class="badge ok">Opérationnelle</span>`
               : `<span class="badge warn">En panne</span>`;
-          const detail = !s
+          const detail = !s || s.disabled
             ? ""
-            : s.ok
+            : key === "ai" && s.ok
+              ? `${s.analyzed ?? 0} articles analysés${s.pending ? `, ${s.pending} en attente` : ""}${s.quota ? " (quota du jour atteint)" : ""}${s.model ? ` · ${s.model}` : ""} · ${formatAgo(s.at)}`
+              : s.ok
               ? `${s.fetched ?? 0} éléments utiles, ${s.added ?? 0} nouveaux · ${formatAgo(s.at)}`
               : `Dernier succès : ${s.last_ok ? formatAgo(s.last_ok) : "jamais"}`;
           return `<tr><td><b>${escapeHtml(label)}</b></td><td>${state}</td><td class="muted small">${escapeHtml(detail)}</td></tr>`;

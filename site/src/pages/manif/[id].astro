@@ -5,6 +5,7 @@ import { eventCardHtml, reliabilityHtml } from "../../lib/render";
 import {
   type ManifEvent,
   SIGNAL_LABEL,
+  WARN_SIGNALS,
   formatDay,
   formatNumber,
   formatTime,
@@ -60,7 +61,7 @@ const reliabilityText: Record<number, string> = {
       <div class="badges">
         <span class={`badge ${status}`} id="status-badge"><span class="dot"></span><span>{STATUS_LABEL[status]}</span></span>
         {e.scope === "world" && <span class="badge world">Monde · détection GDELT</span>}
-        {e.signals.map((s) => SIGNAL_LABEL[s] && <span class={`badge ${s === "tensions" || s === "interdite" ? "warn" : ""}`}>{SIGNAL_LABEL[s]}</span>)}
+        {e.signals.map((s) => SIGNAL_LABEL[s] && <span class={`badge ${WARN_SIGNALS.has(s) ? "warn" : ""}`}>{SIGNAL_LABEL[s]}</span>)}
       </div>
       <h1>{e.title}</h1>
       <p class="when">
@@ -81,11 +82,39 @@ const reliabilityText: Record<number, string> = {
       )
     }
 
+    {
+      (e.signals.includes("non_verifie") || e.signals.includes("dementi")) && (
+        <div class="notice">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 15h-2v-2h2v2Zm0-4h-2V7h2v6Z" /></svg>
+          <div>
+            {e.signals.includes("dementi") ? (
+              <>Au moins un média <strong>dément</strong> cette information. Elle est affichée pour transparence, mais ne la relaie pas sans vérifier.</>
+            ) : (
+              <>Cette mobilisation n'est évoquée que comme une <strong>rumeur</strong> ou une information <strong>non vérifiée</strong> (messages sur les réseaux, conditionnel…). Attends une confirmation avant de t'y fier.</>
+            )}
+          </div>
+        </div>
+      )
+    }
+
     <div class="layout">
       <div class="main">
         <section class="card">
           <h2>En bref</h2>
-          <blockquote class="headline">« {e.headline} »</blockquote>
+          {
+            e.summary ? (
+              <>
+                <p class="summary">{e.summary}</p>
+                <p class="ai-note small muted">
+                  Résumé rédigé par une IA à partir de {e.ai_count} article{(e.ai_count ?? 0) > 1 ? "s" : ""}
+                  {e.nature && <> · selon cette analyse, la mobilisation <strong>{e.nature === "attestee" ? "a eu lieu ou est en cours" : "est annoncée, pas encore confirmée sur place"}</strong></>}.
+                </p>
+                <blockquote class="headline">« {e.headline} »</blockquote>
+              </>
+            ) : (
+              <blockquote class="headline">« {e.headline} »</blockquote>
+            )
+          }
           <dl class="facts">
             <div><dt>Date</dt><dd>{dateLabel}{note && <span class="hint">{note}</span>}</dd></div>
             <div><dt>Heure</dt><dd>{e.time ? formatTime(e.time) : <span class="muted">Non précisée</span>}</dd></div>
@@ -251,6 +280,14 @@ const reliabilityText: Record<number, string> = {
     height: 320px;
     padding: 0;
     overflow: hidden;
+  }
+  .summary {
+    font-size: 1.08rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .ai-note {
+    margin: 0 0 14px;
   }
   .headline {
     margin: 0 0 18px;

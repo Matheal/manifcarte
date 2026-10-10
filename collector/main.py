@@ -16,6 +16,7 @@ import pathlib
 from datetime import datetime, timedelta, timezone
 
 from . import config, sources
+from .ai import Analyzer
 from .events import _local_date, build_fr_events, build_world_events
 from .extract import Gazetteer, extract
 from .geocode import Geocoder
@@ -95,8 +96,23 @@ def run(data_dir: pathlib.Path, out: pathlib.Path, skip: set[str], offline: bool
             log.info("%-12s %4d pertinents, %4d nouveaux", name, len(got), added)
 
     prune(stored, now)
-    geo = Geocoder(data_dir / "geocache.json")
     items = list(stored.values())
+
+    # Analyse IA des nouveaux articles (sans effet si GEMINI_API_KEY est absente).
+    if "ai" not in skip:
+        analyzer = Analyzer(state)
+        try:
+            report = analyzer.analyze(items)
+            status["ai"] = {**report, "at": now.isoformat(), "fetched": report.get("analyzed", 0),
+                            "added": report.get("analyzed", 0), "model": state.get("ai", {}).get("model"),
+                            "last_ok": now.isoformat() if not report.get("disabled") else None}
+            log.info("ia           %s", report)
+        except Exception as e:  # l'IA ne doit jamais bloquer la mise à jour de la carte
+            log.exception("Analyse IA en échec")
+            status["ai"] = {"ok": False, "at": now.isoformat(), "error": str(e)[:200],
+                            "last_ok": status.get("ai", {}).get("last_ok")}
+
+    geo = Geocoder(data_dir / "geocache.json")
     events = build_fr_events(items, gaz, geo) + build_world_events(items)
     events.sort(key=lambda e: (e["date"], e["reliability"]["score"]), reverse=True)
     geo.save()
@@ -122,7 +138,7 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Collecte des mobilisations")
     ap.add_argument("--data-dir", type=pathlib.Path, default=ROOT / "data" / "store")
     ap.add_argument("--out", type=pathlib.Path, default=ROOT / "site" / "public" / "data" / "events.json")
-    ap.add_argument("--skip", nargs="*", default=[], choices=["google_news", "rss", "mastodon", "gdelt"])
+    ap.add_argument("--skip", nargs="*", default=[], choices=["google_news", "rss", "mastodon", "gdelt", "ai"])
     ap.add_argument("--offline", action="store_true", help="ne rien télécharger, recalculer seulement")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")

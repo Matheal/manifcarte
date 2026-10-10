@@ -14,6 +14,11 @@ export interface ManifEvent {
   kind: string;
   title: string;
   headline: string;
+  /** Résumé neutre rédigé par l'IA (absent si aucun article n'a été analysé). */
+  summary?: string | null;
+  /** Selon l'IA : "annoncee" (à venir) ou "attestee" (a eu lieu / en cours). */
+  nature?: "annoncee" | "attestee" | null;
+  ai_count?: number;
   city: string;
   insee?: string;
   dep?: string;
@@ -23,7 +28,7 @@ export interface ManifEvent {
   geo_precision: "lieu" | "commune";
   place: string | null;
   date: string; // AAAA-MM-JJ, heure de Paris
-  date_precision: "explicite" | "relative" | "publication";
+  date_precision: "explicite" | "relative" | "ia" | "publication";
   time: string | null;
   causes: string[];
   cause_labels: string[];
@@ -41,6 +46,12 @@ export interface SourceStatus {
   fetched?: number;
   added?: number;
   error?: string;
+  // Analyse IA
+  disabled?: boolean;
+  analyzed?: number;
+  pending?: number;
+  quota?: boolean;
+  model?: string | null;
 }
 
 export interface Dataset {
@@ -79,14 +90,20 @@ export const SIGNAL_LABEL: Record<string, string> = {
   blocus: "Blocus",
   tensions: "Tensions signalées",
   interdite: "Interdiction évoquée",
-  annulee: "Annulation ou report évoqué",
+  annulee: "Annulée ou reportée",
+  non_verifie: "Non vérifiée",
+  dementi: "Démentie",
 };
+
+/** Signaux affichés en orange (prudence). */
+export const WARN_SIGNALS = new Set(["tensions", "interdite", "non_verifie", "dementi", "annulee"]);
 
 export const SOURCE_LABEL: Record<string, string> = {
   google_news: "Google News",
   rss: "Flux RSS de presse",
   mastodon: "Mastodon",
   gdelt: "GDELT (monde)",
+  ai: "Analyse IA (Gemini)",
 };
 
 /** Date du jour à Paris, au format AAAA-MM-JJ (indépendant du fuseau du visiteur). */
@@ -193,6 +210,7 @@ export function placeLabel(e: ManifEvent): string {
 export function precisionNote(e: ManifEvent): string | null {
   if (e.date_precision === "publication") return "Date estimée d'après la parution des articles";
   if (e.date_precision === "relative") return "Date déduite d'une formulation comme « ce jeudi » ou « demain »";
+  if (e.date_precision === "ia") return "Date déterminée par l'IA à partir des articles";
   return null;
 }
 
