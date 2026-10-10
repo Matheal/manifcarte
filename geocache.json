@@ -1,4 +1,13 @@
 {
+"Centre hospitalier universitaire de Reims|Reims": null,
+"Lycée Albert-Camus|Nantes": [
+47.20446,
+-1.6091
+],
+"Nantes Université|Nantes": [
+47.24546,
+-1.55199
+],
 "Rectorat|Dijon": [
 47.3185,
 5.03424
@@ -14,6 +23,10 @@
 "campus Tertre|Nantes": [
 47.24734,
 -1.5506
+],
+"hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
+49.53765,
+5.7816
 ],
 "lycée Albert-Camus|Nantes": [
 47.20446,
@@ -35,6 +48,14 @@
 "lycée Cyfflé|Nancy": [
 48.68656,
 6.18211
+],
+"lycée Henri-Loritz|Nancy": [
+48.69074,
+6.19228
+],
+"lycée Langevin|Beauvais": [
+49.41463,
+2.10875
 ],
 "lycée Loritz|Nancy": [
 48.69118,
@@ -62,5 +83,13 @@
 6.17785
 ],
 "place Saint-Anne|Rennes": null,
-"place de l'Opéra|Toulon": null
+"place de l'Opéra|Toulon": null,
+"place de la Bastille|Paris": [
+48.85267,
+2.36882
+],
+"rue du Rabodeau|Maxéville": [
+48.70196,
+6.1309
+]
 }
