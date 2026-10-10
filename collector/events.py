@@ -63,11 +63,11 @@ IGNORED_NATURES = {"contexte", "hors_sujet", "rappel_ancien"}
 _AI_SIGNALS = {"annonce", "annulee", "interdite"}  # remplacés par le jugement de l'IA
 
 
-def _from_ai(it: dict, ref: date, gaz: Gazetteer, rule_signals: set[str]) -> list[tuple[str, date, Contribution]]:
+def _from_ai(it: dict, ref: date, gaz: Gazetteer, ext) -> list[tuple[str, date, Contribution]]:
     ai = it["ai"]
     if ai["nature"] in IGNORED_NATURES:
         return []
-    signals = rule_signals - _AI_SIGNALS
+    signals = (set(ext.signals) if ext else set()) - _AI_SIGNALS
     if ai["nature"] == "annonce":
         signals.add("annonce")
     if ai["veracite"] in ("rumeur", "non_verifie"):
@@ -82,11 +82,18 @@ def _from_ai(it: dict, ref: date, gaz: Gazetteer, rule_signals: set[str]) -> lis
         if not commune:
             continue
         d, precision = ref, "publication"
-        if ev["date"]:
-            candidate = date.fromisoformat(ev["date"])
-            # Garde-fou contre une date aberrante.
-            if -30 <= (candidate - ref).days <= 45:
-                d, precision = candidate, "ia"
+        candidate = date.fromisoformat(ev["date"]) if ev["date"] else None
+        # Garde-fou contre une date aberrante.
+        if candidate and -30 <= (candidate - ref).days <= 45:
+            d, precision = candidate, "ia"
+        else:
+            # Date trouvée par les règles ; pour une annonce, seulement une date à venir.
+            rule_dates = [(x, pr) for x, pr in (ext.dates if ext else [])
+                          if ai["nature"] != "annonce" or x >= ref]
+            if rule_dates:
+                d, precision = rule_dates[0]
+            elif ai["nature"] == "annonce":
+                continue  # annonce sans date connue : on ne la place pas « aujourd'hui » par erreur
         out.append((commune.insee, d, Contribution(
             item=it, precision=precision,
             causes=ai["causes"] or ["autre"],
@@ -123,7 +130,7 @@ def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder) -> list[di
         ref = _local_date(it["published"])
         ext = extract(it["title"], it.get("text", ""), ref, gaz)
         if it.get("ai"):
-            found = _from_ai(it, ref, gaz, set(ext.signals) if ext else set())
+            found = _from_ai(it, ref, gaz, ext)
         else:
             found = _from_rules(it, ext) if ext else []
         for insee, d, contrib in found:

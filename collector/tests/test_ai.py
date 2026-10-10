@@ -177,3 +177,14 @@ class _FrozenDatetime(ai.datetime):
     @classmethod
     def now(cls, tz=None):
         return ai.datetime(2026, 10, 10, 12, 0, tzinfo=tz or ai.timezone.utc)
+
+
+def test_announcement_without_date_is_not_placed_today():
+    it = with_ai(item(1, "Un troisième mardi de manif annoncé à Caen"), "annonce", events=[ev(ville="Caen", date=None)])
+    assert build_fr_events([it], GAZ, FakeGeo()) == []
+
+
+def test_announcement_without_ai_date_uses_rule_date():
+    it = with_ai(item(1, "Les lycéens de Caen appellent à manifester jeudi"), "annonce", events=[ev(ville="Caen", date=None)])
+    [e] = build_fr_events([it], GAZ, FakeGeo())
+    assert e["date"] == "2026-10-08" and e["date_precision"] == "relative"
