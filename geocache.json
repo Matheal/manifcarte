@@ -1,5 +1,10 @@
 {
 "Centre hospitalier universitaire de Reims|Reims": null,
+"Institut d'urbanisme et géographie alpine|Grenoble": null,
+"Lauga|Bayonne": [
+43.4815,
+-1.4745
+],
 "Lycée Albert-Camus|Nantes": [
 47.20446,
 -1.6091
@@ -16,6 +21,10 @@
 43.57765,
 1.44575
 ],
+"Sciences Po|Paris": [
+48.8539,
+2.32902
+],
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
 5.92335
@@ -24,9 +33,25 @@
 47.24734,
 -1.5506
 ],
+"centre-ville|Nancy": [
+48.68963,
+6.18426
+],
+"centre-ville|Nantes": [
+47.21484,
+-1.55794
+],
+"cité scolaire Beaumont|Redon": [
+47.65578,
+-2.09402
+],
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
+],
+"l'Écusson|Montpellier": [
+43.61084,
+3.87659
 ],
 "lycée Albert-Camus|Nantes": [
 47.20446,
@@ -87,6 +112,10 @@
 "place de la Bastille|Paris": [
 48.85267,
 2.36882
+],
+"port|Vannes": [
+47.65033,
+-2.75857
 ],
 "rue du Rabodeau|Maxéville": [
 48.70196,
