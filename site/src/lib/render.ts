@@ -1,6 +1,13 @@
 // Génération HTML des cartes d'événements (utilisée au build ET dans le navigateur).
+import { restrictionIconSvg } from "./icons";
 import {
   type ManifEvent,
+  type Restriction,
+  RESTRICTION_STATUS_LABEL,
+  formatRange,
+  issueUrl,
+  restrictionStatus,
+  withBase,
   SIGNAL_LABEL,
   STATUS_LABEL,
   escapeHtml,
@@ -33,6 +40,7 @@ export function eventCardHtml(e: ManifEvent, base: string, today = todayParis())
   const status = statusOf(e, today);
   const when = [status === "today" ? "" : relativeDay(e.date, today), formatTime(e.time)].filter(Boolean).join(" · ");
   const extra: string[] = [];
+  if (e.verified) extra.push(`<span class="badge verified">✓ Vérifiée</span>`);
   if (e.scope === "world") extra.push(`<span class="badge world">Monde</span>`);
   for (const sig of ["dementi", "non_verifie", "annulee"]) {
     if (e.signals.includes(sig)) extra.push(`<span class="badge warn">${SIGNAL_LABEL[sig]}</span>`);
@@ -48,4 +56,47 @@ export function eventCardHtml(e: ManifEvent, base: string, today = todayParis())
     <p class="headline">${escapeHtml(e.summary || e.headline)}</p>
   </div>
 </a>`;
+}
+
+/** Carte d'une restriction (page Perturbations, fiches, panneau de la carte). */
+export function restrictionCardHtml(
+  r: Restriction,
+  base: string,
+  today = todayParis(),
+  opts: { compact?: boolean; siteUrl?: string } = {},
+): string {
+  const status = restrictionStatus(r, today);
+  const lines = r.lines.length
+    ? `<div class="lines">${r.lines.map((l) => `<span class="line">${escapeHtml(l)}</span>`).join("")}</div>`
+    : "";
+  const origin = r.verified
+    ? `<span class="badge verified">✓ Vérifiée</span>`
+    : `<span class="badge">Détectée par IA</span>`;
+  const where = r.place ? `${r.place}, ${r.city}` : r.city;
+  const head = `<div class="r-icon r-${status}">${restrictionIconSvg(r.type, 20)}</div>
+    <div class="r-body">
+      <div class="r-title"><b>${escapeHtml(r.type_label)}</b> · ${escapeHtml(where)}</div>
+      <div class="meta"><span class="badge r-${status}">${RESTRICTION_STATUS_LABEL[status]}</span><span>${escapeHtml(formatRange(r.start, r.end))}</span>${opts.compact ? "" : origin}</div>
+      <p class="r-desc">${escapeHtml(r.description)}</p>${lines}`;
+  if (opts.compact) {
+    return `<a class="restriction-card compact" href="${withBase(base, "perturbations/")}#${r.id}" data-rid="${r.id}">${head}</div></a>`;
+  }
+  const details = r.details.length
+    ? `<ul class="r-details">${r.details.map((d) => `<li>${escapeHtml(d)}</li>`).join("")}</ul>`
+    : "";
+  const sources = r.sources
+    .map((src) =>
+      src.url
+        ? `<a href="${escapeHtml(src.url)}" target="_blank" rel="noopener nofollow">${escapeHtml(src.outlet)}</a>`
+        : `<span>${escapeHtml(src.outlet)}</span>`,
+    )
+    .join(" · ");
+  const page = `${opts.siteUrl ?? ""}${withBase(base, "perturbations/")}#${r.id}`;
+  return `<article class="restriction-card" id="${r.id}" data-status="${status}">${head}${details}
+      <p class="r-sources small muted">Sources : ${sources}</p>
+      <div class="r-actions small">
+        <a href="${withBase(base)}?r=${encodeURIComponent(r.id)}">Voir sur la carte</a>
+        <a href="${escapeHtml(issueUrl("3-supprimer.yml", { lien: page, title: `[Erreur] ${r.type_label} à ${r.city}` }))}" target="_blank" rel="noopener">Signaler une erreur</a>
+      </div>
+    </div></article>`;
 }

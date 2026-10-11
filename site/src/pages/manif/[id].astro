@@ -1,12 +1,15 @@
 ---
 import Base from "../../layouts/Base.astro";
 import { loadDataset } from "../../lib/data";
-import { eventCardHtml, reliabilityHtml } from "../../lib/render";
+import { eventCardHtml, reliabilityHtml, restrictionCardHtml } from "../../lib/render";
 import {
   type ManifEvent,
   SIGNAL_LABEL,
   WARN_SIGNALS,
   formatDay,
+  frDate,
+  issueUrl,
+  restrictionsFor,
   formatNumber,
   formatTime,
   placeLabel,
@@ -36,6 +39,17 @@ const others = loadDataset()
   .events.filter((o) => o.id !== e.id && o.city === e.city && o.country === e.country)
   .slice(0, 6);
 const note = precisionNote(e);
+const related = restrictionsFor(e, loadDataset().restrictions);
+const siteOrigin = Astro.site ? new URL(Astro.site).origin : "";
+const pageUrl = `${siteOrigin}${withBase(base, `manif/${e.id}/`)}`;
+const reportUrl = issueUrl("3-supprimer.yml", { lien: pageUrl, title: `[Erreur] ${e.title}, ${dateFr}` });
+const completeUrl = issueUrl("1-ajouter-manif.yml", {
+  ville: e.city,
+  date: frDate(e.date),
+  ...(e.time ? { heure: e.time.replace(":", "h") } : {}),
+  ...(e.place ? { lieu: e.place } : {}),
+  title: `[Ajout] ${e.title}, ${dateFr}`,
+});
 const fmtPublished = new Intl.DateTimeFormat("fr-FR", {
   day: "numeric",
   month: "short",
@@ -60,7 +74,8 @@ const reliabilityText: Record<number, string> = {
     <header class="head">
       <div class="badges">
         <span class={`badge ${status}`} id="status-badge"><span class="dot"></span><span>{STATUS_LABEL[status]}</span></span>
-        {e.scope === "world" && <span class="badge world">Monde · détection GDELT</span>}
+        {e.verified && <span class="badge verified">✓ Vérifiée par l'équipe</span>}
+        {e.scope === "world" && !e.verified && <span class="badge world">Monde · détection GDELT</span>}
         {e.signals.map((s) => SIGNAL_LABEL[s] && <span class={`badge ${WARN_SIGNALS.has(s) ? "warn" : ""}`}>{SIGNAL_LABEL[s]}</span>)}
       </div>
       <h1>{e.title}</h1>
@@ -137,7 +152,7 @@ const reliabilityText: Record<number, string> = {
             }
             <div>
               <dt>Fiabilité</dt>
-              <dd><Fragment set:html={reliabilityHtml(e)} /><span class="hint">{e.scope === "world" ? `Repérée dans ${e.source_count} article(s) par GDELT, une base de données mondiale automatique.` : reliabilityText[e.reliability.level]}</span></dd>
+              <dd><Fragment set:html={reliabilityHtml(e)} /><span class="hint">{e.verified ? "Ajoutée ou confirmée manuellement par l'équipe ManifCarte." : e.scope === "world" ? `Repérée dans ${e.source_count} article(s) par GDELT, une base de données mondiale automatique.` : reliabilityText[e.reliability.level]}</span></dd>
             </div>
           </dl>
           <div class="actions">
@@ -146,7 +161,21 @@ const reliabilityText: Record<number, string> = {
             <button class="btn" type="button" id="share">Partager</button>
             <a class="btn" href={directions} target="_blank" rel="noopener">Itinéraire</a>
           </div>
+          <div class="contribute small">
+            <a href={reportUrl} target="_blank" rel="noopener">Signaler une erreur</a>
+            <a href={completeUrl} target="_blank" rel="noopener">Compléter ou corriger (heure, lieu…)</a>
+          </div>
         </section>
+
+        {
+          related.length > 0 && (
+            <section class="card">
+              <h2>Perturbations à {e.city}</h2>
+              <p class="small muted">Restrictions signalées autour de cette date (± 1 jour).</p>
+              <div class="related" set:html={related.map((r) => restrictionCardHtml(r, base, today, { compact: true })).join("")} />
+            </section>
+          )
+        }
 
         <section class="card">
           <h2>Sources ({e.source_count})</h2>
@@ -154,9 +183,13 @@ const reliabilityText: Record<number, string> = {
             {
               e.sources.map((s) => (
                 <li>
-                  <a href={s.url} target="_blank" rel="noopener nofollow">{s.title}</a>
+                  {s.url ? (
+                    <a href={s.url} target="_blank" rel="noopener nofollow">{s.title}</a>
+                  ) : (
+                    <span class="src-title">{s.title}</span>
+                  )}
                   <span class="muted small">
-                    {s.outlet}{s.kind === "social" && " · message public"} · {fmtPublished.format(new Date(s.published))}
+                    {s.outlet}{s.kind === "social" && " · message public"}{s.kind !== "manuel" && <> · {fmtPublished.format(new Date(s.published))}</>}
                   </span>
                 </li>
               ))
@@ -327,6 +360,24 @@ const reliabilityText: Record<number, string> = {
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 18px;
+  }
+  .contribute {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 12px;
+    font-weight: 600;
+  }
+  .contribute a {
+    color: var(--text-2);
+  }
+  .related {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .src-title {
+    font-weight: 600;
   }
   .sources {
     list-style: none;

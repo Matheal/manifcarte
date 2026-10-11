@@ -1,0 +1,210 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadDataset } from "../lib/data";
+import { restrictionIconSvg } from "../lib/icons";
+import { restrictionCardHtml } from "../lib/render";
+import {
+  RESTRICTION_LABEL,
+  type Restriction,
+  type RestrictionStatus,
+  type RestrictionType,
+  addDays,
+  issueUrl,
+  restrictionStatus,
+  todayParis,
+  withBase,
+} from "../lib/shared";
+
+const base = import.meta.env.BASE_URL;
+const siteUrl = Astro.site ? new URL(Astro.site).origin : "";
+const data = loadDataset();
+const today = todayParis();
+const RANK: Record<RestrictionStatus, number> = { active: 0, upcoming: 1, past: 2 };
+// On garde les restrictions terminées depuis moins de 14 jours.
+const list = (data.restrictions ?? [])
+  .filter((r) => r.end >= addDays(today, -14))
+  .sort(
+    (a, b) =>
+      RANK[restrictionStatus(a, today)] - RANK[restrictionStatus(b, today)] ||
+      (a.city === data.focus.name ? -1 : 0) - (b.city === data.focus.name ? -1 : 0) ||
+      a.start.localeCompare(b.start),
+  );
+const byCity = new Map<string, Restriction[]>();
+for (const r of list) (byCity.get(r.city) ?? byCity.set(r.city, []).get(r.city)!).push(r);
+const counts = {
+  active: list.filter((r) => restrictionStatus(r, today) === "active").length,
+  upcoming: list.filter((r) => restrictionStatus(r, today) === "upcoming").length,
+};
+const types = Object.keys(RESTRICTION_LABEL) as RestrictionType[];
+const typeCount = (t: RestrictionType) => list.filter((r) => r.type === t).length;
+---
+
+<Base title="Perturbations et restrictions" description="Bus et trams déviés, rues fermées, arrêtés préfectoraux, établissements fermés : les restrictions liées aux mobilisations.">
+  <div class="container page">
+    <h1>Perturbations et restrictions</h1>
+    <p class="lede">
+      Transports déviés, rues fermées, interdictions, établissements fermés… Ce qui change autour des mobilisations,
+      détecté dans la presse par l'IA ou signalé et vérifié par l'équipe.
+    </p>
+
+    <div class="kpis">
+      <div class="card kpi"><b>{counts.active}</b><span>En cours</span></div>
+      <div class="card kpi"><b>{counts.upcoming}</b><span>À venir</span></div>
+      <a class="card kpi cta" href={issueUrl("2-signaler-restriction.yml")} target="_blank" rel="noopener">
+        <b>+</b><span>Signaler une restriction</span>
+      </a>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filtrer par type">
+      <button class="chip" type="button" data-type="all" aria-pressed="true">Toutes</button>
+      {
+        types.map(
+          (t) =>
+            typeCount(t) > 0 && (
+              <button class="chip" type="button" data-type={t} aria-pressed="false">
+                <Fragment set:html={restrictionIconSvg(t, 15)} />
+                {RESTRICTION_LABEL[t]} <span class="muted">{typeCount(t)}</span>
+              </button>
+            ),
+        )
+      }
+    </div>
+    <div class="filters" role="group" aria-label="Filtrer par période">
+      <button class="chip" type="button" data-when="current" aria-pressed="true">En cours et à venir</button>
+      <button class="chip" type="button" data-when="all" aria-pressed="false">Avec les terminées</button>
+    </div>
+
+    {
+      list.length === 0 ? (
+        <div class="empty card">
+          <p>
+            <b>Aucune perturbation signalée</b> pour le moment.
+          </p>
+          <p class="small">
+            Les restrictions sont détectées automatiquement dans les articles. Tu en connais une ?
+            <a href={issueUrl("2-signaler-restriction.yml")} target="_blank" rel="noopener">Signale-la</a>.
+          </p>
+        </div>
+      ) : (
+        [...byCity].map(([city, items]) => (
+          <section class="city" data-city={city}>
+            <h2>
+              {city} <span class="muted">{items.length}</span>
+            </h2>
+            <div class="grid">
+              {items.map((r) => (
+                <div class="item" data-type={r.type} data-status={restrictionStatus(r, today)}>
+                  <Fragment set:html={restrictionCardHtml(r, base, today, { siteUrl })} />
+                </div>
+              ))}
+            </div>
+          </section>
+        ))
+      )
+    }
+    <p class="empty-filter muted" hidden>Aucune perturbation ne correspond à ce filtre.</p>
+
+    <p class="small muted note">
+      Les informations détectées par IA proviennent des titres et résumés d'articles : vérifie toujours auprès de
+      l'exploitant (réseau de transport, mairie, préfecture). <a href={withBase(base, "contribuer/")}>Contribuer</a>
+    </p>
+  </div>
+</Base>
+
+<script>
+  let type = "all";
+  let when = "current";
+
+  function apply(): void {
+    let shown = 0;
+    document.querySelectorAll<HTMLElement>(".item").forEach((el) => {
+      const ok = (type === "all" || el.dataset.type === type) && (when === "all" || el.dataset.status !== "past");
+      el.hidden = !ok;
+      if (ok) shown++;
+    });
+    document.querySelectorAll<HTMLElement>(".city").forEach((sec) => {
+      sec.hidden = !sec.querySelector(".item:not([hidden])");
+    });
+    document.querySelector<HTMLElement>(".empty-filter")!.hidden = shown > 0 || !document.querySelector(".item");
+    document.querySelectorAll("[data-type]").forEach((b) => {
+      if (b.tagName === "BUTTON") b.setAttribute("aria-pressed", String((b as HTMLElement).dataset.type === type));
+    });
+    document.querySelectorAll<HTMLElement>("[data-when]").forEach((b) =>
+      b.setAttribute("aria-pressed", String(b.dataset.when === when)),
+    );
+  }
+
+  document.querySelectorAll<HTMLButtonElement>("button[data-type]").forEach((b) =>
+    b.addEventListener("click", () => {
+      type = b.dataset.type!;
+      apply();
+    }),
+  );
+  document.querySelectorAll<HTMLButtonElement>("button[data-when]").forEach((b) =>
+    b.addEventListener("click", () => {
+      when = b.dataset.when!;
+      apply();
+    }),
+  );
+  // Lien direct vers une restriction terminée : on l'affiche quand même.
+  const target = location.hash ? document.getElementById(location.hash.slice(1)) : null;
+  if (target?.closest<HTMLElement>(".item")?.dataset.status === "past") when = "all";
+  apply();
+  target?.scrollIntoView({ block: "center" });
+</script>
+
+<style>
+  .kpis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+    margin: 24px 0 16px;
+  }
+  .kpi {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-decoration: none;
+  }
+  .kpi b {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+  .kpi span {
+    color: var(--text-2);
+    font-size: 0.9rem;
+  }
+  .kpi.cta {
+    border-color: var(--restriction);
+    background: color-mix(in srgb, var(--restriction) 10%, var(--surface));
+  }
+  .kpi.cta b {
+    color: var(--restriction);
+  }
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+  .filters .chip :global(svg) {
+    width: 15px;
+    height: 15px;
+  }
+  .city {
+    margin-top: 28px;
+  }
+  .city h2 {
+    font-size: 1.15rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 440px), 1fr));
+    gap: 10px;
+  }
+  .note {
+    margin-top: 32px;
+  }
+</style>

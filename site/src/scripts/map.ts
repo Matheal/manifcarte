@@ -1,10 +1,20 @@
 // Carte interactive (page d'accueil).
 import type { GeoJSONSource, MapGeoJSONFeature, Popup } from "maplibre-gl";
-import { eventCardHtml, reliabilityHtml, statusBadge } from "../lib/render";
+import { RESTRICTION_ICON } from "../lib/icons";
+import { eventCardHtml, reliabilityHtml, restrictionCardHtml, statusBadge } from "../lib/render";
 import {
   type Dataset,
   type ManifEvent,
+  type Restriction,
+  type RestrictionType,
+  RESTRICTION_STATUS_LABEL,
+  addDays,
   escapeHtml,
+  formatRange,
+  issueUrl,
+  restrictionStatus,
+  strip,
+  withBase,
   eventPath,
   formatAgo,
   formatTime,
@@ -45,6 +55,15 @@ let filters: Filters = readFilters();
 let byId = new Map<string, ManifEvent>();
 let popup: Popup | null = null;
 let today = todayParis();
+let allRestrictions: Restriction[] = [];
+let visibleRestrictions: Restriction[] = [];
+let restrictionsById = new Map<string, Restriction>();
+let showRestrictions = true;
+
+// Liens directs : ?manif=<id> ou ?r=<id> (lus avant que les filtres ne réécrivent l'URL).
+const initialParams = new URLSearchParams(location.search);
+const targetEvent = initialParams.get("manif");
+const targetRestriction = initialParams.get("r");
 
 const map = new maplibregl.Map({
   container: "map",
@@ -102,11 +121,80 @@ function toGeoJSON(events: ManifEvent[]): GeoJSON.FeatureCollection {
   };
 }
 
-/** Le style sombre dessine les pistes d'aéroport en noir épais : on les masque. */
+/** Restrictions visibles selon la période choisie et la recherche. */
+function filterRestrictions(): Restriction[] {
+  if (!showRestrictions || filters.scope === "world") return [];
+  const from =
+    filters.period === "7d" ? addDays(today, -7) : filters.period === "30d" ? addDays(today, -30) : null;
+  const q = strip(filters.q.trim().toLowerCase());
+  return allRestrictions.filter((r) => {
+    if (filters.period === "upcoming" && r.end < today) return false;
+    if (from && r.end < from) return false;
+    if (q && !strip(`${r.city} ${r.place ?? ""} ${r.description} ${r.type_label}`.toLowerCase()).includes(q))
+      return false;
+    return true;
+  });
+}
+
+function restrictionsGeoJSON(list: Restriction[]): GeoJSON.FeatureCollection {
+  return {
+    type: "FeatureCollection",
+    features: list.map((r) => ({
+      type: "Feature",
+      geometry: { type: "Point", coordinates: [r.lon, r.lat] },
+      properties: {
+        id: r.id,
+        icon: `r-${r.type}-${restrictionStatus(r, today)}`,
+        // Au centre d'une commune, l'icône est décalée pour ne pas cacher les manifs.
+        shifted: r.geo_precision === "commune" ? 1 : 0,
+        rank: { active: 2, upcoming: 1, past: 0 }[restrictionStatus(r, today)],
+      },
+    })),
+  };
+}
+
+/** Dessine les pictogrammes des restrictions (pastille + icône blanche) pour MapLibre. */
+function addRestrictionIcons(): void {
+  const size = 64; // affiché en 32 px (pixelRatio 2)
+  const palette = {
+    active: { bg: css("--restriction"), fg: "#ffffff" },
+    upcoming: { bg: css("--surface"), fg: css("--restriction") },
+    past: { bg: css("--surface-2"), fg: css("--past") },
+  };
+  for (const type of Object.keys(RESTRICTION_ICON) as RestrictionType[]) {
+    for (const [state, c] of Object.entries(palette)) {
+      const name = `r-${type}-${state}`;
+      if (map.hasImage(name)) map.removeImage(name);
+      const canvas = document.createElement("canvas");
+      canvas.width = canvas.height = size;
+      const ctx = canvas.getContext("2d")!;
+      ctx.beginPath();
+      ctx.roundRect(4, 4, size - 8, size - 8, 14);
+      ctx.fillStyle = c.bg;
+      ctx.shadowColor = "rgba(0,0,0,0.25)";
+      ctx.shadowBlur = 6;
+      ctx.fill();
+      ctx.shadowColor = "transparent";
+      ctx.lineWidth = 4;
+      ctx.strokeStyle = state === "upcoming" ? palette.active.bg : "#ffffff";
+      ctx.stroke();
+      ctx.save();
+      ctx.translate(14, 14);
+      ctx.scale(36 / 24, 36 / 24);
+      ctx.fillStyle = c.fg;
+      ctx.fill(new Path2D(RESTRICTION_ICON[type]), "evenodd");
+      ctx.restore();
+      map.addImage(name, ctx.getImageData(0, 0, size, size), { pixelRatio: 2 });
+    }
+  }
+}
+
+/** Le style sombre dessine pistes d'aéroport et voies ferrées en noir épais : on les adoucit. */
 function tidyBaseStyle(): void {
   if (!isDark()) return;
   for (const layer of map.getStyle().layers) {
     if (layer.id.includes("aeroway")) map.setLayoutProperty(layer.id, "visibility", "none");
+    else if (layer.type === "line" && /rail|transit/.test(layer.id)) map.setPaintProperty(layer.id, "line-color", "#3b3a44");
   }
 }
 
@@ -192,6 +280,21 @@ function addLayers(): void {
       "circle-opacity": ["case", ["==", ["get", "status"], "past"], 0.75, 1],
     },
   });
+  // Restrictions (bus déviés, arrêtés…) : pictogrammes au-dessus des points.
+  addRestrictionIcons();
+  map.addSource("restrictions", { type: "geojson", data: restrictionsGeoJSON(visibleRestrictions) });
+  map.addLayer({
+    id: "restrictions",
+    type: "symbol",
+    source: "restrictions",
+    layout: {
+      "icon-image": ["get", "icon"],
+      "icon-size": ["interpolate", ["linear"], ["zoom"], 5, 0.7, 11, 1],
+      "icon-allow-overlap": true,
+      "icon-offset": ["case", ["==", ["get", "shifted"], 1], ["literal", [0, -30]], ["literal", [0, 0]]],
+      "symbol-sort-key": ["get", "rank"],
+    },
+  });
   // Sélection
   map.addLayer({
     id: "selected",
@@ -234,6 +337,31 @@ function popupHtml(e: ManifEvent): string {
   </div>`;
 }
 
+function restrictionPopupHtml(r: Restriction): string {
+  const st = restrictionStatus(r, today);
+  const page = `${location.origin}${withBase(BASE, "perturbations/")}#${r.id}`;
+  return `<div class="popup">
+    <div class="meta"><span class="badge r-${st}">${RESTRICTION_STATUS_LABEL[st]}</span><span>${escapeHtml(formatRange(r.start, r.end))}</span></div>
+    <h3>${escapeHtml(r.type_label)}</h3>
+    <div class="meta">${escapeHtml(r.place ? `${r.place}, ${r.city}` : r.city)}</div>
+    <p>${escapeHtml(r.description)}</p>
+    ${r.lines.length ? `<div class="lines">${r.lines.map((l) => `<span class="line">${escapeHtml(l)}</span>`).join("")}</div>` : ""}
+    <div class="meta" style="margin-top:6px">${r.verified ? '<span class="badge verified">✓ Vérifiée</span>' : '<span class="badge">Détectée par IA</span>'}</div>
+    <a class="more" href="${withBase(BASE, "perturbations/")}#${r.id}">Détails et sources →</a>
+    <a class="more report" href="${escapeHtml(issueUrl("3-supprimer.yml", { lien: page, title: `[Erreur] ${r.type_label} à ${r.city}` }))}" target="_blank" rel="noopener">Signaler une erreur</a>
+  </div>`;
+}
+
+function selectRestriction(r: Restriction, fly: boolean): void {
+  popup?.remove();
+  setSelected("");
+  popup = new maplibregl.Popup({ offset: r.geo_precision === "commune" ? [0, -46] : 18, maxWidth: "300px", focusAfterOpen: false })
+    .setLngLat([r.lon, r.lat])
+    .setHTML(restrictionPopupHtml(r))
+    .addTo(map);
+  if (fly) map.flyTo({ center: [r.lon, r.lat], zoom: Math.max(map.getZoom(), 13), speed: 1.4 });
+}
+
 function select(e: ManifEvent, fly: boolean): void {
   popup?.remove();
   const pos = spread(visible).get(e.id) ?? [e.lon, e.lat];
@@ -259,24 +387,48 @@ function renderList(): void {
   const todayN = fr.filter((e) => statusOf(e, today) === "today").length;
   const upcomingN = fr.filter((e) => statusOf(e, today) === "upcoming").length;
   const worldN = visible.length - fr.length;
+  const activeR = visibleRestrictions.filter((r) => restrictionStatus(r, today) !== "past").length;
   summaryEl.innerHTML =
     filters.scope === "world"
       ? `<b>${worldN}</b> mobilisations détectées dans le monde`
       : `<b>${todayN}</b> aujourd'hui · <b>${upcomingN}</b> à venir en France` +
+        (activeR ? ` · <b>${activeR}</b> perturbation${activeR > 1 ? "s" : ""}` : "") +
         (worldN ? ` <span class="muted">· ${worldN} dans le monde</span>` : "");
   listTitleEl.textContent = inView.length
     ? `${inView.length} mobilisation${inView.length > 1 ? "s" : ""} dans cette zone de la carte`
     : "";
   const shown = inView.slice(0, 80);
-  listEl.innerHTML = shown.length
+  // Perturbations visibles dans la zone, en tête de liste (en cours et à venir d'abord).
+  const rank = { active: 0, upcoming: 1, past: 2 };
+  const rInView = visibleRestrictions
+    .filter((r) => b.contains([r.lon, r.lat]))
+    .sort((a, c) => rank[restrictionStatus(a, today)] - rank[restrictionStatus(c, today)]);
+  const rHtml = rInView.length
+    ? `<p class="list-subtitle small muted">${rInView.length} perturbation${rInView.length > 1 ? "s" : ""} dans cette zone</p>` +
+      rInView.slice(0, 6).map((r) => restrictionCardHtml(r, BASE, today, { compact: true })).join("") +
+      (rInView.length > 6 ? `<a class="small" href="${withBase(BASE, "perturbations/")}">Voir les ${rInView.length} perturbations →</a>` : "") +
+      `<p class="list-subtitle small muted">Mobilisations</p>`
+    : "";
+  listEl.innerHTML = rHtml + (shown.length
     ? shown.map((e) => eventCardHtml(e, BASE, today)).join("") +
       (inView.length > shown.length
         ? `<p class="small muted">… et ${inView.length - shown.length} autres : zoome pour affiner.</p>`
         : "")
-    : `<div class="empty"><p><b>Aucune mobilisation ici</b> avec ces filtres.</p><p class="small">Dézoome, change de période ou essaie « Tout ».</p></div>`;
+    : `<div class="empty"><p><b>Aucune mobilisation ici</b> avec ces filtres.</p><p class="small">Dézoome, change de période ou essaie « Tout ».</p></div>`);
 }
 
 listEl.addEventListener("click", (ev) => {
+  const rcard = (ev.target as HTMLElement).closest<HTMLAnchorElement>(".restriction-card");
+  if (rcard && !(ev.metaKey || ev.ctrlKey || ev.shiftKey)) {
+    const r = restrictionsById.get(rcard.dataset.rid!);
+    if (r) {
+      ev.preventDefault();
+      selectRestriction(r, true);
+      panel.classList.remove("open");
+      handle.setAttribute("aria-expanded", "false");
+    }
+    return;
+  }
   const card = (ev.target as HTMLElement).closest<HTMLAnchorElement>(".event-card");
   if (!card || ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
   // 1er clic : on montre sur la carte. Le lien « Voir la fiche » est dans la bulle.
@@ -310,6 +462,7 @@ function syncControls(): void {
   );
   (document.getElementById("level") as HTMLSelectElement).value = String(filters.minLevel);
   (document.getElementById("q") as HTMLInputElement).value = filters.q;
+  document.getElementById("toggle-r")?.setAttribute("aria-pressed", String(showRestrictions));
   const extra = filters.causes.size + (filters.minLevel > 1 ? 1 : 0);
   document.getElementById("filter-count")!.textContent = extra ? `(${extra})` : "";
 }
@@ -319,9 +472,16 @@ function refresh(): void {
   visible = applyFilters(all, filters, today);
   writeFilters(filters);
   syncControls();
+  visibleRestrictions = filterRestrictions();
   (map.getSource("events") as GeoJSONSource | undefined)?.setData(toGeoJSON(visible));
+  (map.getSource("restrictions") as GeoJSONSource | undefined)?.setData(restrictionsGeoJSON(visibleRestrictions));
   renderList();
 }
+
+document.getElementById("toggle-r")?.addEventListener("click", () => {
+  showRestrictions = !showRestrictions;
+  refresh();
+});
 
 document.querySelectorAll<HTMLButtonElement>("[data-period]").forEach((b) =>
   b.addEventListener("click", () => {
@@ -384,7 +544,12 @@ map.on("click", "points", (ev) => {
   const e = id && byId.get(id);
   if (e) select(e, false);
 });
-for (const layer of ["clusters", "points"]) {
+map.on("click", "restrictions", (ev) => {
+  const id = ev.features?.[0]?.properties.id;
+  const r = id && restrictionsById.get(id);
+  if (r) selectRestriction(r, false);
+});
+for (const layer of ["clusters", "points", "restrictions"]) {
   map.on("mouseenter", layer, () => (map.getCanvas().style.cursor = "pointer"));
   map.on("mouseleave", layer, () => (map.getCanvas().style.cursor = ""));
 }
@@ -397,6 +562,7 @@ window.addEventListener("themechange", () => {
   map.once("style.load", () => {
     addLayers();
     (map.getSource("events") as GeoJSONSource).setData(toGeoJSON(visible));
+    (map.getSource("restrictions") as GeoJSONSource).setData(restrictionsGeoJSON(visibleRestrictions));
   });
 });
 
@@ -407,6 +573,8 @@ async function start(): Promise<void> {
     const data = await loadData();
     all = data.events;
     byId = new Map(all.map((e) => [e.id, e]));
+    allRestrictions = data.restrictions ?? [];
+    restrictionsById = new Map(allRestrictions.map((r) => [r.id, r]));
     updatedEl.textContent = `Mise à jour automatique ${formatAgo(data.generated_at)} · ${data.count.fr} en France, ${data.count.world} dans le monde`;
   } catch (err) {
     errorEl.hidden = false;
@@ -415,14 +583,21 @@ async function start(): Promise<void> {
   }
   // La liste s'affiche sans attendre le fond de carte.
   refresh();
-  // Lien direct vers une manif : ?manif=<id>
-  const target = new URLSearchParams(location.search).get("manif");
   const ready = () => {
     addLayers();
     refresh();
     requestAnimationFrame(pulse);
-    const e = target ? byId.get(target) : undefined;
+    const e = targetEvent ? byId.get(targetEvent) : undefined;
     if (e) select(e, true);
+    const r = targetRestriction ? restrictionsById.get(targetRestriction) : undefined;
+    if (r) {
+      // Une restriction passée reste accessible depuis un lien direct.
+      if (!visibleRestrictions.includes(r)) {
+        filters.period = "all";
+        refresh();
+      }
+      selectRestriction(r, true);
+    }
   };
   if (map.isStyleLoaded()) ready();
   else map.once("load", ready);

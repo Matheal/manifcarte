@@ -8,7 +8,7 @@ from datetime import date, datetime
 from zoneinfo import ZoneInfo
 
 from . import config
-from .extract import CAUSE_LABELS, Gazetteer, extract, is_relevant, slugify
+from .extract import CAUSE_LABELS, Commune, Gazetteer, extract, is_relevant, slugify
 from .geocode import Geocoder
 
 TZ = ZoneInfo(config.TIMEZONE)
@@ -56,6 +56,7 @@ class Contribution:
     nature: str | None = None            # nature selon l'IA (None = analyse par règles)
     veracite: str | None = None
     resume: str | None = None
+    kind_override: str | None = None
 
 
 # Natures pour lesquelles un article ne crée pas de point sur la carte.
@@ -122,8 +123,53 @@ def _from_rules(it: dict, ext) -> list[tuple[str, date, Contribution]]:
     return out
 
 
-def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder) -> list[dict]:
+MANUAL_OUTLET = "Ajout vérifié par l'équipe ManifCarte"
+
+
+def resolve_city(name: str, gaz: Gazetteer, geo: Geocoder) -> tuple[str, Commune, str] | None:
+    """(clé, commune, pays) : commune française connue, sinon géocodage libre (France ou monde)."""
+    commune = gaz.lookup(name)
+    if commune:
+        return commune.insee, commune, "France"
+    hit = geo.locate_city(name)
+    if not hit:
+        return None
+    lat, lon, city, country = hit
+    return f"geo:{slugify(city)}", Commune(city, "", "", lon, lat, 0), country or "France"
+
+
+def _from_manual(m: dict, gaz: Gazetteer, geo: Geocoder) -> tuple[str, date, Contribution, Commune, str] | None:
+    resolved = resolve_city(m["ville"], gaz, geo)
+    if not resolved:
+        return None
+    key, commune, country = resolved
+    future = m["date"] > m["created"]
+    pseudo = {
+        "id": f"manuel-{m['issue']}", "kind": "manuel", "outlet": MANUAL_OUTLET,
+        "title": m["description"] or f"{m['kind']} signalée à {commune.name}",
+        "url": m["source"], "published": datetime.combine(m["created"], datetime.min.time(), TZ).isoformat(),
+    }
+    contrib = Contribution(
+        item=pseudo, precision="explicite", causes=[m["cause"]],
+        signals={"annonce", "verifie"} if future else {"verifie"},
+        places=[m["lieu"]] if m["lieu"] else [], time=m["heure"],
+        nature="annonce" if future else "compte_rendu", veracite="etabli",
+        resume=(m["description"] or None) and m["description"][:160],
+    )
+    contrib.kind_override = m["kind"]
+    return key, m["date"], contrib, commune, country
+
+
+def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder,
+                    manual: list[dict] = ()) -> list[dict]:
     buckets: dict[tuple[str, date], list[Contribution]] = defaultdict(list)
+    places_by_key: dict[str, tuple[Commune, str]] = {}
+    for m in manual:
+        found = _from_manual(m, gaz, geo)
+        if found:
+            key, d, contrib, commune, country = found
+            buckets[(key, d)].append(contrib)
+            places_by_key[key] = (commune, country)
     for it in items:
         if it["kind"] == "gdelt":
             continue
@@ -137,9 +183,10 @@ def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder) -> list[di
             buckets[(insee, d)].append(contrib)
 
     events = []
-    for (insee, d), contribs in buckets.items():
-        commune = gaz.by_insee[insee]
-        items_ = {c.item["url"]: c.item for c in contribs}.values()
+    for (key, d), contribs in buckets.items():
+        commune, country = places_by_key.get(key) or (gaz.by_insee[key], "France")
+        items_ = {c.item["id"]: c.item for c in contribs}.values()
+        manual_contribs = [c for c in contribs if c.item["kind"] == "manuel"]
         press_outlets = {i["outlet"] for i in items_ if i["kind"] == "presse"}
         social = sum(1 for i in items_ if i["kind"] == "social")
 
@@ -159,10 +206,10 @@ def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder) -> list[di
                 participants = max(participants or 0, c.participants)
 
         # Synthèse du jugement de l'IA sur l'ensemble des articles.
-        ai_contribs = [c for c in contribs if c.nature]
-        natures = Counter(c.nature for c in ai_contribs)
+        ai_contribs = [c for c in contribs if c.nature and c.item["kind"] != "manuel"]
+        natures = Counter(c.nature for c in ai_contribs + manual_contribs)
         nature = None
-        if ai_contribs:
+        if ai_contribs or manual_contribs:
             nature = "attestee" if natures["compte_rendu"] or natures["en_cours"] else "annoncee"
         verification = None
         established = [c for c in contribs if c.veracite == "etabli" or (not c.nature and c.item["kind"] == "presse")]
@@ -205,26 +252,33 @@ def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder) -> list[di
             key=lambda c: (c.item["kind"] == "presse", c.nature in ("compte_rendu", "en_cours"),
                            c.item["published"]),
         )
-        kind = _kind([s["title"] for s in sources] + [i.get("text", "") for i in items_])
+        overrides = [c.kind_override for c in manual_contribs if c.kind_override]
+        kind = overrides[0] if overrides else _kind([s["title"] for s in sources] + [i.get("text", "") for i in items_])
         cause_keys = [c for c, _ in causes.most_common(4) if c != "autre"][:3] or ["autre"]
         reliability = _reliability(len(press_outlets), social)
         if verification == "dementi":
             reliability = {"level": 1, "label": "Démentie", "score": 0}
         elif verification == "non_verifie":
             reliability = {"level": 1, "label": "Non vérifiée", "score": min(reliability["score"], 1)}
+        if manual_contribs and verification != "dementi":
+            # Validé par l'équipe : on fait confiance, même sans article de presse.
+            reliability = {"level": 3, "label": "Vérifiée par l'équipe", "score": 10 + reliability["score"]}
+            signals.discard("non_verifie")
         events.append({
             "id": f"{d.isoformat()}-{slugify(commune.name)}",
-            "scope": "fr",
+            "scope": "fr" if country == "France" else "world",
             "kind": kind,
             "title": f"{kind} à {commune.name}",
             "headline": headline,
-            "summary": summaries[-1].resume if summaries else None,
+            "summary": (summaries[-1].resume if summaries
+                        else next((c.resume for c in manual_contribs if c.resume), None)),
+            "verified": bool(manual_contribs),
             "nature": nature,
             "ai_count": len({c.item["url"] for c in ai_contribs}),
             "city": commune.name,
-            "insee": commune.insee,
-            "dep": commune.dep,
-            "country": "France",
+            "insee": commune.insee or None,
+            "dep": commune.dep or None,
+            "country": country,
             "lat": lat,
             "lon": lon,
             "geo_precision": precision_geo,

@@ -57,6 +57,27 @@ de **contexte**, ou relaie une **rumeur** / un **démenti**. Elle extrait aussi 
 Sans clé, ou si le quota gratuit du jour est atteint, le collecteur continue avec les règles classiques.
 Réglages (modèle, nombre d'appels par jour…) dans `collector/config.py`, section « Analyse par IA ».
 
+## Contributions et modération (ajouter, signaler, supprimer)
+
+Tout passe par l'onglet **Issues** du dépôt, avec trois formulaires (page « Contribuer » du site) :
+
+| Formulaire | Effet |
+|---|---|
+| ➕ Ajouter une mobilisation | Crée une manif « ✓ Vérifiée par l'équipe » (même sans article de presse) |
+| 🚧 Signaler une restriction | Ajoute une perturbation (bus déviés, rue fermée, arrêté…) sur la carte |
+| 🗑️ Signaler une erreur | Retire une fiche (lien `/manif/…`), une restriction (`#r-…`) ou ignore un article (son lien) |
+
+- **Tes propres formulaires** (propriétaire du dépôt) s'appliquent **automatiquement** en 2 à 3 minutes.
+- Ceux des autres attendent que tu ajoutes l'étiquette **`approuvé`**. Pour refuser : ferme le ticket.
+- Pour annuler une contribution déjà appliquée : étiquette **`annulé`**.
+- Le robot répond sur chaque ticket (appliqué, en attente, ou erreur à corriger).
+
+## Perturbations et restrictions
+
+L'IA relève dans les articles les restrictions liées aux mobilisations : transports déviés, rues fermées,
+arrêtés préfectoraux, établissements fermés, commerces fermés. Elles s'affichent sur la carte (pictogrammes
+orange), sur les fiches des manifs concernées et sur la page « Perturbations ».
+
 ## Travailler en local (Mac)
 
 ```bash

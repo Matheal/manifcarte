@@ -8,10 +8,14 @@ on:
     - cron: "*/20 * * * *"
   push:
     branches: [main]
+  # Ajouts, restrictions et suppressions proposés via les formulaires (onglet Issues).
+  issues:
+    types: [opened, edited, labeled, unlabeled, closed, reopened]
   workflow_dispatch:
 
 permissions:
   contents: write   # écrire les données sur la branche « data »
+  issues: write     # lire les contributions et y répondre
   pages: write      # publier le site
   id-token: write
 
@@ -55,6 +59,10 @@ jobs:
           # Clé gratuite Google AI Studio (Settings > Secrets and variables > Actions).
           # Sans elle, l'analyse IA est simplement désactivée.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Lecture des contributions (issues) et réponses automatiques.
+          GITHUB_TOKEN: ${{ github.token }}
+          MANIFCARTE_NOTIFY: "1"
+          MANIFCARTE_SITE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python -m collector.main --data-dir store --out site/public/data/events.json
 
       - name: Sauvegarder les données

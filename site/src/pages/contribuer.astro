@@ -1,0 +1,167 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadDataset } from "../lib/data";
+import { REPO_URL, issueUrl } from "../lib/shared";
+
+const mod = loadDataset().moderation ?? { pending: 0, manual_events: 0, manual_restrictions: 0, removed: 0 };
+const plural = (n: number) => (n > 1 ? "s" : "");
+const statsLine = [
+  `${mod.manual_events} mobilisation${plural(mod.manual_events)} ajoutée${plural(mod.manual_events)}`,
+  `${mod.manual_restrictions} restriction${plural(mod.manual_restrictions)} signalée${plural(mod.manual_restrictions)}`,
+  `${mod.removed} correction${plural(mod.removed)} appliquée${plural(mod.removed)}`,
+].join(" · ");
+const actions = [
+  {
+    icon: "＋",
+    title: "Ajouter une mobilisation",
+    text: "Une manif, un blocus ou un rassemblement qu'aucun média n'a encore relayé ? Indique la ville, la date et le lieu.",
+    href: issueUrl("1-ajouter-manif.yml"),
+    cta: "Proposer un ajout",
+    tone: "upcoming",
+  },
+  {
+    icon: "⚠",
+    title: "Signaler une restriction",
+    text: "Bus ou tram déviés, rue fermée, arrêté préfectoral, lycée fermé… Aide les autres à s'organiser.",
+    href: issueUrl("2-signaler-restriction.yml"),
+    cta: "Signaler une restriction",
+    tone: "restriction",
+  },
+  {
+    icon: "✕",
+    title: "Signaler une erreur",
+    text: "Fausse information, mauvaise date, doublon ? Le plus simple : bouton « Signaler une erreur » sur la fiche concernée.",
+    href: issueUrl("3-supprimer.yml"),
+    cta: "Signaler une erreur",
+    tone: "accent",
+  },
+];
+---
+
+<Base title="Contribuer" description="Ajouter une mobilisation, signaler une restriction ou une erreur sur ManifCarte.">
+  <div class="container page">
+    <div class="prose">
+      <h1>Contribuer</h1>
+      <p class="lede">
+        La carte se remplit automatiquement, mais rien ne remplace le terrain. Tu peux proposer un ajout ou une
+        correction : chaque proposition est <strong>relue par l'équipe</strong> avant d'apparaître.
+      </p>
+    </div>
+
+    <div class="actions">
+      {
+        actions.map((a) => (
+          <article class={`card action ${a.tone}`}>
+            <div class="icon" aria-hidden="true">{a.icon}</div>
+            <h2>{a.title}</h2>
+            <p>{a.text}</p>
+            <a class="btn btn-primary" href={a.href} target="_blank" rel="noopener">
+              {a.cta} →
+            </a>
+          </article>
+        ))
+      }
+    </div>
+
+    <div class="stats small muted">
+      {statsLine} · <strong>{mod.pending} proposition{plural(mod.pending)} en attente</strong>
+    </div>
+
+    <div class="prose">
+      <h2>Comment ça marche</h2>
+      <ol>
+        <li>Le bouton ouvre un <b>formulaire sur GitHub</b> (il faut un compte GitHub, gratuit).</li>
+        <li>Ta proposition attend la <b>validation de l'équipe</b>, qui vérifie l'information.</li>
+        <li>Une fois validée, elle apparaît sur la carte en <b>2 à 3 minutes</b>, avec le badge « ✓ Vérifiée ».</li>
+        <li>Un message automatique te répond sur GitHub à chaque étape.</li>
+      </ol>
+
+      <div class="notice">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 21h22L12 2Zm1 15h-2v-2h2v2Zm0-4h-2V9h2v4Z"></path></svg>
+        <div>
+          Les formulaires sont <strong>publics</strong>. N'y mets <strong>aucun nom, numéro de téléphone ou photo</strong>
+          de personne, surtout s'il s'agit de mineurs. Indique seulement des lieux, des dates et des liens publics.
+        </div>
+      </div>
+
+      <h2 id="equipe">Pour l'équipe : valider ou annuler</h2>
+      <ul>
+        <li>
+          Tes propres formulaires (propriétaire du dépôt) sont <b>appliqués automatiquement</b>, sans validation.
+        </li>
+        <li>
+          Pour valider la proposition de quelqu'un d'autre : ouvre-la sur GitHub et ajoute l'étiquette
+          <code>approuvé</code>.
+        </li>
+        <li>Pour refuser : ferme-la simplement. Pour annuler une contribution déjà appliquée : étiquette <code>annulé</code>.</li>
+        <li>Une proposition mal remplie (date illisible…) reçoit un message d'erreur : il suffit de la modifier.</li>
+      </ul>
+      <p>
+        <a class="btn" href={`${REPO_URL}/issues?q=is%3Aopen+label%3Aajout-manif%2Crestriction%2Csuppression`} target="_blank" rel="noopener">
+          Voir les propositions en attente
+        </a>
+      </p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 16px;
+    margin: 28px 0 12px;
+  }
+  .action {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-top: 4px solid var(--tone);
+  }
+  .action.upcoming {
+    --tone: var(--upcoming);
+  }
+  .action.restriction {
+    --tone: var(--restriction);
+  }
+  .action.accent {
+    --tone: var(--accent);
+  }
+  .action .icon {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: color-mix(in srgb, var(--tone) 15%, transparent);
+    color: var(--tone);
+    font-size: 1.4rem;
+    font-weight: 800;
+  }
+  .action h2 {
+    margin: 8px 0 0;
+    font-size: 1.15rem;
+  }
+  .action p {
+    flex: 1;
+    color: var(--text-2);
+    font-size: 0.92rem;
+  }
+  .action .btn-primary {
+    align-self: flex-start;
+    background: var(--tone);
+    border-color: var(--tone);
+  }
+  .stats {
+    margin-bottom: 8px;
+  }
+  .notice {
+    margin: 20px 0;
+  }
+  code {
+    padding: 1px 6px;
+    border-radius: 6px;
+    background: var(--surface-2);
+    font-size: 0.88em;
+  }
+</style>

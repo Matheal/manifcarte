@@ -57,6 +57,36 @@ class Geocoder:
         self.cache[key] = hit
         return (hit[0], hit[1]) if hit else None
 
+    def locate_city(self, name: str) -> tuple[float, float, str, str] | None:
+        """Ville quelconque (France ou monde) : (lat, lon, nom, pays en français)."""
+        key = f"ville|{name}"
+        if key not in self.cache:
+            if self.calls >= config.MAX_GEOCODE_PER_RUN:
+                return None
+            wait = 1.1 - (time.monotonic() - self._last)
+            if wait > 0:
+                time.sleep(wait)
+            self.calls += 1
+            self._last = time.monotonic()
+            try:
+                r = self.session.get(NOMINATIM, timeout=config.HTTP_TIMEOUT, params={
+                    "q": name, "format": "jsonv2", "limit": 1, "addressdetails": 1,
+                    "accept-language": "fr", "featureType": "settlement"})
+                r.raise_for_status()
+                res = r.json()
+            except (requests.RequestException, ValueError) as e:
+                log.warning("Géocodage impossible pour %s : %s", name, e)
+                return None
+            if res:
+                addr = res[0].get("address", {})
+                city = addr.get("city") or addr.get("town") or addr.get("village") or res[0]["name"]
+                self.cache[key] = [round(float(res[0]["lat"]), 5), round(float(res[0]["lon"]), 5),
+                                   city, addr.get("country", "")]
+            else:
+                self.cache[key] = None
+        hit = self.cache[key]
+        return tuple(hit) if hit else None
+
     def save(self) -> None:
         self.path.write_text(json.dumps(self.cache, ensure_ascii=False, indent=0, sort_keys=True),
                              encoding="utf-8")

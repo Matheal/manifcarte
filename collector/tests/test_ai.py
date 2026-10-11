@@ -188,3 +188,18 @@ def test_announcement_without_ai_date_uses_rule_date():
     it = with_ai(item(1, "Les lycéens de Caen appellent à manifester jeudi"), "annonce", events=[ev(ville="Caen", date=None)])
     [e] = build_fr_events([it], GAZ, FakeGeo())
     assert e["date"] == "2026-10-08" and e["date_precision"] == "relative"
+
+
+def test_clean_perturbations():
+    out = ai._clean({"nature": "contexte", "veracite": "etabli", "evenements": [], "causes": [], "resume": "",
+                     "perturbations": [
+                         {"type": "transport", "ville": "Nancy", "lieu": "place Carnot", "lignes": ["T1", " "],
+                          "debut": "2026-10-13", "fin": "demain", "description": "Tram coupé"},
+                         {"type": "inconnu", "ville": "Metz", "description": "Rue fermée"},
+                         {"type": "transport", "ville": "", "description": "sans ville"}]})
+    assert out["perturbations"] == [
+        {"type": "transport", "ville": "Nancy", "lieu": "place Carnot", "lignes": ["T1"],
+         "debut": "2026-10-13", "fin": None, "description": "Tram coupé"},
+        {"type": "autre", "ville": "Metz", "lieu": None, "lignes": [], "debut": None, "fin": None,
+         "description": "Rue fermée"},
+    ]

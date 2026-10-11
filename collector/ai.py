@@ -32,10 +32,11 @@ TZ = ZoneInfo(config.TIMEZONE)
 API = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
 
 # À changer si on modifie la consigne : les articles déjà analysés seront ré-analysés.
-PROMPT_VERSION = 1
+PROMPT_VERSION = 2
 
 NATURES = ["annonce", "en_cours", "compte_rendu", "rappel_ancien", "contexte", "hors_sujet"]
 VERACITES = ["etabli", "non_verifie", "rumeur", "dementi"]
+PERTURBATION_TYPES = ["transport", "circulation", "etablissement", "arrete", "commerce", "autre"]
 
 INSTRUCTIONS = f"""Tu es un assistant de veille qui recense les mobilisations (manifestations, blocus,
 rassemblements, grèves avec cortège, marches) pour une carte publique. Tu reçois des articles
@@ -64,6 +65,16 @@ rassemblements, grèves avec cortège, marches) pour une carte publique. Tu reç
 - "causes" : parmi {", ".join(CAUSES)}.
 - "participants" : nombre de participants cité (le plus élevé), ou null.
 - "resume" : une phrase neutre et factuelle en français (140 caractères max), sans nom de personne.
+- "perturbations" : restrictions ou perturbations CONCRÈTES liées aux mobilisations et décrites
+  dans l'article (liste vide sinon). Pour chacune :
+  "type" : "transport" (bus/tram/train déviés, arrêts non desservis, gare fermée),
+           "circulation" (rues ou routes fermées, stationnement interdit),
+           "etablissement" (lycée, fac, école fermés ou perturbés),
+           "arrete" (arrêté préfectoral ou municipal : interdiction de manifester, d'artifices, périmètre),
+           "commerce" (commerces, services publics fermés), "autre" ;
+  "ville", "lieu" (précis ou null), "lignes" (lignes de transport citées, ex. ["T1", "Corol"], sinon []),
+  "debut" et "fin" au format AAAA-MM-JJ (null si inconnu),
+  "description" : courte phrase factuelle (110 caractères max).
 
 Règles : ne devine pas, n'invente aucun lieu ni aucune date. Ne cite jamais de nom de personne
 privée ni de mineur. Réponds uniquement avec le tableau JSON."""
@@ -92,6 +103,19 @@ SCHEMA = {
             "causes": {"type": "ARRAY", "items": {"type": "STRING", "enum": list(CAUSES)}},
             "participants": {"type": "INTEGER", "nullable": True},
             "resume": _S,
+            "perturbations": {
+                "type": "ARRAY",
+                "items": {
+                    "type": "OBJECT",
+                    "properties": {
+                        "type": {"type": "STRING", "enum": PERTURBATION_TYPES},
+                        "ville": _S, "lieu": _NS,
+                        "lignes": {"type": "ARRAY", "items": _S},
+                        "debut": _NS, "fin": _NS, "description": _S,
+                    },
+                    "required": ["type", "ville", "description"],
+                },
+            },
         },
         "required": ["i", "nature", "veracite", "evenements", "causes", "resume"],
     },
@@ -122,10 +146,25 @@ def _clean(res: dict) -> dict:
         events.append({
             "ville": ville[:80],
             "pays": (ev.get("pays") or "France").strip()[:60],
-            "date": date if isinstance(date, str) and re.fullmatch(r"20\d\d-\d\d-\d\d", date) else None,
+            "date": _iso_date(date),
             "heure": heure if isinstance(heure, str) and re.fullmatch(r"[0-2]\d:[0-5]\d", heure) else None,
             "lieu": (ev.get("lieu") or None) and str(ev["lieu"]).strip()[:80],
             "annule": bool(ev.get("annule")),
+        })
+    perturbations = []
+    for pt in res.get("perturbations") or []:
+        ville = (pt.get("ville") or "").strip()
+        desc = (pt.get("description") or "").strip()
+        if not ville or not desc:
+            continue
+        perturbations.append({
+            "type": pt.get("type") if pt.get("type") in PERTURBATION_TYPES else "autre",
+            "ville": ville[:80],
+            "lieu": (pt.get("lieu") or None) and str(pt["lieu"]).strip()[:80],
+            "lignes": [str(x).strip()[:20] for x in (pt.get("lignes") or []) if str(x).strip()][:8],
+            "debut": _iso_date(pt.get("debut")),
+            "fin": _iso_date(pt.get("fin")),
+            "description": desc[:140],
         })
     participants = res.get("participants")
     return {
@@ -135,7 +174,12 @@ def _clean(res: dict) -> dict:
         "causes": [c for c in (res.get("causes") or []) if c in CAUSES][:3],
         "participants": participants if isinstance(participants, int) and 0 < participants < 5_000_000 else None,
         "resume": str(res.get("resume") or "")[:160],
+        "perturbations": perturbations[:5],
     }
+
+
+def _iso_date(value) -> str | None:
+    return value if isinstance(value, str) and re.fullmatch(r"20\d\d-\d\d-\d\d", value) else None
 
 
 class Analyzer:

@@ -1,0 +1,68 @@
+name: "🚧 Signaler une restriction ou une perturbation"
+description: Bus ou tram déviés, rue fermée, arrêté préfectoral, lycée fermé…
+title: "[Restriction] "
+labels: ["restriction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Signale une restriction **liée à une mobilisation** : transports déviés, rues fermées, interdiction
+        de manifester, établissement fermé… Elle sera **relue par l'équipe** avant publication.
+        ⚠️ Ce ticket est **public** : n'indique aucune information personnelle.
+  - type: dropdown
+    id: rtype
+    attributes:
+      label: Type de restriction
+      options:
+        - "Transports (bus, tram, train)"
+        - "Circulation / route fermée"
+        - "Établissement fermé ou perturbé"
+        - "Arrêté / interdiction"
+        - "Commerces / services fermés"
+        - "Autre"
+      default: 0
+    validations:
+      required: true
+  - type: input
+    id: ville
+    attributes:
+      label: Ville
+      placeholder: "Nancy"
+    validations:
+      required: true
+  - type: input
+    id: lieu
+    attributes:
+      label: Lieu précis
+      placeholder: "place Carnot"
+  - type: input
+    id: lignes
+    attributes:
+      label: Lignes de transport concernées
+      description: Séparées par des virgules
+      placeholder: "T1, Corol, 2"
+  - type: input
+    id: debut
+    attributes:
+      label: Date de début
+      placeholder: "13/10/2026"
+    validations:
+      required: true
+  - type: input
+    id: fin
+    attributes:
+      label: Date de fin
+      description: Laisse vide si la restriction ne dure qu'une journée.
+      placeholder: "16/10/2026"
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Ex. : « Lignes T1 et 2 déviées par le boulevard Lobau de 10 h à 14 h »"
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source (lien)
+      placeholder: "https://…"

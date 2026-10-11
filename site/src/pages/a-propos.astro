@@ -46,6 +46,15 @@ const repo = import.meta.env.PUBLIC_REPO_URL as string | undefined;
           ne créent pas de point sur la carte. Si l'IA est indisponible, les règles ci-dessus prennent le relais.
         </li>
         <li>
+          <b>Perturbations.</b> L'IA relève aussi les restrictions décrites dans les articles (bus ou tram déviés,
+          rues fermées, arrêtés préfectoraux, établissements fermés). Elles apparaissent sur la carte avec un
+          pictogramme orange et sur la page <a href="../perturbations/">Perturbations</a>.
+        </li>
+        <li>
+          <b>Contributions.</b> Chacun peut proposer un ajout, une restriction ou une correction via la page
+          <a href="../contribuer/">Contribuer</a>. Rien n'est publié sans la validation de l'équipe.
+        </li>
+        <li>
           <b>Publication.</b> La carte est régénérée et mise en ligne automatiquement sur GitHub Pages.
         </li>
       </ol>
@@ -133,6 +142,8 @@ const repo = import.meta.env.PUBLIC_REPO_URL as string | undefined;
               : `<span class="badge warn">En panne</span>`;
           const detail = !s || s.disabled
             ? ""
+            : key === "moderation" && s.ok
+              ? `${s.added ?? 0} ajout(s) appliqué(s), ${s.pending ?? 0} proposition(s) en attente · ${formatAgo(s.at)}`
             : key === "ai" && s.ok
               ? `${s.analyzed ?? 0} articles analysés${s.pending ? `, ${s.pending} en attente` : ""}${s.quota ? " (quota du jour atteint)" : ""}${s.model ? ` · ${s.model}` : ""} · ${formatAgo(s.at)}`
               : s.ok

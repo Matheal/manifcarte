@@ -4,7 +4,7 @@ export interface Source {
   title: string;
   url: string;
   outlet: string;
-  kind: "presse" | "social";
+  kind: "presse" | "social" | "manuel";
   published: string;
 }
 
@@ -19,6 +19,8 @@ export interface ManifEvent {
   /** Selon l'IA : "annoncee" (à venir) ou "attestee" (a eu lieu / en cours). */
   nature?: "annoncee" | "attestee" | null;
   ai_count?: number;
+  /** Ajoutée ou confirmée manuellement par l'équipe. */
+  verified?: boolean;
   city: string;
   insee?: string;
   dep?: string;
@@ -54,12 +56,35 @@ export interface SourceStatus {
   model?: string | null;
 }
 
+export type RestrictionType = "transport" | "circulation" | "etablissement" | "arrete" | "commerce" | "autre";
+
+export interface Restriction {
+  id: string;
+  type: RestrictionType;
+  type_label: string;
+  city: string;
+  lat: number;
+  lon: number;
+  geo_precision: "lieu" | "commune";
+  place: string | null;
+  start: string;
+  end: string;
+  description: string;
+  details: string[];
+  lines: string[];
+  origin: "ia" | "manuel";
+  verified: boolean;
+  sources: Source[];
+}
+
 export interface Dataset {
   generated_at: string;
   focus: { name: string; insee: string; lat: number; lon: number; zoom: number };
   sources: Record<string, SourceStatus>;
   count: { fr: number; world: number };
   events: ManifEvent[];
+  restrictions?: Restriction[];
+  moderation?: { pending: number; manual_events: number; manual_restrictions: number; removed: number };
 }
 
 export type Status = "today" | "upcoming" | "past";
@@ -93,6 +118,7 @@ export const SIGNAL_LABEL: Record<string, string> = {
   annulee: "Annulée ou reportée",
   non_verifie: "Non vérifiée",
   dementi: "Démentie",
+  verifie: "Vérifiée par l'équipe",
 };
 
 /** Signaux affichés en orange (prudence). */
@@ -104,6 +130,7 @@ export const SOURCE_LABEL: Record<string, string> = {
   mastodon: "Mastodon",
   gdelt: "GDELT (monde)",
   ai: "Analyse IA (Gemini)",
+  moderation: "Contributions (GitHub)",
 };
 
 /** Date du jour à Paris, au format AAAA-MM-JJ (indépendant du fuseau du visiteur). */
@@ -272,4 +299,62 @@ export function toIcs(e: ManifEvent, pageUrl: string): string {
     "END:VCALENDAR",
   );
   return lines.join("\r\n");
+}
+
+// --- Restrictions --------------------------------------------------------------------
+
+export const RESTRICTION_LABEL: Record<RestrictionType, string> = {
+  transport: "Transports perturbés",
+  circulation: "Circulation restreinte",
+  etablissement: "Établissement fermé",
+  arrete: "Arrêté / interdiction",
+  commerce: "Commerces fermés",
+  autre: "Autre perturbation",
+};
+
+export type RestrictionStatus = "active" | "upcoming" | "past";
+
+export const RESTRICTION_STATUS_LABEL: Record<RestrictionStatus, string> = {
+  active: "En cours",
+  upcoming: "À venir",
+  past: "Terminée",
+};
+
+export function restrictionStatus(r: Restriction, today = todayParis()): RestrictionStatus {
+  if (r.end < today) return "past";
+  return r.start > today ? "upcoming" : "active";
+}
+
+/** « le 13 oct. » ou « du 13 au 16 oct. ». */
+export function formatRange(start: string, end: string): string {
+  if (start === end) return `le ${formatShort(start)}`;
+  const [s, e] = [formatShort(start), formatShort(end)];
+  const sameMonth = start.slice(0, 7) === end.slice(0, 7);
+  return `du ${sameMonth ? s.split(" ")[0] : s} au ${e}`;
+}
+
+/** Restrictions de la même ville qui touchent la date d'une mobilisation (± 1 jour). */
+export function restrictionsFor(e: ManifEvent, all: Restriction[] = []): Restriction[] {
+  const from = addDays(e.date, -1);
+  const to = addDays(e.date, 1);
+  return all.filter((r) => r.city === e.city && r.start <= to && r.end >= from);
+}
+
+// --- Contributions (formulaires GitHub) ------------------------------------------------
+
+export const REPO_URL: string =
+  (import.meta.env.PUBLIC_REPO_URL as string | undefined) || "https://github.com/Matheal/manifcarte";
+
+export type IssueTemplate = "1-ajouter-manif.yml" | "2-signaler-restriction.yml" | "3-supprimer.yml";
+
+/** Lien vers un formulaire GitHub pré-rempli (les clés sont les « id » des champs). */
+export function issueUrl(template: IssueTemplate, fields: Record<string, string> = {}): string {
+  const p = new URLSearchParams({ template, ...fields });
+  return `${REPO_URL}/issues/new?${p.toString()}`;
+}
+
+/** Date AAAA-MM-JJ -> JJ/MM/AAAA (format des formulaires). */
+export function frDate(day: string): string {
+  const [y, m, d] = day.split("-");
+  return `${d}/${m}/${y}`;
 }

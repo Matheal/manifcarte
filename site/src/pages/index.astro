@@ -37,6 +37,9 @@ const focus = data.focus;
                 </button>
               ))
             }
+            <button class="chip chip-r" type="button" id="toggle-r" aria-pressed="true" title="Afficher les bus déviés, rues fermées, arrêtés…">
+              ⚠ Perturbations
+            </button>
           </div>
           <details class="more-filters">
             <summary>Plus de filtres <span id="filter-count"></span></summary>
@@ -74,6 +77,7 @@ const focus = data.focus;
         <span><i class="upcoming"></i>À venir</span>
         <span><i class="past"></i>Passée</span>
         <span><i class="world"></i>Monde</span>
+        <span><i class="restriction"></i>Perturbation</span>
       </div>
       <p class="map-error" id="map-error" hidden></p>
     </div>
@@ -214,6 +218,10 @@ const focus = data.focus;
   .legend .world {
     background: var(--world);
   }
+  .legend .restriction {
+    background: var(--restriction);
+    border-radius: 3px;
+  }
   .map-error {
     position: absolute;
     top: 60px;
@@ -338,6 +346,21 @@ const focus = data.focus;
     align-items: center;
     font-size: 0.82rem;
     color: var(--text-2);
+  }
+  .popup a.more.report {
+    margin-left: 12px;
+    color: var(--text-3);
+    font-weight: 600;
+  }
+  .list-subtitle {
+    margin: 6px 0 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.72rem;
+  }
+  .popup .lines {
+    margin-top: 4px;
   }
   .popup a.more {
     display: inline-block;

@@ -16,7 +16,9 @@ import pathlib
 from datetime import datetime, timedelta, timezone
 
 from . import config, sources
+from . import moderation
 from .ai import Analyzer
+from .restrictions import build_restrictions
 from .events import _local_date, build_fr_events, build_world_events
 from .extract import Gazetteer, extract
 from .geocode import Geocoder
@@ -112,10 +114,27 @@ def run(data_dir: pathlib.Path, out: pathlib.Path, skip: set[str], offline: bool
             status["ai"] = {"ok": False, "at": now.isoformat(), "error": str(e)[:200],
                             "last_ok": status.get("ai", {}).get("last_ok")}
 
+    # Contributions validées (ajouts, restrictions, suppressions) depuis les issues GitHub.
+    mod, gh = moderation.Moderation(), None
+    try:
+        mod, gh = moderation.load()
+        status["moderation"] = {"ok": True, "at": now.isoformat(), "last_ok": now.isoformat(),
+                                "fetched": len(mod.statuses), "added": len(mod.manual_events),
+                                "pending": mod.pending}
+    except Exception as e:
+        log.exception("Lecture des contributions en échec")
+        status["moderation"] = {"ok": False, "at": now.isoformat(), "error": str(e)[:200],
+                                "last_ok": status.get("moderation", {}).get("last_ok")}
+    usable = [it for it in items if it["url"] not in mod.removed_urls]
+
     geo = Geocoder(data_dir / "geocache.json")
-    events = build_fr_events(items, gaz, geo) + build_world_events(items)
+    events = build_fr_events(usable, gaz, geo, mod.manual_events) + build_world_events(usable)
+    events = [e for e in events if e["id"] not in mod.removed_events]
     events.sort(key=lambda e: (e["date"], e["reliability"]["score"]), reverse=True)
+    restrictions = [r for r in build_restrictions(usable, mod.manual_restrictions, gaz, geo)
+                    if r["id"] not in mod.removed_restrictions]
     geo.save()
+    moderation.notify(mod, gh, state.setdefault("moderation", {}))
 
     state["sources"] = status
     _dump(data_dir / "items.json", sorted(items, key=lambda i: i["id"]))
@@ -127,10 +146,17 @@ def run(data_dir: pathlib.Path, out: pathlib.Path, skip: set[str], offline: bool
         "count": {"fr": sum(e["scope"] == "fr" for e in events),
                   "world": sum(e["scope"] == "world" for e in events)},
         "events": events,
+        "restrictions": restrictions,
+        "moderation": {
+            "pending": mod.pending,
+            "manual_events": len(mod.manual_events),
+            "manual_restrictions": len(mod.manual_restrictions),
+            "removed": len(mod.removed_events) + len(mod.removed_urls) + len(mod.removed_restrictions),
+        },
     }
     _dump(out, payload)
-    log.info("%d événements (%d France, %d monde) -> %s", len(events), payload["count"]["fr"],
-             payload["count"]["world"], out)
+    log.info("%d événements (%d France, %d monde), %d restrictions -> %s", len(events),
+             payload["count"]["fr"], payload["count"]["world"], len(restrictions), out)
     return payload
 
 

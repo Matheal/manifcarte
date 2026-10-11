@@ -1,0 +1,86 @@
+name: "➕ Ajouter une mobilisation"
+description: Une manifestation, un blocus ou un rassemblement qui n'apparaît pas sur la carte.
+title: "[Ajout] "
+labels: ["ajout-manif"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merci ! Ta proposition sera **relue par l'équipe** avant d'apparaître sur la carte.
+        ⚠️ Ce ticket est **public** : n'indique **aucun nom, numéro de téléphone ou information personnelle**.
+  - type: input
+    id: ville
+    attributes:
+      label: Ville
+      placeholder: "Nancy"
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: "Format conseillé : 13/10/2026"
+      placeholder: "13/10/2026"
+    validations:
+      required: true
+  - type: input
+    id: heure
+    attributes:
+      label: Heure de début
+      placeholder: "14h30"
+  - type: input
+    id: lieu
+    attributes:
+      label: Lieu précis
+      description: Point de rendez-vous, lycée, place…
+      placeholder: "place Stanislas"
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type de mobilisation
+      options:
+        - Manifestation
+        - Rassemblement
+        - Blocus
+        - Grève
+        - Marche
+        - Autre
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: cause
+    attributes:
+      label: Cause principale
+      options:
+        - "Éducation & lycéens"
+        - "Retraites"
+        - "Travail & syndicats"
+        - "Climat & environnement"
+        - "International & paix"
+        - "Droits & égalité"
+        - "Police & justice"
+        - "Agriculture"
+        - "Santé & hôpital"
+        - "Services publics & pouvoir d'achat"
+        - "Politique & institutions"
+        - "Autre"
+      default: 0
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Une ou deux phrases factuelles (qui appelle, pour quoi, parcours…).
+  - type: input
+    id: source
+    attributes:
+      label: Source (lien)
+      description: Communiqué, publication publique, article… Facultatif mais très utile pour valider.
+      placeholder: "https://…"
+  - type: checkboxes
+    id: consentement
+    attributes:
+      label: Vérification
+      options:
+        - label: Je n'ai indiqué aucune information personnelle (nom, téléphone, photo de personne).
+          required: true

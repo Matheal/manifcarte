@@ -19,7 +19,9 @@ const path = Astro.url.pathname;
 const nav = [
   { href: withBase(base), label: "Carte", match: (p: string) => p === withBase(base) },
   { href: withBase(base, "liste/"), label: "Liste" },
-  { href: withBase(base, "stats/"), label: "Statistiques" },
+  { href: withBase(base, "perturbations/"), label: "Perturbations" },
+  { href: withBase(base, "stats/"), label: "Stats" },
+  { href: withBase(base, "contribuer/"), label: "Contribuer" },
   { href: withBase(base, "securite/"), label: "Sécurité" },
   { href: withBase(base, "a-propos/"), label: "À propos" },
 ];

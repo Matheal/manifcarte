@@ -1,0 +1,36 @@
+name: "🗑️ Signaler une erreur / retirer une fiche"
+description: Fausse information, mauvaise date, doublon, ce n'est pas une mobilisation…
+title: "[Erreur] "
+labels: ["suppression"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Indique la fiche à retirer (bouton « Signaler une erreur » sur la fiche) ou le lien d'un article
+        à ignorer. La demande est **relue par l'équipe** avant d'être appliquée.
+  - type: input
+    id: lien
+    attributes:
+      label: Lien de la fiche ou de l'article
+      placeholder: "https://matheal.github.io/manifcarte/manif/2026-10-16-nancy/"
+    validations:
+      required: true
+  - type: dropdown
+    id: motif
+    attributes:
+      label: Motif
+      options:
+        - Fausse information
+        - Mauvaise date
+        - Mauvais lieu
+        - Doublon
+        - Ce n'est pas une mobilisation
+        - Autre
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Précisions
+      description: Facultatif. Si la date ou le lieu est faux, indique la bonne information.
