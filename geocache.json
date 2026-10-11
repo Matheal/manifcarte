@@ -1,4 +1,8 @@
 {
+"Bastille|Paris": [
+48.85299,
+2.36886
+],
 "Centre hospitalier universitaire de Reims|Reims": null,
 "Institut d'urbanisme et géographie alpine|Grenoble": null,
 "Lauga|Bayonne": [
@@ -173,6 +177,10 @@
 "place Victor-Hugo|Grenoble": [
 45.18895,
 5.72533
+],
+"place de Verdun|La Rochelle": [
+46.18838,
+-1.06308
 ],
 "place de l'Opéra|Toulon": null,
 "place de la Bastille|Paris": [
