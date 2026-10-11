@@ -4,6 +4,10 @@
 2.36886
 ],
 "Centre hospitalier universitaire de Reims|Reims": null,
+"Hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
+49.53765,
+5.7816
+],
 "Institut d'urbanisme et géographie alpine|Grenoble": null,
 "Lauga|Bayonne": [
 43.4815,
@@ -21,14 +25,32 @@
 47.20446,
 -1.6091
 ],
+"Lycée Charles Péguy|Orléans": [
+47.88872,
+1.89726
+],
+"Lycée Galilée|Guérande": [
+47.3302,
+-2.41858
+],
 "Lycée Jean-Baptiste-Dumas|Alès": [
 44.13009,
 4.07548
 ],
+"Lycée Langevin|Beauvais": [
+49.41463,
+2.10875
+],
+"Lycée Pothier|Orléans": [
+47.90916,
+1.90943
+],
+"Lycée Rosa-Parks|Saint-Denis": null,
 "Lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
 ],
+"Lycée Voltaire et Gauguin|Orléans": null,
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
 "Maison du Peuple|Belfort": [
 47.64147,
@@ -37,6 +59,10 @@
 "Nantes Université|Nantes": [
 47.24546,
 -1.55199
+],
+"Place de la Bastille|Paris": [
+48.85267,
+2.36882
 ],
 "Rectorat|Dijon": [
 47.3185,
@@ -120,6 +146,7 @@
 47.88872,
 1.89726
 ],
+"lycée Chopin|Nancy": null,
 "lycée Corbière|Morlaix": [
 48.59895,
 -3.81765
@@ -127,6 +154,10 @@
 "lycée Cyfflé|Nancy": [
 48.68656,
 6.18211
+],
+"lycée Georges-Brassens|Rive-de-Gier": [
+45.53319,
+4.60543
 ],
 "lycée Henri-Loritz|Nancy": [
 48.69074,
