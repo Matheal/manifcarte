@@ -5,6 +5,10 @@
 43.4815,
 -1.4745
 ],
+"Le Patio|Strasbourg": [
+48.57812,
+7.76548
+],
 "Lumière|La Ciotat": [
 43.18683,
 5.61789
@@ -12,6 +16,10 @@
 "Lycée Albert-Camus|Nantes": [
 47.20446,
 -1.6091
+],
+"Lycée Jean-Baptiste-Dumas|Alès": [
+44.13009,
+4.07548
 ],
 "Lycée Tristan-Corbière|Morlaix": [
 48.59895,
@@ -33,6 +41,10 @@
 "Rectorat|Toulouse": [
 43.57765,
 1.44575
+],
+"Région|Lille": [
+50.63219,
+3.0603
 ],
 "Sciences Po|Paris": [
 48.8539,
@@ -78,6 +90,10 @@
 47.65578,
 -2.09402
 ],
+"commissariat|Lannion": [
+48.73142,
+-3.45163
+],
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
@@ -111,6 +127,10 @@
 "lycée Henri-Loritz|Nancy": [
 48.69074,
 6.19228
+],
+"lycée Jeanne-d'Arc|Nancy": [
+48.69269,
+6.18609
 ],
 "lycée Langevin|Beauvais": [
 49.41463,
@@ -164,6 +184,10 @@
 -2.75857
 ],
 "rectorat et centre-ville|Dijon": null,
+"rue Saint Georges|Nancy": [
+48.69239,
+6.18761
+],
 "rue Saint-Jean|Nancy": [
 48.7535,
 6.2794
