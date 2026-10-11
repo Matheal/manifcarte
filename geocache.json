@@ -60,6 +60,14 @@
 47.24546,
 -1.55199
 ],
+"Place Albert 1er|Montpellier": [
+43.61576,
+3.87444
+],
+"Place Carnot|Nancy": [
+48.69344,
+6.17785
+],
 "Place de la Bastille|Paris": [
 48.85267,
 2.36882
@@ -79,6 +87,10 @@
 "Sciences Po|Paris": [
 48.8539,
 2.32902
+],
+"Universite de Nantes|Nantes": [
+47.24546,
+-1.55199
 ],
 "Université Toulouse-Jean-Jaurès|Toulouse": [
 43.57838,
@@ -128,6 +140,11 @@
 48.73142,
 -3.45163
 ],
+"de Gaulle|Orléans": [
+47.90106,
+1.90284
+],
+"fac du Mirail|Toulouse": null,
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
