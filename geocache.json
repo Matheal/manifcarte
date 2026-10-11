@@ -100,6 +100,10 @@
 49.18288,
 -0.36472
 ],
+"centre-ville|Dijon": [
+47.32355,
+5.04148
+],
 "centre-ville|Lyon": [
 45.79926,
 4.8479
@@ -200,11 +204,16 @@
 47.18674,
 -1.52138
 ],
+"lycée privé Saint-Dominique|Saint-Herblain": null,
 "place Carnot|Nancy": [
 48.69344,
 6.17785
 ],
 "place Saint-Anne|Rennes": null,
+"place Sainte-Anne|Rennes": [
+48.11442,
+-1.68057
+],
 "place Victor-Hugo|Grenoble": [
 45.18895,
 5.72533
@@ -227,6 +236,10 @@
 -2.75857
 ],
 "rectorat et centre-ville|Dijon": null,
+"rectorat|Toulouse": [
+43.57765,
+1.44575
+],
 "rue Saint Georges|Nancy": [
 48.69239,
 6.18761
