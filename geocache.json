@@ -42,6 +42,10 @@
 47.20446,
 -1.6091
 ],
+"Lycée Beaumont|Redon": [
+47.65485,
+-2.09309
+],
 "Lycée Charles Péguy|Orléans": [
 47.88872,
 1.89726
@@ -298,5 +302,6 @@
 "rue du Rabodeau|Maxéville": [
 48.70196,
 6.1309
-]
+],
+"École des Mines|Paris": null
 }
