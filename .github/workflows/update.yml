@@ -91,6 +91,8 @@ jobs:
           SITE_URL: ${{ steps.pages.outputs.origin }}
           BASE_PATH: ${{ steps.pages.outputs.base_path }}
           PUBLIC_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
+          # Lien de dons (Ko-fi, Liberapay…) : Settings > Secrets and variables > Actions > Variables.
+          PUBLIC_DONATE_URL: ${{ vars.DONATE_URL }}
           ASTRO_TELEMETRY_DISABLED: 1
         run: |
           npm ci --no-audit --no-fund

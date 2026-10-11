@@ -358,3 +358,6 @@ export function frDate(day: string): string {
   const [y, m, d] = day.split("-");
   return `${d}/${m}/${y}`;
 }
+
+/** Lien de dons (Ko-fi, Liberapay…), défini par la variable GitHub DONATE_URL. Vide = pas de dons. */
+export const DONATE_URL: string = (import.meta.env.PUBLIC_DONATE_URL as string | undefined)?.trim() || "";

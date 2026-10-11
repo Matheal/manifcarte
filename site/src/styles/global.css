@@ -386,6 +386,18 @@ select {
   margin-top: 2px;
 }
 
+.link-btn {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-weight: 650;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .muted {
   color: var(--text-3);
 }

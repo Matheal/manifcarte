@@ -74,6 +74,10 @@ const isActive = (item: (typeof nav)[number]) => (item.match ? item.match(path) 
             }
           </ul>
         </nav>
+        <a class="support" href={withBase(base, "soutenir/")} aria-current={path.startsWith(withBase(base, "soutenir/")) ? "page" : undefined}>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.6 4.5c2 0 3.6 1.1 4.4 2.6.8-1.5 2.4-2.6 4.4-2.6 3.6 0 5.7 3.8 4.2 7.2C19.5 16.4 12 21 12 21Z"></path></svg>
+          <span>Soutenir</span>
+        </a>
         <button class="theme-toggle" type="button" aria-label="Changer de thème (clair / sombre)">
           <svg viewBox="0 0 24 24" aria-hidden="true"
             ><path
@@ -95,6 +99,11 @@ const isActive = (item: (typeof nav)[number]) => (item.match ? item.match(path) 
               <strong>ManifCarte</strong> recense automatiquement des mobilisations à partir de la presse et de sources
               publiques. Les informations ne sont <strong>pas officielles</strong> : vérifie toujours auprès des
               organisateurs et des médias cités.
+            </p>
+            <p>
+              Gratuit, sans publicité et sans traceur.
+              <a href={withBase(base, "soutenir/")}>Soutenir le projet</a> ·
+              <a href={withBase(base, "contribuer/")}>Contribuer</a>
             </p>
             <p class="muted small">
               Fond de carte © <a href="https://www.openstreetmap.org/copyright">contributeurs OpenStreetMap</a>,
@@ -207,6 +216,28 @@ const isActive = (item: (typeof nav)[number]) => (item.match ? item.match(path) 
     color: var(--text);
     background: var(--surface-2);
   }
+  .support {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    height: 38px;
+    padding: 0 14px;
+    border-radius: 999px;
+    border: 1px solid color-mix(in srgb, var(--accent) 40%, var(--border));
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-decoration: none;
+  }
+  .support:hover,
+  .support[aria-current="page"] {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+  }
+  .support svg {
+    width: 16px;
+    height: 16px;
+  }
   .theme-toggle {
     flex: none;
     width: 38px;
@@ -242,6 +273,14 @@ const isActive = (item: (typeof nav)[number]) => (item.match ? item.match(path) 
     }
     .bar {
       gap: 8px;
+    }
+    .support {
+      width: 38px;
+      padding: 0;
+      justify-content: center;
+    }
+    .support span {
+      display: none;
     }
     nav a {
       padding: 7px 10px;

@@ -1,0 +1,118 @@
+---
+import Base from "../layouts/Base.astro";
+import { DONATE_URL, withBase } from "../lib/shared";
+
+const base = import.meta.env.BASE_URL;
+const platform = DONATE_URL.includes("liberapay")
+  ? "Liberapay"
+  : DONATE_URL.includes("ko-fi")
+    ? "Ko-fi"
+    : DONATE_URL.includes("github.com/sponsors")
+      ? "GitHub Sponsors"
+      : "la plateforme de dons";
+---
+
+<Base title="Soutenir le projet" description="ManifCarte est gratuit, sans publicité et sans traceur. Tu peux soutenir le projet.">
+  <div class="container page">
+    <div class="prose">
+      <h1>Soutenir ManifCarte</h1>
+      <p class="lede">
+        ManifCarte est <strong>gratuit, sans publicité et sans traceur</strong>, et le restera. Le projet est développé
+        bénévolement.
+      </p>
+    </div>
+
+    <div class="ways">
+      <article class="card way main">
+        <h2>Faire un don</h2>
+        {
+          DONATE_URL ? (
+            <>
+              <p>
+                Un petit don, même ponctuel, aide à faire vivre le projet : temps de développement, et un jour un nom de
+                domaine ou un hébergement plus robuste si le site grandit.
+              </p>
+              <a class="btn btn-primary big" href={DONATE_URL} target="_blank" rel="noopener">
+                ♥ Faire un don sur {platform}
+              </a>
+              <p class="small muted">
+                Le paiement se fait entièrement sur {platform} : ManifCarte ne voit et ne stocke aucune donnée bancaire.
+              </p>
+            </>
+          ) : (
+            <p class="muted">Les dons ne sont pas encore ouverts. En attendant, les autres façons d'aider comptent tout autant !</p>
+          )
+        }
+      </article>
+
+      <article class="card way">
+        <h2>Contribuer</h2>
+        <p>Ajoute une mobilisation, signale une restriction ou corrige une erreur : c'est ce qui rend la carte fiable.</p>
+        <a class="btn" href={withBase(base, "contribuer/")}>Contribuer →</a>
+      </article>
+
+      <article class="card way">
+        <h2>Faire connaître</h2>
+        <p>Partage le lien autour de toi : plus il y a d'utilisateurs, plus il y a de signalements, plus la carte est juste.</p>
+        <button class="btn" type="button" id="share">Partager le site</button>
+      </article>
+    </div>
+
+    <div class="prose">
+      <h2>Transparence</h2>
+      <ul>
+        <li>Le site ne coûte rien à héberger aujourd'hui (GitHub Pages, données et IA gratuites).</li>
+        <li>Aucune publicité, aucune revente de données : c'est un engagement.</li>
+        <li>Les dons ne donnent aucun droit de regard sur le contenu de la carte.</li>
+      </ul>
+    </div>
+  </div>
+</Base>
+
+<script>
+  const btn = document.getElementById("share") as HTMLButtonElement;
+  btn.addEventListener("click", async () => {
+    const url = new URL(import.meta.env.BASE_URL, location.origin).href;
+    try {
+      if (navigator.share) return await navigator.share({ title: "ManifCarte", text: "La carte des mobilisations", url });
+      await navigator.clipboard.writeText(url);
+      btn.textContent = "Lien copié ✓";
+    } catch {
+      /* partage annulé */
+    }
+  });
+</script>
+
+<style>
+  .ways {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: 16px;
+    margin: 28px 0;
+  }
+  .way {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .way h2 {
+    margin: 0;
+    font-size: 1.15rem;
+  }
+  .way p {
+    margin: 0;
+    color: var(--text-2);
+    font-size: 0.93rem;
+  }
+  .way.main {
+    border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
+    background: color-mix(in srgb, var(--accent) 6%, var(--surface));
+  }
+  .btn.big {
+    height: 46px;
+    padding: 0 22px;
+    font-size: 1rem;
+    margin: 6px 0;
+  }
+</style>

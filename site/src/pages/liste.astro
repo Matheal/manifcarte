@@ -7,7 +7,10 @@ import { PERIOD_LABEL, SCOPE_LABEL } from "../scripts/filters";
 <Base title="Liste des mobilisations" description="Toutes les manifestations, blocus et rassemblements recensés, jour par jour.">
   <div class="container page">
     <h1>Liste des mobilisations</h1>
-    <p class="lede">Jour par jour, toutes les mobilisations détectées automatiquement. Filtre par période, zone ou cause.</p>
+    <p class="lede">
+      Jour par jour, les mobilisations du jour et à venir. Les mobilisations passées sont masquées : choisis
+      « + 7 jours passés » ou « Tout l'historique » pour les afficher.
+    </p>
 
     <div class="filters card">
       <label class="visually-hidden" for="q">Rechercher</label>
@@ -57,7 +60,7 @@ import { PERIOD_LABEL, SCOPE_LABEL } from "../scripts/filters";
 <script>
   import { eventCardHtml } from "../lib/render";
   import { formatDay, relativeDay, todayParis } from "../lib/shared";
-  import { type Filters, applyFilters, loadData, readFilters, writeFilters } from "../scripts/filters";
+  import { type Filters, applyFilters, hiddenPastCount, loadData, readFilters, writeFilters } from "../scripts/filters";
 
   const BASE = import.meta.env.BASE_URL;
   const groupsEl = document.getElementById("groups")!;
@@ -86,10 +89,19 @@ import { PERIOD_LABEL, SCOPE_LABEL } from "../scripts/filters";
     const events = applyFilters(all, filters, today);
     writeFilters(filters, DEFAULTS);
     sync();
-    countEl.textContent = `${events.length} mobilisation${events.length > 1 ? "s" : ""}`;
+    const hidden = hiddenPastCount(all, filters, today);
+    countEl.innerHTML =
+      `${events.length} mobilisation${events.length > 1 ? "s" : ""}` +
+      (hidden
+        ? ` · <button class="link-btn" type="button" data-show-past>${hidden} passée${hidden > 1 ? "s" : ""} masquée${hidden > 1 ? "s" : ""} · afficher</button>`
+        : "");
     if (!events.length) {
-      groupsEl.innerHTML = `<div class="empty card"><p><b>Aucune mobilisation</b> ne correspond à ces filtres.</p>
-        <p class="small">Essaie la période « Tout » ou retire des filtres.</p></div>`;
+      groupsEl.innerHTML =
+        filters.period === "upcoming"
+          ? `<div class="empty card"><p><b>Aucune mobilisation annoncée</b> pour aujourd'hui ou les jours à venir.</p>
+            <button class="btn" type="button" data-show-past>Voir les 7 derniers jours</button></div>`
+          : `<div class="empty card"><p><b>Aucune mobilisation</b> ne correspond à ces filtres.</p>
+            <p class="small">Essaie « Tout l'historique » ou retire des filtres.</p></div>`;
       return;
     }
     // Regroupement par jour (l'ordre de tri est déjà le bon).
@@ -111,6 +123,11 @@ import { PERIOD_LABEL, SCOPE_LABEL } from "../scripts/filters";
       render();
     }),
   );
+  document.querySelector(".page")!.addEventListener("click", (ev) => {
+    if (!(ev.target as HTMLElement).closest("[data-show-past]")) return;
+    filters.period = "7d";
+    render();
+  });
   document.querySelectorAll<HTMLButtonElement>("[data-scope]").forEach((b) =>
     b.addEventListener("click", () => {
       filters.scope = b.dataset.scope as Filters["scope"];

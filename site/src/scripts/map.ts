@@ -23,7 +23,7 @@ import {
   statusOf,
   todayParis,
 } from "../lib/shared";
-import { type Filters, applyFilters, loadData, readFilters, writeFilters } from "./filters";
+import { type Filters, applyFilters, hiddenPastCount, loadData, readFilters, writeFilters } from "./filters";
 import { MAP_STYLES as STYLES, isDark, loadMapLibre } from "./maplib";
 
 const maplibregl = await loadMapLibre();
@@ -274,7 +274,13 @@ function addLayers(): void {
         colors.upcoming,
         colors.past,
       ],
-      "circle-radius": ["interpolate", ["linear"], ["zoom"], 3, 5, 10, 7, 15, 10],
+      // Aujourd'hui et à venir : points plus gros que les mobilisations passées.
+      "circle-radius": [
+        "interpolate", ["linear"], ["zoom"],
+        3, ["case", ["==", ["get", "status"], "past"], 5, 7],
+        10, ["case", ["==", ["get", "status"], "past"], 7, 10],
+        15, ["case", ["==", ["get", "status"], "past"], 10, 13],
+      ],
       "circle-stroke-width": ["match", ["get", "level"], 3, 3, 2, 2.5, 1.5],
       "circle-stroke-color": colors.surface,
       "circle-opacity": ["case", ["==", ["get", "status"], "past"], 0.75, 1],
@@ -394,9 +400,13 @@ function renderList(): void {
       : `<b>${todayN}</b> aujourd'hui · <b>${upcomingN}</b> à venir en France` +
         (activeR ? ` · <b>${activeR}</b> perturbation${activeR > 1 ? "s" : ""}` : "") +
         (worldN ? ` <span class="muted">· ${worldN} dans le monde</span>` : "");
-  listTitleEl.textContent = inView.length
-    ? `${inView.length} mobilisation${inView.length > 1 ? "s" : ""} dans cette zone de la carte`
+  const hidden = hiddenPastCount(all, filters, today);
+  const showPast = hidden
+    ? ` · <button class="link-btn" type="button" data-show-past>${hidden} passée${hidden > 1 ? "s" : ""} masquée${hidden > 1 ? "s" : ""} · afficher</button>`
     : "";
+  listTitleEl.innerHTML = inView.length
+    ? `${inView.length} mobilisation${inView.length > 1 ? "s" : ""} dans cette zone${showPast}`
+    : showPast.replace(" · ", "");
   const shown = inView.slice(0, 80);
   // Perturbations visibles dans la zone, en tête de liste (en cours et à venir d'abord).
   const rank = { active: 0, upcoming: 1, past: 2 };
@@ -414,7 +424,11 @@ function renderList(): void {
       (inView.length > shown.length
         ? `<p class="small muted">… et ${inView.length - shown.length} autres : zoome pour affiner.</p>`
         : "")
-    : `<div class="empty"><p><b>Aucune mobilisation ici</b> avec ces filtres.</p><p class="small">Dézoome, change de période ou essaie « Tout ».</p></div>`);
+    : filters.period === "upcoming"
+      ? `<div class="empty"><p><b>Aucune mobilisation annoncée ici</b> pour aujourd'hui ou les jours à venir.</p>
+          <p class="small">Dézoome pour voir ailleurs, ou affiche les mobilisations récentes.</p>
+          <button class="btn" type="button" data-show-past>Voir les 7 derniers jours</button></div>`
+      : `<div class="empty"><p><b>Aucune mobilisation ici</b> avec ces filtres.</p><p class="small">Dézoome, change de période ou essaie « Tout l'historique ».</p></div>`);
 }
 
 listEl.addEventListener("click", (ev) => {
@@ -441,6 +455,13 @@ listEl.addEventListener("click", (ev) => {
       handle.setAttribute("aria-expanded", "false");
     }
   }
+});
+
+// « Afficher les passées » : on passe à la période « + 7 jours passés ».
+document.querySelector(".panel")!.addEventListener("click", (ev) => {
+  if (!(ev.target as HTMLElement).closest("[data-show-past]")) return;
+  filters.period = "7d";
+  refresh();
 });
 
 handle.addEventListener("click", () => {

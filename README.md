@@ -78,6 +78,13 @@ L'IA relève dans les articles les restrictions liées aux mobilisations : trans
 arrêtés préfectoraux, établissements fermés, commerces fermés. Elles s'affichent sur la carte (pictogrammes
 orange), sur les fiches des manifs concernées et sur la page « Perturbations ».
 
+## Bouton de dons
+
+Crée un compte sur Ko-fi, Liberapay ou GitHub Sponsors, puis dans le dépôt GitHub :
+**Settings → Secrets and variables → Actions → onglet Variables → New repository variable**,
+nom `DONATE_URL`, valeur = ton lien (ex. `https://ko-fi.com/tonpseudo`). Le bouton « Faire un don »
+apparaît sur la page « Soutenir » à la prochaine mise à jour. Sans variable, la page reste sans bouton de don.
+
 ## Travailler en local (Mac)
 
 ```bash

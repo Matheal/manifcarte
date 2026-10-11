@@ -35,9 +35,10 @@ const today = todayParis();
 const status = statusOf(e, today);
 const dateFr = formatDay(e.date);
 const dateLabel = dateFr[0].toUpperCase() + dateFr.slice(1);
-const others = loadDataset()
-  .events.filter((o) => o.id !== e.id && o.city === e.city && o.country === e.country)
-  .slice(0, 6);
+const sameCity = loadDataset().events.filter((o) => o.id !== e.id && o.city === e.city && o.country === e.country);
+// À venir d'abord (les plus proches), les passées repliées.
+const othersUpcoming = sameCity.filter((o) => o.date >= today).sort((a, b) => a.date.localeCompare(b.date)).slice(0, 6);
+const othersPast = sameCity.filter((o) => o.date < today).slice(0, 6);
 const note = precisionNote(e);
 const related = restrictionsFor(e, loadDataset().restrictions);
 const siteOrigin = Astro.site ? new URL(Astro.site).origin : "";
@@ -206,11 +207,19 @@ const reliabilityText: Record<number, string> = {
     </div>
 
     {
-      others.length > 0 && (
+      othersUpcoming.length > 0 && (
         <section class="others">
-          <h2>Autres mobilisations à {e.city}</h2>
-          <div class="grid" set:html={others.map((o) => eventCardHtml(o, base, today)).join("")} />
+          <h2>Prochaines mobilisations à {e.city}</h2>
+          <div class="grid" set:html={othersUpcoming.map((o) => eventCardHtml(o, base, today)).join("")} />
         </section>
+      )
+    }
+    {
+      othersPast.length > 0 && (
+        <details class="others past">
+          <summary>Mobilisations passées à {e.city} ({othersPast.length})</summary>
+          <div class="grid" set:html={othersPast.map((o) => eventCardHtml(o, base, today)).join("")} />
+        </details>
       )
     }
   </article>
@@ -399,6 +408,12 @@ const reliabilityText: Record<number, string> = {
   }
   .others {
     margin-top: 40px;
+  }
+  .others.past summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--text-2);
+    margin-bottom: 12px;
   }
   .others .grid {
     display: grid;
