@@ -5,9 +5,17 @@
 43.4815,
 -1.4745
 ],
+"Lumière|La Ciotat": [
+43.18683,
+5.61789
+],
 "Lycée Albert-Camus|Nantes": [
 47.20446,
 -1.6091
+],
+"Lycée Tristan-Corbière|Morlaix": [
+48.59895,
+-3.81765
 ],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
 "Maison du Peuple|Belfort": [
@@ -30,6 +38,10 @@
 48.8539,
 2.32902
 ],
+"Université Toulouse-Jean-Jaurès|Toulouse": [
+43.57838,
+1.401
+],
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
 5.92335
@@ -45,6 +57,10 @@
 "centre-ville|Caen": [
 49.18288,
 -0.36472
+],
+"centre-ville|Lyon": [
+45.79926,
+4.8479
 ],
 "centre-ville|Nancy": [
 48.68963,
@@ -74,6 +90,7 @@
 47.20446,
 -1.6091
 ],
+"lycée Bertran-de-Born|Périgueux": null,
 "lycée Bertran|Périgueux": null,
 "lycée Bonaparte|Toulon": [
 43.12566,
@@ -103,6 +120,10 @@
 48.69118,
 6.19165
 ],
+"lycée Léonard de Vinci|Montpellier": [
+43.62757,
+3.82389
+],
 "lycée Léonard|Montpellier": [
 43.62757,
 3.82389
@@ -129,6 +150,10 @@
 6.17785
 ],
 "place Saint-Anne|Rennes": null,
+"place Victor-Hugo|Grenoble": [
+45.18895,
+5.72533
+],
 "place de l'Opéra|Toulon": null,
 "place de la Bastille|Paris": [
 48.85267,
@@ -139,6 +164,10 @@
 -2.75857
 ],
 "rectorat et centre-ville|Dijon": null,
+"rue Saint-Jean|Nancy": [
+48.7535,
+6.2794
+],
 "rue du Rabodeau|Maxéville": [
 48.70196,
 6.1309
