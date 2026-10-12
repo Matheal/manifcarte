@@ -134,6 +134,10 @@
 47.24734,
 -1.5506
 ],
+"campus Valrose|Nice": [
+43.71498,
+7.26264
+],
 "centre-ville|Bordeaux": [
 44.84113,
 -0.65678
@@ -166,6 +170,10 @@
 47.65578,
 -2.09402
 ],
+"cité scolaire de Saint-Nazaire|Saint-Nazaire": [
+47.27392,
+-2.22329
+],
 "commissariat|Lannion": [
 48.73142,
 -3.45163
@@ -175,6 +183,14 @@
 1.90284
 ],
 "fac du Mirail|Toulouse": null,
+"gare d'Auch|Auch": [
+43.64727,
+0.59674
+],
+"gare|Arras": [
+50.28777,
+2.78266
+],
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
@@ -183,6 +199,10 @@
 43.61084,
 3.87659
 ],
+"les Arènes|Toulouse": [
+43.59216,
+1.41803
+],
 "lycee Jeanne-d'Arc|Nancy": [
 48.69269,
 6.18609
@@ -190,6 +210,10 @@
 "lycée Albert-Camus|Nantes": [
 47.20446,
 -1.6091
+],
+"lycée Arago|Reims": [
+49.22849,
+4.0078
 ],
 "lycée Bertran-de-Born|Périgueux": null,
 "lycée Bertran|Périgueux": null,
@@ -218,6 +242,10 @@
 48.69074,
 6.19228
 ],
+"lycée Jean Moulin|Béziers": [
+43.34117,
+3.23559
+],
 "lycée Jeanne-d'Arc|Nancy": [
 48.69269,
 6.18609
@@ -238,6 +266,14 @@
 43.62757,
 3.82389
 ],
+"lycée Marquette|Pont-à-Mousson": [
+48.90593,
+6.05718
+],
+"lycée Michelis|Amiens": [
+49.88933,
+2.30352
+],
 "lycée Mounier|Grenoble": [
 45.17919,
 5.73067
@@ -247,6 +283,10 @@
 -0.64936
 ],
 "lycée Rosa-Parks|Saint-Denis": null,
+"lycée Simone Weil|Pantin": [
+48.89315,
+2.41039
+],
 "lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
@@ -255,14 +295,27 @@
 47.47074,
 -0.59143
 ],
+"lycée de l'Harteloire|Brest": [
+48.39354,
+-4.48996
+],
 "lycée des Bourdonnières|Nantes": [
 47.18674,
 -1.52138
 ],
 "lycée privé Saint-Dominique|Saint-Herblain": null,
+"lycées Jacques-Dolle et Léonard-de-Vinci|Antibes": null,
+"mairie de Vannes|Vannes": [
+47.65837,
+-2.76093
+],
 "place Carnot|Nancy": [
 48.69344,
 6.17785
+],
+"place Déliot|Lille": [
+50.61938,
+3.06743
 ],
 "place Saint-Anne|Rennes": null,
 "place Sainte-Anne|Rennes": [
@@ -281,6 +334,14 @@
 "place de la Bastille|Paris": [
 48.85267,
 2.36882
+],
+"place de la République|Dijon": [
+47.32661,
+5.04501
+],
+"place de la Trémoille|Laval": [
+48.06885,
+-0.77263
 ],
 "place du Pâtis|Montargis": [
 47.88078,
@@ -311,5 +372,6 @@
 48.70196,
 6.1309
 ],
+"services de l'Éducation nationale|Niort": null,
 "École des Mines|Paris": null
 }
