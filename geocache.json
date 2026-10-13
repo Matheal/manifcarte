@@ -1,4 +1,8 @@
 {
+"Avenue des Gobelins|Paris": [
+48.83423,
+2.35365
+],
 "Bastille|Paris": [
 48.85299,
 2.36886
@@ -223,6 +227,10 @@
 "Préfecture|Pau": [
 43.29605,
 -0.36948
+],
+"Quai Zola|Rennes": [
+48.10986,
+-1.67716
 ],
 "Rectorat|Dijon": [
 47.3185,
@@ -738,6 +746,10 @@
 45.18895,
 5.72533
 ],
+"place d'Italie|Paris": [
+48.83094,
+2.35589
+],
 "place de Jaude|Clermont-Ferrand": [
 45.77641,
 3.08214
@@ -750,6 +762,10 @@
 "place de la Bastille|Paris": [
 48.85267,
 2.36882
+],
+"place de la Comédie|Montpellier": [
+43.60869,
+3.87992
 ],
 "place de la République|Dijon": [
 47.32661,
@@ -833,6 +849,10 @@
 "École des Mines|Saint-Étienne": [
 45.42388,
 4.40806
+],
+"École supérieure d'art de Lorraine|Épinal": [
+48.17072,
+6.45303
 ],
 "école du Schluthfeld|Strasbourg": [
 48.56781,
