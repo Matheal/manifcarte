@@ -3,6 +3,14 @@
 48.85299,
 2.36886
 ],
+"Bourse du Travail|Saint-Étienne": [
+45.43315,
+4.38772
+],
+"CHU de Lille|Lille": [
+50.61292,
+3.03649
+],
 "Campo Santo|Perpignan": [
 42.70021,
 2.89751
@@ -16,15 +24,24 @@
 -0.36526
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
+"Campus|Grenoble": [
+45.19114,
+5.77005
+],
 "Centre Jean Richepin|Clermont-Ferrand": [
 45.78155,
 3.0854
 ],
 "Centre hospitalier universitaire de Reims|Reims": null,
+"Centre-ville|Foix": null,
 "Conseil des prud'hommes de montpellier|Montpellier": null,
 "Eaux-ClaireS|Grenoble": [
 45.17666,
 5.70895
+],
+"Gare|Lyon": [
+45.7704,
+4.9542
 ],
 "Gare|Nancy": [
 48.65552,
@@ -33,6 +50,10 @@
 "Hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
+],
+"Hôpital|Saint-Nazaire": [
+47.27549,
+-2.21719
 ],
 "IUT, Enssat, lycée Félix-Le-Dantec|Lannion": null,
 "Institut d'urbanisme et de géographie alpine|Grenoble": [
@@ -93,6 +114,10 @@
 47.3302,
 -2.41858
 ],
+"Lycée Jean Macé|Rennes": [
+48.11709,
+-1.67045
+],
 "Lycée Jean-Baptiste-Dumas|Alès": [
 44.13009,
 4.07548
@@ -124,6 +149,10 @@
 -2.08662
 ],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
+"Maison des syndicats|Fort-de-France": [
+14.606,
+-61.06414
+],
 "Maison du Peuple|Belfort": [
 47.64147,
 6.85137
@@ -138,6 +167,10 @@
 -1.55199
 ],
 "Orléans td|Orléans": null,
+"Parc Expo|Mulhouse": [
+47.76479,
+7.33591
+],
 "Parlement Européen|Strasbourg": [
 48.59748,
 7.76989
@@ -150,6 +183,10 @@
 48.69344,
 6.17785
 ],
+"Place d'Italie|Paris": [
+48.83094,
+2.35589
+],
 "Place de Gaulle|Orléans": [
 47.90136,
 1.90267
@@ -161,6 +198,10 @@
 "Place de la Bastille|Paris": [
 48.85267,
 2.36882
+],
+"Préfecture|Pau": [
+43.29605,
+-0.36948
 ],
 "Rectorat|Dijon": [
 47.3185,
@@ -194,13 +235,26 @@
 48.8539,
 2.32902
 ],
+"Sciences-Po|Aix-en-Provence": [
+43.52925,
+5.4357
+],
+"Siège du Groupe ADP|Tremblay-en-France": null,
 "Universite de Nantes|Nantes": [
 47.24546,
 -1.55199
 ],
+"Université Bourgogne Europe|Dijon": [
+47.31331,
+5.06886
+],
 "Université Toulouse-Jean-Jaurès|Toulouse": [
 43.57838,
 1.401
+],
+"Université d'Avignon|Avignon": [
+43.9497,
+4.81602
 ],
 "Université de Bourgogne|Dijon": [
 47.31331,
@@ -210,10 +264,19 @@
 48.84351,
 2.21543
 ],
+"Université de Perpignan|Perpignan": [
+42.68217,
+2.8991
+],
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
 5.92335
 ],
+"boulevard Delacourtie|Toulouse": [
+43.58397,
+1.4495
+],
+"bourse du travail|Villeurbanne": null,
 "campus Tertre|Nantes": [
 47.24734,
 -1.5506
@@ -323,6 +386,7 @@
 49.53765,
 5.7816
 ],
+"hôtels de ville|Vannes": null,
 "l'Écusson|Montpellier": [
 43.61084,
 3.87659
@@ -346,6 +410,14 @@
 "lycée Arago|Reims": [
 49.22849,
 4.0078
+],
+"lycée Aristide Briand|Saint-Nazaire": [
+47.27281,
+-2.2338
+],
+"lycée Baudelaire|Annecy": [
+45.89659,
+6.09691
 ],
 "lycée Bertran-de-Born|Périgueux": null,
 "lycée Bertran|Périgueux": null,
@@ -386,6 +458,10 @@
 47.46625,
 -0.54443
 ],
+"lycée Douanier Rousseau|Laval": [
+48.07198,
+-0.76138
+],
 "lycée Escoffier|Cagnes-sur-Mer": [
 43.67084,
 7.1486
@@ -397,6 +473,10 @@
 "lycée Henri-Loritz|Nancy": [
 48.69074,
 6.19228
+],
+"lycée Hélène-Boucher|Paris": [
+48.84831,
+2.40717
 ],
 "lycée Jean Moulin|Béziers": [
 43.34117,
@@ -430,6 +510,10 @@
 43.62757,
 3.82389
 ],
+"lycée Madeleine-Michelis|Amiens": [
+49.88922,
+2.30308
+],
 "lycée Marguerite-de-Navarre|Alençon": [
 48.40908,
 0.0911
@@ -441,6 +525,10 @@
 "lycée Michelis|Amiens": [
 49.88933,
 2.30352
+],
+"lycée Monge|Chambéry": [
+45.56405,
+5.93556
 ],
 "lycée Mounier|Grenoble": [
 45.17919,
@@ -454,6 +542,10 @@
 "lycée Paul-Guérin|Niort": [
 46.31576,
 -0.44119
+],
+"lycée Paul-Valéry|Sète": [
+43.40162,
+3.69259
 ],
 "lycée Paul-Éluard|Saint-Denis": null,
 "lycée Pergaud|Besançon": [
@@ -477,6 +569,10 @@
 48.89315,
 2.41039
 ],
+"lycée Théodore Monod|Noisy-le-Sec": [
+48.88867,
+2.46667
+],
 "lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
@@ -488,6 +584,14 @@
 "lycée d'Antibes|Antibes": [
 43.59258,
 7.11573
+],
+"lycée de Bonneville|Bonneville": [
+46.06966,
+6.31367
+],
+"lycée de Saint-Denis|Saint-Denis": [
+-20.88768,
+55.47012
 ],
 "lycée de l'Harteloire|Brest": [
 48.39354,
@@ -511,9 +615,17 @@
 47.65837,
 -2.76093
 ],
+"maison des syndicats|Chalon-sur-Saône": [
+46.78685,
+4.85899
+],
 "place Albert 1er|Montpellier": [
 43.61576,
 3.87444
+],
+"place Bellecour|Lyon": [
+45.75766,
+4.83243
 ],
 "place Carnot|Nancy": [
 48.69344,
@@ -586,11 +698,20 @@
 47.65033,
 -2.75857
 ],
+"préfecture d'Agen|Agen": null,
 "préfecture|Pau": [
 43.29605,
 -0.36948
 ],
+"raffinerie de Normandie|Gonfreville-l'Orcher": [
+49.48802,
+0.24084
+],
 "rectorat et centre-ville|Dijon": null,
+"rectorat|Dijon": [
+47.3185,
+5.03424
+],
 "rectorat|Toulouse": [
 43.57765,
 1.44575
@@ -625,5 +746,13 @@
 48.90122,
 2.21347
 ],
-"École des Mines|Paris": null
+"université de Nantes|Nantes": [
+47.24546,
+-1.55199
+],
+"École des Mines|Paris": null,
+"école du Schluthfeld|Strasbourg": [
+48.56781,
+7.74915
+]
 }
