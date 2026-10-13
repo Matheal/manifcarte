@@ -1,76 +1,73 @@
 {
- "gdelt_last": "20261013114500",
+ "gdelt_last": "20261013124500",
  "sources": {
   "google_news": {
    "ok": true,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "last_ok": "2026-10-13T11:42:48.527863+00:00",
-   "fetched": 1021,
-   "added": 119
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "last_ok": "2026-10-13T12:42:03.158490+00:00",
+   "fetched": 1704,
+   "added": 84
   },
   "rss": {
    "ok": true,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "last_ok": "2026-10-13T11:42:48.527863+00:00",
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "last_ok": "2026-10-13T12:42:03.158490+00:00",
    "fetched": 228,
-   "added": 17
+   "added": 19
   },
   "mastodon": {
    "ok": true,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "last_ok": "2026-10-13T11:42:48.527863+00:00",
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "last_ok": "2026-10-13T12:42:03.158490+00:00",
    "fetched": 381,
-   "added": 7
+   "added": 3
   },
   "gdelt": {
    "ok": true,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "last_ok": "2026-10-13T11:42:48.527863+00:00",
-   "fetched": 21,
-   "added": 14
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "last_ok": "2026-10-13T12:42:03.158490+00:00",
+   "fetched": 19,
+   "added": 9
   },
   "ai": {
-   "ok": true,
-   "analyzed": 300,
-   "pending": 670,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "fetched": 300,
-   "added": 300,
-   "model": "gemini-3.5-flash-lite",
+   "ok": false,
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "last_ok": "2026-10-13T11:42:48.527863+00:00"
   },
   "moderation": {
    "ok": true,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "last_ok": "2026-10-13T11:42:48.527863+00:00",
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "last_ok": "2026-10-13T12:42:03.158490+00:00",
    "fetched": 2,
    "added": 1,
    "pending": 0
   },
   "demosphere": {
    "ok": true,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "last_ok": "2026-10-13T11:42:48.527863+00:00",
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "last_ok": "2026-10-13T12:42:03.158490+00:00",
    "fetched": 5,
    "added": 0
   },
   "mobilizon": {
    "ok": true,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "last_ok": "2026-10-13T11:42:48.527863+00:00",
-   "fetched": 37,
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "last_ok": "2026-10-13T12:42:03.158490+00:00",
+   "fetched": 36,
    "added": 0
   },
   "bluesky": {
-   "ok": false,
-   "at": "2026-10-13T11:42:48.527863+00:00",
-   "error": "401 Client Error: Unauthorized for url: https://bsky.social/xrpc/com.atproto.server.createSession",
-   "last_ok": null
+   "ok": true,
+   "at": "2026-10-13T12:42:03.158490+00:00",
+   "last_ok": "2026-10-13T12:42:03.158490+00:00",
+   "fetched": 401,
+   "added": 401
   }
  },
  "ai": {
   "day": "2026-10-13",
-  "calls_today": 90,
+  "calls_today": 91,
   "model": "gemini-3.5-flash-lite"
  },
  "moderation": {
@@ -79,5 +76,5 @@
    "2": "add_event"
   }
  },
- "gnews_cursor": 120
+ "gnews_cursor": 40
 }
