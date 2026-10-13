@@ -20,6 +20,11 @@
 49.53765,
 5.7816
 ],
+"IUT, Enssat, lycée Félix-Le-Dantec|Lannion": null,
+"Institut d'urbanisme et de géographie alpine|Grenoble": [
+45.1652,
+5.72794
+],
 "Institut d'urbanisme et géographie alpine|Grenoble": null,
 "Jean-Baptiste-Dumas|Alès": [
 44.13421,
@@ -42,6 +47,14 @@
 47.20446,
 -1.6091
 ],
+"Lycée Aristide-Briand|Saint-Nazaire": [
+47.27281,
+-2.2338
+],
+"Lycée Auguste-Brizeux|Quimper": [
+47.99384,
+-4.11159
+],
 "Lycée Beaumont|Redon": [
 47.65485,
 -2.09309
@@ -49,6 +62,14 @@
 "Lycée Charles Péguy|Orléans": [
 47.88872,
 1.89726
+],
+"Lycée Chevrollier|Angers": [
+47.4548,
+-0.55967
+],
+"Lycée Clemenceau|Montpellier": [
+43.60216,
+3.87353
 ],
 "Lycée Cyfflé|Nancy": [
 48.68656,
@@ -66,6 +87,14 @@
 49.41463,
 2.10875
 ],
+"Lycée Malherbe|Caen": [
+49.17512,
+-0.3724
+],
+"Lycée Mendès-France|La Roche-sur-Yon": [
+46.66724,
+-1.44738
+],
 "Lycée Pothier|Orléans": [
 47.90916,
 1.90943
@@ -76,6 +105,10 @@
 -3.81765
 ],
 "Lycée Voltaire et Gauguin|Orléans": null,
+"Lycée de Pornic|Pornic": [
+47.12143,
+-2.08662
+],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
 "Maison du Peuple|Belfort": [
 47.64147,
@@ -114,6 +147,10 @@
 50.63219,
 3.0603
 ],
+"Saint-Paul|Roanne": [
+46.04278,
+4.07465
+],
 "Sciences Po|Paris": [
 48.8539,
 2.32902
@@ -125,6 +162,14 @@
 "Université Toulouse-Jean-Jaurès|Toulouse": [
 43.57838,
 1.401
+],
+"Université de Bourgogne|Dijon": [
+47.31331,
+5.06886
+],
+"Université de Paris Nanterre|Nanterre": [
+48.84351,
+2.21543
 ],
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
@@ -161,6 +206,10 @@
 "centre-ville|Nantes": [
 47.21484,
 -1.55794
+],
+"centre-ville|Rennes": [
+48.11154,
+-1.67907
 ],
 "centre-ville|Saint-Nazaire": [
 47.27483,
@@ -282,6 +331,11 @@
 44.80912,
 -0.64936
 ],
+"lycée Paul-Guérin|Niort": [
+46.31576,
+-0.44119
+],
+"lycée Paul-Éluard|Saint-Denis": null,
 "lycée Rosa-Parks|Saint-Denis": null,
 "lycée Simone Weil|Pantin": [
 48.89315,
@@ -299,6 +353,10 @@
 48.39354,
 -4.48996
 ],
+"lycée de la Mer|Sète": [
+43.4233,
+3.67537
+],
 "lycée des Bourdonnières|Nantes": [
 47.18674,
 -1.52138
@@ -309,9 +367,17 @@
 47.65837,
 -2.76093
 ],
+"place Albert 1er|Montpellier": [
+43.61576,
+3.87444
+],
 "place Carnot|Nancy": [
 48.69344,
 6.17785
+],
+"place Deliot|Lille": [
+50.61938,
+3.06743
 ],
 "place Déliot|Lille": [
 50.61938,
@@ -373,5 +439,6 @@
 6.1309
 ],
 "services de l'Éducation nationale|Niort": null,
+"université Paris 8|Saint-Denis": null,
 "École des Mines|Paris": null
 }
