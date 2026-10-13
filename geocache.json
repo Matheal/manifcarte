@@ -11,7 +11,12 @@
 49.19503,
 -0.36526
 ],
+"Campus Lettres et IUT Charlemagne|Nancy": null,
 "Centre hospitalier universitaire de Reims|Reims": null,
+"Eaux-ClaireS|Grenoble": [
+45.17666,
+5.70895
+],
 "Gare|Nancy": [
 48.65552,
 6.22798
@@ -143,6 +148,14 @@
 43.57765,
 1.44575
 ],
+"Rotonde|Aix-en-Provence": [
+43.52562,
+5.44481
+],
+"Réformés|Marseille": [
+43.29882,
+5.38592
+],
 "Région|Lille": [
 50.63219,
 3.0603
@@ -182,6 +195,10 @@
 "campus Valrose|Nice": [
 43.71498,
 7.26264
+],
+"centre-ville|Antibes": [
+43.58577,
+7.11927
 ],
 "centre-ville|Bordeaux": [
 44.84113,
@@ -269,6 +286,10 @@
 "lycée Bonaparte|Toulon": [
 43.12566,
 5.92621
+],
+"lycée Camille-Claudel|Caen": [
+49.20402,
+-0.3851
 ],
 "lycée Charles Péguy|Orléans": [
 47.88872,
@@ -363,6 +384,10 @@
 ],
 "lycée privé Saint-Dominique|Saint-Herblain": null,
 "lycées Jacques-Dolle et Léonard-de-Vinci|Antibes": null,
+"lycée|Gennevilliers": [
+48.92146,
+2.3042
+],
 "mairie de Vannes|Vannes": [
 47.65837,
 -2.76093
