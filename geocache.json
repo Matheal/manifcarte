@@ -47,6 +47,7 @@
 48.84701,
 2.41082
 ],
+"Devant la CCI|Brive-la-Gaillarde": null,
 "Duchesse Anne|Nantes": [
 47.21666,
 -1.5472
@@ -75,16 +76,25 @@
 47.27549,
 -2.21719
 ],
+"Hôtel de Ville|Paris": [
+48.85643,
+2.35253
+],
 "IUT de Dijon|Dijon": [
 47.30993,
 5.06876
 ],
 "IUT, Enssat, lycée Félix-Le-Dantec|Lannion": null,
+"Inspection académique de Haute-Corse|Bastia": null,
 "Institut d'urbanisme et de géographie alpine|Grenoble": [
 45.1652,
 5.72794
 ],
 "Institut d'urbanisme et géographie alpine|Grenoble": null,
+"Invalides|Paris": [
+48.86034,
+2.31468
+],
 "Jean-Baptiste-Dumas|Alès": [
 44.13421,
 4.08008
@@ -328,11 +338,19 @@
 43.71498,
 7.26264
 ],
+"campus de Paris-Saclay|Gif-sur-Yvette": [
+48.71125,
+2.1624
+],
 "campus de Rouen Mont-Saint-Aignan|Mont-Saint-Aignan": [
 49.45883,
 1.06767
 ],
 "campus de l'UBO|Quimper": null,
+"campus du Tertre|Nantes": [
+47.24872,
+-1.55261
+],
 "centre Assas|Paris": [
 48.84957,
 2.38612
@@ -417,6 +435,7 @@
 47.90106,
 1.90284
 ],
+"devant la mairie|Saint-Denis": null,
 "devant la préfecture|Quimper": null,
 "fac du Mirail|Toulouse": null,
 "faculté de pharmacie de Paris|Paris": [
@@ -513,6 +532,10 @@
 4.35722
 ],
 "lycée David d'Angers|Angers": [
+47.46625,
+-0.54443
+],
+"lycée David|Angers": [
 47.46625,
 -0.54443
 ],
@@ -747,6 +770,10 @@
 7.74596
 ],
 "place Saint-Anne|Rennes": null,
+"place Saint-Corentin|Quimper": [
+47.99582,
+-4.10292
+],
 "place Sainte-Anne|Rennes": [
 48.11442,
 -1.68057
@@ -754,6 +781,10 @@
 "place Stanislas|Nancy": [
 48.69352,
 6.18329
+],
+"place Vauban|Paris": [
+48.85345,
+2.31158
 ],
 "place Victor-Hugo|Grenoble": [
 45.18895,
@@ -776,6 +807,10 @@
 48.85267,
 2.36882
 ],
+"place de la Comédie|Metz": [
+49.12143,
+6.17343
+],
 "place de la Comédie|Montpellier": [
 43.60869,
 3.87992
@@ -787,6 +822,10 @@
 "place de la Trémoille|Laval": [
 48.06885,
 -0.77263
+],
+"place des Terreaux|Lyon": [
+45.76749,
+4.83349
 ],
 "place du Pâtis|Montargis": [
 47.88078,
@@ -804,6 +843,10 @@
 "préfecture|Pau": [
 43.29605,
 -0.36948
+],
+"préfecture|Tours": [
+47.39207,
+0.69218
 ],
 "pôle universitaire|Quimper": [
 47.9724,
