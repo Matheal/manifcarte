@@ -3,6 +3,10 @@
 48.85299,
 2.36886
 ],
+"Campo Santo|Perpignan": [
+42.70021,
+2.89751
+],
 "Campus 1 de l'universite de Caen|Caen": [
 49.19503,
 -0.36526
@@ -12,7 +16,12 @@
 -0.36526
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
+"Centre Jean Richepin|Clermont-Ferrand": [
+45.78155,
+3.0854
+],
 "Centre hospitalier universitaire de Reims|Reims": null,
+"Conseil des prud'hommes de montpellier|Montpellier": null,
 "Eaux-ClaireS|Grenoble": [
 45.17666,
 5.70895
@@ -128,6 +137,11 @@
 47.24546,
 -1.55199
 ],
+"Orléans td|Orléans": null,
+"Parlement Européen|Strasbourg": [
+48.59748,
+7.76989
+],
 "Place Albert 1er|Montpellier": [
 43.61576,
 3.87444
@@ -135,6 +149,14 @@
 "Place Carnot|Nancy": [
 48.69344,
 6.17785
+],
+"Place de Gaulle|Orléans": [
+47.90136,
+1.90267
+],
+"Place de Jaude|Clermont-Ferrand": [
+45.77641,
+3.08214
 ],
 "Place de la Bastille|Paris": [
 48.85267,
@@ -163,6 +185,10 @@
 "Saint-Paul|Roanne": [
 46.04278,
 4.07465
+],
+"Sciences Po|Caen": [
+49.18411,
+-0.36755
 ],
 "Sciences Po|Paris": [
 48.8539,
@@ -196,6 +222,14 @@
 43.71498,
 7.26264
 ],
+"campus de Rouen Mont-Saint-Aignan|Mont-Saint-Aignan": [
+49.45883,
+1.06767
+],
+"centre Assas|Paris": [
+48.84957,
+2.38612
+],
 "centre-ville|Antibes": [
 43.58577,
 7.11927
@@ -215,6 +249,14 @@
 "centre-ville|Grenoble": [
 45.1902,
 5.71495
+],
+"centre-ville|Le Mans": [
+48.00174,
+0.20306
+],
+"centre-ville|Limoges": [
+45.82468,
+1.26056
 ],
 "centre-ville|Lyon": [
 45.79926,
@@ -244,9 +286,17 @@
 47.27392,
 -2.22329
 ],
+"commissariat|Dunkerque": [
+51.01293,
+2.30648
+],
 "commissariat|Lannion": [
 48.73142,
 -3.45163
+],
+"commissariat|Roubaix": [
+50.69009,
+3.18689
 ],
 "cours de Vincennes|Paris": [
 48.84771,
@@ -289,6 +339,10 @@
 47.20446,
 -1.6091
 ],
+"lycée Alcide|Bouaye": [
+47.15575,
+-1.67994
+],
 "lycée Arago|Reims": [
 49.22849,
 4.0078
@@ -302,6 +356,10 @@
 "lycée Branly|Dreux": [
 48.73189,
 1.37866
+],
+"lycée Brossolette|Villeurbanne": [
+45.7714,
+4.87728
 ],
 "lycée Camille-Claudel|Caen": [
 49.20402,
@@ -320,6 +378,18 @@
 48.68656,
 6.18211
 ],
+"lycée Daudet|Nîmes": [
+43.83544,
+4.35722
+],
+"lycée David d'Angers|Angers": [
+47.46625,
+-0.54443
+],
+"lycée Escoffier|Cagnes-sur-Mer": [
+43.67084,
+7.1486
+],
 "lycée Georges-Brassens|Rive-de-Gier": [
 45.53319,
 4.60543
@@ -335,6 +405,10 @@
 "lycée Jean Vigo|Millau": [
 44.09423,
 3.05518
+],
+"lycée Jean-Baptiste-Dumas|Alès": [
+44.13009,
+4.07548
 ],
 "lycée Jeanne-d'Arc|Nancy": [
 48.69269,
@@ -355,6 +429,10 @@
 "lycée Léonard|Montpellier": [
 43.62757,
 3.82389
+],
+"lycée Marguerite-de-Navarre|Alençon": [
+48.40908,
+0.0911
 ],
 "lycée Marquette|Pont-à-Mousson": [
 48.90593,
@@ -378,7 +456,23 @@
 -0.44119
 ],
 "lycée Paul-Éluard|Saint-Denis": null,
+"lycée Pergaud|Besançon": [
+47.26463,
+6.04246
+],
+"lycée Queneau|Yvetot": [
+49.61151,
+0.77027
+],
+"lycée Romain-Rolland|Ivry-sur-Seine": [
+48.80122,
+2.39424
+],
 "lycée Rosa-Parks|Saint-Denis": null,
+"lycée Saint-Exupéry|Marseille": [
+43.34733,
+5.35523
+],
 "lycée Simone Weil|Pantin": [
 48.89315,
 2.41039
@@ -390,6 +484,10 @@
 "lycée d'Angers|Angers": [
 47.47074,
 -0.59143
+],
+"lycée d'Antibes|Antibes": [
+43.59258,
+7.11573
 ],
 "lycée de l'Harteloire|Brest": [
 48.39354,
@@ -421,6 +519,10 @@
 48.69344,
 6.17785
 ],
+"place Darcy|Dijon": [
+47.3236,
+5.03283
+],
 "place Deliot|Lille": [
 50.61938,
 3.06743
@@ -429,6 +531,11 @@
 50.61938,
 3.06743
 ],
+"place Guichard|Lyon": [
+45.75917,
+4.84738
+],
+"place Guichard|Villeurbanne": null,
 "place Kléber|Strasbourg": [
 48.58331,
 7.74596
@@ -438,9 +545,17 @@
 48.11442,
 -1.68057
 ],
+"place Stanislas|Nancy": [
+48.69352,
+6.18329
+],
 "place Victor-Hugo|Grenoble": [
 45.18895,
 5.72533
+],
+"place de Jaude|Clermont-Ferrand": [
+45.77641,
+3.08214
 ],
 "place de Verdun|La Rochelle": [
 46.18838,
@@ -471,6 +586,10 @@
 47.65033,
 -2.75857
 ],
+"préfecture|Pau": [
+43.29605,
+-0.36948
+],
 "rectorat et centre-ville|Dijon": null,
 "rectorat|Toulouse": [
 43.57765,
@@ -489,6 +608,22 @@
 6.1309
 ],
 "services de l'Éducation nationale|Niort": null,
+"université Lyon 2|Lyon": [
+45.75161,
+4.83726
+],
+"université Lyon|Lyon": [
+45.72978,
+4.82658
+],
 "université Paris 8|Saint-Denis": null,
+"université Rennes|Rennes": [
+48.11938,
+-1.70149
+],
+"université de Nanterre|Nanterre": [
+48.90122,
+2.21347
+],
 "École des Mines|Paris": null
 }
