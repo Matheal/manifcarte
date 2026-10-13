@@ -120,7 +120,7 @@ AI_ENABLED = True
 # Essayés dans l'ordre (si un modèle est retiré par Google, on passe au suivant).
 AI_MODELS = ["gemini-3.5-flash-lite", "gemini-flash-lite-latest", "gemini-3.1-flash-lite"]
 AI_BATCH_SIZE = 10                  # articles envoyés par requête
-AI_MAX_CALLS_PER_RUN = 15           # au plus 150 articles analysés par passage
+AI_MAX_CALLS_PER_RUN = 30           # au plus 300 articles analysés par passage (~3 min)
 AI_MAX_CALLS_PER_DAY = 400          # ~4 000 articles/jour, garde-fou sous les quotas gratuits
 AI_MIN_SECONDS_BETWEEN_CALLS = 6    # ≤ 10 requêtes par minute
 AI_MAX_AGE_DAYS = 21                # inutile d'analyser les vieux articles
