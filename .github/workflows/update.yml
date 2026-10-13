@@ -97,7 +97,7 @@ jobs:
           # Lien de dons (Ko-fi, Liberapay…) : Settings > Secrets and variables > Actions > Variables.
           PUBLIC_DONATE_URL: ${{ vars.DONATE_URL }}
           # Relais du formulaire « sans compte » (tools/formulaire-sans-compte/LISEZMOI.md).
-          PUBLIC_REPORT_ENDPOINT: ${{ vars.REPORT_ENDPOINT }}
+          PUBLIC_REPORT_ENDPOINT: ${{ vars.REPORT_ENDPOINT || secrets.REPORT_ENDPOINT }}
           ASTRO_TELEMETRY_DISABLED: 1
         run: |
           npm ci --no-audit --no-fund
