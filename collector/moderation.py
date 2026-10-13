@@ -27,7 +27,12 @@ log = logging.getLogger(__name__)
 TZ = ZoneInfo(config.TIMEZONE)
 
 LABEL_ADD, LABEL_RESTRICTION, LABEL_REMOVE = "ajout-manif", "restriction", "suppression"
+LABEL_POST = "publication"
 LABEL_APPROVED, LABEL_CANCELLED = "approuvé", "annulé"
+# Envoyé depuis le formulaire sans compte du site : jamais approuvé automatiquement,
+# même si le ticket est techniquement créé par le compte du propriétaire.
+LABEL_ANONYMOUS = "anonyme"
+CONTRIBUTION_LABELS = {LABEL_ADD, LABEL_RESTRICTION, LABEL_REMOVE, LABEL_POST}
 TRUSTED = {"OWNER", "MEMBER", "COLLABORATOR"}
 
 # Intitulés des champs des formulaires -> clés internes (doivent correspondre aux .yml).
@@ -47,6 +52,9 @@ FIELDS = {
     "Lien de la fiche ou de l'article": "lien",
     "Motif": "motif",
     "Précisions": "details",
+    "Lien de la publication": "lien",
+    "Plateforme": "plateforme",
+    "Texte de la publication": "texte",
 }
 KINDS = {"Manifestation", "Rassemblement", "Blocus", "Grève", "Marche", "Autre"}
 RESTRICTION_TYPES = {
@@ -67,6 +75,7 @@ class Moderation:
     removed_urls: set[str] = field(default_factory=set)
     manual_events: list[dict] = field(default_factory=list)
     manual_restrictions: list[dict] = field(default_factory=list)
+    posts: list[dict] = field(default_factory=list)
     pending: int = 0
     # numéro d'issue -> ("applied" | "pending" | "error", message)
     statuses: dict[int, tuple[str, str]] = field(default_factory=dict)
@@ -126,6 +135,18 @@ def interpret(issue: dict) -> tuple[str, dict | str]:
     labels = {lab["name"] for lab in issue.get("labels", [])}
     form = parse_form(issue.get("body") or "")
     ref = datetime.fromisoformat(issue["created_at"].replace("Z", "+00:00")).astimezone(TZ).date()
+
+    if LABEL_POST in labels:
+        url = _url(form.get("lien"))
+        texte = (form.get("texte") or "").strip()
+        if not url or not texte:
+            return "error", "Le lien et le texte de la publication sont obligatoires."
+        extra = ". ".join(f"{k} : {form[k.lower()]}" for k in ("Ville", "Date") if form.get(k.lower()))
+        return "add_post", {
+            "issue": issue["number"], "url": url, "platform": form.get("plateforme", "Réseau social"),
+            "text": (texte + (f". {extra}" if extra else ""))[:900],
+            "published": issue["created_at"].replace("Z", "+00:00"),
+        }
 
     if LABEL_REMOVE in labels:
         lien = form.get("lien", "")
@@ -191,13 +212,14 @@ def collect(issues: list[dict]) -> Moderation:
     mod = Moderation()
     for issue in sorted(issues, key=lambda i: i["number"]):
         labels = {lab["name"] for lab in issue.get("labels", [])}
-        if not labels & {LABEL_ADD, LABEL_RESTRICTION, LABEL_REMOVE}:
+        if not labels & CONTRIBUTION_LABELS:
             continue
         num = issue["number"]
         if LABEL_CANCELLED in labels:
             mod.statuses[num] = ("cancelled", "")
             continue
-        approved = issue.get("author_association") in TRUSTED or LABEL_APPROVED in labels
+        trusted_author = issue.get("author_association") in TRUSTED and LABEL_ANONYMOUS not in labels
+        approved = trusted_author or LABEL_APPROVED in labels
         if not approved:
             if issue["state"] == "open":
                 mod.pending += 1
@@ -217,6 +239,8 @@ def collect(issues: list[dict]) -> Moderation:
             mod.manual_events.append(data)
         elif kind == "add_restriction":
             mod.manual_restrictions.append(data)
+        elif kind == "add_post":
+            mod.posts.append(data)
         else:
             continue
         mod.statuses[num] = ("applied", kind)
@@ -241,6 +265,8 @@ MESSAGES = {
                "Elle apparaîtra sur la carte une fois approuvée.",
     "add_event": "✅ Mobilisation ajoutée. Elle sera visible sur la carte d'ici 2 à 3 minutes : {site}",
     "add_restriction": "✅ Restriction ajoutée. Elle sera visible d'ici 2 à 3 minutes : {site}perturbations/",
+    "add_post": "✅ Publication prise en compte : l'IA va l'analyser comme un article (visible d'ici 2 à 3 "
+                "minutes si elle décrit une mobilisation précise) : {site}",
     "remove_event": "🗑️ Fiche retirée de la carte (visible d'ici 2 à 3 minutes). "
                     "Pour annuler, ajoute l'étiquette « annulé » à ce ticket.",
     "remove_restriction": "🗑️ Restriction retirée de la carte. Pour annuler, ajoute l'étiquette « annulé ».",
@@ -275,3 +301,11 @@ def notify(mod: Moderation, session: requests.Session | None, state: dict) -> No
         except requests.RequestException as e:
             log.warning("Commentaire impossible sur #%s : %s", num, e)
 
+
+
+def post_items(mod: Moderation) -> list[dict]:
+    """Publications validées -> items « social » analysés comme des articles."""
+    return [{
+        "id": f"post-{p['issue']}", "kind": "social", "outlet": f"{p['platform']} (signalée)",
+        "title": p["text"][:140], "text": p["text"], "url": p["url"], "published": p["published"],
+    } for p in mod.posts]

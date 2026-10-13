@@ -1,0 +1,59 @@
+name: "📱 Signaler une publication (TikTok, Instagram, X…)"
+description: Un appel à manifester ou un blocus vu sur un réseau social.
+title: "[Publication] "
+labels: ["publication"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Colle le lien et **recopie le texte** de la publication (légende, texte de l'image) : l'IA de ManifCarte
+        l'analysera comme un article. La publication sera **relue par l'équipe** avant de compter sur la carte.
+        ⚠️ Ce ticket est **public** : ne recopie **ni noms, ni pseudos, ni visages** de personnes.
+  - type: input
+    id: lien
+    attributes:
+      label: Lien de la publication
+      placeholder: "https://www.tiktok.com/@…/video/…"
+    validations:
+      required: true
+  - type: dropdown
+    id: plateforme
+    attributes:
+      label: Plateforme
+      options:
+        - TikTok
+        - Instagram
+        - X / Twitter
+        - Snapchat
+        - Facebook
+        - Telegram
+        - YouTube
+        - Autre
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: texte
+    attributes:
+      label: Texte de la publication
+      description: Recopie ce qu'annonce la publication (date, heure, lieu, revendication).
+      placeholder: "BLOCUS LYCÉE POINCARÉ JEUDI 7H30 🔥 tout le monde devant l'entrée"
+    validations:
+      required: true
+  - type: input
+    id: ville
+    attributes:
+      label: Ville
+      placeholder: "Nancy"
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      placeholder: "15/10/2026"
+  - type: checkboxes
+    id: consentement
+    attributes:
+      label: Vérification
+      options:
+        - label: Je n'ai recopié aucun nom, pseudo ni information personnelle.
+          required: true

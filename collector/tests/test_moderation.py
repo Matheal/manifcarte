@@ -113,3 +113,32 @@ def test_restrictions_from_ai_are_merged_and_manual_kept():
     assert len(auto["sources"]) == 2 and auto["geo_precision"] == "lieu"
     assert manual["type"] == "arrete" and manual["start"] == "2026-10-13" and manual["end"] == "2026-10-16"
     assert manual["verified"]
+
+
+def test_social_post_becomes_item_and_anonymous_needs_approval():
+    body = form(lien="https://www.tiktok.com/@x/video/1", plateforme="TikTok",
+                texte="BLOCUS lycée Poincaré jeudi 7h30", ville="Nancy")
+    issues = [
+        issue(1, "publication", body),
+        issue(2, "publication", body, labels=["anonyme"]),           # formulaire sans compte : en attente
+        issue(3, "publication", body, labels=["anonyme", "approuvé"]),
+        issue(4, "publication", form(lien="pas un lien", texte="x")),
+    ]
+    mod = mo.collect(issues)
+    assert [p["issue"] for p in mod.posts] == [1, 3]
+    assert mod.pending == 1 and mod.statuses[4][0] == "error"
+    [it, _] = mo.post_items(mod)
+    assert it["id"] == "post-1" and it["kind"] == "social" and it["outlet"] == "TikTok (signalée)"
+    assert "Ville : Nancy" in it["text"] and it["url"] == "https://www.tiktok.com/@x/video/1"
+
+
+def test_anonymous_add_is_not_auto_approved():
+    mod = mo.collect([issue(1, "ajout-manif", form(ville="Nancy", date="13/10/2026"), labels=["anonyme"])])
+    assert mod.manual_events == [] and mod.pending == 1
+
+
+def test_site_forms_match_parser():
+    """Les intitulés du formulaire sans compte (site) doivent aussi être connus du collecteur."""
+    forms = (TEMPLATES.parents[1] / "site" / "src" / "lib" / "forms.ts").read_text()
+    for label in re.findall(r'label: "([^"]+)"', forms):
+        assert label in mo.FIELDS, f"forms.ts : « {label} » inconnu"

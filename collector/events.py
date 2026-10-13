@@ -126,6 +126,19 @@ def _from_rules(it: dict, ext) -> list[tuple[str, date, Contribution]]:
 MANUAL_OUTLET = "Ajout vérifié par l'équipe ManifCarte"
 
 
+def _from_gdelt_fr(it: dict, gaz: Gazetteer) -> list[tuple[str, date, Contribution]]:
+    """Événement GDELT situé en France : rattaché à la commune (point 6)."""
+    if it.get("country") != "FR" or it["articles"] < config.GDELT_MIN_ARTICLES:
+        return []
+    commune = gaz.lookup(it["place"].split(",")[0].strip())
+    if not commune:
+        return []
+    return [(commune.insee, date.fromisoformat(it["date"]), Contribution(
+        item=it, precision="publication", causes=["autre"],
+        signals={"tensions"} if any(k in it["codes"] for k in ("Manifestation violente", "Émeute")) else set(),
+    ))]
+
+
 def resolve_city(name: str, gaz: Gazetteer, geo: Geocoder) -> tuple[str, Commune, str] | None:
     """(clé, commune, pays) : commune française connue, sinon géocodage libre (France ou monde)."""
     commune = gaz.lookup(name)
@@ -172,6 +185,9 @@ def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder,
             places_by_key[key] = (commune, country)
     for it in items:
         if it["kind"] == "gdelt":
+            found = _from_gdelt_fr(it, gaz)
+            for key, d, contrib in found:
+                buckets[(key, d)].append(contrib)
             continue
         ref = _local_date(it["published"])
         ext = extract(it["title"], it.get("text", ""), ref, gaz)
@@ -184,11 +200,16 @@ def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder,
 
     events = []
     for (key, d), contribs in buckets.items():
+        # GDELT seul (sans presse ni contribution) : seulement s'il y a beaucoup d'articles.
+        if all(c.item["kind"] == "gdelt" for c in contribs) and \
+                sum(c.item["articles"] for c in contribs) < config.GDELT_FR_MIN_ARTICLES_ALONE:
+            continue
         commune, country = places_by_key.get(key) or (gaz.by_insee[key], "France")
         items_ = {c.item["id"]: c.item for c in contribs}.values()
         manual_contribs = [c for c in contribs if c.item["kind"] == "manuel"]
         press_outlets = {i["outlet"] for i in items_ if i["kind"] == "presse"}
-        social = sum(1 for i in items_ if i["kind"] == "social")
+        # Signaux plus faibles qu'un média : réseaux sociaux, agendas militants, détection GDELT.
+        social = sum(1 for i in items_ if i["kind"] in ("social", "agenda", "gdelt"))
 
         causes: Counter = Counter()
         signals: set[str] = set()
@@ -235,7 +256,8 @@ def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder,
                 break
 
         sources = sorted(
-            ({"title": i["title"], "url": i["url"], "outlet": i["outlet"], "kind": i["kind"],
+            ({"title": i["title"] if i["kind"] != "gdelt" else f"Détection automatique GDELT ({i['articles']} articles)",
+              "url": i["url"], "outlet": i["outlet"], "kind": i["kind"],
               "published": i["published"]} for i in items_),
             key=lambda s: s["published"], reverse=True,
         )
@@ -300,7 +322,7 @@ def build_fr_events(items: list[dict], gaz: Gazetteer, geo: Geocoder,
 def build_world_events(items: list[dict]) -> list[dict]:
     events = []
     for it in items:
-        if it["kind"] != "gdelt" or it["articles"] < config.GDELT_MIN_ARTICLES:
+        if it["kind"] != "gdelt" or it["articles"] < config.GDELT_MIN_ARTICLES or it.get("country") == "FR":
             continue
         parts = [p.strip() for p in it["place"].split(",")]
         city, country = parts[0], parts[-1]

@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import { loadDataset } from "../lib/data";
-import { REPO_URL, issueUrl } from "../lib/shared";
+import { REPORT_ENDPOINT, REPO_URL, issueUrl } from "../lib/shared";
 
 const mod = loadDataset().moderation ?? { pending: 0, manual_events: 0, manual_restrictions: 0, removed: 0 };
 const plural = (n: number) => (n > 1 ? "s" : "");
@@ -11,6 +11,14 @@ const statsLine = [
   `${mod.removed} correction${plural(mod.removed)} appliquée${plural(mod.removed)}`,
 ].join(" · ");
 const actions = [
+  {
+    icon: "📱",
+    title: "Signaler une publication",
+    text: "Un appel à manifester ou un blocus vu sur TikTok, Instagram, X ou Snapchat ? Colle le lien et le texte : l'IA l'analyse.",
+    href: issueUrl("4-signaler-publication.yml"),
+    cta: "Signaler une publication",
+    tone: "world",
+  },
   {
     icon: "＋",
     title: "Ajouter une mobilisation",
@@ -70,7 +78,13 @@ const actions = [
     <div class="prose">
       <h2>Comment ça marche</h2>
       <ol>
-        <li>Le bouton ouvre un <b>formulaire sur GitHub</b> (il faut un compte GitHub, gratuit).</li>
+        {
+          REPORT_ENDPOINT ? (
+            <li>Le bouton ouvre un <b>formulaire sur ce site</b>, sans compte ni inscription.</li>
+          ) : (
+            <li>Le bouton ouvre un <b>formulaire sur GitHub</b> (il faut un compte GitHub, gratuit).</li>
+          )
+        }
         <li>Ta proposition attend la <b>validation de l'équipe</b>, qui vérifie l'information.</li>
         <li>Une fois validée, elle apparaît sur la carte en <b>2 à 3 minutes</b>, avec le badge « ✓ Vérifiée ».</li>
         <li>Un message automatique te répond sur GitHub à chaque étape.</li>
@@ -84,6 +98,14 @@ const actions = [
         </div>
       </div>
 
+      <h2>Et TikTok, Instagram, X ?</h2>
+      <p>
+        Ces plateformes n'offrent aucun accès gratuit et autorisé à leurs publications : ManifCarte ne peut donc pas
+        les lire automatiquement. C'est pour ça que <strong>tes signalements comptent</strong> : une publication
+        signalée est analysée par l'IA exactement comme un article de presse, puis placée sur la carte une fois
+        validée. Bluesky et Mastodon, eux, sont lus automatiquement.
+      </p>
+
       <h2 id="equipe">Pour l'équipe : valider ou annuler</h2>
       <ul>
         <li>
@@ -95,9 +117,10 @@ const actions = [
         </li>
         <li>Pour refuser : ferme-la simplement. Pour annuler une contribution déjà appliquée : étiquette <code>annulé</code>.</li>
         <li>Une proposition mal remplie (date illisible…) reçoit un message d'erreur : il suffit de la modifier.</li>
+        <li>Les signalements envoyés sans compte portent l'étiquette <code>anonyme</code> et attendent toujours ta validation.</li>
       </ul>
       <p>
-        <a class="btn" href={`${REPO_URL}/issues?q=is%3Aopen+label%3Aajout-manif%2Crestriction%2Csuppression`} target="_blank" rel="noopener">
+        <a class="btn" href={`${REPO_URL}/issues?q=is%3Aopen+label%3Aajout-manif%2Crestriction%2Csuppression%2Cpublication`} target="_blank" rel="noopener">
           Voir les propositions en attente
         </a>
       </p>
@@ -123,6 +146,9 @@ const actions = [
   }
   .action.restriction {
     --tone: var(--restriction);
+  }
+  .action.world {
+    --tone: var(--world);
   }
   .action.accent {
     --tone: var(--accent);

@@ -50,7 +50,9 @@ _PROTEST_RE = re.compile(
 _NOT_PROTEST_RE = re.compile(
     r"manifestations? (?:culturelles?|sportives?|festives?|commerciales?|nautiques?|"
     r"équestres?|d'intérêt|aériennes?|scientifiques?)|défilés? de mode|"
-    r"manifestations? (?:cliniques?|cutanées?|allergiques?)|grève de la faim",
+    r"manifestations? (?:cliniques?|cutanées?|allergiques?)|grève de la faim|"
+    r"rassemblements? (?:\w+ )?(?:de |d')(?:véhicules|voitures|motos|montgolfières|camping-cars|"
+    r"vélos anciens|collectionneurs|fans|familles|anciens élèves)|rassemblement (?:mensuel|annuel|international)",
     re.IGNORECASE,
 )
 

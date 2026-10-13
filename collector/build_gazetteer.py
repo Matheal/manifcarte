@@ -29,6 +29,7 @@ STOPLIST = {
     "Saintes", "Revel", "Gray", "Lure", "Dole", "Sedan", "Grenade", "Baden",
     "Vif", "Die", "Eu", "Ham", "Pia", "Drap", "Gan", "Mana", "Sada", "Arues",
     "Charly", "Seclin", "Loos", "Lens-Lestang",
+    "L'Union",  # « l'Union syndicale », « l'Union européenne »…
     # Homonymes étrangers fréquents dans l'actualité internationale
     "Valence", "Vienne", "Bruges", "Saint-Louis",
 }

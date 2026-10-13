@@ -18,8 +18,11 @@ const repo = import.meta.env.PUBLIC_REPO_URL as string | undefined;
       <h2>Comment ça marche</h2>
       <ol>
         <li>
-          <b>Collecte.</b> Toutes les 20 minutes environ, un robot lit les sources publiques : recherches Google News,
-          flux RSS de la presse régionale et nationale, hashtags publics sur Mastodon et la base mondiale GDELT.
+          <b>Collecte.</b> Plusieurs fois par heure, un robot lit les sources publiques : Google News (recherches
+          nationales et ville par ville), une quarantaine de flux de presse régionale et nationale, des sites
+          d'information militants (Manif'Est, Paris-luttes…), les agendas Démosphère et Mobilizon, Bluesky,
+          Mastodon et la base mondiale GDELT. TikTok, Instagram et X n'offrent pas d'accès autorisé : leurs
+          publications arrivent par vos <a href="../signaler/">signalements</a>.
         </li>
         <li>
           <b>Tri.</b> Il ne garde que les articles qui parlent d'une mobilisation (« manifestation », « blocus », « grève »,

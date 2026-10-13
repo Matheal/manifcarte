@@ -59,6 +59,9 @@ jobs:
           # Clé gratuite Google AI Studio (Settings > Secrets and variables > Actions).
           # Sans elle, l'analyse IA est simplement désactivée.
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          # Compte Bluesky dédié au robot (facultatif) : identifiant + mot de passe d'application.
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
           # Lecture des contributions (issues) et réponses automatiques.
           GITHUB_TOKEN: ${{ github.token }}
           MANIFCARTE_NOTIFY: "1"
@@ -93,6 +96,8 @@ jobs:
           PUBLIC_REPO_URL: ${{ github.server_url }}/${{ github.repository }}
           # Lien de dons (Ko-fi, Liberapay…) : Settings > Secrets and variables > Actions > Variables.
           PUBLIC_DONATE_URL: ${{ vars.DONATE_URL }}
+          # Relais du formulaire « sans compte » (tools/formulaire-sans-compte/LISEZMOI.md).
+          PUBLIC_REPORT_ENDPOINT: ${{ vars.REPORT_ENDPOINT }}
           ASTRO_TELEMETRY_DISABLED: 1
         run: |
           npm ci --no-audit --no-fund

@@ -72,6 +72,24 @@ Tout passe par l'onglet **Issues** du dépôt, avec trois formulaires (page « C
 - Pour annuler une contribution déjà appliquée : étiquette **`annulé`**.
 - Le robot répond sur chaque ticket (appliqué, en attente, ou erreur à corriger).
 
+## Sources
+
+| Source | Détail |
+|---|---|
+| Google News | recherches nationales + **120 plus grandes villes**, par tranches de 40 à chaque passage |
+| Flux RSS | ~40 médias : presse régionale de toute la France, France 3 (toutes régions), presse nationale |
+| Sites militants | Manif'Est (Nancy/Lorraine), Paris-luttes, Rebellyon |
+| Agendas | Démosphère (Paris, Toulouse, Lille, Rennes, Strasbourg), Mobilizon |
+| Réseaux sociaux | Bluesky (compte robot facultatif : secrets `BSKY_HANDLE` + `BSKY_APP_PASSWORD`), Mastodon |
+| GDELT | monde entier ; en France, renforce les mobilisations déjà repérées |
+| TikTok, Instagram, X… | aucun accès autorisé : **signalements** (formulaire « Publication »), analysés par l'IA |
+
+Les articles sans ville reconnue sont gardés quand l'IA est active : elle retrouve souvent la ville
+(« lycée Loritz » → Nancy).
+
+**Formulaire sans compte** : voir `tools/formulaire-sans-compte/LISEZMOI.md` (Google Apps Script gratuit,
+variable `REPORT_ENDPOINT`). Les envois portent l'étiquette `anonyme` et attendent toujours ta validation.
+
 ## Perturbations et restrictions
 
 L'IA relève dans les articles les restrictions liées aux mobilisations : transports déviés, rues fermées,

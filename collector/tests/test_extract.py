@@ -91,3 +91,16 @@ def test_extract_full():
     assert e.dates[0][0] == date(2026, 10, 8)
     assert e.time == "10:00"
     assert "annonce" in e.signals
+
+
+@pytest.mark.parametrize("text", [
+    "Rassemblement de véhicules anciens à Bressuire",
+    "Rassemblement International de Montgolfières - 44ème édition",
+    "Rassemblement mensuel de voitures anciennes",
+])
+def test_not_protest_gatherings(text):
+    assert ex.is_relevant(text) is False
+
+
+def test_union_is_not_a_city():
+    assert GAZ.find("aux côtés de L'Union syndicale Solidaires") == []

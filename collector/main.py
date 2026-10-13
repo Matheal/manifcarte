@@ -20,7 +20,7 @@ from . import moderation
 from .ai import Analyzer
 from .restrictions import build_restrictions
 from .events import _local_date, build_fr_events, build_world_events
-from .extract import Gazetteer, extract
+from .extract import Gazetteer, extract, is_relevant
 from .geocode import Geocoder
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -36,6 +36,12 @@ def _dump(path: pathlib.Path, data, pretty: bool = False) -> None:
     text = json.dumps(data, ensure_ascii=False, indent=1 if pretty else None,
                       separators=None if pretty else (",", ":"))
     path.write_text(text, encoding="utf-8")
+
+
+def keep_item(it: dict, gaz: Gazetteer, ai_on: bool) -> bool:
+    if extract(it["title"], it["text"], _local_date(it["published"]), gaz):
+        return True
+    return ai_on and is_relevant(f"{it['title']}. {it['text']}")
 
 
 def merge_items(stored: dict[str, dict], new: list[dict]) -> int:
@@ -70,10 +76,14 @@ def run(data_dir: pathlib.Path, out: pathlib.Path, skip: set[str], offline: bool
     state = _load(data_dir / "state.json", {})
     gaz = Gazetteer(ROOT / "data" / "communes.json")
     status: dict[str, dict] = state.get("sources", {})
+    ai_on = Analyzer(state).enabled and "ai" not in skip
 
     fetchers = {
-        "google_news": sources.google_news,
+        "google_news": lambda: sources.google_news(state),
         "rss": sources.rss_feeds,
+        "demosphere": sources.demosphere,
+        "mobilizon": sources.mobilizon,
+        "bluesky": lambda: sources.bluesky(state),
         "mastodon": sources.mastodon,
         "gdelt": lambda: sources.gdelt(state) if config.GDELT_ENABLED else [],
     }
@@ -83,21 +93,41 @@ def run(data_dir: pathlib.Path, out: pathlib.Path, skip: set[str], offline: bool
                 continue
             try:
                 got = fetch()
+                if got is None:  # source non configurée (ex. Bluesky sans compte)
+                    status[name] = {"ok": True, "disabled": True, "at": now.isoformat()}
+                    continue
             except Exception as e:  # une source en panne ne doit pas bloquer les autres
                 log.exception("Source %s en échec", name)
                 status[name] = {"ok": False, "at": now.isoformat(), "error": str(e)[:200],
                                 "last_ok": status.get(name, {}).get("last_ok")}
                 continue
-            # On ne stocke que les articles utiles (localisables et parlant d'une mobilisation).
+            # On ne stocke que les articles utiles : localisables par les règles, ou (point 5)
+            # simplement pertinents quand l'IA est là pour retrouver la ville (« lycée Loritz » -> Nancy).
             if name != "gdelt":
-                got = [it for it in got
-                       if extract(it["title"], it["text"], _local_date(it["published"]), gaz)]
+                got = [it for it in got if keep_item(it, gaz, ai_on)]
             added = merge_items(stored, got)
             status[name] = {"ok": True, "at": now.isoformat(), "last_ok": now.isoformat(),
                             "fetched": len(got), "added": added}
             log.info("%-12s %4d pertinents, %4d nouveaux", name, len(got), added)
 
     prune(stored, now)
+    # Contributions validées (ajouts, restrictions, suppressions) depuis les issues GitHub.
+    mod, gh = moderation.Moderation(), None
+    try:
+        mod, gh = moderation.load()
+        status["moderation"] = {"ok": True, "at": now.isoformat(), "last_ok": now.isoformat(),
+                                "fetched": len(mod.statuses), "added": len(mod.manual_events),
+                                "pending": mod.pending}
+    except Exception as e:
+        log.exception("Lecture des contributions en échec")
+        status["moderation"] = {"ok": False, "at": now.isoformat(), "error": str(e)[:200],
+                                "last_ok": status.get("moderation", {}).get("last_ok")}
+    # Publications de réseaux sociaux signalées et validées : analysées comme des articles.
+    posts = {it["id"]: it for it in moderation.post_items(mod)}
+    for key in [k for k in stored if k.startswith("post-") and k not in posts]:
+        del stored[key]  # publication annulée
+    for key, it in posts.items():
+        stored.setdefault(key, it)
     items = list(stored.values())
 
     # Analyse IA des nouveaux articles (sans effet si GEMINI_API_KEY est absente).
@@ -114,17 +144,6 @@ def run(data_dir: pathlib.Path, out: pathlib.Path, skip: set[str], offline: bool
             status["ai"] = {"ok": False, "at": now.isoformat(), "error": str(e)[:200],
                             "last_ok": status.get("ai", {}).get("last_ok")}
 
-    # Contributions validées (ajouts, restrictions, suppressions) depuis les issues GitHub.
-    mod, gh = moderation.Moderation(), None
-    try:
-        mod, gh = moderation.load()
-        status["moderation"] = {"ok": True, "at": now.isoformat(), "last_ok": now.isoformat(),
-                                "fetched": len(mod.statuses), "added": len(mod.manual_events),
-                                "pending": mod.pending}
-    except Exception as e:
-        log.exception("Lecture des contributions en échec")
-        status["moderation"] = {"ok": False, "at": now.isoformat(), "error": str(e)[:200],
-                                "last_ok": status.get("moderation", {}).get("last_ok")}
     usable = [it for it in items if it["url"] not in mod.removed_urls]
 
     geo = Geocoder(data_dir / "geocache.json")
@@ -164,7 +183,8 @@ def main() -> None:
     ap = argparse.ArgumentParser(description="Collecte des mobilisations")
     ap.add_argument("--data-dir", type=pathlib.Path, default=ROOT / "data" / "store")
     ap.add_argument("--out", type=pathlib.Path, default=ROOT / "site" / "public" / "data" / "events.json")
-    ap.add_argument("--skip", nargs="*", default=[], choices=["google_news", "rss", "mastodon", "gdelt", "ai"])
+    ap.add_argument("--skip", nargs="*", default=[],
+                    choices=["google_news", "rss", "demosphere", "mobilizon", "bluesky", "mastodon", "gdelt", "ai"])
     ap.add_argument("--offline", action="store_true", help="ne rien télécharger, recalculer seulement")
     args = ap.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")

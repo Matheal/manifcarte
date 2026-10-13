@@ -1,7 +1,7 @@
 """Récupération des sources. Chaque fonction renvoie une liste d'« items » (dict).
 
 Format d'un item :
-    id, kind ("presse" | "social" | "gdelt"), outlet, title, text, url, published (ISO UTC)
+    id, kind ("presse" | "agenda" | "social" | "gdelt"), outlet, title, text, url, published (ISO UTC)
 Les items GDELT portent en plus les champs déjà géolocalisés (lat, lon, place, country…).
 """
 from __future__ import annotations
@@ -9,11 +9,15 @@ from __future__ import annotations
 import csv
 import hashlib
 import io
+import json
 import logging
+import os
+import pathlib
 import time
 import urllib.parse
 import zipfile
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 
 import feedparser
 import requests
@@ -64,25 +68,46 @@ def _feed_items(content: bytes, outlet_default: str, kind: str = "presse") -> li
     return items
 
 
-def google_news() -> list[dict]:
+def _google_news_search(query: str, window: str) -> list[dict]:
+    url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
+        {"q": f"{query} when:{window}", "hl": "fr", "gl": "FR", "ceid": "FR:fr"})
+    r = SESSION.get(url, timeout=config.HTTP_TIMEOUT)
+    r.raise_for_status()
+    time.sleep(1)  # politesse
+    return _feed_items(r.content, "Google News")
+
+
+def _rotating_cities(state: dict) -> list[str]:
+    """Les plus grandes communes, par tranches qui tournent d'un passage à l'autre."""
+    rows = json.loads((pathlib.Path(__file__).resolve().parent.parent / "data" / "communes.json")
+                      .read_text(encoding="utf-8"))
+    cities = [r[0] for r in rows[: config.GOOGLE_NEWS_CITY_COUNT]]
+    start = state.get("gnews_cursor", 0) % len(cities)
+    batch = (cities + cities)[start:start + config.GOOGLE_NEWS_CITIES_PER_RUN]
+    state["gnews_cursor"] = start + len(batch)
+    focus = config.FOCUS_CITY["name"]
+    return [focus] + [c for c in batch if c != focus]
+
+
+def google_news(state: dict | None = None) -> list[dict]:
     items: list[dict] = []
     for q in config.GOOGLE_NEWS_QUERIES:
-        url = "https://news.google.com/rss/search?" + urllib.parse.urlencode(
-            {"q": f"{q} when:7d", "hl": "fr", "gl": "FR", "ceid": "FR:fr"})
-        r = SESSION.get(url, timeout=config.HTTP_TIMEOUT)
-        r.raise_for_status()
-        items += _feed_items(r.content, "Google News")
-        time.sleep(1)  # politesse
+        items += _google_news_search(q, "7d")
+    for city in _rotating_cities(state if state is not None else {}):
+        try:
+            items += _google_news_search(config.GOOGLE_NEWS_CITY_QUERY.format(city=city), "3d")
+        except requests.RequestException as e:
+            log.warning("Google News « %s » : %s", city, e)
     return items
 
 
 def rss_feeds() -> list[dict]:
     items: list[dict] = []
-    for outlet, url in config.RSS_FEEDS.items():
+    for outlet, (url, kind) in config.RSS_FEEDS.items():
         try:
             r = SESSION.get(url, timeout=config.HTTP_TIMEOUT)
             r.raise_for_status()
-            items += _feed_items(r.content, outlet)
+            items += _feed_items(r.content, outlet, kind)
         except requests.RequestException as e:
             log.warning("RSS %s indisponible : %s", outlet, e)
     return items
@@ -113,6 +138,114 @@ def mastodon() -> list[dict]:
                     "published": post["created_at"].replace("Z", "+00:00"),
                 })
     return items
+
+
+# --- Agendas (Démosphère, Mobilizon) ---------------------------------------------------
+
+_FR_WEEKDAYS = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+_FR_MONTHS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre",
+              "octobre", "novembre", "décembre"]
+
+
+def _fr_datetime(dt: datetime) -> str:
+    """« samedi 17 octobre 2026 à 15h00 » : lisible par les règles d'extraction et par l'IA."""
+    local = dt.astimezone(ZoneInfo(config.TIMEZONE))
+    return (f"{_FR_WEEKDAYS[local.weekday()]} {local.day} {_FR_MONTHS[local.month - 1]} {local.year} "
+            f"à {local.hour}h{local.minute:02d}")
+
+
+def demosphere() -> list[dict]:
+    """Agendas Démosphère : titres du type « mardi 13 octobre 2026 - Rennes - Manifestation… »."""
+    items: list[dict] = []
+    for city in config.DEMOSPHERE_CITIES:
+        try:
+            r = SESSION.get(f"https://{city}.demosphere.net/events.xml", timeout=config.HTTP_TIMEOUT)
+            r.raise_for_status()
+        except requests.RequestException as e:
+            log.warning("Démosphère %s indisponible : %s", city, e)
+            continue
+        items += _feed_items(r.content, f"Démosphère {city.capitalize()}", "agenda")
+    return items
+
+
+_MOBILIZON_QUERY = """query($term: String, $limit: Int) {
+  searchEvents(term: $term, limit: $limit) {
+    elements { title url beginsOn physicalAddress { description locality } }
+  }
+}"""
+
+
+def mobilizon() -> list[dict]:
+    """Événements publics Mobilizon à venir (ou des 2 derniers jours)."""
+    now = datetime.now(timezone.utc)
+    items: dict[str, dict] = {}
+    for instance in config.MOBILIZON_INSTANCES:
+        for term in config.MOBILIZON_TERMS:
+            try:
+                r = SESSION.post(f"https://{instance}/api", timeout=config.HTTP_TIMEOUT,
+                                 json={"query": _MOBILIZON_QUERY, "variables": {"term": term, "limit": 50}})
+                r.raise_for_status()
+                elements = r.json()["data"]["searchEvents"]["elements"]
+            except (requests.RequestException, KeyError, TypeError, ValueError) as e:
+                log.warning("Mobilizon %s « %s » : %s", instance, term, e)
+                continue
+            for ev in elements:
+                try:
+                    begins = datetime.fromisoformat(ev["beginsOn"].replace("Z", "+00:00"))
+                except (KeyError, TypeError, ValueError):
+                    continue
+                if not (now - timedelta(days=2) <= begins <= now + timedelta(days=45)) or not ev.get("url"):
+                    continue
+                addr = ev.get("physicalAddress") or {}
+                where = ", ".join(x for x in (addr.get("description"), addr.get("locality")) if x)
+                title = clean_text(ev.get("title", ""))
+                text = f"{title}. Le {_fr_datetime(begins)}" + (f", {where}." if where else ".")
+                items[ev["url"]] = {
+                    "id": _id(ev["url"]), "kind": "agenda", "outlet": f"Mobilizon ({instance})",
+                    "title": title[:200], "text": text[:600], "url": ev["url"],
+                    # Date de « parution » = maintenant : la date de l'événement est dans le texte.
+                    "published": now.isoformat(),
+                }
+            time.sleep(0.5)
+    return list(items.values())
+
+
+# --- Bluesky -----------------------------------------------------------------------
+
+def bluesky(state: dict) -> list[dict] | None:
+    """Recherche de publications publiques en français (compte robot requis, sinon None)."""
+    handle, password = os.environ.get("BSKY_HANDLE"), os.environ.get("BSKY_APP_PASSWORD")
+    if not handle or not password:
+        return None
+    r = SESSION.post("https://bsky.social/xrpc/com.atproto.server.createSession",
+                     json={"identifier": handle, "password": password}, timeout=config.HTTP_TIMEOUT)
+    r.raise_for_status()
+    token = r.json()["accessJwt"]
+    since = (datetime.now(timezone.utc) - timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    items: dict[str, dict] = {}
+    for q in config.BLUESKY_QUERIES:
+        try:
+            r = SESSION.get("https://bsky.social/xrpc/app.bsky.feed.searchPosts", timeout=config.HTTP_TIMEOUT,
+                            headers={"Authorization": f"Bearer {token}"},
+                            params={"q": q, "lang": "fr", "since": since, "limit": 100, "sort": "latest"})
+            r.raise_for_status()
+        except requests.RequestException as e:
+            log.warning("Bluesky « %s » : %s", q, e)
+            continue
+        for post in r.json().get("posts", []):
+            text = clean_text((post.get("record") or {}).get("text", ""))
+            uri, author = post.get("uri", ""), (post.get("author") or {}).get("handle", "")
+            if not text or not uri.startswith("at://") or not author:
+                continue
+            # Lien public vers la publication ; on ne conserve ni pseudo ni avatar dans le texte.
+            url = f"https://bsky.app/profile/{author}/post/{uri.rsplit('/', 1)[-1]}"
+            items[url] = {
+                "id": _id(url), "kind": "social", "outlet": "Bluesky", "title": text[:140], "text": text[:600],
+                "url": url, "published": (post.get("indexedAt") or datetime.now(timezone.utc).isoformat())
+                .replace("Z", "+00:00"),
+            }
+        time.sleep(1)
+    return list(items.values())
 
 
 # --- GDELT ------------------------------------------------------------------------

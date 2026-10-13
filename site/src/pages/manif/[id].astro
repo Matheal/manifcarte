@@ -190,7 +190,7 @@ const reliabilityText: Record<number, string> = {
                     <span class="src-title">{s.title}</span>
                   )}
                   <span class="muted small">
-                    {s.outlet}{s.kind === "social" && " · message public"}{s.kind !== "manuel" && <> · {fmtPublished.format(new Date(s.published))}</>}
+                    {s.outlet}{s.kind === "social" && " · message public"}{s.kind === "agenda" && " · agenda / appel"}{s.kind !== "manuel" && <> · {fmtPublished.format(new Date(s.published))}</>}
                   </span>
                 </li>
               ))

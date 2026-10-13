@@ -4,7 +4,7 @@ export interface Source {
   title: string;
   url: string;
   outlet: string;
-  kind: "presse" | "social" | "manuel";
+  kind: "presse" | "social" | "manuel" | "agenda" | "gdelt";
   published: string;
 }
 
@@ -125,8 +125,11 @@ export const SIGNAL_LABEL: Record<string, string> = {
 export const WARN_SIGNALS = new Set(["tensions", "interdite", "non_verifie", "dementi", "annulee"]);
 
 export const SOURCE_LABEL: Record<string, string> = {
-  google_news: "Google News",
-  rss: "Flux RSS de presse",
+  google_news: "Google News (national + 120 villes)",
+  rss: "Flux RSS (presse et sites militants)",
+  demosphere: "Agendas Démosphère",
+  mobilizon: "Agendas Mobilizon",
+  bluesky: "Bluesky",
   mastodon: "Mastodon",
   gdelt: "GDELT (monde)",
   ai: "Analyse IA (Gemini)",
@@ -345,12 +348,37 @@ export function restrictionsFor(e: ManifEvent, all: Restriction[] = []): Restric
 export const REPO_URL: string =
   (import.meta.env.PUBLIC_REPO_URL as string | undefined) || "https://github.com/Matheal/manifcarte";
 
-export type IssueTemplate = "1-ajouter-manif.yml" | "2-signaler-restriction.yml" | "3-supprimer.yml";
+export type IssueTemplate =
+  | "1-ajouter-manif.yml"
+  | "2-signaler-restriction.yml"
+  | "3-supprimer.yml"
+  | "4-signaler-publication.yml";
 
-/** Lien vers un formulaire GitHub pré-rempli (les clés sont les « id » des champs). */
-export function issueUrl(template: IssueTemplate, fields: Record<string, string> = {}): string {
+/** URL du relais « sans compte » (variable GitHub REPORT_ENDPOINT). Vide = formulaires GitHub. */
+export const REPORT_ENDPOINT: string = (import.meta.env.PUBLIC_REPORT_ENDPOINT as string | undefined)?.trim() || "";
+
+const TEMPLATE_TYPE: Record<IssueTemplate, string> = {
+  "1-ajouter-manif.yml": "ajout-manif",
+  "2-signaler-restriction.yml": "restriction",
+  "3-supprimer.yml": "suppression",
+  "4-signaler-publication.yml": "publication",
+};
+
+/** Formulaire GitHub pré-rempli (clés = « id » des champs). */
+export function githubIssueUrl(template: IssueTemplate, fields: Record<string, string> = {}): string {
   const p = new URLSearchParams({ template, ...fields });
   return `${REPO_URL}/issues/new?${p.toString()}`;
+}
+
+/**
+ * Lien de contribution : la page « Signaler » du site (sans compte) si le relais est
+ * configuré, sinon le formulaire GitHub.
+ */
+export function issueUrl(template: IssueTemplate, fields: Record<string, string> = {}): string {
+  if (!REPORT_ENDPOINT) return githubIssueUrl(template, fields);
+  const { title: _title, ...rest } = fields;
+  const p = new URLSearchParams({ type: TEMPLATE_TYPE[template], ...rest });
+  return `${withBase(import.meta.env.BASE_URL, "signaler/")}?${p.toString()}`;
 }
 
 /** Date AAAA-MM-JJ -> JJ/MM/AAAA (format des formulaires). */

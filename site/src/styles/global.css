@@ -83,6 +83,11 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+/* L'attribut hidden doit toujours l'emporter sur les display: flex/grid des composants. */
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   background: var(--bg);

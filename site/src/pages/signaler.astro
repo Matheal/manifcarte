@@ -1,0 +1,266 @@
+---
+import Base from "../layouts/Base.astro";
+import { FORMS, type ReportType } from "../lib/forms";
+import { REPORT_ENDPOINT, githubIssueUrl } from "../lib/shared";
+
+const order: ReportType[] = ["publication", "ajout-manif", "restriction", "suppression"];
+---
+
+<Base title="Signaler" description="Signale une publication (TikTok, Instagram, X…), une mobilisation, une restriction ou une erreur, sans compte.">
+  <div class="container page">
+    <div class="prose">
+      <h1>Signaler</h1>
+      <p class="lede">
+        Une publication TikTok, Instagram ou X qui appelle à manifester, une mobilisation absente de la carte, une
+        restriction ou une erreur ? Signale-la ici. Chaque signalement est <strong>relu par l'équipe</strong> avant
+        d'apparaître.
+      </p>
+    </div>
+
+    <div class="tabs" role="tablist" aria-label="Type de signalement">
+      {
+        order.map((t, i) => (
+          <button class="chip" type="button" role="tab" data-tab={t} aria-selected={i === 0 ? "true" : "false"} aria-pressed={i === 0 ? "true" : "false"}>
+            {FORMS[t].short}
+          </button>
+        ))
+      }
+    </div>
+
+    {
+      REPORT_ENDPOINT ? (
+        <form class="card report" id="report" data-endpoint={REPORT_ENDPOINT} novalidate>
+          {order.map((t, i) => (
+            <fieldset data-form={t} hidden={i !== 0}>
+              <legend>{FORMS[t].name}</legend>
+              {FORMS[t].fields.map((f) => (
+                <label class="field">
+                  <span>
+                    {f.label}
+                    {f.required && <b class="req" aria-hidden="true"> *</b>}
+                  </span>
+                  {f.kind === "textarea" ? (
+                    <textarea name={f.id} rows="4" placeholder={f.placeholder} data-required={f.required ? "1" : undefined} />
+                  ) : f.kind === "select" ? (
+                    <select name={f.id}>{f.options!.map((o) => <option>{o}</option>)}</select>
+                  ) : (
+                    <input name={f.id} type="text" placeholder={f.placeholder} data-required={f.required ? "1" : undefined} autocomplete="off" />
+                  )}
+                  {f.hint && <small class="muted">{f.hint}</small>}
+                </label>
+              ))}
+            </fieldset>
+          ))}
+          {/* Pot de miel : invisible pour les humains. */}
+          <label class="hp" aria-hidden="true">Site web <input name="website" tabindex="-1" autocomplete="off" /></label>
+          <label class="consent">
+            <input type="checkbox" name="consent" />
+            <span>Je n'ai indiqué <strong>aucun nom, pseudo, numéro ou photo</strong> de personne.</span>
+          </label>
+          <p class="small muted">
+            Ton signalement sera publié comme ticket public sur le dépôt GitHub du projet, en attente de validation.
+            Aucune donnée personnelle (ni adresse IP, ni e-mail) n'est enregistrée par ManifCarte.
+          </p>
+          <button class="btn btn-primary" type="submit">Envoyer le signalement</button>
+          <p class="result" id="result" role="status" aria-live="polite" hidden></p>
+        </form>
+      ) : (
+        <div class="card github">
+          {order.map((t, i) => (
+            <div data-form={t} hidden={i !== 0}>
+              <h2>{FORMS[t].name}</h2>
+              <p>Le formulaire s'ouvre sur GitHub (compte gratuit nécessaire).</p>
+              <a class="btn btn-primary" href={githubIssueUrl(FORMS[t].template as never)} target="_blank" rel="noopener">
+                Ouvrir le formulaire →
+              </a>
+            </div>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</Base>
+
+<script>
+  import { FORMS, type ReportType, issueBody } from "../lib/forms";
+
+  const params = new URLSearchParams(location.search);
+  const started = Date.now();
+  let current: ReportType = "publication";
+
+  function show(type: ReportType): void {
+    current = type;
+    document.querySelectorAll<HTMLElement>("[data-form]").forEach((el) => (el.hidden = el.dataset.form !== type));
+    document.querySelectorAll<HTMLButtonElement>("[data-tab]").forEach((b) => {
+      const on = b.dataset.tab === type;
+      b.setAttribute("aria-selected", String(on));
+      b.setAttribute("aria-pressed", String(on));
+    });
+  }
+
+  document.querySelectorAll<HTMLButtonElement>("[data-tab]").forEach((b) =>
+    b.addEventListener("click", () => show(b.dataset.tab as ReportType)),
+  );
+
+  // Pré-remplissage depuis une fiche : ?type=suppression&lien=…
+  const initial = params.get("type") as ReportType | null;
+  if (initial && initial in FORMS) {
+    show(initial);
+    const fs = document.querySelector<HTMLElement>(`fieldset[data-form="${initial}"]`);
+    params.forEach((value, key) => {
+      const el = fs?.querySelector<HTMLInputElement | HTMLTextAreaElement>(`[name="${key}"]`);
+      if (el && key !== "type") el.value = value;
+    });
+  }
+
+  const form = document.getElementById("report") as HTMLFormElement | null;
+  const result = document.getElementById("result");
+
+  function say(text: string, ok: boolean): void {
+    if (!result) return;
+    result.hidden = false;
+    result.className = `result ${ok ? "ok" : "err"}`;
+    result.textContent = text;
+  }
+
+  form?.addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    const fs = form.querySelector<HTMLElement>(`fieldset[data-form="${current}"]`)!;
+    const values: Record<string, string> = {};
+    let missing = "";
+    fs.querySelectorAll<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>("[name]").forEach((el) => {
+      values[el.name] = el.value.trim();
+      if (el.dataset.required && !el.value.trim() && !missing) missing = el.closest("label")!.querySelector("span")!.textContent!.replace("*", "").trim();
+    });
+    if (missing) return say(`Le champ « ${missing} » est obligatoire.`, false);
+    if (!(form.elements.namedItem("consent") as HTMLInputElement).checked) {
+      return say("Coche la case : aucune information personnelle.", false);
+    }
+    const def = FORMS[current];
+    const summary = values.ville || values.lien || values.texte || "";
+    const button = form.querySelector<HTMLButtonElement>("button[type=submit]")!;
+    button.disabled = true;
+    say("Envoi en cours…", true);
+    try {
+      // text/plain évite la requête préalable CORS, refusée par Google Apps Script.
+      const res = await fetch(form.dataset.endpoint!, {
+        method: "POST",
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({
+          type: current,
+          title: `${def.titlePrefix} ${summary}`.slice(0, 120),
+          body: issueBody(def, values),
+          website: (form.elements.namedItem("website") as HTMLInputElement).value,
+          elapsed: Date.now() - started,
+        }),
+      });
+      const data = await res.json();
+      if (!data.ok) throw new Error(data.error);
+      form.reset();
+      say(`Merci ! Ton signalement (n° ${data.number}) a bien été reçu. Il apparaîtra sur la carte une fois validé par l'équipe.`, true);
+    } catch (err) {
+      say((err as Error).message || "L'envoi a échoué. Réessaie dans quelques minutes.", false);
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+
+<style>
+  .tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 24px 0 12px;
+  }
+  .report,
+  .github {
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  legend {
+    font-family: var(--font-display);
+    font-weight: 750;
+    font-size: 1.2rem;
+    margin-bottom: 4px;
+  }
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  .field small {
+    font-weight: 400;
+  }
+  .req {
+    color: var(--accent);
+  }
+  input[type="text"],
+  textarea,
+  .field select {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    font-weight: 400;
+  }
+  .field select {
+    height: 44px;
+  }
+  textarea {
+    resize: vertical;
+  }
+  .hp {
+    position: absolute;
+    left: -9999px;
+  }
+  .consent {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 0.92rem;
+  }
+  .consent input {
+    margin-top: 4px;
+  }
+  .report .btn-primary {
+    align-self: flex-start;
+    height: 46px;
+    padding: 0 22px;
+  }
+  .result {
+    margin: 0;
+    padding: 12px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+  }
+  .result.ok {
+    background: color-mix(in srgb, var(--verified) 14%, transparent);
+    color: var(--verified);
+  }
+  .result.err {
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    color: var(--accent);
+  }
+  .github h2 {
+    margin: 0;
+  }
+  .github p {
+    color: var(--text-2);
+  }
+</style>
