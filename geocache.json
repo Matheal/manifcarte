@@ -34,7 +34,15 @@
 ],
 "Centre hospitalier universitaire de Reims|Reims": null,
 "Centre-ville|Foix": null,
+"Cesame|Angers": [
+47.42203,
+-0.56309
+],
 "Conseil des prud'hommes de montpellier|Montpellier": null,
+"Cours de Vincennes|Paris": [
+48.84701,
+2.41082
+],
 "Eaux-ClaireS|Grenoble": [
 45.17666,
 5.70895
@@ -51,9 +59,17 @@
 49.53765,
 5.7816
 ],
+"Hôpital de Montauban|Montauban": [
+44.02318,
+1.35092
+],
 "Hôpital|Saint-Nazaire": [
 47.27549,
 -2.21719
+],
+"IUT de Dijon|Dijon": [
+47.30993,
+5.06876
 ],
 "IUT, Enssat, lycée Félix-Le-Dantec|Lannion": null,
 "Institut d'urbanisme et de géographie alpine|Grenoble": [
@@ -134,6 +150,7 @@
 46.66724,
 -1.44738
 ],
+"Lycée Paul-Eluard|Saint-Denis": null,
 "Lycée Pothier|Orléans": [
 47.90916,
 1.90943
@@ -240,6 +257,7 @@
 5.4357
 ],
 "Siège du Groupe ADP|Tremblay-en-France": null,
+"Stanley Tools|Besançon": null,
 "Universite de Nantes|Nantes": [
 47.24546,
 -1.55199
@@ -268,6 +286,11 @@
 42.68217,
 2.8991
 ],
+"Université du Mans|Le Mans": [
+48.00922,
+0.15787
+],
+"Voie ferrée|Hennebont": null,
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
 5.92335
@@ -277,6 +300,10 @@
 1.4495
 ],
 "bourse du travail|Villeurbanne": null,
+"campus Moulins|Lille": [
+50.61833,
+3.05382
+],
 "campus Tertre|Nantes": [
 47.24734,
 -1.5506
@@ -289,6 +316,7 @@
 49.45883,
 1.06767
 ],
+"campus de l'UBO|Quimper": null,
 "centre Assas|Paris": [
 48.84957,
 2.38612
@@ -369,6 +397,7 @@
 47.90106,
 1.90284
 ],
+"devant la préfecture|Quimper": null,
 "fac du Mirail|Toulouse": null,
 "faculté de pharmacie de Paris|Paris": [
 48.84315,
@@ -412,6 +441,10 @@
 4.0078
 ],
 "lycée Aristide Briand|Saint-Nazaire": [
+47.27281,
+-2.2338
+],
+"lycée Aristide-Briand|Saint-Nazaire": [
 47.27281,
 -2.2338
 ],
@@ -466,6 +499,10 @@
 43.67084,
 7.1486
 ],
+"lycée François-Truffaut|Challans": [
+46.8534,
+-1.87021
+],
 "lycée Georges-Brassens|Rive-de-Gier": [
 45.53319,
 4.60543
@@ -497,6 +534,10 @@
 "lycée Langevin|Beauvais": [
 49.41463,
 2.10875
+],
+"lycée Libergier|Reims": [
+49.25096,
+4.02751
 ],
 "lycée Loritz|Nancy": [
 48.69118,
@@ -577,6 +618,10 @@
 48.59895,
 -3.81765
 ],
+"lycée Victor-Grignard|Cherbourg-en-Cotentin": [
+49.63894,
+-1.62965
+],
 "lycée d'Angers|Angers": [
 47.47074,
 -0.59143
@@ -618,6 +663,10 @@
 "maison des syndicats|Chalon-sur-Saône": [
 46.78685,
 4.85899
+],
+"passage Pasteur|Besançon": [
+47.23863,
+6.02114
 ],
 "place Albert 1er|Montpellier": [
 43.61576,
@@ -703,6 +752,10 @@
 43.29605,
 -0.36948
 ],
+"pôle universitaire|Quimper": [
+47.9724,
+-4.09353
+],
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
 0.24084
@@ -716,6 +769,7 @@
 43.57765,
 1.44575
 ],
+"rond-point du pont de Camélat et préfecture|Agen": null,
 "rue Saint Georges|Nancy": [
 48.69239,
 6.18761
@@ -751,6 +805,10 @@
 -1.55199
 ],
 "École des Mines|Paris": null,
+"École des Mines|Saint-Étienne": [
+45.42388,
+4.40806
+],
 "école du Schluthfeld|Strasbourg": [
 48.56781,
 7.74915
