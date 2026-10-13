@@ -214,11 +214,16 @@ def mobilizon() -> list[dict]:
 
 def bluesky(state: dict) -> list[dict] | None:
     """Recherche de publications publiques en français (compte robot requis, sinon None)."""
-    handle, password = os.environ.get("BSKY_HANDLE"), os.environ.get("BSKY_APP_PASSWORD")
+    # Tolère les erreurs de saisie courantes : « @ » devant l'identifiant, espaces, retour à la ligne.
+    handle = (os.environ.get("BSKY_HANDLE") or "").strip().lstrip("@").strip()
+    password = (os.environ.get("BSKY_APP_PASSWORD") or "").strip()
     if not handle or not password:
         return None
     r = SESSION.post("https://bsky.social/xrpc/com.atproto.server.createSession",
                      json={"identifier": handle, "password": password}, timeout=config.HTTP_TIMEOUT)
+    if r.status_code == 401:
+        raise RuntimeError("Bluesky refuse la connexion : vérifie BSKY_HANDLE (sans @) "
+                           "et BSKY_APP_PASSWORD (mot de passe d'application, pas celui du compte)")
     r.raise_for_status()
     token = r.json()["accessJwt"]
     since = (datetime.now(timezone.utc) - timedelta(days=2)).strftime("%Y-%m-%dT%H:%M:%SZ")
