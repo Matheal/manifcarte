@@ -212,6 +212,10 @@
 47.32355,
 5.04148
 ],
+"centre-ville|Grenoble": [
+45.1902,
+5.71495
+],
 "centre-ville|Lyon": [
 45.79926,
 4.8479
@@ -244,11 +248,19 @@
 48.73142,
 -3.45163
 ],
+"cours de Vincennes|Paris": [
+48.84771,
+2.40278
+],
 "de Gaulle|Orléans": [
 47.90106,
 1.90284
 ],
 "fac du Mirail|Toulouse": null,
+"faculté de pharmacie de Paris|Paris": [
+48.84315,
+2.33534
+],
 "gare d'Auch|Auch": [
 43.64727,
 0.59674
@@ -287,6 +299,10 @@
 43.12566,
 5.92621
 ],
+"lycée Branly|Dreux": [
+48.73189,
+1.37866
+],
 "lycée Camille-Claudel|Caen": [
 49.20402,
 -0.3851
@@ -315,6 +331,10 @@
 "lycée Jean Moulin|Béziers": [
 43.34117,
 3.23559
+],
+"lycée Jean Vigo|Millau": [
+44.09423,
+3.05518
 ],
 "lycée Jeanne-d'Arc|Nancy": [
 48.69269,
@@ -352,6 +372,7 @@
 44.80912,
 -0.64936
 ],
+"lycée Paul-Eluard|Saint-Denis": null,
 "lycée Paul-Guérin|Niort": [
 46.31576,
 -0.44119
@@ -407,6 +428,10 @@
 "place Déliot|Lille": [
 50.61938,
 3.06743
+],
+"place Kléber|Strasbourg": [
+48.58331,
+7.74596
 ],
 "place Saint-Anne|Rennes": null,
 "place Sainte-Anne|Rennes": [
