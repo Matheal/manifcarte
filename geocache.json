@@ -15,6 +15,10 @@
 50.61292,
 3.03649
 ],
+"CO'Met|Orléans": [
+47.8747,
+1.91312
+],
 "Campo Santo|Perpignan": [
 42.70021,
 2.89751
@@ -31,6 +35,10 @@
 "Campus|Grenoble": [
 45.19114,
 5.77005
+],
+"Carrefour Courtine|Avignon": [
+43.92829,
+4.79335
 ],
 "Centre Jean Richepin|Clermont-Ferrand": [
 45.78155,
@@ -57,6 +65,14 @@
 5.70895
 ],
 "Faculté de lettres|Metz": null,
+"Gare d'Amiens|Amiens": [
+49.89322,
+2.28344
+],
+"Gare|Amiens": [
+49.89322,
+2.28344
+],
 "Gare|Lyon": [
 45.7704,
 4.9542
@@ -77,6 +93,7 @@
 47.27549,
 -2.21719
 ],
+"Hôtel L'Imperator|Nîmes": null,
 "Hôtel de Ville|Paris": [
 48.85643,
 2.35253
@@ -133,6 +150,10 @@
 47.65485,
 -2.09309
 ],
+"Lycée Berthelot|Châtellerault": [
+46.81544,
+0.54077
+],
 "Lycée Charles Péguy|Orléans": [
 47.88872,
 1.89726
@@ -152,6 +173,10 @@
 "Lycée Galilée|Guérande": [
 47.3302,
 -2.41858
+],
+"Lycée Hélène-Boucher|Paris": [
+48.84831,
+2.40717
 ],
 "Lycée Jean Macé|Rennes": [
 48.11709,
@@ -202,6 +227,14 @@
 45.72999,
 4.86657
 ],
+"Miroir d'eau|Nantes": [
+47.21503,
+-1.54908
+],
+"Nanterre-Université|Nanterre": [
+48.90105,
+2.21336
+],
 "Nantes Université|Nantes": [
 47.24546,
 -1.55199
@@ -246,6 +279,10 @@
 "Quai Zola|Rennes": [
 48.10986,
 -1.67716
+],
+"Raffinerie de Normandie|Gonfreville-l'Orcher": [
+49.48802,
+0.24084
 ],
 "Rectorat|Dijon": [
 47.3185,
@@ -421,6 +458,10 @@
 47.27392,
 -2.22329
 ],
+"collège Alexandre Macal|Saint-François": [
+16.25081,
+-61.28766
+],
 "commissariat|Dunkerque": [
 51.01293,
 2.30648
@@ -456,6 +497,10 @@
 43.64727,
 0.59674
 ],
+"gare de Lyon|Paris": [
+48.84366,
+2.37449
+],
 "gare|Arras": [
 50.28777,
 2.78266
@@ -465,6 +510,10 @@
 5.7816
 ],
 "hôtels de ville|Vannes": null,
+"inspection académique|Rennes": [
+48.11046,
+-1.67217
+],
 "l'Écusson|Montpellier": [
 43.61084,
 3.87659
@@ -524,6 +573,10 @@
 47.88872,
 1.89726
 ],
+"lycée Charles-de-Gaulle|Rosny-sous-Bois": [
+48.86225,
+2.4904
+],
 "lycée Charles|Rosny-sous-Bois": [
 48.86225,
 2.4904
@@ -558,9 +611,14 @@
 7.1486
 ],
 "lycée Ferdinand Daguin|Mérignac": null,
+"lycée François Premier|Le Havre": null,
 "lycée François-Truffaut|Challans": [
 46.8534,
 -1.87021
+],
+"lycée Gabriel-Fauré|Foix": [
+42.9618,
+1.60488
 ],
 "lycée Georges-Brassens|Rive-de-Gier": [
 45.53319,
@@ -746,6 +804,10 @@
 46.78685,
 4.85899
 ],
+"maison des syndicats|Le Havre": [
+49.49793,
+0.12747
+],
 "passage Pasteur|Besançon": [
 47.23863,
 6.02114
@@ -849,6 +911,10 @@
 47.88078,
 2.70553
 ],
+"plage des Minimes|La Rochelle": [
+46.14074,
+-1.171
+],
 "port de Vannes|Vannes": [
 47.64878,
 -2.75798
@@ -919,6 +985,7 @@
 47.24546,
 -1.55199
 ],
+"voies sur berges|Angers": null,
 "École des Mines|Paris": null,
 "École des Mines|Saint-Étienne": [
 45.42388,
@@ -931,5 +998,6 @@
 "école du Schluthfeld|Strasbourg": [
 48.56781,
 7.74915
-]
+],
+"écoles primaires|Saint-Joseph": null
 }
