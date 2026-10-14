@@ -11,6 +11,10 @@
 45.43315,
 4.38772
 ],
+"CCVA|Villeurbanne": [
+45.76761,
+4.88765
+],
 "CHIMM|Les Mureaux": null,
 "CHU de Lille|Lille": [
 50.61292,
@@ -52,6 +56,10 @@
 ],
 "Centre hospitalier universitaire de Reims|Reims": null,
 "Centre-ville|Foix": null,
+"Centre-ville|Grenoble": [
+45.1902,
+5.71495
+],
 "Centre|Strasbourg": [
 48.58263,
 7.74755
@@ -59,6 +67,10 @@
 "Cesame|Angers": [
 47.42203,
 -0.56309
+],
+"Château des Ducs|Chambéry": [
+45.56546,
+5.91643
 ],
 "Cimetière de Thiais|Thiais": [
 48.76106,
@@ -79,6 +91,10 @@
 5.70895
 ],
 "Faculté de lettres|Metz": null,
+"Foch|Nantes": [
+47.21932,
+-1.55026
+],
 "Gare d'Amiens|Amiens": [
 49.89322,
 2.28344
@@ -289,6 +305,7 @@
 45.72999,
 4.86657
 ],
+"Metro Jean Jaurès|Toulouse": null,
 "Miroir d'eau|Nantes": [
 47.21503,
 -1.54908
@@ -310,6 +327,7 @@
 48.59748,
 7.76989
 ],
+"Parvis de la gare matabiau|Toulouse": null,
 "Place Albert 1er|Montpellier": [
 43.61576,
 3.87444
@@ -379,6 +397,10 @@
 43.52562,
 5.44481
 ],
+"Rue de Créqui|Lyon": [
+45.76437,
+4.84691
+],
 "Réformés|Marseille": [
 43.29882,
 5.38592
@@ -408,6 +430,10 @@
 "Théâtre de Verdure|Nice": [
 43.69563,
 7.26779
+],
+"UTT|Troyes": [
+48.26908,
+4.0665
 ],
 "Universite de Nantes|Nantes": [
 47.24546,
@@ -446,6 +472,7 @@
 0.152
 ],
 "Voie ferrée|Hennebont": null,
+"Voies sur berges et grands boulevards|Angers": null,
 "avenue Félix Faure|Villeurbanne": [
 45.75569,
 4.8758
@@ -529,6 +556,10 @@
 45.79926,
 4.8479
 ],
+"centre-ville|Marseille": [
+43.27471,
+5.4236
+],
 "centre-ville|Metz": [
 49.10899,
 6.17734
@@ -540,6 +571,10 @@
 "centre-ville|Nantes": [
 47.21484,
 -1.55794
+],
+"centre-ville|Niort": [
+46.31941,
+-0.45468
 ],
 "centre-ville|Poitiers": [
 46.56597,
@@ -557,6 +592,7 @@
 47.65578,
 -2.09402
 ],
+"cité scolaire Paul-Valéry|Sète": null,
 "cité scolaire de Saint-Nazaire|Saint-Nazaire": [
 47.27392,
 -2.22329
@@ -877,6 +913,10 @@
 48.89315,
 2.41039
 ],
+"lycée St Exupéry|Créteil": [
+48.78346,
+2.46258
+],
 "lycée Thiers|Marseille": [
 43.29757,
 5.38308
@@ -892,6 +932,10 @@
 "lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
+],
+"lycée Victor Hugo|Colomiers": [
+43.61588,
+1.30948
 ],
 "lycée Victor-Grignard|Cherbourg-en-Cotentin": [
 49.63894,
@@ -1138,11 +1182,16 @@
 "services de l'Éducation nationale|Niort": null,
 "siège de la Région Grand Est|Strasbourg": null,
 "siège du MEDEF|Lille": null,
+"tribunal de Besançon|Besançon": [
+47.2317,
+6.02511
+],
 "tribunal judiciaire|Toulouse": [
 43.59374,
 1.44513
 ],
 "université Bordeaux Montesquieu|Bordeaux": null,
+"université Bordeaux Montesquieu|Pessac": null,
 "université Lyon 2|Lyon": [
 45.75161,
 4.83726
@@ -1160,6 +1209,10 @@
 50.63217,
 3.04612
 ],
+"université d'Avignon|Avignon": [
+43.9497,
+4.81602
+],
 "université de Nanterre|Nanterre": [
 48.90122,
 2.21347
@@ -1168,6 +1221,7 @@
 47.24546,
 -1.55199
 ],
+"usine Durkopp|Vierzon": null,
 "voies sur berges|Angers": null,
 "École des Mines|Paris": null,
 "École des Mines|Saint-Étienne": [
