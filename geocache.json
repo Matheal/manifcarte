@@ -99,6 +99,10 @@
 43.29636,
 -0.37298
 ],
+"Hôpital Sud|Rennes": [
+48.08299,
+-1.65303
+],
 "Hôpital d'Albi|Albi": [
 43.88433,
 2.03504
@@ -114,6 +118,10 @@
 "Hôpital|Saint-Nazaire": [
 47.27549,
 -2.21719
+],
+"Hôtel Imperator|Nîmes": [
+43.83855,
+4.35272
 ],
 "Hôtel L'Imperator|Nîmes": null,
 "Hôtel de Ville|Paris": [
@@ -200,6 +208,10 @@
 43.83544,
 4.35722
 ],
+"Lycée Descartes|Tours": [
+47.39187,
+0.68921
+],
 "Lycée Galilée|Guérande": [
 47.3302,
 -2.41858
@@ -219,6 +231,10 @@
 "Lycée Julien-Gracq|Beaupréau-en-Mauges": [
 47.1927,
 -0.99278
+],
+"Lycée Kléber|Strasbourg": [
+48.59401,
+7.75769
 ],
 "Lycée Langevin|Beauvais": [
 49.41463,
@@ -342,6 +358,10 @@
 48.10986,
 -1.67716
 ],
+"Quai d'Orsay|Paris": [
+48.86186,
+2.31593
+],
 "Raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
 0.24084
@@ -439,6 +459,14 @@
 1.4495
 ],
 "bourse du travail|Villeurbanne": null,
+"bâtiment Gabriel|Dijon": [
+47.31597,
+5.06573
+],
+"campus 1 et 2|Caen": [
+49.19187,
+-0.30335
+],
 "campus Moulins|Lille": [
 50.61833,
 3.05382
@@ -464,6 +492,7 @@
 47.24872,
 -1.55261
 ],
+"campus sud de santé|Amiens": null,
 "centre Assas|Paris": [
 48.84957,
 2.38612
@@ -499,6 +528,10 @@
 "centre-ville|Lyon": [
 45.79926,
 4.8479
+],
+"centre-ville|Metz": [
+49.10899,
+6.17734
 ],
 "centre-ville|Nancy": [
 48.68963,
@@ -651,6 +684,10 @@
 "lycée Camille-Claudel|Caen": [
 49.20402,
 -0.3851
+],
+"lycée Camille-Pissarro|Pontoise": [
+49.05589,
+2.09001
 ],
 "lycée Charles Péguy|Orléans": [
 47.88872,
@@ -920,6 +957,10 @@
 49.49793,
 0.12747
 ],
+"miroir d'eau|Nantes": [
+47.21503,
+-1.54908
+],
 "passage Pasteur|Besançon": [
 47.23863,
 6.02114
@@ -1007,6 +1048,10 @@
 47.32661,
 5.04501
 ],
+"place de la République|Paris": [
+48.86754,
+2.36396
+],
 "place de la Révolution|Besançon": [
 47.24003,
 6.02238
@@ -1030,6 +1075,10 @@
 "place du Pâtis|Montargis": [
 47.88078,
 2.70553
+],
+"place du Vigan|Albi": [
+43.9273,
+2.14781
 ],
 "plage des Minimes|La Rochelle": [
 46.14074,
@@ -1089,6 +1138,10 @@
 "services de l'Éducation nationale|Niort": null,
 "siège de la Région Grand Est|Strasbourg": null,
 "siège du MEDEF|Lille": null,
+"tribunal judiciaire|Toulouse": [
+43.59374,
+1.44513
+],
 "université Bordeaux Montesquieu|Bordeaux": null,
 "université Lyon 2|Lyon": [
 45.75161,
@@ -1102,6 +1155,10 @@
 "université Rennes|Rennes": [
 48.11938,
 -1.70149
+],
+"université catholique|Lille": [
+50.63217,
+3.04612
 ],
 "université de Nanterre|Nanterre": [
 48.90122,
