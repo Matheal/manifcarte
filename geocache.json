@@ -1,4 +1,8 @@
 {
+"Assemblée nationale|Paris": [
+48.86178,
+2.31798
+],
 "Avenue des Gobelins|Paris": [
 48.83423,
 2.35365
@@ -193,6 +197,10 @@
 47.20446,
 -1.6091
 ],
+"Lycée Alcide-d'Orbigny|Bouaye": [
+47.15575,
+-1.67994
+],
 "Lycée Aristide-Briand|Saint-Nazaire": [
 47.27281,
 -2.2338
@@ -233,9 +241,17 @@
 43.83544,
 4.35722
 ],
+"Lycée Dautet|La Rochelle": [
+46.16541,
+-1.15352
+],
 "Lycée Descartes|Tours": [
 47.39187,
 0.68921
+],
+"Lycée Galilée|Gennevilliers": [
+48.92146,
+2.3042
 ],
 "Lycée Galilée|Guérande": [
 47.3302,
@@ -287,11 +303,23 @@
 1.90943
 ],
 "Lycée Rosa-Parks|Saint-Denis": null,
+"Lycée Saint-Cricq|Pau": [
+43.29909,
+-0.35908
+],
+"Lycée Saint-Exupéry|Marseille": [
+43.34733,
+5.35523
+],
 "Lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
 ],
 "Lycée Voltaire et Gauguin|Orléans": null,
+"Lycée de Bouaye|Bouaye": [
+47.15399,
+-1.68086
+],
 "Lycée de Pornic|Pornic": [
 47.12143,
 -2.08662
@@ -461,6 +489,10 @@
 47.31331,
 5.06886
 ],
+"Université Lyon 2|Lyon": [
+45.75161,
+4.83726
+],
 "Université Toulouse-Jean-Jaurès|Toulouse": [
 43.57838,
 1.401
@@ -539,6 +571,7 @@
 -1.55261
 ],
 "campus sud de santé|Amiens": null,
+"campus universitaire|Toulon": null,
 "centre Assas|Paris": [
 48.84957,
 2.38612
@@ -668,6 +701,10 @@
 43.64727,
 0.59674
 ],
+"gare d'Hennebont|Hennebont": [
+47.79923,
+-3.28752
+],
 "gare de Lyon|Paris": [
 48.84366,
 2.37449
@@ -675,6 +712,10 @@
 "gare|Arras": [
 50.28777,
 2.78266
+],
+"giratoire de Lanester|Lanester": [
+47.75973,
+-3.33086
 ],
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
@@ -693,6 +734,7 @@
 43.59216,
 1.41803
 ],
+"lyc&eacute;es|Caen": null,
 "lycee Jeanne-d'Arc|Nancy": [
 48.69269,
 6.18609
@@ -1010,6 +1052,7 @@
 2.3042
 ],
 "magasin Castorama|Antibes": null,
+"magasin d'Antibes|Antibes": null,
 "mairie de Vannes|Vannes": [
 47.65837,
 -2.76093
