@@ -15,6 +15,10 @@
 45.43315,
 4.38772
 ],
+"Bourse du travail|Toulon": [
+43.12921,
+5.92588
+],
 "CCI de Brive|Brive-la-Gaillarde": null,
 "CCVA|Villeurbanne": [
 45.76761,
@@ -46,6 +50,10 @@
 2.36602
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
+"Campus de la Doua|Villeurbanne": [
+45.78316,
+4.87117
+],
 "Campus sud de santé|Amiens": null,
 "Campus|Grenoble": [
 45.19114,
@@ -103,6 +111,10 @@
 "Foch|Nantes": [
 47.21932,
 -1.55026
+],
+"Gare Saint-Lazare|Paris": [
+48.87704,
+2.32507
 ],
 "Gare d'Amiens|Amiens": [
 49.89322,
@@ -201,6 +213,10 @@
 47.15575,
 -1.67994
 ],
+"Lycée Appert|Orvault": [
+47.25162,
+-1.61086
+],
 "Lycée Aristide-Briand|Saint-Nazaire": [
 47.27281,
 -2.2338
@@ -281,6 +297,7 @@
 49.41463,
 2.10875
 ],
+"Lycée Louis Berthollet|Annecy": null,
 "Lycée Malherbe|Caen": [
 49.17512,
 -0.3724
@@ -298,6 +315,10 @@
 1.44185
 ],
 "Lycée Paul-Eluard|Saint-Denis": null,
+"Lycée Pierre et Marie Curie|Menton": [
+43.77646,
+7.48527
+],
 "Lycée Pothier|Orléans": [
 47.90916,
 1.90943
@@ -348,6 +369,10 @@
 4.86657
 ],
 "Metro Jean Jaurès|Toulouse": null,
+"Mindin|Saint-Brevin-les-Pins": [
+47.26709,
+-2.16747
+],
 "Miroir d'eau|Nantes": [
 47.21503,
 -1.54908
@@ -406,6 +431,10 @@
 43.60869,
 3.87992
 ],
+"Place des Terreaux|Lyon": [
+45.76749,
+4.83349
+],
 "Place du Vigan|Albi": [
 43.9273,
 2.14781
@@ -414,6 +443,7 @@
 43.29605,
 -0.36948
 ],
+"Pôle juridique et judiciaire|Bordeaux": null,
 "Quai Zola|Rennes": [
 48.10986,
 -1.67716
@@ -439,6 +469,7 @@
 1.44575
 ],
 "Rond point du Casino|Boulogne-sur-Mer": null,
+"Rond-point de la Patte d'Oie|Blois": null,
 "Rotonde|Aix-en-Provence": [
 43.52562,
 5.44481
@@ -545,6 +576,7 @@
 -0.30335
 ],
 "campus Bradois ingénierie|Nancy": null,
+"campus Montesquieu|Pessac": null,
 "campus Moulins|Lille": [
 50.61833,
 3.05382
@@ -640,6 +672,10 @@
 47.27483,
 -2.19795
 ],
+"centre-ville|Toulouse": [
+43.63323,
+1.41782
+],
 "cité scolaire Beaumont|Redon": [
 47.65578,
 -2.09402
@@ -652,6 +688,10 @@
 "collège Alexandre Macal|Saint-François": [
 16.25081,
 -61.28766
+],
+"commissariat de La Courneuve|La Courneuve": [
+48.92841,
+2.39014
 ],
 "commissariat|Dunkerque": [
 51.01293,
@@ -927,6 +967,10 @@
 "lycée Marquette|Pont-à-Mousson": [
 48.90593,
 6.05718
+],
+"lycée Marseilleveyre|Marseille": [
+43.24022,
+5.37744
 ],
 "lycée Michelis|Amiens": [
 49.88933,
@@ -1234,6 +1278,7 @@
 43.57765,
 1.44575
 ],
+"rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "rue Saint Georges|Nancy": [
 48.69239,
@@ -1249,7 +1294,12 @@
 ],
 "services de l'Éducation nationale|Niort": null,
 "siège de la Région Grand Est|Strasbourg": null,
+"siège de la Région|Strasbourg": null,
 "siège du MEDEF|Lille": null,
+"sous-préfecture de Vendôme|Vendôme": [
+47.79243,
+1.06669
+],
 "tribunal de Besançon|Besançon": [
 47.2317,
 6.02511
