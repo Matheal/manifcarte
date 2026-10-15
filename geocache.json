@@ -29,9 +29,17 @@
 4.88765
 ],
 "CHIMM|Les Mureaux": null,
+"CHU de Besançon|Besançon": [
+47.22504,
+5.96219
+],
 "CHU de Lille|Lille": [
 50.61292,
 3.03649
+],
+"CNSMDP|Paris": [
+48.88906,
+2.39081
 ],
 "CO'Met|Orléans": [
 47.8747,
@@ -59,6 +67,11 @@
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
 "Campus de Sciences Po Menton|Menton": null,
+"Campus de Sciences Po|Menton": null,
+"Campus de Villejean|Rennes": [
+48.11874,
+-1.70215
+],
 "Campus de la Doua|Villeurbanne": [
 45.78316,
 4.87117
@@ -145,6 +158,10 @@
 49.89322,
 2.28344
 ],
+"Gare de Lyon|Paris": [
+48.84468,
+2.37377
+],
 "Gare|Amiens": [
 49.89322,
 2.28344
@@ -194,6 +211,10 @@
 50.29119,
 2.77713
 ],
+"IRTS|Montpellier": [
+43.60139,
+3.83105
+],
 "IUT de Dijon|Dijon": [
 47.30993,
 5.06876
@@ -225,6 +246,7 @@
 44.13421,
 4.08008
 ],
+"L'Imperator|Nîmes": null,
 "L'Écusson|Montpellier": [
 43.61084,
 3.87659
@@ -310,6 +332,10 @@
 47.39187,
 0.68921
 ],
+"Lycée Faidherbe|Lille": [
+50.61484,
+3.07842
+],
 "Lycée Galilée|Gennevilliers": [
 48.92146,
 2.3042
@@ -333,6 +359,10 @@
 "Lycée Jean-Baptiste-Dumas|Alès": [
 44.13009,
 4.07548
+],
+"Lycée Jules-Lesven|Brest": [
+48.40644,
+-4.48091
 ],
 "Lycée Julien-Gracq|Beaupréau-en-Mauges": [
 47.1927,
@@ -450,6 +480,10 @@
 -1.55199
 ],
 "Orléans td|Orléans": null,
+"PSA Aulnay|Aulnay-sous-Bois": [
+48.94992,
+2.52194
+],
 "Papillons Blancs|Dunkerque": null,
 "Parc Expo|Mulhouse": [
 47.76479,
@@ -499,6 +533,10 @@
 "Place de la Liberté|Brest": [
 48.39072,
 -4.48582
+],
+"Place de la République|Bordeaux": [
+44.83489,
+-0.57988
 ],
 "Place de la République|Paris": [
 48.86754,
@@ -612,6 +650,10 @@
 45.75161,
 4.83726
 ],
+"Université Rennes 2|Rennes": [
+48.11932,
+-1.7015
+],
 "Université Toulouse 1 Capitole|Toulouse": [
 43.60728,
 1.43943
@@ -639,6 +681,10 @@
 "Université de Perpignan|Perpignan": [
 42.68217,
 2.8991
+],
+"Université de Toulon|Toulon": [
+43.13541,
+6.01616
 ],
 "Université du Mans|Le Mans": [
 48.00922,
@@ -712,6 +758,10 @@
 "centre-ville|Antibes": [
 43.58577,
 7.11927
+],
+"centre-ville|Avignon": [
+44.01104,
+4.87211
 ],
 "centre-ville|Bordeaux": [
 44.84113,
@@ -839,6 +889,7 @@
 "devant la mairie|Saint-Denis": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
+"devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus|Vitry-sur-Seine": null,
@@ -1054,6 +1105,10 @@
 48.69269,
 6.18609
 ],
+"lycée Joseph-Loth|Pontivy": [
+48.06598,
+-2.96372
+],
 "lycée Jules-Lesven|Brest": [
 48.40644,
 -4.48091
@@ -1067,6 +1122,7 @@
 49.41463,
 2.10875
 ],
+"lycée Les Iris|Gradignan": null,
 "lycée Lesage|Vannes": [
 47.6471,
 -2.77448
@@ -1217,6 +1273,10 @@
 0.30968
 ],
 "lycée du Parc Saint-Jean|Toulon": null,
+"lycée du Pays de Retz|Pornic": [
+47.12143,
+-2.08662
+],
 "lycée polyvalent Mermoz|Montpellier": [
 43.61107,
 3.89235
@@ -1252,6 +1312,10 @@
 "miroir d'eau|Nantes": [
 47.21503,
 -1.54908
+],
+"palais de justice|Saint-Nazaire": [
+47.27908,
+-2.21509
 ],
 "passage Pasteur|Besançon": [
 47.23863,
@@ -1437,6 +1501,7 @@
 "rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point de la rocade|Arques": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
+"ronds-points|La Valette-du-Var": null,
 "rue Saint Georges|Nancy": [
 48.69239,
 6.18761
@@ -1493,6 +1558,10 @@
 2.21347
 ],
 "université de Nantes|Nantes": [
+47.24546,
+-1.55199
+],
+"université|Nantes": [
 47.24546,
 -1.55199
 ],
