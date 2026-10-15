@@ -11,6 +11,7 @@
 45.43315,
 4.38772
 ],
+"CCI de Brive|Brive-la-Gaillarde": null,
 "CCVA|Villeurbanne": [
 45.76761,
 4.88765
@@ -77,6 +78,10 @@
 2.37649
 ],
 "Conseil des prud'hommes de montpellier|Montpellier": null,
+"Conservatoire d'Orléans|Orléans": [
+47.83827,
+1.93715
+],
 "Cours de Vincennes|Paris": [
 48.84701,
 2.41082
@@ -216,6 +221,10 @@
 43.60216,
 3.87353
 ],
+"Lycée Cornouaille|Quimper": [
+47.99012,
+-4.12386
+],
 "Lycée Cyfflé|Nancy": [
 48.68656,
 6.18211
@@ -287,7 +296,12 @@
 47.12143,
 -2.08662
 ],
+"Lycée des Bourdonnières|Nantes": [
+47.18674,
+-1.52138
+],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
+"Lycées Rimbaud et Latécoère|Istres": null,
 "Mairie de Saint-Nazaire|Saint-Nazaire": [
 47.18269,
 -2.14802
@@ -381,6 +395,10 @@
 2.31593
 ],
 "Raffinerie de Normandie|Gonfreville-l'Orcher": [
+49.48802,
+0.24084
+],
+"Raffinerie de Normandie|Le Havre": [
 49.48802,
 0.24084
 ],
@@ -494,6 +512,7 @@
 49.19187,
 -0.30335
 ],
+"campus Bradois ingénierie|Nancy": null,
 "campus Moulins|Lille": [
 50.61833,
 3.05382
@@ -771,6 +790,7 @@
 7.1486
 ],
 "lycée Ferdinand Daguin|Mérignac": null,
+"lycée Ferdinand-Daguin|Mérignac": null,
 "lycée François Premier|Le Havre": null,
 "lycée François-Truffaut|Challans": [
 46.8534,
@@ -816,6 +836,10 @@
 "lycée Jean-Dupuy|Tarbes": [
 43.23061,
 0.06367
+],
+"lycée Jean-Jacques Rousseau|Sarcelles": [
+48.99326,
+2.38502
 ],
 "lycée Jeanne-d'Arc|Nancy": [
 48.69269,
@@ -985,6 +1009,7 @@
 48.92146,
 2.3042
 ],
+"magasin Castorama|Antibes": null,
 "mairie de Vannes|Vannes": [
 47.65837,
 -2.76093
