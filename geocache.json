@@ -94,6 +94,10 @@
 47.42203,
 -0.56309
 ],
+"Chambre d'agriculture du Lot|Cahors": [
+44.44898,
+1.43431
+],
 "Château des Ducs|Chambéry": [
 45.56546,
 5.91643
@@ -204,6 +208,14 @@
 "Invalides|Paris": [
 48.86034,
 2.31468
+],
+"Jardin du Mail|Angers": [
+47.47029,
+-0.54551
+],
+"Jarry|Baie-Mahault": [
+16.24148,
+-61.58204
 ],
 "Jean Jaures|Toulouse": [
 43.60562,
@@ -334,6 +346,10 @@
 49.41463,
 2.10875
 ],
+"Lycée Les Iris|Lormont": [
+44.86798,
+-0.52647
+],
 "Lycée Louis Berthollet|Annecy": null,
 "Lycée Malherbe|Caen": [
 49.17512,
@@ -371,6 +387,10 @@
 43.34733,
 5.35523
 ],
+"Lycée Sédar Senghor|Évreux": [
+49.00923,
+1.14106
+],
 "Lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
@@ -389,7 +409,12 @@
 -1.52138
 ],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
+"Lycée professionnel La Ruche|Bordeaux": null,
 "Lycées Rimbaud et Latécoère|Istres": null,
+"Léonard de Vinci|Roubaix": [
+50.6728,
+3.18824
+],
 "Mairie de Saint-Nazaire|Saint-Nazaire": [
 47.18269,
 -2.14802
@@ -425,6 +450,7 @@
 -1.55199
 ],
 "Orléans td|Orléans": null,
+"Papillons Blancs|Dunkerque": null,
 "Parc Expo|Mulhouse": [
 47.76479,
 7.33591
@@ -470,6 +496,10 @@
 43.60869,
 3.87992
 ],
+"Place de la Liberté|Brest": [
+48.39072,
+-4.48582
+],
 "Place de la République|Paris": [
 48.86754,
 2.36396
@@ -485,6 +515,10 @@
 "Place du Vigan|Albi": [
 43.9273,
 2.14781
+],
+"Plaine des sports|Saint-Nazaire": [
+47.27269,
+-2.23166
 ],
 "Préfecture|Pau": [
 43.29605,
@@ -538,10 +572,12 @@
 46.04278,
 4.07465
 ],
+"Sciences Po Menton|Menton": null,
 "Sciences Po|Caen": [
 49.18411,
 -0.36755
 ],
+"Sciences Po|Menton": null,
 "Sciences Po|Paris": [
 48.8539,
 2.32902
@@ -575,6 +611,10 @@
 "Université Lyon 2|Lyon": [
 45.75161,
 4.83726
+],
+"Université Toulouse 1 Capitole|Toulouse": [
+43.60728,
+1.43943
 ],
 "Université Toulouse Capitole|Toulouse": [
 43.60738,
@@ -758,6 +798,14 @@
 48.92841,
 2.39014
 ],
+"commissariat de Saint-Denis|Saint-Denis": [
+-20.88633,
+55.45245
+],
+"commissariat|Besançon": [
+47.2324,
+6.02027
+],
 "commissariat|Dunkerque": [
 51.01293,
 2.30648
@@ -787,11 +835,13 @@
 47.90106,
 1.90284
 ],
+"devant la mairie|Argentan": null,
 "devant la mairie|Saint-Denis": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
 "devant le tribunal|Foix": null,
 "du cinéma REX au pont Michel|Paris": null,
+"dépôt de bus|Vitry-sur-Seine": null,
 "fac du Mirail|Toulouse": null,
 "faculté de pharmacie de Paris|Paris": [
 48.84315,
@@ -818,6 +868,10 @@
 50.28777,
 2.78266
 ],
+"gare|Lille": [
+50.69454,
+3.1627
+],
 "giratoire de Lanester|Lanester": [
 47.75973,
 -3.33086
@@ -834,6 +888,10 @@
 "l'Écusson|Montpellier": [
 43.61084,
 3.87659
+],
+"la Rotonde|Aix-en-Provence": [
+43.52629,
+5.44542
 ],
 "les Arènes|Toulouse": [
 43.59216,
@@ -1154,6 +1212,10 @@
 47.18674,
 -1.52138
 ],
+"lycée du Bois-d'Amour|Poitiers": [
+46.55258,
+0.30968
+],
 "lycée du Parc Saint-Jean|Toulon": null,
 "lycée polyvalent Mermoz|Montpellier": [
 43.61107,
@@ -1373,6 +1435,7 @@
 1.44575
 ],
 "rond-point Jeanne-Rose|Le Creusot": null,
+"rond-point de la rocade|Arques": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "rue Saint Georges|Nancy": [
 48.69239,
