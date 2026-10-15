@@ -1,4 +1,8 @@
 {
+"4 chemins|Aubervilliers": [
+48.90409,
+2.3907
+],
 "Assemblée nationale|Paris": [
 48.86178,
 2.31798
@@ -45,11 +49,16 @@
 49.19503,
 -0.36526
 ],
+"Campus Carlone|Nice": [
+43.69269,
+7.23787
+],
 "Campus Condorcet|Aubervilliers": [
 48.91098,
 2.36602
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
+"Campus de Sciences Po Menton|Menton": null,
 "Campus de la Doua|Villeurbanne": [
 45.78316,
 4.87117
@@ -73,6 +82,10 @@
 45.1902,
 5.71495
 ],
+"Centre-ville|Nantes": [
+47.21484,
+-1.55794
+],
 "Centre|Strasbourg": [
 48.58263,
 7.74755
@@ -93,6 +106,14 @@
 "Conservatoire d'Orléans|Orléans": [
 47.83827,
 1.93715
+],
+"Conservatoire de Boulogne-Billancourt|Boulogne-Billancourt": [
+48.82296,
+2.28971
+],
+"Conservatoire|Boulogne-Billancourt": [
+48.82296,
+2.28971
 ],
 "Cours de Vincennes|Paris": [
 48.84701,
@@ -184,9 +205,17 @@
 48.86034,
 2.31468
 ],
+"Jean Jaures|Toulouse": [
+43.60562,
+1.44848
+],
 "Jean-Baptiste-Dumas|Alès": [
 44.13421,
 4.08008
+],
+"L'Écusson|Montpellier": [
+43.61084,
+3.87659
 ],
 "Lauga|Bayonne": [
 43.4815,
@@ -232,6 +261,10 @@
 "Lycée Berthelot|Châtellerault": [
 46.81544,
 0.54077
+],
+"Lycée Blaise-Pascal|Clermont-Ferrand": [
+45.77534,
+3.09427
 ],
 "Lycée Charles Péguy|Orléans": [
 47.88872,
@@ -281,6 +314,10 @@
 48.11709,
 -1.67045
 ],
+"Lycée Jean Monnet|Montpellier": [
+43.62424,
+3.83483
+],
 "Lycée Jean-Baptiste-Dumas|Alès": [
 44.13009,
 4.07548
@@ -314,7 +351,9 @@
 43.60969,
 1.44185
 ],
+"Lycée Paul Eluard|Saint-Denis": null,
 "Lycée Paul-Eluard|Saint-Denis": null,
+"Lycée Paul-Éluard|Saint-Denis": null,
 "Lycée Pierre et Marie Curie|Menton": [
 43.77646,
 7.48527
@@ -431,6 +470,14 @@
 43.60869,
 3.87992
 ],
+"Place de la République|Paris": [
+48.86754,
+2.36396
+],
+"Place de la République|Rennes": [
+48.11002,
+-1.67918
+],
 "Place des Terreaux|Lyon": [
 45.76749,
 4.83349
@@ -486,6 +533,7 @@
 50.63219,
 3.0603
 ],
+"Saint-Denis Pleyel|Saint-Denis": null,
 "Saint-Paul|Roanne": [
 46.04278,
 4.07465
@@ -504,6 +552,10 @@
 ],
 "Siège du Groupe ADP|Tremblay-en-France": null,
 "Stanley Tools|Besançon": null,
+"Station Debourg|Lyon": [
+45.73098,
+4.8334
+],
 "Théâtre de Verdure|Nice": [
 43.69563,
 7.26779
@@ -523,6 +575,10 @@
 "Université Lyon 2|Lyon": [
 45.75161,
 4.83726
+],
+"Université Toulouse Capitole|Toulouse": [
+43.60738,
+1.43815
 ],
 "Université Toulouse-Jean-Jaurès|Toulouse": [
 43.57838,
@@ -554,6 +610,11 @@
 ],
 "Voie ferrée|Hennebont": null,
 "Voies sur berges et grands boulevards|Angers": null,
+"autoroute A9|Perpignan": null,
+"avenue Carnot|Clermont-Ferrand": [
+45.77622,
+3.09703
+],
 "avenue Félix Faure|Villeurbanne": [
 45.75569,
 4.8758
@@ -689,6 +750,10 @@
 16.25081,
 -61.28766
 ],
+"collège Lakanal|Aubagne": [
+43.28589,
+5.58259
+],
 "commissariat de La Courneuve|La Courneuve": [
 48.92841,
 2.39014
@@ -806,6 +871,10 @@
 ],
 "lycée Bertran-de-Born|Périgueux": null,
 "lycée Bertran|Périgueux": null,
+"lycée Blaise-Pascal|Clermont-Ferrand": [
+45.77534,
+3.09427
+],
 "lycée Bonaparte|Toulon": [
 43.12566,
 5.92621
@@ -931,6 +1000,10 @@
 48.40644,
 -4.48091
 ],
+"lycée La Herdrie|Basse-Goulaine": [
+47.19787,
+-1.45287
+],
 "lycée La Mare-Carré|Moissy-Cramayel": null,
 "lycée Langevin|Beauvais": [
 49.41463,
@@ -948,6 +1021,7 @@
 48.69118,
 6.19165
 ],
+"lycée Louis-Berthollet|Annecy": null,
 "lycée Léonard de Vinci|Montpellier": [
 43.62757,
 3.82389
@@ -1171,6 +1245,10 @@
 48.85345,
 2.31158
 ],
+"place Victor Hugo|Grenoble": [
+45.18895,
+5.72533
+],
 "place Victor-Hugo|Grenoble": [
 45.18895,
 5.72533
@@ -1183,6 +1261,10 @@
 45.77641,
 3.08214
 ],
+"place de Milan|Lyon": [
+45.76201,
+4.85852
+],
 "place de Verdun|La Rochelle": [
 46.18838,
 -1.06308
@@ -1191,6 +1273,10 @@
 "place de la Bastille|Paris": [
 48.85267,
 2.36882
+],
+"place de la Bourse|Bordeaux": [
+44.84146,
+-0.57038
 ],
 "place de la Comédie|Metz": [
 49.12143,
@@ -1207,6 +1293,14 @@
 "place de la République|Paris": [
 48.86754,
 2.36396
+],
+"place de la République|Rennes": [
+48.10985,
+-1.67989
+],
+"place de la République|Strasbourg": [
+48.5865,
+7.75493
 ],
 "place de la Révolution|Besançon": [
 47.24003,
