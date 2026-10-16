@@ -146,11 +146,17 @@
 48.84701,
 2.41082
 ],
+"Cultura|Saint-Doulchard": [
+47.11771,
+2.37701
+],
 "Devant la CCI|Brive-la-Gaillarde": null,
 "Duchesse Anne|Nantes": [
 47.21666,
 -1.5472
 ],
+"Dépôt bus d'Asnières|Asnières-sur-Seine": null,
+"Dépôt bus de Pleyel|Saint-Denis": null,
 "Eaux-ClaireS|Grenoble": [
 45.17666,
 5.70895
@@ -192,6 +198,10 @@
 "Hédas|Pau": [
 43.29636,
 -0.37298
+],
+"Hôpital Edouard-Herriot|Lyon": [
+45.74347,
+4.88262
 ],
 "Hôpital Sud|Rennes": [
 48.08299,
@@ -273,6 +283,10 @@
 "L'Écusson|Montpellier": [
 43.61084,
 3.87659
+],
+"La Rotonde|Aix-en-Provence": [
+43.52629,
+5.44542
 ],
 "Lauga|Bayonne": [
 43.4815,
@@ -655,6 +669,7 @@
 ],
 "Rond point du Casino|Boulogne-sur-Mer": null,
 "Rond-point de la Patte d'Oie|Blois": null,
+"Ronds points|Rennes": null,
 "Rotonde|Aix-en-Provence": [
 43.52562,
 5.44481
@@ -712,6 +727,10 @@
 "Tour Eiffel|Paris": [
 48.85826,
 2.2945
+],
+"Tribunal judiciaire|Bobigny": [
+48.9094,
+2.45007
 ],
 "UTT|Troyes": [
 48.26908,
@@ -1010,11 +1029,16 @@
 43.6321,
 3.86429
 ],
+"facultés|Tours": null,
 "faculté|Nice": [
 43.71701,
 7.26758
 ],
 "galerie marchande Les Capucins|Thionville": null,
+"gare SNCF|Voiron": [
+45.3643,
+5.59427
+],
 "gare d'Auch|Auch": [
 43.64727,
 0.59674
@@ -1494,6 +1518,10 @@
 49.89126,
 2.30232
 ],
+"place République|Perpignan": [
+42.76941,
+2.87367
+],
 "place Saint-Anne|Rennes": null,
 "place Saint-Corentin|Quimper": [
 47.99582,
@@ -1720,6 +1748,10 @@
 "université|Nantes": [
 47.24546,
 -1.55199
+],
+"université|Perpignan": [
+42.68217,
+2.8991
 ],
 "usine Durkopp|Vierzon": null,
 "voies sur berges|Angers": null,
