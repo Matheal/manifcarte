@@ -168,6 +168,10 @@
 48.84468,
 2.37377
 ],
+"Gare de Metz|Metz": [
+49.10952,
+6.17682
+],
 "Gare|Amiens": [
 49.89322,
 2.28344
@@ -227,6 +231,14 @@
 ],
 "IUT, Enssat, lycée Félix-Le-Dantec|Lannion": null,
 "Inspection académique de Haute-Corse|Bastia": null,
+"Institut Agro de Montpellier|Montpellier": [
+43.61832,
+3.85543
+],
+"Institut Agro|Montpellier": [
+43.61832,
+3.85543
+],
 "Institut d'urbanisme et de géographie alpine|Grenoble": [
 45.1652,
 5.72794
@@ -268,6 +280,14 @@
 "Les Arènes|Toulouse": [
 43.59216,
 1.41803
+],
+"Lille Centre|Lille": [
+50.63195,
+3.06849
+],
+"Loire-Atlantique|Nantes": [
+47.21864,
+-1.55414
 ],
 "Lumière|Aubagne": null,
 "Lumière|La Ciotat": [
@@ -350,6 +370,10 @@
 47.3302,
 -2.41858
 ],
+"Lycée Gauguin|Papeete": [
+-17.54668,
+-149.57727
+],
 "Lycée Henri-Matisse|Cugnaux": [
 43.53079,
 1.35266
@@ -381,6 +405,10 @@
 "Lycée Kléber|Strasbourg": [
 48.59401,
 7.75769
+],
+"Lycée La Herdrie|Basse-Goulaine": [
+47.19787,
+-1.45287
 ],
 "Lycée Langevin|Beauvais": [
 49.41463,
@@ -436,6 +464,10 @@
 -3.81765
 ],
 "Lycée Voltaire et Gauguin|Orléans": null,
+"Lycée d'Opunohu|Moorea-Maiao": [
+-17.52869,
+-149.83878
+],
 "Lycée de Bouaye|Bouaye": [
 47.15399,
 -1.68086
@@ -450,6 +482,7 @@
 ],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
 "Lycée professionnel La Ruche|Bordeaux": null,
+"Lycées Léonard de Vinci, Saint-Rémi et Jean-Moulin|Roubaix": null,
 "Lycées Rimbaud et Latécoère|Istres": null,
 "Léonard de Vinci|Roubaix": [
 50.6728,
@@ -629,6 +662,10 @@
 46.04278,
 4.07465
 ],
+"Sciences Po Aix|Aix-en-Provence": [
+43.52925,
+5.4357
+],
 "Sciences Po Menton|Menton": null,
 "Sciences Po|Caen": [
 49.18411,
@@ -672,6 +709,10 @@
 "Université Lyon 2|Lyon": [
 45.75161,
 4.83726
+],
+"Université Paris-Panthéon-Assas|Paris": [
+48.84693,
+2.34503
 ],
 "Université Rennes 2|Rennes": [
 48.11932,
@@ -946,6 +987,10 @@
 48.84366,
 2.37449
 ],
+"gare|Angoulême": [
+45.64374,
+0.10803
+],
 "gare|Arras": [
 50.28777,
 2.78266
@@ -1156,6 +1201,10 @@
 "lycée Langevin|Beauvais": [
 49.41463,
 2.10875
+],
+"lycée Laplace|Caen": [
+49.19701,
+-0.35996
 ],
 "lycée Les Iris|Gradignan": null,
 "lycée Lesage|Vannes": [
@@ -1599,6 +1648,10 @@
 "université de Nantes|Nantes": [
 47.24546,
 -1.55199
+],
+"université du Mans|Le Mans": [
+48.01364,
+0.15905
 ],
 "université|Nantes": [
 47.24546,
