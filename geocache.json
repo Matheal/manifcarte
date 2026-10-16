@@ -609,6 +609,10 @@
 47.27269,
 -2.23166
 ],
+"Préfecture|Avignon": [
+43.9484,
+4.80517
+],
 "Préfecture|Pau": [
 43.29605,
 -0.36948
@@ -777,6 +781,10 @@
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
 5.92335
+],
+"avenue du Général de Gaulle|Maisons-Alfort": [
+48.80704,
+2.42569
 ],
 "boulevard Delacourtie|Toulouse": [
 43.58397,
@@ -1459,6 +1467,10 @@
 48.58331,
 7.74596
 ],
+"place Massena|Nice": [
+43.69695,
+7.27032
+],
 "place Saint-Anne|Rennes": null,
 "place Saint-Corentin|Quimper": [
 47.99582,
@@ -1487,6 +1499,10 @@
 "place d'Italie|Paris": [
 48.83094,
 2.35589
+],
+"place de Clichy|Clichy": [
+48.88348,
+2.32729
 ],
 "place de Jaude|Clermont-Ferrand": [
 45.77641,
