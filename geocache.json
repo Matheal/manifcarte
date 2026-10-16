@@ -95,6 +95,10 @@
 45.78155,
 3.0854
 ],
+"Centre hospitalier de Martigues|Martigues": [
+43.41272,
+5.03869
+],
 "Centre hospitalier universitaire de Reims|Reims": null,
 "Centre-ville|Foix": null,
 "Centre-ville|Grenoble": [
@@ -151,6 +155,7 @@
 45.17666,
 5.70895
 ],
+"Elysée et Matignon|Paris": null,
 "Faculté de lettres|Metz": null,
 "Foch|Nantes": [
 47.21932,
@@ -472,6 +477,10 @@
 47.15399,
 -1.68086
 ],
+"Lycée de Montesoro|Bastia": [
+42.66977,
+9.44034
+],
 "Lycée de Pornic|Pornic": [
 47.12143,
 -2.08662
@@ -609,6 +618,7 @@
 47.27269,
 -2.23166
 ],
+"Presqu'ile et arrondissements concernes|Lyon": null,
 "Préfecture|Avignon": [
 43.9484,
 4.80517
@@ -685,10 +695,15 @@
 5.4357
 ],
 "Siège du Groupe ADP|Tremblay-en-France": null,
+"Solidarité Femmes 44|Nantes": null,
 "Stanley Tools|Besançon": null,
 "Station Debourg|Lyon": [
 45.73098,
 4.8334
+],
+"Théâtre Debussy, 116 avenue du Général de Gaulle|Maisons-Alfort": [
+48.80129,
+2.43026
 ],
 "Théâtre de Verdure|Nice": [
 43.69563,
@@ -757,6 +772,10 @@
 "Université de Toulon|Toulon": [
 43.13541,
 6.01616
+],
+"Université de Tours|Tours": [
+47.38366,
+0.67352
 ],
 "Université du Mans|Le Mans": [
 48.00922,
@@ -1470,6 +1489,10 @@
 "place Massena|Nice": [
 43.69695,
 7.27032
+],
+"place René Goblet|Amiens": [
+49.89126,
+2.30232
 ],
 "place Saint-Anne|Rennes": null,
 "place Saint-Corentin|Quimper": [
