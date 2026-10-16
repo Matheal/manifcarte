@@ -3,14 +3,20 @@
 48.90409,
 2.3907
 ],
+"A9|Nîmes": [
+43.81302,
+4.34356
+],
 "Assemblée nationale|Paris": [
 48.86178,
 2.31798
 ],
+"Autoroute A69|Castres": null,
 "Avenue des Gobelins|Paris": [
 48.83423,
 2.35365
 ],
+"Bassin de Lacq|Pau": null,
 "Bastille|Paris": [
 48.85299,
 2.36886
@@ -344,6 +350,10 @@
 47.3302,
 -2.41858
 ],
+"Lycée Henri-Matisse|Cugnaux": [
+43.53079,
+1.35266
+],
 "Lycée Hélène-Boucher|Paris": [
 48.84831,
 2.40717
@@ -493,6 +503,10 @@
 48.59748,
 7.76989
 ],
+"Parlement européen|Strasbourg": [
+48.59748,
+7.76989
+],
 "Parvis de la gare matabiau|Toulouse": null,
 "Place Albert 1er|Montpellier": [
 43.61576,
@@ -525,6 +539,10 @@
 "Place de la Bastille|Paris": [
 48.85267,
 2.36882
+],
+"Place de la Bourse|Bordeaux": [
+44.84146,
+-0.57038
 ],
 "Place de la Comédie|Montpellier": [
 43.60869,
@@ -571,6 +589,7 @@
 48.86186,
 2.31593
 ],
+"RN 126|Castres": null,
 "Raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
 0.24084
@@ -634,6 +653,10 @@
 43.69563,
 7.26779
 ],
+"Tour Eiffel|Paris": [
+48.85826,
+2.2945
+],
 "UTT|Troyes": [
 48.26908,
 4.0665
@@ -673,6 +696,10 @@
 "Université de Bourgogne|Dijon": [
 47.31331,
 5.06886
+],
+"Université de Nantes|Nantes": [
+47.24546,
+-1.55199
 ],
 "Université de Paris Nanterre|Nanterre": [
 48.84351,
@@ -898,6 +925,10 @@
 48.84315,
 2.33534
 ],
+"faculté de sciences|Montpellier": [
+43.6321,
+3.86429
+],
 "faculté|Nice": [
 43.71701,
 7.26758
@@ -1112,6 +1143,10 @@
 "lycée Jules-Lesven|Brest": [
 48.40644,
 -4.48091
+],
+"lycée Julien-Gracq|Beaupréau-en-Mauges": [
+47.1927,
+-0.99278
 ],
 "lycée La Herdrie|Basse-Goulaine": [
 47.19787,
@@ -1469,6 +1504,10 @@
 -2.75857
 ],
 "préfecture d'Agen|Agen": null,
+"préfecture du Val-d'Oise|Cergy": [
+49.03526,
+2.07788
+],
 "préfecture|Pau": [
 43.29605,
 -0.36948
@@ -1571,6 +1610,10 @@
 "École des Mines|Saint-Étienne": [
 45.42388,
 4.40806
+],
+"École du Louvre|Paris": [
+48.86093,
+2.33097
 ],
 "École supérieure d'art de Lorraine|Épinal": [
 48.17072,
