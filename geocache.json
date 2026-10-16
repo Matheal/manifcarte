@@ -764,6 +764,7 @@
 ],
 "Voie ferrée|Hennebont": null,
 "Voies sur berges et grands boulevards|Angers": null,
+"ZAC du Monné|Allonnes": null,
 "autoroute A9|Perpignan": null,
 "avenue Carnot|Clermont-Ferrand": [
 45.77622,
@@ -791,6 +792,10 @@
 -0.30335
 ],
 "campus Bradois ingénierie|Nancy": null,
+"campus Mailly|Perpignan": [
+42.69793,
+2.89901
+],
 "campus Montesquieu|Pessac": null,
 "campus Moulins|Lille": [
 50.61833,
@@ -1270,6 +1275,10 @@
 3.69259
 ],
 "lycée Paul-Éluard|Saint-Denis": null,
+"lycée Pau|Pau": [
+43.36036,
+-0.3687
+],
 "lycée Pergaud|Besançon": [
 47.26463,
 6.04246
@@ -1582,6 +1591,10 @@
 47.3185,
 5.03424
 ],
+"rectorat|Rennes": [
+48.11945,
+-1.67437
+],
 "rectorat|Toulouse": [
 43.57765,
 1.44575
@@ -1659,6 +1672,7 @@
 ],
 "usine Durkopp|Vierzon": null,
 "voies sur berges|Angers": null,
+"zone d'activité du Monné|Allonnes": null,
 "École des Mines|Paris": null,
 "École des Mines|Saint-Étienne": [
 45.42388,
