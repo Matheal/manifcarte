@@ -21,6 +21,7 @@
 48.85299,
 2.36886
 ],
+"Bellevue jusqu'au lycée Sud|Le Mans": null,
 "Bourse du Travail|Saint-Étienne": [
 45.43315,
 4.38772
@@ -223,6 +224,10 @@
 44.02318,
 1.35092
 ],
+"Hôpital de la Timone|Marseille": [
+43.28957,
+5.40348
+],
 "Hôpital Édouard-Herriot|Lyon": [
 45.74347,
 4.88262
@@ -296,6 +301,10 @@
 43.61084,
 3.87659
 ],
+"La Chevalière|Aix-en-Provence": [
+43.54558,
+5.43026
+],
 "La Rotonde|Aix-en-Provence": [
 43.52629,
 5.44542
@@ -333,6 +342,7 @@
 47.15575,
 -1.67994
 ],
+"Lycée Anne-Sophie Pic|Toulon": null,
 "Lycée Appert|Orvault": [
 47.25162,
 -1.61086
@@ -405,6 +415,10 @@
 -17.54668,
 -149.57727
 ],
+"Lycée Henri Wallon|Aubervilliers": [
+48.91147,
+2.38871
+],
 "Lycée Henri-Matisse|Cugnaux": [
 43.53079,
 1.35266
@@ -476,6 +490,10 @@
 "Lycée Pothier|Orléans": [
 47.90916,
 1.90943
+],
+"Lycée Prévert|Savenay": [
+47.36498,
+-1.94068
 ],
 "Lycée Rosa-Parks|Saint-Denis": null,
 "Lycée Saint-Cricq|Pau": [
@@ -823,6 +841,10 @@
 "Voie ferrée|Hennebont": null,
 "Voies sur berges et grands boulevards|Angers": null,
 "ZAC du Monné|Allonnes": null,
+"ZAC|Le Mans": [
+47.94833,
+0.18014
+],
 "autoroute A9|Perpignan": null,
 "avenue Carnot|Clermont-Ferrand": [
 45.77622,
@@ -890,6 +912,7 @@
 ],
 "campus sud de santé|Amiens": null,
 "campus universitaire|Toulon": null,
+"carrefour du centenaire|Chambéry": null,
 "centre Assas|Paris": [
 48.84957,
 2.38612
@@ -909,6 +932,10 @@
 "centre-ville|Caen": [
 49.18288,
 -0.36472
+],
+"centre-ville|Chambéry": [
+45.69122,
+5.91236
 ],
 "centre-ville|Dijon": [
 47.32355,
@@ -1365,6 +1392,7 @@
 43.40162,
 3.69259
 ],
+"lycée Paul-Vergès|Saint-Paul": null,
 "lycée Paul-Éluard|Saint-Denis": null,
 "lycée Pau|Pau": [
 43.36036,
@@ -1675,6 +1703,10 @@
 ],
 "près du rond-point de Poitiers Sud|Poitiers": null,
 "préfecture d'Agen|Agen": null,
+"préfecture d'Avignon|Avignon": [
+43.9484,
+4.80517
+],
 "préfecture du Val-d'Oise|Cergy": [
 49.03526,
 2.07788
@@ -1714,6 +1746,10 @@
 ],
 "rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point de la rocade|Arques": null,
+"rond-point du Kaligone|Kingersheim": [
+47.78959,
+7.31523
+],
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "ronds-points|La Valette-du-Var": null,
 "rue Saint Georges|Nancy": [
@@ -1735,6 +1771,10 @@
 "sous-préfecture de Vendôme|Vendôme": [
 47.79243,
 1.06669
+],
+"stade d'Ornano|Caen": [
+49.17949,
+-0.39695
 ],
 "tribunal de Besançon|Besançon": [
 47.2317,
