@@ -156,6 +156,10 @@
 2.37701
 ],
 "Devant la CCI|Brive-la-Gaillarde": null,
+"Donjon de Rouen|Rouen": [
+49.44648,
+1.09439
+],
 "Duchesse Anne|Nantes": [
 47.21666,
 -1.5472
@@ -750,6 +754,10 @@
 50.63219,
 3.0603
 ],
+"République|Paris": [
+48.86789,
+2.36388
+],
 "Saint-Denis Pleyel|Saint-Denis": null,
 "Saint-Paul|Roanne": [
 46.04278,
@@ -879,6 +887,7 @@
 47.94833,
 0.18014
 ],
+"autoroute A71|Saint-Amand-Montrond": null,
 "autoroute A9|Perpignan": null,
 "avenue Carnot|Clermont-Ferrand": [
 45.77622,
@@ -1504,6 +1513,10 @@
 48.59895,
 -3.81765
 ],
+"lycée Truffaut|Challans": [
+46.8534,
+-1.87021
+],
 "lycée Victor Hugo|Colomiers": [
 43.61588,
 1.30948
@@ -1762,6 +1775,7 @@
 47.64878,
 -2.75798
 ],
+"porte de Paris à la place de la République|Lille": null,
 "port|Vannes": [
 47.65033,
 -2.75857
@@ -1832,7 +1846,10 @@
 7.31523
 ],
 "rond-point du pont de Camélat et préfecture|Agen": null,
+"rond-point du péage du Muy|Le Muy": null,
+"ronds-points|Aubenas": null,
 "ronds-points|La Valette-du-Var": null,
+"ronds-points|Montélimar": null,
 "rue Saint Georges|Nancy": [
 48.69239,
 6.18761
@@ -1840,6 +1857,10 @@
 "rue Saint-Jean|Nancy": [
 48.7535,
 6.2794
+],
+"rue de la Fidélité|Paris": [
+48.87448,
+2.35616
 ],
 "rue du Rabodeau|Maxéville": [
 48.70196,
