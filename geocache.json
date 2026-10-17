@@ -955,6 +955,10 @@
 48.84957,
 2.38612
 ],
+"centre-ville|Angers": [
+47.46549,
+-0.55869
+],
 "centre-ville|Antibes": [
 43.58577,
 7.11927
@@ -1018,6 +1022,10 @@
 "centre-ville|Poitiers": [
 46.56597,
 0.34954
+],
+"centre-ville|Reims": [
+49.25899,
+4.02438
 ],
 "centre-ville|Rennes": [
 48.11154,
@@ -1673,6 +1681,10 @@
 45.76201,
 4.85852
 ],
+"place de Résistance|Quimper": [
+47.99373,
+-4.10495
+],
 "place de Verdun|La Rochelle": [
 46.18838,
 -1.06308
@@ -1771,6 +1783,10 @@
 "préfecture|Tours": [
 47.39207,
 0.69218
+],
+"péage|Le Mans": [
+48.00466,
+0.31253
 ],
 "pôle universitaire|Quimper": [
 47.9724,
