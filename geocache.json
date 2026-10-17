@@ -12,6 +12,10 @@
 2.31798
 ],
 "Autoroute A69|Castres": null,
+"Autoroute|Bayonne": [
+43.48753,
+-1.44885
+],
 "Avenue des Gobelins|Paris": [
 48.83423,
 2.35365
@@ -274,6 +278,10 @@
 "Hôtel de Région|Lyon": [
 45.74012,
 4.81946
+],
+"Hôtel de Ville|Limoges": [
+45.82675,
+1.26162
 ],
 "Hôtel de Ville|Paris": [
 48.85643,
@@ -754,6 +762,12 @@
 2.31593
 ],
 "RN 126|Castres": null,
+"RN 165|Quéven": null,
+"RN 165|Vannes": null,
+"RN20|Foix": [
+42.9639,
+1.60538
+],
 "Raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
 0.24084
@@ -932,6 +946,7 @@
 47.94833,
 0.18014
 ],
+"arrêt Tourelles Dauphine|Orléans": null,
 "autoroute A10|Tours": [
 47.47443,
 0.77513
@@ -962,6 +977,7 @@
 43.58397,
 1.4495
 ],
+"boulevard des Coloniaux|Poitiers": null,
 "bourse du travail|Villeurbanne": null,
 "bâtiment Gabriel|Dijon": [
 47.31597,
@@ -1064,6 +1080,10 @@
 "centre-ville|Metz": [
 49.10899,
 6.17734
+],
+"centre-ville|Montpellier": [
+43.60866,
+3.88644
 ],
 "centre-ville|Nancy": [
 48.68963,
@@ -1193,6 +1213,10 @@
 "devant le tribunal|Foix": null,
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus|Vitry-sur-Seine": null,
+"esplanade des Fontaines|Montauban": [
+44.01803,
+1.3574
+],
 "fac d'Avignon|Avignon": [
 43.94782,
 4.8102
@@ -1259,6 +1283,10 @@
 -1.67217
 ],
 "l'Écusson|Montpellier": [
+43.61084,
+3.87659
+],
+"l'écusson|Montpellier": [
 43.61084,
 3.87659
 ],
@@ -1697,6 +1725,10 @@
 50.61938,
 3.06743
 ],
+"place Foch|Épinal": [
+48.17225,
+6.44776
+],
 "place Guichard|Lyon": [
 45.75917,
 4.84738
@@ -1780,6 +1812,10 @@
 46.18838,
 -1.06308
 ],
+"place de l'Amérique Latine|Saint-Nazaire": [
+47.276,
+-2.20508
+],
 "place de l'Opéra|Toulon": null,
 "place de la Bastille|Paris": [
 48.85267,
@@ -1796,6 +1832,10 @@
 "place de la Comédie|Montpellier": [
 43.60869,
 3.87992
+],
+"place de la République|Caen": [
+49.18097,
+-0.36356
 ],
 "place de la République|Dijon": [
 47.32661,
@@ -1928,6 +1968,7 @@
 45.83771,
 3.14979
 ],
+"rond-point de McDonald's|Chalon-sur-Saône": null,
 "rond-point de Pen-ar-C'hleuz|Brest": [
 48.41458,
 -4.47953
@@ -1947,6 +1988,10 @@
 "ronds-points|Aubenas": null,
 "ronds-points|La Valette-du-Var": null,
 "ronds-points|Montélimar": null,
+"rue Lenepveu|Angers": [
+47.47235,
+-0.55093
+],
 "rue Saint Georges|Nancy": [
 48.69239,
 6.18761
@@ -1954,6 +1999,10 @@
 "rue Saint-Jean|Nancy": [
 48.7535,
 6.2794
+],
+"rue Vital-Carles|Bordeaux": [
+44.84018,
+-0.57827
 ],
 "rue de la Fidélité|Paris": [
 48.87448,
@@ -1974,6 +2023,10 @@
 "stade d'Ornano|Caen": [
 49.17949,
 -0.39695
+],
+"tour de la Liberté|Saint-Dié-des-Vosges": [
+48.2865,
+6.94737
 ],
 "tribunal de Besançon|Besançon": [
 47.2317,
