@@ -92,9 +92,17 @@
 45.19114,
 5.77005
 ],
+"Carrefour City de l'Alma|Rennes": [
+48.09827,
+-1.67498
+],
 "Carrefour Courtine|Avignon": [
 43.92829,
 4.79335
+],
+"Centre 2|Saint-Étienne": [
+45.49153,
+4.48529
 ],
 "Centre Jean Richepin|Clermont-Ferrand": [
 45.78155,
@@ -125,6 +133,10 @@
 "Chambre d'agriculture du Lot|Cahors": [
 44.44898,
 1.43431
+],
+"Champs-Elysées|Paris": [
+48.87076,
+2.30533
 ],
 "Château des Ducs|Chambéry": [
 45.56546,
@@ -208,6 +220,10 @@
 "Gare|Nancy": [
 48.65552,
 6.22798
+],
+"Gare|Saint-Nazaire": [
+47.28664,
+-2.21116
 ],
 "Grande Ile|Strasbourg": [
 48.58296,
@@ -569,6 +585,11 @@
 47.18269,
 -2.14802
 ],
+"Mairie|Lille": [
+50.61479,
+3.11637
+],
+"Mairie|Marseille": null,
 "Mairie|Reims": [
 49.33987,
 4.02287
@@ -1056,6 +1077,10 @@
 46.31941,
 -0.45468
 ],
+"centre-ville|Pau": [
+43.29147,
+-0.36975
+],
 "centre-ville|Poitiers": [
 46.56597,
 0.34954
@@ -1075,6 +1100,10 @@
 "centre-ville|Saint-Nazaire": [
 47.27483,
 -2.19795
+],
+"centre-ville|Toulon": [
+43.10166,
+5.88115
 ],
 "centre-ville|Toulouse": [
 43.63323,
@@ -1706,6 +1735,10 @@
 48.11442,
 -1.68057
 ],
+"place Soult|Castres": [
+43.60397,
+2.2465
+],
 "place Stanislas|Nancy": [
 48.69352,
 6.18329
@@ -1768,6 +1801,7 @@
 47.32661,
 5.04501
 ],
+"place de la République|Le Havre": null,
 "place de la République|Lille": [
 50.6313,
 3.06097
@@ -1820,6 +1854,10 @@
 46.14074,
 -1.171
 ],
+"pont des Catalans|Toulouse": [
+43.60374,
+1.428
+],
 "port de Vannes|Vannes": [
 47.64878,
 -2.75798
@@ -1838,6 +1876,10 @@
 "préfecture du Val-d'Oise|Cergy": [
 49.03526,
 2.07788
+],
+"préfecture|Ajaccio": [
+41.91977,
+8.73688
 ],
 "préfecture|Annecy": [
 45.90324,
@@ -1880,6 +1922,7 @@
 43.57765,
 1.44575
 ],
+"rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point de Gerzat|Gerzat": [
 45.83771,
@@ -1898,6 +1941,7 @@
 47.78959,
 7.31523
 ],
+"rond-point du Leclerc de Cleunay|Rennes": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "rond-point du péage du Muy|Le Muy": null,
 "ronds-points|Aubenas": null,
@@ -1997,6 +2041,10 @@
 "École supérieure d'art de Lorraine|Épinal": [
 48.17072,
 6.45303
+],
+"Île de Ré|La Rochelle": [
+46.1777,
+-1.18973
 ],
 "école du Schluthfeld|Strasbourg": [
 48.56781,
