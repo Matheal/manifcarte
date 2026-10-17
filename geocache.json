@@ -104,6 +104,10 @@
 43.92829,
 4.79335
 ],
+"Cartabaffe|Paris": [
+48.86804,
+2.35468
+],
 "Centre 2|Saint-Étienne": [
 45.49153,
 4.48529
@@ -228,6 +232,10 @@
 "Gare|Saint-Nazaire": [
 47.28664,
 -2.21116
+],
+"Grand'Place|Lille": [
+50.72271,
+3.1592
 ],
 "Grande Ile|Strasbourg": [
 48.58296,
@@ -643,6 +651,10 @@
 "Nantes Université|Nantes": [
 47.24546,
 -1.55199
+],
+"Nation|Paris": [
+48.84768,
+2.39552
 ],
 "Orléans td|Orléans": null,
 "PSA Aulnay|Aulnay-sous-Bois": [
@@ -1128,6 +1140,10 @@
 "centre-ville|Rennes": [
 48.11154,
 -1.67907
+],
+"centre-ville|Rouen": [
+49.40697,
+1.05032
 ],
 "centre-ville|Saint-Denis": [
 -20.88081,
@@ -1700,6 +1716,10 @@
 ],
 "magasin Castorama|Antibes": null,
 "magasin d'Antibes|Antibes": null,
+"mairie de Limoges|Limoges": [
+45.82632,
+1.26025
+],
 "mairie de Vannes|Vannes": [
 47.65837,
 -2.76093
@@ -1765,6 +1785,10 @@
 "place Jasmin|Agen": [
 44.20406,
 0.61217
+],
+"place Jean-Jaurès|Tours": [
+47.38955,
+0.68912
 ],
 "place Kléber|Strasbourg": [
 48.58331,
@@ -1897,6 +1921,10 @@
 "place de la Victoire|Bordeaux": [
 44.83099,
 -0.57233
+],
+"place des Héros|Arras": [
+50.29126,
+2.7774
 ],
 "place des Otages|Morlaix": [
 48.57798,
@@ -2031,6 +2059,10 @@
 "rue Vital-Carles|Bordeaux": [
 44.84018,
 -0.57827
+],
+"rue de Béthune|Lille": [
+50.63412,
+3.06361
 ],
 "rue de la Fidélité|Paris": [
 48.87448,
