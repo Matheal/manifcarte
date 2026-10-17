@@ -29,6 +29,10 @@
 43.12921,
 5.92588
 ],
+"Brequigny|Rennes": [
+48.08526,
+-1.69263
+],
 "CCI de Brive|Brive-la-Gaillarde": null,
 "CCVA|Villeurbanne": [
 45.76761,
@@ -219,6 +223,10 @@
 44.02318,
 1.35092
 ],
+"Hôpital Édouard-Herriot|Lyon": [
+45.74347,
+4.88262
+],
 "Hôpital|Saint-Nazaire": [
 47.27549,
 -2.21719
@@ -228,6 +236,10 @@
 4.35272
 ],
 "Hôtel L'Imperator|Nîmes": null,
+"Hôtel de Région|Lyon": [
+45.74012,
+4.81946
+],
 "Hôtel de Ville|Paris": [
 48.85643,
 2.35253
@@ -691,6 +703,10 @@
 46.04278,
 4.07465
 ],
+"Sainte Soline|Niort": [
+46.30791,
+-0.43762
+],
 "Sciences Po Aix|Aix-en-Provence": [
 43.52925,
 5.4357
@@ -967,6 +983,10 @@
 43.28589,
 5.58259
 ],
+"commissariat d'Aubervilliers|Aubervilliers": [
+48.91442,
+2.38769
+],
 "commissariat de La Courneuve|La Courneuve": [
 48.92841,
 2.39014
@@ -986,6 +1006,10 @@
 "commissariat|Lannion": [
 48.73142,
 -3.45163
+],
+"commissariat|Paris": [
+48.88086,
+2.36629
 ],
 "commissariat|Roubaix": [
 50.69009,
@@ -1100,6 +1124,10 @@
 "lycée Alcide|Bouaye": [
 47.15575,
 -1.67994
+],
+"lycée Antoine-Bourdelle|Montauban": [
+44.01459,
+1.36873
 ],
 "lycée Arago|Reims": [
 49.22849,
@@ -1539,6 +1567,7 @@
 48.85345,
 2.31158
 ],
+"place Victor Hugo au parc Paul Mistral|Grenoble": null,
 "place Victor Hugo|Grenoble": [
 45.18895,
 5.72533
@@ -1587,6 +1616,10 @@
 "place de la République|Dijon": [
 47.32661,
 5.04501
+],
+"place de la République|Lille": [
+50.6313,
+3.06097
 ],
 "place de la République|Paris": [
 48.86754,
@@ -1640,6 +1673,7 @@
 47.65033,
 -2.75857
 ],
+"près du rond-point de Poitiers Sud|Poitiers": null,
 "préfecture d'Agen|Agen": null,
 "préfecture du Val-d'Oise|Cergy": [
 49.03526,
