@@ -291,6 +291,10 @@
 50.29119,
 2.77713
 ],
+"Hôtel de ville|Limoges": [
+45.82675,
+1.26162
+],
 "IRTS|Montpellier": [
 43.60139,
 3.83105
@@ -628,6 +632,10 @@
 47.21503,
 -1.54908
 ],
+"Monthieu|Saint-Étienne": [
+45.44154,
+4.41537
+],
 "Nanterre-Université|Nanterre": [
 48.90105,
 2.21336
@@ -740,9 +748,17 @@
 5.37475
 ],
 "Presqu'ile et arrondissements concernes|Lyon": null,
+"Presqu'île|Lyon": [
+45.80837,
+4.94258
+],
 "Préfecture|Avignon": [
 43.9484,
 4.80517
+],
+"Préfecture|Besançon": [
+47.23371,
+6.023
 ],
 "Préfecture|Caen": [
 49.17958,
@@ -1129,6 +1145,10 @@
 43.63323,
 1.41782
 ],
+"centre-ville|Tours": [
+47.38146,
+0.76349
+],
 "cité scolaire Beaumont|Redon": [
 47.65578,
 -2.09402
@@ -1277,6 +1297,10 @@
 5.7816
 ],
 "hôtel de luxe L'Impérator|Nîmes": null,
+"hôtel de ville|Limoges": [
+45.82675,
+1.26162
+],
 "hôtels de ville|Vannes": null,
 "inspection académique|Rennes": [
 48.11046,
@@ -1617,6 +1641,10 @@
 "lycée Victor-Grignard|Cherbourg-en-Cotentin": [
 49.63894,
 -1.62965
+],
+"lycée Zola|Rennes": [
+48.10941,
+-1.6751
 ],
 "lycée d'Angers|Angers": [
 47.47074,
