@@ -580,6 +580,10 @@
 48.94992,
 2.52194
 ],
+"Palais de Justice|Périgueux": [
+45.18657,
+0.72011
+],
 "Papillons Blancs|Dunkerque": null,
 "Parc Expo|Mulhouse": [
 47.76479,
@@ -650,6 +654,10 @@
 48.11002,
 -1.67918
 ],
+"Place de la Résistance|Quimper": [
+47.99365,
+-4.10549
+],
 "Place des Terreaux|Lyon": [
 45.76749,
 4.83349
@@ -698,7 +706,9 @@
 1.44575
 ],
 "Rond point du Casino|Boulogne-sur-Mer": null,
+"Rond-point de Troyalac'h|Quimper": null,
 "Rond-point de la Patte d'Oie|Blois": null,
+"Rond-point du Cora|Saint-Avold": null,
 "Ronds points|Rennes": null,
 "Rotonde|Aix-en-Provence": [
 43.52562,
@@ -854,6 +864,10 @@
 45.75569,
 4.8758
 ],
+"avenue Marius-Berroir|Chambéry": [
+45.56564,
+5.93377
+],
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
 5.92335
@@ -985,6 +999,10 @@
 48.11154,
 -1.67907
 ],
+"centre-ville|Saint-Denis": [
+-20.88081,
+55.45795
+],
 "centre-ville|Saint-Nazaire": [
 47.27483,
 -2.19795
@@ -1063,6 +1081,8 @@
 47.90106,
 1.90284
 ],
+"devant Barthou|Pau": null,
+"devant l'hôpital de Dax|Dax": null,
 "devant la mairie|Argentan": null,
 "devant la mairie|Saint-Denis": null,
 "devant la préfecture|Quimper": null,
@@ -1745,6 +1765,18 @@
 1.44575
 ],
 "rond-point Jeanne-Rose|Le Creusot": null,
+"rond-point de Gerzat|Gerzat": [
+45.83771,
+3.14979
+],
+"rond-point de Pen-ar-C'hleuz|Brest": [
+48.41458,
+-4.47953
+],
+"rond-point de l'Archer|Soissons": [
+49.36522,
+3.30903
+],
 "rond-point de la rocade|Arques": null,
 "rond-point du Kaligone|Kingersheim": [
 47.78959,
