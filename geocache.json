@@ -162,6 +162,7 @@
 ],
 "Dépôt bus d'Asnières|Asnières-sur-Seine": null,
 "Dépôt bus de Pleyel|Saint-Denis": null,
+"Dépôts bus de Pleyel et Asnières|Paris": null,
 "Eaux-ClaireS|Grenoble": [
 45.17666,
 5.70895
@@ -171,6 +172,10 @@
 "Foch|Nantes": [
 47.21932,
 -1.55026
+],
+"Gare SNCF|Voiron": [
+45.3643,
+5.59427
 ],
 "Gare Saint-Lazare|Paris": [
 48.87704,
@@ -241,6 +246,7 @@
 4.35272
 ],
 "Hôtel L'Imperator|Nîmes": null,
+"Hôtel L'Impérator|Nîmes": null,
 "Hôtel de Région|Lyon": [
 45.74012,
 4.81946
@@ -262,6 +268,10 @@
 5.06876
 ],
 "IUT, Enssat, lycée Félix-Le-Dantec|Lannion": null,
+"Ikea|Villiers-sur-Marne": [
+48.82791,
+2.52987
+],
 "Inspection académique de Haute-Corse|Bastia": null,
 "Institut Agro de Montpellier|Montpellier": [
 43.61832,
@@ -482,6 +492,7 @@
 ],
 "Lycée Paul Eluard|Saint-Denis": null,
 "Lycée Paul-Eluard|Saint-Denis": null,
+"Lycée Paul-Éluard|Montreuil": null,
 "Lycée Paul-Éluard|Saint-Denis": null,
 "Lycée Pierre et Marie Curie|Menton": [
 43.77646,
@@ -503,6 +514,10 @@
 "Lycée Saint-Exupéry|Marseille": [
 43.34733,
 5.35523
+],
+"Lycée Sainte-Anne|Brest": [
+48.39662,
+-4.49073
 ],
 "Lycée Sédar Senghor|Évreux": [
 49.00923,
@@ -583,6 +598,10 @@
 "Palais de Justice|Périgueux": [
 45.18657,
 0.72011
+],
+"Palais des papes|Avignon": [
+43.95071,
+4.80769
 ],
 "Papillons Blancs|Dunkerque": null,
 "Parc Expo|Mulhouse": [
@@ -669,6 +688,10 @@
 "Plaine des sports|Saint-Nazaire": [
 47.27269,
 -2.23166
+],
+"Porte d'Aix|Marseille": [
+43.30185,
+5.37475
 ],
 "Presqu'ile et arrondissements concernes|Lyon": null,
 "Préfecture|Avignon": [
@@ -1091,6 +1114,10 @@
 "devant le tribunal|Foix": null,
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus|Vitry-sur-Seine": null,
+"fac d'Avignon|Avignon": [
+43.94782,
+4.8102
+],
 "fac du Mirail|Toulouse": null,
 "faculté de pharmacie de Paris|Paris": [
 48.84315,
@@ -1142,6 +1169,7 @@
 49.53765,
 5.7816
 ],
+"hôtel de luxe L'Impérator|Nîmes": null,
 "hôtels de ville|Vannes": null,
 "inspection académique|Rennes": [
 48.11046,
