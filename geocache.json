@@ -209,6 +209,10 @@
 48.65552,
 6.22798
 ],
+"Grande Ile|Strasbourg": [
+48.58296,
+7.74783
+],
 "Hédas|Pau": [
 43.29636,
 -0.37298
@@ -565,6 +569,14 @@
 47.18269,
 -2.14802
 ],
+"Mairie|Reims": [
+49.33987,
+4.02287
+],
+"Maison de la Culture|Amiens": [
+49.89409,
+2.29172
+],
 "Maison des syndicats|Fort-de-France": [
 14.606,
 -61.06414
@@ -703,6 +715,10 @@
 43.9484,
 4.80517
 ],
+"Préfecture|Caen": [
+49.17958,
+-0.36767
+],
 "Préfecture|Pau": [
 43.29605,
 -0.36948
@@ -732,6 +748,10 @@
 "Rectorat|Toulouse": [
 43.57765,
 1.44575
+],
+"Rivière-des-Galets|Le Port": [
+-20.96105,
+55.31949
 ],
 "Rond point du Casino|Boulogne-sur-Mer": null,
 "Rond-point de Troyalac'h|Quimper": null,
@@ -880,12 +900,20 @@
 48.01684,
 0.152
 ],
+"Vieux-Port|Marseille": [
+43.29458,
+5.36928
+],
 "Voie ferrée|Hennebont": null,
 "Voies sur berges et grands boulevards|Angers": null,
 "ZAC du Monné|Allonnes": null,
 "ZAC|Le Mans": [
 47.94833,
 0.18014
+],
+"autoroute A10|Tours": [
+47.47443,
+0.77513
 ],
 "autoroute A71|Saint-Amand-Montrond": null,
 "autoroute A9|Perpignan": null,
@@ -1069,6 +1097,10 @@
 43.28589,
 5.58259
 ],
+"collège René-Cassin|Corbas": [
+45.65673,
+4.9012
+],
 "commissariat d'Aubervilliers|Aubervilliers": [
 48.91442,
 2.38769
@@ -1166,6 +1198,10 @@
 "gare de Lyon|Paris": [
 48.84366,
 2.37449
+],
+"gare|Angers": [
+47.46436,
+-0.55621
 ],
 "gare|Angoulême": [
 45.64374,
@@ -1583,6 +1619,7 @@
 47.65837,
 -2.76093
 ],
+"mairie|Marseille": null,
 "mairie|Vesoul": [
 47.61144,
 6.21526
@@ -1636,11 +1673,19 @@
 4.84738
 ],
 "place Guichard|Villeurbanne": null,
+"place Jasmin|Agen": [
+44.20406,
+0.61217
+],
 "place Kléber|Strasbourg": [
 48.58331,
 7.74596
 ],
 "place Massena|Nice": [
+43.69695,
+7.27032
+],
+"place Masséna|Nice": [
 43.69695,
 7.27032
 ],
@@ -1751,6 +1796,10 @@
 44.83099,
 -0.57233
 ],
+"place des Otages|Morlaix": [
+48.57798,
+-3.82895
+],
 "place des Terreaux|Lyon": [
 45.76749,
 4.83349
@@ -1789,6 +1838,10 @@
 "préfecture du Val-d'Oise|Cergy": [
 49.03526,
 2.07788
+],
+"préfecture|Annecy": [
+45.90324,
+6.13142
 ],
 "préfecture|Pau": [
 43.29605,
