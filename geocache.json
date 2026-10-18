@@ -664,6 +664,10 @@
 48.84768,
 2.39552
 ],
+"Opéra de Paris|Paris": [
+48.87653,
+2.32524
+],
 "Orléans td|Orléans": null,
 "PSA Aulnay|Aulnay-sous-Bois": [
 48.94992,
@@ -1315,6 +1319,10 @@
 "gare|Arras": [
 50.28777,
 2.78266
+],
+"gare|Dijon": [
+47.32367,
+5.02803
 ],
 "gare|Lille": [
 50.69454,
@@ -1973,6 +1981,10 @@
 "plage des Minimes|La Rochelle": [
 46.14074,
 -1.171
+],
+"pont Chaban-Delmas|Bordeaux": [
+44.85831,
+-0.55178
 ],
 "pont des Catalans|Toulouse": [
 43.60374,
