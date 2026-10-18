@@ -209,6 +209,10 @@
 47.21932,
 -1.55026
 ],
+"Forum des Halles|Paris": [
+48.86216,
+2.34537
+],
 "Gare SNCF|Voiron": [
 45.3643,
 5.59427
@@ -310,6 +314,10 @@
 "Hôtel de ville|Arras": [
 50.29119,
 2.77713
+],
+"Hôtel de ville|Lille": [
+50.61957,
+3.13126
 ],
 "Hôtel de ville|Limoges": [
 45.82675,
@@ -645,6 +653,10 @@
 "Mairie|Reims": [
 49.33987,
 4.02287
+],
+"Mairie|Épernay": [
+49.06041,
+3.84116
 ],
 "Maison de la Culture|Amiens": [
 49.89409,
@@ -1321,6 +1333,7 @@
 "devant la mairie|Brest": null,
 "devant la mairie|Brive-la-Gaillarde": null,
 "devant la mairie|Laon": null,
+"devant la mairie|Montluçon": null,
 "devant la mairie|Saint-Denis": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
@@ -1393,11 +1406,16 @@
 47.75973,
 -3.33086
 ],
+"giratoire du Heckenwald|Saint-Avold": null,
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
 ],
 "hôtel de luxe L'Impérator|Nîmes": null,
+"hôtel de ville|Aix-en-Provence": [
+43.52983,
+5.44724
+],
 "hôtel de ville|Limoges": [
 45.82675,
 1.26162
@@ -1809,6 +1827,14 @@
 49.89415,
 2.29539
 ],
+"mairie d'Angers|Angers": [
+47.47121,
+-0.5483
+],
+"mairie de Brest|Brest": [
+48.3913,
+-4.48508
+],
 "mairie de Caen|Caen": [
 49.20268,
 -0.33848
@@ -1834,6 +1860,10 @@
 -1.55847
 ],
 "mairie|Marseille": null,
+"mairie|Mulhouse": [
+47.74929,
+7.33557
+],
 "mairie|Vesoul": [
 47.61144,
 6.21526
@@ -2234,6 +2264,10 @@
 "tribunal de Besançon|Besançon": [
 47.2317,
 6.02511
+],
+"tribunal judiciaire|Grenoble": [
+45.19193,
+5.71135
 ],
 "tribunal judiciaire|Toulouse": [
 43.59374,
