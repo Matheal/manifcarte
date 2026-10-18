@@ -743,6 +743,10 @@
 44.83489,
 -0.57988
 ],
+"Place de la République|Metz": [
+49.11501,
+6.17262
+],
 "Place de la République|Paris": [
 48.86754,
 2.36396
@@ -1009,6 +1013,10 @@
 45.75569,
 4.8758
 ],
+"avenue Jean-Médecin|Nice": [
+43.70339,
+7.26612
+],
 "avenue Marius-Berroir|Chambéry": [
 45.56564,
 5.93377
@@ -1101,6 +1109,7 @@
 45.69122,
 5.91236
 ],
+"centre-ville|Clermont-Ferrand": null,
 "centre-ville|Dijon": [
 47.32355,
 5.04148
@@ -2095,6 +2104,10 @@
 48.7535,
 6.2794
 ],
+"rue Sainte-Catherine|Bordeaux": [
+44.8397,
+-0.57415
+],
 "rue Vital-Carles|Bordeaux": [
 44.84018,
 -0.57827
@@ -2179,6 +2192,10 @@
 2.8991
 ],
 "usine Durkopp|Vierzon": null,
+"voie Jean Taittinger|Reims": [
+49.23975,
+4.03386
+],
 "voie express|Vannes": [
 47.66844,
 -2.72449
