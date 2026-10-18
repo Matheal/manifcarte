@@ -126,6 +126,10 @@
 45.1902,
 5.71495
 ],
+"Centre-ville|Nancy": [
+48.68963,
+6.18426
+],
 "Centre-ville|Nantes": [
 47.21484,
 -1.55794
@@ -302,6 +306,10 @@
 "Hôtel de ville|Limoges": [
 45.82675,
 1.26162
+],
+"Hôtel de ville|Marseille": [
+43.29732,
+5.36946
 ],
 "IRTS|Montpellier": [
 43.60139,
@@ -759,6 +767,10 @@
 43.30185,
 5.37475
 ],
+"Presqu'Ile|Lyon": [
+45.76385,
+4.83444
+],
 "Presqu'ile et arrondissements concernes|Lyon": null,
 "Presqu'île|Lyon": [
 45.80837,
@@ -981,6 +993,10 @@
 ],
 "autoroute A71|Saint-Amand-Montrond": null,
 "autoroute A9|Perpignan": null,
+"avenue Alsace Lorraine|Grenoble": [
+45.18916,
+5.7218
+],
 "avenue Carnot|Clermont-Ferrand": [
 45.77622,
 3.09703
@@ -1716,6 +1732,10 @@
 ],
 "magasin Castorama|Antibes": null,
 "magasin d'Antibes|Antibes": null,
+"mairie de Lille|Lille": [
+50.63275,
+3.07066
+],
 "mairie de Limoges|Limoges": [
 45.82632,
 1.26025
@@ -1938,6 +1958,10 @@
 43.6044,
 1.44335
 ],
+"place du Commerce|Nantes": [
+47.21335,
+-1.55785
+],
 "place du Pâtis|Montargis": [
 47.88078,
 2.70553
@@ -1989,6 +2013,7 @@
 47.39207,
 0.69218
 ],
+"péage du Mans nord|Le Mans": null,
 "péage|Le Mans": [
 48.00466,
 0.31253
@@ -2018,8 +2043,10 @@
 43.57765,
 1.44575
 ],
+"rond point d'Audincourt|Audincourt": null,
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
+"rond-point Picot|Châlons-en-Champagne": null,
 "rond-point de Gerzat|Gerzat": [
 45.83771,
 3.14979
@@ -2140,7 +2167,12 @@
 2.8991
 ],
 "usine Durkopp|Vierzon": null,
+"voie express|Vannes": [
+47.66844,
+-2.72449
+],
 "voies sur berges|Angers": null,
+"zone Horizon|Châteaubriant": null,
 "zone d'activité du Monné|Allonnes": null,
 "École des Mines|Paris": null,
 "École des Mines|Saint-Étienne": [
