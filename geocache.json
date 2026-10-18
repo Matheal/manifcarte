@@ -1296,6 +1296,7 @@
 "devant Barthou|Pau": null,
 "devant l'hôpital de Dax|Dax": null,
 "devant la mairie|Argentan": null,
+"devant la mairie|Avignon": null,
 "devant la mairie|Brest": null,
 "devant la mairie|Laon": null,
 "devant la mairie|Saint-Denis": null,
@@ -1377,6 +1378,10 @@
 "hôtel de ville|Limoges": [
 45.82675,
 1.26162
+],
+"hôtel de ville|Tulle": [
+45.2663,
+1.77189
 ],
 "hôtels de ville|Vannes": null,
 "inspection académique|Rennes": [
@@ -2152,6 +2157,10 @@
 48.7535,
 6.2794
 ],
+"rue Saint-Rome|Toulouse": [
+43.60271,
+1.44352
+],
 "rue Sainte-Catherine|Bordeaux": [
 44.8397,
 -0.57415
@@ -2172,6 +2181,7 @@
 48.70196,
 6.1309
 ],
+"rue située à l'arrière du café Blondel|Metz": null,
 "rues adjacentes à la place de la République|Paris": null,
 "services de l'Éducation nationale|Niort": null,
 "siège de la Région Grand Est|Strasbourg": null,
