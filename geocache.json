@@ -20,6 +20,10 @@
 48.83423,
 2.35365
 ],
+"Barachois|Saint-Denis": [
+-20.87448,
+55.4464
+],
 "Bassin de Lacq|Pau": null,
 "Bastille|Paris": [
 48.85299,
@@ -617,6 +621,10 @@
 50.61479,
 3.11637
 ],
+"Mairie|Limoges": [
+45.82678,
+1.25924
+],
 "Mairie|Marseille": null,
 "Mairie|Reims": [
 49.33987,
@@ -706,6 +714,10 @@
 "Place Jean Jaurès|Troyes": [
 48.29458,
 4.07018
+],
+"Place Sainte-Anne|Rennes": [
+48.11442,
+-1.68057
 ],
 "Place d'Arc|Orléans": [
 47.90814,
@@ -831,6 +843,10 @@
 "Rectorat|Toulouse": [
 43.57765,
 1.44575
+],
+"Rennes|Rennes": [
+48.11134,
+-1.68002
 ],
 "Rivière-des-Galets|Le Port": [
 -20.96105,
@@ -1921,6 +1937,10 @@
 "place de la Comédie|Montpellier": [
 43.60869,
 3.87992
+],
+"place de la Grande-Boucherie|Strasbourg": [
+48.57996,
+7.75056
 ],
 "place de la République|Caen": [
 49.18097,
