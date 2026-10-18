@@ -367,6 +367,10 @@
 43.61084,
 3.87659
 ],
+"La Canebière|Marseille": [
+43.29568,
+5.37564
+],
 "La Chevalière|Aix-en-Provence": [
 43.54558,
 5.43026
@@ -711,6 +715,7 @@
 48.69344,
 6.17785
 ],
+"Place E. Feuillère (Place des jets d'eau)|Vesoul": null,
 "Place Jean Jaurès|Troyes": [
 48.29458,
 4.07018
@@ -807,6 +812,10 @@
 "Préfecture|Caen": [
 49.17958,
 -0.36767
+],
+"Préfecture|Clermont-Ferrand": [
+45.77595,
+3.08404
 ],
 "Préfecture|Pau": [
 43.29605,
@@ -1287,6 +1296,8 @@
 "devant Barthou|Pau": null,
 "devant l'hôpital de Dax|Dax": null,
 "devant la mairie|Argentan": null,
+"devant la mairie|Brest": null,
+"devant la mairie|Laon": null,
 "devant la mairie|Saint-Denis": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
@@ -1298,6 +1309,7 @@
 44.01803,
 1.3574
 ],
+"esplanade des tanneurs|Tours": null,
 "fac d'Avignon|Avignon": [
 43.94782,
 4.8102
@@ -1765,6 +1777,14 @@
 ],
 "magasin Castorama|Antibes": null,
 "magasin d'Antibes|Antibes": null,
+"mairie d'Amiens|Amiens": [
+49.89415,
+2.29539
+],
+"mairie de Caen|Caen": [
+49.20268,
+-0.33848
+],
 "mairie de Lille|Lille": [
 50.63275,
 3.07066
@@ -1979,6 +1999,10 @@
 44.83099,
 -0.57233
 ],
+"place des Cordeliers|Annonay": [
+45.2407,
+4.67245
+],
 "place des Héros|Arras": [
 50.29126,
 2.7774
@@ -2006,6 +2030,10 @@
 "place du Vigan|Albi": [
 43.9273,
 2.14781
+],
+"plage de Foncillon|Royan": [
+45.61908,
+-1.03384
 ],
 "plage des Minimes|La Rochelle": [
 46.14074,
@@ -2144,6 +2172,7 @@
 48.70196,
 6.1309
 ],
+"rues adjacentes à la place de la République|Paris": null,
 "services de l'Éducation nationale|Niort": null,
 "siège de la Région Grand Est|Strasbourg": null,
 "siège de la Région|Strasbourg": null,
@@ -2160,6 +2189,7 @@
 48.2865,
 6.94737
 ],
+"traversée urbaine|Reims": null,
 "tribunal de Besançon|Besançon": [
 47.2317,
 6.02511
