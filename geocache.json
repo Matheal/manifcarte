@@ -154,6 +154,10 @@
 48.87076,
 2.30533
 ],
+"Chateaufarine|Besançon": [
+47.21946,
+5.95573
+],
 "Château des Ducs|Chambéry": [
 45.56546,
 5.91643
@@ -617,9 +621,17 @@
 50.6728,
 3.18824
 ],
+"Mairie d'Aulnay-sous-Bois|Aulnay-sous-Bois": [
+48.93425,
+2.50006
+],
 "Mairie de Saint-Nazaire|Saint-Nazaire": [
 47.18269,
 -2.14802
+],
+"Mairie|Illkirch-Graffenstaden": [
+48.52888,
+7.71258
 ],
 "Mairie|Lille": [
 50.61479,
@@ -932,6 +944,10 @@
 48.85826,
 2.2945
 ],
+"Tribunal de Lyon|Lyon": [
+45.76189,
+4.82801
+],
 "Tribunal judiciaire|Bobigny": [
 48.9094,
 2.45007
@@ -1106,6 +1122,10 @@
 "campus sud de santé|Amiens": null,
 "campus universitaire|Toulon": null,
 "carrefour du centenaire|Chambéry": null,
+"cathédrale de Metz|Metz": [
+49.12027,
+6.17663
+],
 "centre Assas|Paris": [
 48.84957,
 2.38612
@@ -1294,16 +1314,19 @@
 1.90284
 ],
 "devant Barthou|Pau": null,
+"devant des mairies|Saint-Brieuc": null,
 "devant l'hôpital de Dax|Dax": null,
 "devant la mairie|Argentan": null,
 "devant la mairie|Avignon": null,
 "devant la mairie|Brest": null,
+"devant la mairie|Brive-la-Gaillarde": null,
 "devant la mairie|Laon": null,
 "devant la mairie|Saint-Denis": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
+"devant les mairies|Paris": null,
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus|Vitry-sur-Seine": null,
 "esplanade des Fontaines|Montauban": [
@@ -1798,9 +1821,17 @@
 45.82632,
 1.26025
 ],
+"mairie de Quimper|Quimper": [
+47.99626,
+-4.10168
+],
 "mairie de Vannes|Vannes": [
 47.65837,
 -2.76093
+],
+"mairie|Bayonne": [
+43.48305,
+-1.55847
 ],
 "mairie|Marseille": null,
 "mairie|Vesoul": [
@@ -2256,9 +2287,17 @@
 49.23975,
 4.03386
 ],
+"voie Taittinger|Reims": [
+49.24611,
+4.02787
+],
 "voie express|Vannes": [
 47.66844,
 -2.72449
+],
+"voie rapide|Chambéry": [
+45.57759,
+5.91971
 ],
 "voies sur berges|Angers": null,
 "zone Horizon|Châteaubriant": null,
