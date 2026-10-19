@@ -7,6 +7,10 @@
 43.81302,
 4.34356
 ],
+"Amiens nord|Amiens": [
+49.89417,
+2.2957
+],
 "Assemblée nationale|Paris": [
 48.86178,
 2.31798
@@ -186,6 +190,10 @@
 "Cultura|Saint-Doulchard": [
 47.11771,
 2.37701
+],
+"Cultura|Villefranche-sur-Saône": [
+45.98325,
+4.74399
 ],
 "Devant la CCI|Brive-la-Gaillarde": null,
 "Donjon de Rouen|Rouen": [
@@ -886,6 +894,7 @@
 55.31949
 ],
 "Rond point du Casino|Boulogne-sur-Mer": null,
+"Rond-point Picot|Châlons-en-Champagne": null,
 "Rond-point de Troyalac'h|Quimper": null,
 "Rond-point de la Patte d'Oie|Blois": null,
 "Rond-point du Cora|Saint-Avold": null,
@@ -1154,6 +1163,10 @@
 44.01104,
 4.87211
 ],
+"centre-ville|Besançon": [
+47.24027,
+6.02002
+],
 "centre-ville|Bordeaux": [
 44.84113,
 -0.65678
@@ -1415,6 +1428,10 @@
 "hôtel de ville|Aix-en-Provence": [
 43.52983,
 5.44724
+],
+"hôtel de ville|Calais": [
+50.95308,
+1.85274
 ],
 "hôtel de ville|Limoges": [
 45.82675,
@@ -2196,6 +2213,10 @@
 3.30903
 ],
 "rond-point de la rocade|Arques": null,
+"rond-point des vaches|Saint-Étienne-du-Rouvray": [
+49.36822,
+1.11144
+],
 "rond-point du Kaligone|Kingersheim": [
 47.78959,
 7.31523
@@ -2251,6 +2272,10 @@
 "sous-préfecture de Vendôme|Vendôme": [
 47.79243,
 1.06669
+],
+"sous-préfecture|Thonon-les-Bains": [
+46.37218,
+6.47617
 ],
 "stade d'Ornano|Caen": [
 49.17949,
@@ -2328,6 +2353,10 @@
 "voie express|Vannes": [
 47.66844,
 -2.72449
+],
+"voie rapide urbaine|Chambéry": [
+45.57759,
+5.91971
 ],
 "voie rapide|Chambéry": [
 45.57759,
