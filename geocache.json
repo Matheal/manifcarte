@@ -3,6 +3,10 @@
 48.90409,
 2.3907
 ],
+"A47|Givors": [
+45.58442,
+4.76965
+],
 "A47|Lyon": [
 45.75781,
 4.83201
@@ -50,6 +54,7 @@
 48.08526,
 -1.69263
 ],
+"CCAS|Amiens": null,
 "CCI de Brive|Brive-la-Gaillarde": null,
 "CCVA|Villeurbanne": [
 45.76761,
@@ -327,6 +332,10 @@
 50.29119,
 2.77713
 ],
+"Hôtel de ville|Caen": [
+49.18112,
+-0.37314
+],
 "Hôtel de ville|Lille": [
 50.61957,
 3.13126
@@ -335,9 +344,21 @@
 45.82675,
 1.26162
 ],
+"Hôtel de ville|Lorient": [
+47.74814,
+-3.36539
+],
 "Hôtel de ville|Marseille": [
 43.29732,
 5.36946
+],
+"Hôtel de ville|Metz": [
+49.13363,
+6.202
+],
+"Hôtel de ville|Orthez": [
+43.48759,
+-0.7741
 ],
 "IRTS|Montpellier": [
 43.60139,
@@ -346,6 +367,10 @@
 "IUT de Dijon|Dijon": [
 47.30993,
 5.06876
+],
+"IUT de Lannion|Lannion": [
+48.75799,
+-3.45142
 ],
 "IUT, Enssat, lycée Félix-Le-Dantec|Lannion": null,
 "Ikea|Villiers-sur-Marne": [
@@ -649,9 +674,29 @@
 47.18269,
 -2.14802
 ],
+"Mairie|Besançon": [
+47.23683,
+6.02224
+],
+"Mairie|Carentan-les-Marais": [
+49.27528,
+-1.14583
+],
+"Mairie|Châteaubriant": [
+47.72159,
+-1.37601
+],
+"Mairie|Clermont-Ferrand": [
+45.85038,
+3.08512
+],
 "Mairie|Illkirch-Graffenstaden": [
 48.52888,
 7.71258
+],
+"Mairie|Laon": [
+49.5275,
+3.54084
 ],
 "Mairie|Lille": [
 50.61479,
@@ -662,9 +707,29 @@
 1.25924
 ],
 "Mairie|Marseille": null,
+"Mairie|Nîmes": [
+43.93658,
+4.32251
+],
+"Mairie|Poitiers": [
+46.51084,
+0.41258
+],
 "Mairie|Reims": [
 49.33987,
 4.02287
+],
+"Mairie|Saint-Lô": [
+49.22862,
+-1.13656
+],
+"Mairie|Saint-Nazaire": [
+47.18262,
+-2.14797
+],
+"Mairie|Tarbes": [
+43.23332,
+0.0788
 ],
 "Mairie|Épernay": [
 49.06041,
@@ -699,6 +764,10 @@
 "Monthieu|Saint-Étienne": [
 45.44154,
 4.41537
+],
+"Musée du Louvre|Paris": [
+48.86115,
+2.33803
 ],
 "Nanterre-Université|Nanterre": [
 48.90105,
@@ -897,6 +966,7 @@
 48.11134,
 -1.68002
 ],
+"Richter, Paul-Valéry et faculté de Sciences|Montpellier": null,
 "Rivière-des-Galets|Le Port": [
 -20.96105,
 55.31949
@@ -1126,6 +1196,10 @@
 6.17026
 ],
 "campus Bradois ingénierie|Nancy": null,
+"campus Carlone|Nice": [
+43.69269,
+7.23787
+],
 "campus Mailly|Perpignan": [
 42.69793,
 2.89901
@@ -1357,25 +1431,38 @@
 "devant Barthou|Pau": null,
 "devant des mairies|Saint-Brieuc": null,
 "devant l'hôpital de Dax|Dax": null,
+"devant l'hôtel de ville|Lille": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
 "devant la mairie|Argentan": null,
 "devant la mairie|Avignon": null,
 "devant la mairie|Beauvais": null,
 "devant la mairie|Brest": null,
+"devant la mairie|Brignoles": null,
 "devant la mairie|Brive-la-Gaillarde": null,
+"devant la mairie|Cannes": null,
 "devant la mairie|Creil": null,
 "devant la mairie|Laon": null,
+"devant la mairie|Lille": null,
 "devant la mairie|Lorient": null,
+"devant la mairie|Lunéville": null,
 "devant la mairie|Montluçon": null,
 "devant la mairie|Niort": null,
 "devant la mairie|Ploemeur": null,
 "devant la mairie|Saint-Denis": null,
+"devant la mairie|Saint-Dié-des-Vosges": null,
 "devant la mairie|Saint-Gilles-Croix-de-Vie": null,
+"devant la mairie|Saint-Laurent-du-Var": null,
 "devant la mairie|Thaon-les-Vosges": null,
+"devant la mairie|Toul": null,
+"devant la mairie|Tours": null,
+"devant la mairie|Vence": null,
+"devant la mairie|Villers-lès-Nancy": null,
+"devant la mairie|Épinal": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
+"devant les mairies|Nancy": null,
 "devant les mairies|Paris": null,
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus|Vitry-sur-Seine": null,
@@ -1390,6 +1477,10 @@
 4.8102
 ],
 "fac du Mirail|Toulouse": null,
+"faculté de Sciences|Montpellier": [
+43.6321,
+3.86429
+],
 "faculté de pharmacie de Paris|Paris": [
 48.84315,
 2.33534
@@ -1914,6 +2005,10 @@
 47.74929,
 7.33557
 ],
+"mairie|Perpignan": [
+42.6704,
+2.83127
+],
 "mairie|Vesoul": [
 47.61144,
 6.21526
@@ -1930,10 +2025,15 @@
 47.21503,
 -1.54908
 ],
+"musée du Louvre|Paris": [
+48.86115,
+2.33803
+],
 "palais de justice|Saint-Nazaire": [
 47.27908,
 -2.21509
 ],
+"parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
 "passage Pasteur|Besançon": [
 47.23863,
 6.02114
@@ -2207,6 +2307,10 @@
 48.00466,
 0.31253
 ],
+"périphérique|Lille": [
+50.65116,
+3.06238
+],
 "pôle universitaire|Quimper": [
 47.9724,
 -4.09353
@@ -2318,6 +2422,7 @@
 49.17949,
 -0.39695
 ],
+"supermarché|Longuenesse": null,
 "tour de la Liberté|Saint-Dié-des-Vosges": [
 48.2865,
 6.94737
@@ -2418,6 +2523,10 @@
 "Île de Ré|La Rochelle": [
 46.1777,
 -1.18973
+],
+"à la mairie|Dijon": [
+47.42931,
+4.94428
 ],
 "école du Schluthfeld|Strasbourg": [
 48.56781,
