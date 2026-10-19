@@ -98,6 +98,7 @@
 2.36602
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
+"Campus Pasteur, Mont-Saint-Aignan et Madrillet|Rouen": null,
 "Campus de Sciences Po Menton|Menton": null,
 "Campus de Sciences Po|Menton": null,
 "Campus de Villejean|Rennes": [
@@ -120,6 +121,10 @@
 "Carrefour Courtine|Avignon": [
 43.92829,
 4.79335
+],
+"Carrefour Dillon|Fort-de-France": [
+14.61539,
+-61.04981
 ],
 "Cartabaffe|Paris": [
 48.86804,
@@ -222,6 +227,7 @@
 ],
 "Elysée et Matignon|Paris": null,
 "Faculté de lettres|Metz": null,
+"Faculté de lettres|Pau": null,
 "Foch|Nantes": [
 47.21932,
 -1.55026
@@ -320,6 +326,10 @@
 45.74012,
 4.81946
 ],
+"Hôtel de Ville|Aulnay-sous-Bois": [
+48.93565,
+2.49493
+],
 "Hôtel de Ville|Limoges": [
 45.82675,
 1.26162
@@ -335,6 +345,10 @@
 "Hôtel de ville|Caen": [
 49.18112,
 -0.37314
+],
+"Hôtel de ville|Colmar": [
+48.08738,
+7.27796
 ],
 "Hôtel de ville|Lille": [
 50.61957,
@@ -674,9 +688,29 @@
 47.18269,
 -2.14802
 ],
+"Mairie|Angers": [
+47.37144,
+-0.49679
+],
+"Mairie|Angoulême": [
+45.66587,
+0.23709
+],
+"Mairie|Avignon": [
+43.95962,
+4.86386
+],
+"Mairie|Beauvais": [
+49.40461,
+2.1119
+],
 "Mairie|Besançon": [
 47.23683,
 6.02224
+],
+"Mairie|Béziers": [
+43.37085,
+3.2501
 ],
 "Mairie|Carentan-les-Marais": [
 49.27528,
@@ -689,6 +723,10 @@
 "Mairie|Clermont-Ferrand": [
 45.85038,
 3.08512
+],
+"Mairie|Creil": [
+49.26116,
+2.47305
 ],
 "Mairie|Illkirch-Graffenstaden": [
 48.52888,
@@ -719,6 +757,10 @@
 49.33987,
 4.02287
 ],
+"Mairie|Rochefort": [
+45.96156,
+-0.98634
+],
 "Mairie|Saint-Lô": [
 49.22862,
 -1.13656
@@ -727,6 +769,7 @@
 47.18262,
 -2.14797
 ],
+"Mairie|Saint-Pierre": null,
 "Mairie|Tarbes": [
 43.23332,
 0.0788
@@ -815,6 +858,7 @@
 48.59748,
 7.76989
 ],
+"Parvis de l'ancien hôtel de ville|Angers": null,
 "Parvis de la gare matabiau|Toulouse": null,
 "Place Albert 1er|Montpellier": [
 43.61576,
@@ -997,6 +1041,10 @@
 50.63219,
 3.0603
 ],
+"République|Lille": [
+50.59842,
+3.09845
+],
 "République|Paris": [
 48.86789,
 2.36388
@@ -1157,6 +1205,7 @@
 45.75569,
 4.8758
 ],
+"avenue Jean Moulin|Saint-Denis": null,
 "avenue Jean-Médecin|Nice": [
 43.70339,
 7.26612
@@ -1439,8 +1488,10 @@
 "devant la mairie|Brest": null,
 "devant la mairie|Brignoles": null,
 "devant la mairie|Brive-la-Gaillarde": null,
+"devant la mairie|Caen": null,
 "devant la mairie|Cannes": null,
 "devant la mairie|Creil": null,
+"devant la mairie|Guéret": null,
 "devant la mairie|Laon": null,
 "devant la mairie|Lille": null,
 "devant la mairie|Lorient": null,
@@ -1448,6 +1499,7 @@
 "devant la mairie|Montluçon": null,
 "devant la mairie|Niort": null,
 "devant la mairie|Ploemeur": null,
+"devant la mairie|Quimper": null,
 "devant la mairie|Saint-Denis": null,
 "devant la mairie|Saint-Dié-des-Vosges": null,
 "devant la mairie|Saint-Gilles-Croix-de-Vie": null,
@@ -1458,10 +1510,15 @@
 "devant la mairie|Vence": null,
 "devant la mairie|Villers-lès-Nancy": null,
 "devant la mairie|Épinal": null,
+"devant la mairie|Étaples": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
+"devant les mairies|Metz": [
+49.13066,
+6.14599
+],
 "devant les mairies|Nancy": null,
 "devant les mairies|Paris": null,
 "du cinéma REX au pont Michel|Paris": null,
@@ -1557,6 +1614,11 @@
 50.95308,
 1.85274
 ],
+"hôtel de ville|La Rochelle": [
+46.15988,
+-1.15125
+],
+"hôtel de ville|Lescar": null,
 "hôtel de ville|Limoges": [
 45.82675,
 1.26162
@@ -2263,6 +2325,7 @@
 47.8961,
 1.89554
 ],
+"pont autoroutier de Givors|Givors": null,
 "pont des Catalans|Toulouse": [
 43.60374,
 1.428
@@ -2387,6 +2450,10 @@
 "rue Sainte-Catherine|Bordeaux": [
 44.8397,
 -0.57415
+],
+"rue Trachel|Nice": [
+43.70628,
+7.26188
 ],
 "rue Vital-Carles|Bordeaux": [
 44.84018,
