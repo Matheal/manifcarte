@@ -3,6 +3,10 @@
 48.90409,
 2.3907
 ],
+"A47|Lyon": [
+45.75781,
+4.83201
+],
 "A9|Nîmes": [
 43.81302,
 4.34356
@@ -730,6 +734,10 @@
 47.76479,
 7.33591
 ],
+"Parc du Colosse|Saint-André": [
+-20.92668,
+55.66193
+],
 "Parlement Européen|Strasbourg": [
 48.59748,
 7.76989
@@ -902,6 +910,10 @@
 "Rotonde|Aix-en-Provence": [
 43.52562,
 5.44481
+],
+"Ruban Bleu|Saint-Nazaire": [
+47.27516,
+-2.20579
 ],
 "Rue de Créqui|Lyon": [
 45.76437,
@@ -1094,6 +1106,10 @@
 "boulevard Delacourtie|Toulouse": [
 43.58397,
 1.4495
+],
+"boulevard Limbert|Avignon": [
+43.9448,
+4.81602
 ],
 "boulevard des Coloniaux|Poitiers": null,
 "bourse du travail|Villeurbanne": null,
@@ -1341,13 +1357,21 @@
 "devant Barthou|Pau": null,
 "devant des mairies|Saint-Brieuc": null,
 "devant l'hôpital de Dax|Dax": null,
+"devant la mairie d'Argenteuil|Argenteuil": null,
 "devant la mairie|Argentan": null,
 "devant la mairie|Avignon": null,
+"devant la mairie|Beauvais": null,
 "devant la mairie|Brest": null,
 "devant la mairie|Brive-la-Gaillarde": null,
+"devant la mairie|Creil": null,
 "devant la mairie|Laon": null,
+"devant la mairie|Lorient": null,
 "devant la mairie|Montluçon": null,
+"devant la mairie|Niort": null,
+"devant la mairie|Ploemeur": null,
 "devant la mairie|Saint-Denis": null,
+"devant la mairie|Saint-Gilles-Croix-de-Vie": null,
+"devant la mairie|Thaon-les-Vosges": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
@@ -1355,6 +1379,7 @@
 "devant les mairies|Paris": null,
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus|Vitry-sur-Seine": null,
+"dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
 "esplanade des Fontaines|Montauban": [
 44.01803,
 1.3574
@@ -1379,6 +1404,10 @@
 7.26758
 ],
 "galerie marchande Les Capucins|Thionville": null,
+"gare Lille Flandres|Lille": [
+50.63638,
+3.07053
+],
 "gare SNCF|Voiron": [
 45.3643,
 5.59427
@@ -1394,6 +1423,10 @@
 "gare de Lyon|Paris": [
 48.84366,
 2.37449
+],
+"gare du Mans|Le Mans": [
+47.99532,
+0.19219
 ],
 "gare|Angers": [
 47.46436,
@@ -2125,6 +2158,10 @@
 "pont Chaban-Delmas|Bordeaux": [
 44.85831,
 -0.55178
+],
+"pont Joffre|Orléans": [
+47.8961,
+1.89554
 ],
 "pont des Catalans|Toulouse": [
 43.60374,
