@@ -15,6 +15,7 @@
 43.81302,
 4.34356
 ],
+"Agence régionale de santé|Tours": null,
 "Amiens nord|Amiens": [
 49.89417,
 2.2957
@@ -53,6 +54,10 @@
 "Brequigny|Rennes": [
 48.08526,
 -1.69263
+],
+"Brière|Saint-Nazaire": [
+47.31711,
+-2.21982
 ],
 "CCAS|Amiens": null,
 "CCI de Brive|Brive-la-Gaillarde": null,
@@ -712,6 +717,10 @@
 45.66587,
 0.23709
 ],
+"Mairie|Annecy": [
+45.94662,
+6.12204
+],
 "Mairie|Avignon": [
 43.95962,
 4.86386
@@ -747,6 +756,10 @@
 "Mairie|Creil": [
 49.26116,
 2.47305
+],
+"Mairie|Dijon": [
+47.29126,
+5.10211
 ],
 "Mairie|Illkirch-Graffenstaden": [
 48.52888,
@@ -1111,6 +1124,10 @@
 ],
 "Siège du Groupe ADP|Tremblay-en-France": null,
 "Solidarité Femmes 44|Nantes": null,
+"Stade de la Mosson|Montpellier": [
+43.62202,
+3.81209
+],
 "Stanley Tools|Besançon": null,
 "Station Debourg|Lyon": [
 45.73098,
@@ -1135,6 +1152,10 @@
 "Tribunal judiciaire|Bobigny": [
 48.9094,
 2.45007
+],
+"UPPA|Pau": [
+43.31461,
+-0.36533
 ],
 "UTT|Troyes": [
 48.26908,
@@ -1463,6 +1484,10 @@
 "collège Lakanal|Aubagne": [
 43.28589,
 5.58259
+],
+"collège Paul Éluard|Montreuil": [
+48.85369,
+2.42722
 ],
 "collège René-Cassin|Corbas": [
 45.65673,
@@ -2219,6 +2244,10 @@
 4.84738
 ],
 "place Guichard|Villeurbanne": null,
+"place Guérin|Brest": [
+48.39656,
+-4.47909
+],
 "place Jasmin|Agen": [
 44.20406,
 0.61217
@@ -2428,6 +2457,10 @@
 1.89554
 ],
 "pont autoroutier de Givors|Givors": null,
+"pont d'Avesnières|Laval": [
+48.05995,
+-0.76156
+],
 "pont des Catalans|Toulouse": [
 43.60374,
 1.428
