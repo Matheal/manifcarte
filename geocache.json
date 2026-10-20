@@ -184,6 +184,10 @@
 48.76106,
 2.37649
 ],
+"Cnews|Paris": [
+48.84412,
+2.27601
+],
 "Conseil des prud'hommes de montpellier|Montpellier": null,
 "Conservatoire d'Orléans|Orléans": [
 47.83827,
@@ -462,6 +466,10 @@
 "Loire-Atlantique|Nantes": [
 47.21864,
 -1.55414
+],
+"Louvre|Paris": [
+48.86115,
+2.33803
 ],
 "Lumière|Aubagne": null,
 "Lumière|La Ciotat": [
@@ -824,6 +832,10 @@
 48.84768,
 2.39552
 ],
+"Ombrière du Vieux-Port|Marseille": [
+43.29464,
+5.37414
+],
 "Opéra de Paris|Paris": [
 48.87653,
 2.32524
@@ -1151,6 +1163,10 @@
 47.31331,
 5.06886
 ],
+"Université de Bretagne sud|Lorient": [
+47.742,
+-3.3844
+],
 "Université de Nantes|Nantes": [
 47.24546,
 -1.55199
@@ -1294,6 +1310,7 @@
 48.84957,
 2.38612
 ],
+"centre historique|Rouen": null,
 "centre-ville|Angers": [
 47.46549,
 -0.55869
@@ -1335,6 +1352,10 @@
 48.00174,
 0.20306
 ],
+"centre-ville|Lille": [
+50.72297,
+3.1531
+],
 "centre-ville|Limoges": [
 45.82468,
 1.26056
@@ -1355,6 +1376,7 @@
 43.60866,
 3.88644
 ],
+"centre-ville|Mâcon": null,
 "centre-ville|Nancy": [
 48.68963,
 6.18426
@@ -1486,7 +1508,9 @@
 "devant des mairies|Saint-Brieuc": null,
 "devant l'hôpital de Dax|Dax": null,
 "devant l'hôtel de ville|Lille": null,
+"devant la Mairie|Nîmes": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
+"devant la mairie|Angoulême": null,
 "devant la mairie|Argentan": null,
 "devant la mairie|Avignon": null,
 "devant la mairie|Beauvais": null,
@@ -1495,15 +1519,19 @@
 "devant la mairie|Brive-la-Gaillarde": null,
 "devant la mairie|Caen": null,
 "devant la mairie|Cannes": null,
+"devant la mairie|Clermont-Ferrand": null,
 "devant la mairie|Creil": null,
 "devant la mairie|Guéret": null,
 "devant la mairie|Laon": null,
 "devant la mairie|Lille": null,
 "devant la mairie|Lorient": null,
 "devant la mairie|Lunéville": null,
+"devant la mairie|Millau": null,
 "devant la mairie|Montluçon": null,
 "devant la mairie|Niort": null,
+"devant la mairie|Nîmes": null,
 "devant la mairie|Ploemeur": null,
+"devant la mairie|Poitiers": null,
 "devant la mairie|Quimper": null,
 "devant la mairie|Rochefort": null,
 "devant la mairie|Saint-Denis": null,
@@ -1521,6 +1549,7 @@
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
+"devant les mairies|Dunkerque": null,
 "devant les mairies|Metz": [
 49.13066,
 6.14599
@@ -2052,6 +2081,10 @@
 49.20268,
 -0.33848
 ],
+"mairie de Carentan-les-Marais|Carentan-les-Marais": [
+49.27528,
+-1.14583
+],
 "mairie de Lille|Lille": [
 50.63275,
 3.07066
@@ -2059,6 +2092,10 @@
 "mairie de Limoges|Limoges": [
 45.82632,
 1.26025
+],
+"mairie de Nîmes|Nîmes": [
+43.8367,
+4.36014
 ],
 "mairie de Quimper|Quimper": [
 47.99626,
@@ -2072,6 +2109,14 @@
 43.48305,
 -1.55847
 ],
+"mairie|Lille": [
+50.61479,
+3.11637
+],
+"mairie|Lorient": [
+47.69669,
+-3.35289
+],
 "mairie|Marseille": null,
 "mairie|Mulhouse": [
 47.74929,
@@ -2080,6 +2125,10 @@
 "mairie|Perpignan": [
 42.6704,
 2.83127
+],
+"mairie|Poitiers": [
+46.51086,
+0.35061
 ],
 "mairie|Vesoul": [
 47.61144,
@@ -2106,6 +2155,7 @@
 -2.21509
 ],
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
+"parvis de la mairie|Montrouge": null,
 "passage Pasteur|Besançon": [
 47.23863,
 6.02114
