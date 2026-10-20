@@ -114,6 +114,10 @@
 45.19114,
 5.77005
 ],
+"Capitole|Toulouse": [
+43.60444,
+1.4445
+],
 "Carrefour City de l'Alma|Rennes": [
 48.09827,
 -1.67498
@@ -345,6 +349,10 @@
 "Hôtel de ville|Arras": [
 50.29119,
 2.77713
+],
+"Hôtel de ville|Besançon": [
+47.23771,
+6.02384
 ],
 "Hôtel de ville|Caen": [
 49.18112,
@@ -724,6 +732,10 @@
 49.27528,
 -1.14583
 ],
+"Mairie|Champagnole": [
+46.74559,
+5.9078
+],
 "Mairie|Châteaubriant": [
 47.72159,
 -1.37601
@@ -768,6 +780,10 @@
 "Mairie|Rochefort": [
 45.96156,
 -0.98634
+],
+"Mairie|Rouen": [
+49.44053,
+1.14479
 ],
 "Mairie|Saint-Lô": [
 49.22862,
@@ -881,6 +897,7 @@
 6.17785
 ],
 "Place E. Feuillère (Place des jets d'eau)|Vesoul": null,
+"Place E. Feuillère|Vesoul": null,
 "Place Jean Jaurès|Troyes": [
 48.29458,
 4.07018
@@ -1559,6 +1576,10 @@
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus|Vitry-sur-Seine": null,
 "dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
+"esplanade De Gaulle|Rennes": [
+48.10591,
+-1.67643
+],
 "esplanade des Fontaines|Montauban": [
 44.01803,
 1.3574
@@ -1569,6 +1590,7 @@
 4.8102
 ],
 "fac du Mirail|Toulouse": null,
+"facs|Brest": null,
 "faculté de Sciences|Montpellier": [
 43.6321,
 3.86429
@@ -1902,6 +1924,10 @@
 "lycée Madeleine-Michelis|Amiens": [
 49.88922,
 2.30308
+],
+"lycée Malraux|Biarritz": [
+43.48559,
+-1.54672
 ],
 "lycée Marc Bloch|Bischheim": [
 48.61649,
@@ -2570,6 +2596,7 @@
 49.17949,
 -0.39695
 ],
+"station de métro|Vénissieux": null,
 "supermarché|Longuenesse": null,
 "tour de la Liberté|Saint-Dié-des-Vosges": [
 48.2865,
@@ -2663,6 +2690,10 @@
 "École du Louvre|Paris": [
 48.86093,
 2.33097
+],
+"École polytechnique|Palaiseau": [
+48.71279,
+2.21075
 ],
 "École supérieure d'art de Lorraine|Épinal": [
 48.17072,
