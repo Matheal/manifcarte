@@ -798,6 +798,10 @@
 49.44053,
 1.14479
 ],
+"Mairie|Saint-Brieuc": [
+48.40768,
+-2.81823
+],
 "Mairie|Saint-Lô": [
 49.22862,
 -1.13656
@@ -1149,6 +1153,7 @@
 45.76189,
 4.82801
 ],
+"Tribunal judiciaire de Paris|Paris": null,
 "Tribunal judiciaire|Bobigny": [
 48.9094,
 2.45007
@@ -1160,6 +1165,10 @@
 "UTT|Troyes": [
 48.26908,
 4.0665
+],
+"Universite Bretagne Sud|Lorient": [
+47.742,
+-3.3844
 ],
 "Universite de Nantes|Nantes": [
 47.24546,
@@ -1204,6 +1213,10 @@
 "Université de Bretagne sud|Lorient": [
 47.742,
 -3.3844
+],
+"Université de Lorraine|Nancy": [
+48.68386,
+6.19419
 ],
 "Université de Nantes|Nantes": [
 47.24546,
@@ -1377,6 +1390,7 @@
 45.69122,
 5.91236
 ],
+"centre-ville|Cholet": null,
 "centre-ville|Clermont-Ferrand": null,
 "centre-ville|Dijon": [
 47.32355,
@@ -1709,6 +1723,10 @@
 43.48759,
 -0.7741
 ],
+"hôtel de ville|Saint-Étienne": [
+45.4387,
+4.3874
+],
 "hôtel de ville|Tulle": [
 45.2663,
 1.77189
@@ -1981,6 +1999,10 @@
 "lycée Mounier|Grenoble": [
 45.17919,
 5.73067
+],
+"lycée Nelson Mandela|Nantes": [
+47.20832,
+-1.53354
 ],
 "lycée Pape-Clément|Pessac": [
 44.80912,
@@ -2715,6 +2737,10 @@
 "voies sur berges|Angers": null,
 "zone Horizon|Châteaubriant": null,
 "zone d'activité du Monné|Allonnes": null,
+"École Polytechnique|Palaiseau": [
+48.71279,
+2.21075
+],
 "École des Mines|Paris": null,
 "École des Mines|Saint-Étienne": [
 45.42388,
