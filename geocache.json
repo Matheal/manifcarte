@@ -1033,6 +1033,10 @@
 45.76437,
 4.84691
 ],
+"Rue des conserveries|Douarnenez": [
+48.07932,
+-4.30119
+],
 "Réformés|Marseille": [
 43.29882,
 5.38592
@@ -1403,6 +1407,7 @@
 47.38146,
 0.76349
 ],
+"château du Breuil|Mézidon Vallée d'Auge": null,
 "cité scolaire Beaumont|Redon": [
 47.65578,
 -2.09402
@@ -1500,6 +1505,7 @@
 "devant la mairie|Niort": null,
 "devant la mairie|Ploemeur": null,
 "devant la mairie|Quimper": null,
+"devant la mairie|Rochefort": null,
 "devant la mairie|Saint-Denis": null,
 "devant la mairie|Saint-Dié-des-Vosges": null,
 "devant la mairie|Saint-Gilles-Croix-de-Vie": null,
@@ -1622,6 +1628,10 @@
 "hôtel de ville|Limoges": [
 45.82675,
 1.26162
+],
+"hôtel de ville|Orthez": [
+43.48759,
+-0.7741
 ],
 "hôtel de ville|Tulle": [
 45.2663,
@@ -2166,6 +2176,10 @@
 47.99582,
 -4.10292
 ],
+"place Saint-Sulpice|Paris": [
+48.85088,
+2.33375
+],
 "place Sainte-Anne|Rennes": [
 48.11442,
 -1.68057
@@ -2219,7 +2233,15 @@
 47.276,
 -2.20508
 ],
+"place de l'Hôtel-de-Ville|Chalon-sur-Saône": [
+46.78079,
+4.85273
+],
 "place de l'Opéra|Toulon": null,
+"place de l'Étoile|Strasbourg": [
+48.57423,
+7.75433
+],
 "place de la Bastille|Paris": [
 48.85267,
 2.36882
@@ -2252,6 +2274,10 @@
 "place de la République|Lille": [
 50.6313,
 3.06097
+],
+"place de la République|Marseille": [
+43.33484,
+5.48346
 ],
 "place de la République|Paris": [
 48.86754,
@@ -2365,6 +2391,10 @@
 47.39207,
 0.69218
 ],
+"pyramide du Louvre|Paris": [
+48.86099,
+2.33584
+],
 "péage du Mans nord|Le Mans": null,
 "péage|Le Mans": [
 48.00466,
@@ -2382,6 +2412,7 @@
 47.24538,
 -1.55159
 ],
+"quartier des Halles et de République|Paris": null,
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
 0.24084
