@@ -834,6 +834,10 @@
 45.82678,
 1.25924
 ],
+"Mairie|Lorient": [
+47.69669,
+-3.35289
+],
 "Mairie|Marseille": null,
 "Mairie|Nîmes": [
 43.93658,
@@ -970,6 +974,7 @@
 ],
 "Parvis de l'ancien hôtel de ville|Angers": null,
 "Parvis de la gare matabiau|Toulouse": null,
+"Patinoire d'Orléans|Orléans": null,
 "Place Albert 1er|Montpellier": [
 43.61576,
 3.87444
@@ -1056,6 +1061,10 @@
 "Plaine des sports|Saint-Nazaire": [
 47.27269,
 -2.23166
+],
+"Port de Papeete|Papeete": [
+-17.52829,
+-149.57593
 ],
 "Porte d'Aix|Marseille": [
 43.30185,
@@ -1534,6 +1543,7 @@
 47.21484,
 -1.55794
 ],
+"centre-ville|Narbonne": null,
 "centre-ville|Niort": [
 46.31941,
 -0.45468
@@ -2834,6 +2844,10 @@
 "université du Mans|Le Mans": [
 48.01364,
 0.15905
+],
+"université|Montpellier": [
+43.61338,
+3.87347
 ],
 "université|Nantes": [
 47.24546,
