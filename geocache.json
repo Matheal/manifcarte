@@ -321,6 +321,10 @@
 44.02318,
 1.35092
 ],
+"Hôpital de la Pitié-Salpêtrière|Paris": [
+48.83635,
+2.36304
+],
 "Hôpital de la Timone|Marseille": [
 43.28957,
 5.40348
@@ -402,6 +406,10 @@
 "Hôtel de ville|Soissons": [
 49.38377,
 3.3292
+],
+"Hôtel de ville|Épinal": [
+48.19725,
+6.44073
 ],
 "IRTS|Montpellier": [
 43.60139,
@@ -647,6 +655,10 @@
 "Lycée Ozenne|Toulouse": [
 43.60969,
 1.44185
+],
+"Lycée Pasteur|Besançon": [
+47.23765,
+6.01913
 ],
 "Lycée Paul Eluard|Saint-Denis": null,
 "Lycée Paul-Eluard|Saint-Denis": null,
@@ -1155,6 +1167,7 @@
 48.8539,
 2.32902
 ],
+"Sciences po Strasbourg|Strasbourg": null,
 "Sciences-Po|Aix-en-Provence": [
 43.52925,
 5.4357
@@ -1749,6 +1762,7 @@
 -3.33086
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
+"hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
@@ -2283,6 +2297,7 @@
 47.27908,
 -2.21509
 ],
+"parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
 "parvis de la mairie|Montrouge": null,
 "passage Pasteur|Besançon": [
@@ -2721,6 +2736,10 @@
 "tribunal de Besançon|Besançon": [
 47.2317,
 6.02511
+],
+"tribunal de Bobigny|Bobigny": [
+48.9094,
+2.45007
 ],
 "tribunal judiciaire|Grenoble": [
 45.19193,
