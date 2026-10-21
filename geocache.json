@@ -484,6 +484,7 @@
 1.41803
 ],
 "Les Capucins|Thionville": null,
+"Les Six-Croix|Donges": null,
 "Lille Centre|Lille": [
 50.63195,
 3.06849
@@ -765,6 +766,10 @@
 45.85038,
 3.08512
 ],
+"Mairie|Coutances": [
+49.03566,
+-1.47678
+],
 "Mairie|Creil": [
 49.26116,
 2.47305
@@ -851,6 +856,10 @@
 "Marché des États-unis|Lyon": [
 45.72999,
 4.86657
+],
+"Matignon|Paris": [
+48.86972,
+2.3112
 ],
 "Metro Jean Jaurès|Toulouse": null,
 "Mindin|Saint-Brevin-les-Pins": [
@@ -1150,6 +1159,10 @@
 43.52925,
 5.4357
 ],
+"Six-Croix|Donges": [
+47.33978,
+-2.09326
+],
 "Siège du Groupe ADP|Tremblay-en-France": null,
 "Solidarité Femmes 44|Nantes": null,
 "Stade de la Mosson|Montpellier": [
@@ -1253,6 +1266,10 @@
 "Université de Perpignan|Perpignan": [
 42.68217,
 2.8991
+],
+"Université de Rouen|Rouen": [
+49.38492,
+1.07208
 ],
 "Université de Toulon|Toulon": [
 43.13541,
@@ -1662,6 +1679,10 @@
 "faculté de Sciences|Montpellier": [
 43.6321,
 3.86429
+],
+"faculté de lettres|Aix-en-Provence": [
+43.51649,
+5.44805
 ],
 "faculté de lettres|Brest": null,
 "faculté de pharmacie de Paris|Paris": [
@@ -2176,6 +2197,10 @@
 "mairie d'Angers|Angers": [
 47.47121,
 -0.5483
+],
+"mairie d'Annecy|Annecy": [
+45.90574,
+6.12292
 ],
 "mairie de Brest|Brest": [
 48.3913,
