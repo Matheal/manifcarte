@@ -157,6 +157,10 @@
 45.1902,
 5.71495
 ],
+"Centre-ville|Limoges": [
+45.82468,
+1.26056
+],
 "Centre-ville|Nancy": [
 48.68963,
 6.18426
@@ -387,9 +391,17 @@
 49.13363,
 6.202
 ],
+"Hôtel de ville|Montluçon": [
+46.33967,
+2.60753
+],
 "Hôtel de ville|Orthez": [
 43.48759,
 -0.7741
+],
+"Hôtel de ville|Soissons": [
+49.38377,
+3.3292
 ],
 "IRTS|Montpellier": [
 43.60139,
@@ -761,6 +773,10 @@
 47.29126,
 5.10211
 ],
+"Mairie|Hirson": [
+49.92012,
+4.08389
+],
 "Mairie|Illkirch-Graffenstaden": [
 48.52888,
 7.71258
@@ -909,6 +925,10 @@
 43.61576,
 3.87444
 ],
+"Place Bellecour|Lyon": [
+45.75766,
+4.83243
+],
 "Place Carnot|Nancy": [
 48.69344,
 6.17785
@@ -1015,6 +1035,10 @@
 "Préfecture|Clermont-Ferrand": [
 45.77595,
 3.08404
+],
+"Préfecture|Gap": [
+44.55747,
+6.07598
 ],
 "Préfecture|Pau": [
 43.29605,
@@ -1382,6 +1406,10 @@
 44.84113,
 -0.65678
 ],
+"centre-ville|Brest": [
+48.38769,
+-4.48009
+],
 "centre-ville|Caen": [
 49.18288,
 -0.36472
@@ -1628,12 +1656,14 @@
 43.94782,
 4.8102
 ],
+"fac de lettres|Brest": null,
 "fac du Mirail|Toulouse": null,
 "facs|Brest": null,
 "faculté de Sciences|Montpellier": [
 43.6321,
 3.86429
 ],
+"faculté de lettres|Brest": null,
 "faculté de pharmacie de Paris|Paris": [
 48.84315,
 2.33534
@@ -1647,6 +1677,7 @@
 43.71701,
 7.26758
 ],
+"forum des entreprises de Phelma|Grenoble": null,
 "galerie marchande Les Capucins|Thionville": null,
 "gare Lille Flandres|Lille": [
 50.63638,
@@ -2486,6 +2517,10 @@
 "pont des Catalans|Toulouse": [
 43.60374,
 1.428
+],
+"port de Papeete|Papeete": [
+-17.52829,
+-149.57593
 ],
 "port de Vannes|Vannes": [
 47.64878,
