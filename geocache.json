@@ -305,6 +305,10 @@
 48.58296,
 7.74783
 ],
+"Hopital de la Pitie-Salpetriere|Paris": [
+48.83635,
+2.36304
+],
 "Hédas|Pau": [
 43.29636,
 -0.37298
@@ -906,6 +910,10 @@
 45.44154,
 4.41537
 ],
+"Moudong Nord|Baie-Mahault": [
+16.24462,
+-61.58632
+],
 "Musée du Louvre|Paris": [
 48.86115,
 2.33803
@@ -1285,6 +1293,10 @@
 47.742,
 -3.3844
 ],
+"Université de Caen|Caen": [
+49.18908,
+-0.36313
+],
 "Université de Lorraine|Nancy": [
 48.68386,
 6.19419
@@ -1331,6 +1343,10 @@
 "ZAC|Le Mans": [
 47.94833,
 0.18014
+],
+"Zénith|Strasbourg": [
+48.59439,
+7.68921
 ],
 "arrêt Tourelles Dauphine|Orléans": null,
 "autoroute A10|Tours": [
@@ -1457,6 +1473,7 @@
 44.84113,
 -0.65678
 ],
+"centre-ville|Bourg-en-Bresse": null,
 "centre-ville|Brest": [
 48.38769,
 -4.48009
@@ -1479,6 +1496,7 @@
 45.1902,
 5.71495
 ],
+"centre-ville|Le Havre": null,
 "centre-ville|Le Mans": [
 48.00174,
 0.20306
@@ -1523,6 +1541,10 @@
 "centre-ville|Pau": [
 43.29147,
 -0.36975
+],
+"centre-ville|Perpignan": [
+42.67859,
+2.94053
 ],
 "centre-ville|Poitiers": [
 46.56597,
@@ -2737,7 +2759,9 @@
 ],
 "rue située à l'arrière du café Blondel|Metz": null,
 "rues adjacentes à la place de la République|Paris": null,
+"salle de la Bourse|Strasbourg": null,
 "services de l'Éducation nationale|Niort": null,
+"siège de SNCF Réseau|Paris": null,
 "siège de la Région Grand Est|Strasbourg": null,
 "siège de la Région|Strasbourg": null,
 "siège du MEDEF|Lille": null,
