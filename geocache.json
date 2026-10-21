@@ -33,6 +33,10 @@
 48.83423,
 2.35365
 ],
+"Aéroport de Nice Côte d'Azur|Nice": [
+43.65982,
+7.21375
+],
 "Barachois|Saint-Denis": [
 -20.87448,
 55.4464
@@ -43,6 +47,10 @@
 2.36886
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
+"Bourse du Travail|Lyon": [
+45.75921,
+4.84822
+],
 "Bourse du Travail|Saint-Étienne": [
 45.43315,
 4.38772
@@ -407,6 +415,10 @@
 49.38377,
 3.3292
 ],
+"Hôtel de ville|Villefontaine": [
+45.60943,
+5.15683
+],
 "Hôtel de ville|Épinal": [
 48.19725,
 6.44073
@@ -427,6 +439,10 @@
 "Ikea|Villiers-sur-Marne": [
 48.82791,
 2.52987
+],
+"Insa|Saint-Étienne-du-Rouvray": [
+49.38492,
+1.07208
 ],
 "Inspection académique de Haute-Corse|Bastia": null,
 "Institut Agro de Montpellier|Montpellier": [
@@ -734,6 +750,10 @@
 47.18269,
 -2.14802
 ],
+"Mairie|Amiens": [
+49.81571,
+2.20312
+],
 "Mairie|Angers": [
 47.37144,
 -0.49679
@@ -996,6 +1016,7 @@
 48.39072,
 -4.48582
 ],
+"Place de la République et quartier des Halles|Paris": null,
 "Place de la République|Bordeaux": [
 44.83489,
 -0.57988
@@ -1762,6 +1783,7 @@
 -3.33086
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
+"hyper-centre|Perpignan": null,
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
@@ -1818,6 +1840,7 @@
 43.59216,
 1.41803
 ],
+"les boulevards|Toulouse": null,
 "lyc&eacute;es|Caen": null,
 "lycee Jeanne-d'Arc|Nancy": [
 48.69269,
@@ -2570,6 +2593,10 @@
 "port|Vannes": [
 47.65033,
 -2.75857
+],
+"presqu'île|Lyon": [
+45.80837,
+4.94258
 ],
 "près du rond-point de Poitiers Sud|Poitiers": null,
 "préfecture d'Agen|Agen": null,
