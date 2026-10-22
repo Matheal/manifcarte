@@ -59,6 +59,7 @@
 45.43315,
 4.38772
 ],
+"Bourse du travail, quais, Victor Hugo, place de la République, Chartreuses, Gamb|Bordeaux": null,
 "Bourse du travail|Toulon": [
 43.12921,
 5.92588
@@ -150,6 +151,10 @@
 "Cartabaffe|Paris": [
 48.86804,
 2.35468
+],
+"Cathédrale|Orléans": [
+47.90234,
+1.90918
 ],
 "Centre 2|Saint-Étienne": [
 45.49153,
@@ -255,6 +260,7 @@
 5.70895
 ],
 "Elysée et Matignon|Paris": null,
+"Entre Bastille et Nation|Paris": null,
 "Faculté de lettres|Metz": null,
 "Faculté de lettres|Pau": null,
 "Foch|Nantes": [
@@ -990,6 +996,10 @@
 43.29425,
 5.35803
 ],
+"Pitié Salpêtrière|Paris": [
+48.83746,
+2.36519
+],
 "Place Albert 1er|Montpellier": [
 43.61576,
 3.87444
@@ -1448,6 +1458,7 @@
 43.69269,
 7.23787
 ],
+"campus Fonderie|Mulhouse": null,
 "campus Mailly|Perpignan": [
 42.69793,
 2.89901
@@ -2490,6 +2501,10 @@
 44.20406,
 0.61217
 ],
+"place Jean Jaurès|Saint-Étienne": [
+45.44127,
+4.38552
+],
 "place Jean-Bart|Dunkerque": [
 51.03483,
 2.37734
@@ -2551,6 +2566,10 @@
 "place Victor-Hugo|Grenoble": [
 45.18895,
 5.72533
+],
+"place d'Armes|Valenciennes": [
+50.41175,
+3.51742
 ],
 "place d'Italie|Paris": [
 48.83094,
