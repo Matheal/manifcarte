@@ -1426,6 +1426,10 @@
 4.81602
 ],
 "boulevard des Coloniaux|Poitiers": null,
+"boulevard du Roi René|Angers": [
+47.46804,
+-0.557
+],
 "bourse du travail|Villeurbanne": null,
 "bâtiment Gabriel|Dijon": [
 47.31597,
@@ -2486,6 +2490,10 @@
 44.20406,
 0.61217
 ],
+"place Jean-Bart|Dunkerque": [
+51.03483,
+2.37734
+],
 "place Jean-Jaurès|Tours": [
 47.38955,
 0.68912
@@ -2923,6 +2931,10 @@
 ],
 "université Bordeaux Montesquieu|Bordeaux": null,
 "université Bordeaux Montesquieu|Pessac": null,
+"université Grenoble Alpes|Grenoble": [
+45.19319,
+5.76519
+],
 "université Lyon 2|Lyon": [
 45.75161,
 4.83726
