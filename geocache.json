@@ -503,6 +503,7 @@
 43.4815,
 -1.4745
 ],
+"Le Madrillet et Pasteur|Mont-Saint-Aignan": null,
 "Le Patio|Strasbourg": [
 48.57812,
 7.76548
@@ -975,6 +976,10 @@
 "Parvis de l'ancien hôtel de ville|Angers": null,
 "Parvis de la gare matabiau|Toulouse": null,
 "Patinoire d'Orléans|Orléans": null,
+"Pharo|Marseille": [
+43.29425,
+5.35803
+],
 "Place Albert 1er|Montpellier": [
 43.61576,
 3.87444
@@ -1446,6 +1451,7 @@
 1.06767
 ],
 "campus de l'UBO|Quimper": null,
+"campus des Deux-Lions|Tours": null,
 "campus du Tertre|Nantes": [
 47.24872,
 -1.55261
@@ -1701,6 +1707,7 @@
 "devant la mairie|Poitiers": null,
 "devant la mairie|Quimper": null,
 "devant la mairie|Rochefort": null,
+"devant la mairie|Rouen": null,
 "devant la mairie|Saint-Denis": null,
 "devant la mairie|Saint-Dié-des-Vosges": null,
 "devant la mairie|Saint-Gilles-Croix-de-Vie": null,
@@ -1764,6 +1771,7 @@
 43.71701,
 7.26758
 ],
+"fac|Brest": null,
 "forum des entreprises de Phelma|Grenoble": null,
 "galerie marchande Les Capucins|Thionville": null,
 "gare Lille Flandres|Lille": [
@@ -1816,6 +1824,10 @@
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
 "hyper-centre|Perpignan": null,
+"hypercentre|Grenoble": [
+45.18811,
+5.72884
+],
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
@@ -1850,6 +1862,10 @@
 "hôtel de ville|Tulle": [
 45.2663,
 1.77189
+],
+"hôtel de ville|Villefontaine": [
+45.60943,
+5.15683
 ],
 "hôtels de ville|Vannes": null,
 "inspection académique|Rennes": [
@@ -2778,6 +2794,10 @@
 "sous-préfecture de Vendôme|Vendôme": [
 47.79243,
 1.06669
+],
+"sous-préfecture|Dieppe": [
+49.9241,
+1.0781
 ],
 "sous-préfecture|Thonon-les-Bains": [
 46.37218,
