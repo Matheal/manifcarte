@@ -297,6 +297,7 @@
 47.28664,
 -2.21116
 ],
+"Grand Port|Fort-de-France": null,
 "Grand'Place|Lille": [
 50.72271,
 3.1592
@@ -935,6 +936,7 @@
 48.84768,
 2.39552
 ],
+"Nordev|Saint-Denis": null,
 "Ombrière du Vieux-Port|Marseille": [
 43.29464,
 5.37414
@@ -1303,6 +1305,10 @@
 47.31331,
 5.06886
 ],
+"Université de Brest|Brest": [
+48.40087,
+-4.50038
+],
 "Université de Bretagne sud|Lorient": [
 47.742,
 -3.3844
@@ -1347,6 +1353,7 @@
 48.01684,
 0.152
 ],
+"Usine Euroapi|Saint-Aubin-lès-Elbeuf": null,
 "Vieux-Port|Marseille": [
 43.29458,
 5.36928
@@ -1683,6 +1690,7 @@
 "devant l'hôtel de ville|Lille": null,
 "devant la Mairie|Nîmes": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
+"devant la mairie|Aix-les-Bains": null,
 "devant la mairie|Angoulême": null,
 "devant la mairie|Argentan": null,
 "devant la mairie|Avignon": null,
@@ -1708,6 +1716,7 @@
 "devant la mairie|Quimper": null,
 "devant la mairie|Rochefort": null,
 "devant la mairie|Rouen": null,
+"devant la mairie|Saint-Brieuc": null,
 "devant la mairie|Saint-Denis": null,
 "devant la mairie|Saint-Dié-des-Vosges": null,
 "devant la mairie|Saint-Gilles-Croix-de-Vie": null,
@@ -1723,6 +1732,7 @@
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
+"devant les mairies|Chambéry": null,
 "devant les mairies|Dunkerque": null,
 "devant les mairies|Metz": [
 49.13066,
@@ -1824,6 +1834,7 @@
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
 "hyper-centre|Perpignan": null,
+"hypercentre-ville|Caen": null,
 "hypercentre|Grenoble": [
 45.18811,
 5.72884
@@ -1851,6 +1862,11 @@
 45.82675,
 1.26162
 ],
+"hôtel de ville|Lisieux": null,
+"hôtel de ville|Montluçon": [
+46.33967,
+2.60753
+],
 "hôtel de ville|Orthez": [
 43.48759,
 -0.7741
@@ -1859,6 +1875,10 @@
 45.4387,
 4.3874
 ],
+"hôtel de ville|Soissons": [
+49.38377,
+3.3292
+],
 "hôtel de ville|Tulle": [
 45.2663,
 1.77189
@@ -1866,6 +1886,10 @@
 "hôtel de ville|Villefontaine": [
 45.60943,
 5.15683
+],
+"hôtel de ville|Épinal": [
+48.19725,
+6.44073
 ],
 "hôtels de ville|Vannes": null,
 "inspection académique|Rennes": [
@@ -2287,9 +2311,17 @@
 45.90574,
 6.12292
 ],
+"mairie d'Hirson|Hirson": [
+49.92012,
+4.08389
+],
 "mairie de Brest|Brest": [
 48.3913,
 -4.48508
+],
+"mairie de Béziers|Béziers": [
+43.34299,
+3.21373
 ],
 "mairie de Caen|Caen": [
 49.20268,
@@ -2322,6 +2354,18 @@
 "mairie|Bayonne": [
 43.48305,
 -1.55847
+],
+"mairie|Creil": [
+49.26116,
+2.47305
+],
+"mairie|Dijon": [
+47.29126,
+5.10211
+],
+"mairie|Laon": [
+49.5275,
+3.54084
 ],
 "mairie|Lille": [
 50.61479,
@@ -2363,6 +2407,10 @@
 "musée du Louvre|Paris": [
 48.86115,
 2.33803
+],
+"palais de justice|Grenoble": [
+45.19219,
+5.71113
 ],
 "palais de justice|Saint-Nazaire": [
 47.27908,
@@ -2572,6 +2620,10 @@
 44.83099,
 -0.57233
 ],
+"place de la libération|Villefranche-sur-Saône": [
+45.98477,
+4.71697
+],
 "place des Cordeliers|Annonay": [
 45.2407,
 4.67245
@@ -2628,6 +2680,10 @@
 "pont des Catalans|Toulouse": [
 43.60374,
 1.428
+],
+"port de Fort-de-France|Fort-de-France": [
+14.60339,
+-61.06167
 ],
 "port de Papeete|Papeete": [
 -17.52829,
@@ -2711,6 +2767,7 @@
 43.57765,
 1.44575
 ],
+"relais de l'AMF|Auch": null,
 "rond point d'Audincourt|Audincourt": null,
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
@@ -2775,6 +2832,10 @@
 50.63412,
 3.06361
 ],
+"rue de Dôle|Besançon": [
+47.23591,
+6.01339
+],
 "rue de la Fidélité|Paris": [
 48.87448,
 2.35616
@@ -2787,6 +2848,10 @@
 "rues adjacentes à la place de la République|Paris": null,
 "salle de la Bourse|Strasbourg": null,
 "services de l'Éducation nationale|Niort": null,
+"shop park Phare de l'Europe|Brest": [
+48.40802,
+-4.46434
+],
 "siège de SNCF Réseau|Paris": null,
 "siège de la Région Grand Est|Strasbourg": null,
 "siège de la Région|Strasbourg": null,
