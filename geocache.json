@@ -42,6 +42,10 @@
 55.4464
 ],
 "Bassin de Lacq|Pau": null,
+"Bastille à Nation|Paris": [
+48.84906,
+2.39738
+],
 "Bastille|Paris": [
 48.85299,
 2.36886
@@ -756,6 +760,10 @@
 47.18269,
 -2.14802
 ],
+"Mairie|Abbeville": [
+50.21177,
+1.77825
+],
 "Mairie|Amiens": [
 49.81571,
 2.20312
@@ -1297,6 +1305,10 @@
 43.57838,
 1.401
 ],
+"Université d'Angers|Angers": [
+47.47689,
+-0.54972
+],
 "Université d'Avignon|Avignon": [
 43.9497,
 4.81602
@@ -1557,6 +1569,10 @@
 -1.55794
 ],
 "centre-ville|Narbonne": null,
+"centre-ville|Nice": [
+43.69534,
+7.27454
+],
 "centre-ville|Niort": [
 46.31941,
 -0.45468
@@ -1728,6 +1744,7 @@
 "devant la mairie|Villers-lès-Nancy": null,
 "devant la mairie|Épinal": null,
 "devant la mairie|Étaples": null,
+"devant la préfecture|Blois": null,
 "devant la préfecture|Quimper": null,
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
@@ -1804,6 +1821,7 @@
 48.84366,
 2.37449
 ],
+"gare de Montbéliard, av. des Alliés|Montbéliard": null,
 "gare du Mans|Le Mans": [
 47.99532,
 0.19219
@@ -2028,6 +2046,10 @@
 "lycée Gabriel-Fauré|Foix": [
 42.9618,
 1.60488
+],
+"lycée Georges Clemenceau|Reims": [
+49.25025,
+4.04717
 ],
 "lycée Georges-Brassens|Rive-de-Gier": [
 45.53319,
@@ -2619,6 +2641,10 @@
 "place de la Victoire|Bordeaux": [
 44.83099,
 -0.57233
+],
+"place de la gare|Colmar": [
+48.07249,
+7.34658
 ],
 "place de la libération|Villefranche-sur-Saône": [
 45.98477,
