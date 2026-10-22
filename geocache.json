@@ -33,6 +33,10 @@
 48.83423,
 2.35365
 ],
+"Avignon Université|Avignon": [
+43.94916,
+4.818
+],
 "Aéroport de Nice Côte d'Azur|Nice": [
 43.65982,
 7.21375
@@ -169,6 +173,18 @@
 5.03869
 ],
 "Centre hospitalier universitaire de Reims|Reims": null,
+"Centre-ville|Bordeaux": [
+44.84113,
+-0.65678
+],
+"Centre-ville|Brest": [
+48.38769,
+-4.48009
+],
+"Centre-ville|Caen": [
+49.18288,
+-0.36472
+],
 "Centre-ville|Foix": null,
 "Centre-ville|Grenoble": [
 45.1902,
@@ -201,6 +217,10 @@
 "Champs-Elysées|Paris": [
 48.87076,
 2.30533
+],
+"Chateaucreux|Saint-Étienne": [
+45.44297,
+4.40058
 ],
 "Chateaufarine|Besançon": [
 47.21946,
@@ -505,6 +525,10 @@
 "La Chevalière|Aix-en-Provence": [
 43.54558,
 5.43026
+],
+"La Rabine|Vannes": [
+47.65185,
+-2.76108
 ],
 "La Rotonde|Aix-en-Provence": [
 43.52629,
@@ -960,6 +984,10 @@
 2.32524
 ],
 "Orléans td|Orléans": null,
+"Orléans|Orléans": [
+47.90273,
+1.90861
+],
 "PSA Aulnay|Aulnay-sous-Bois": [
 48.94992,
 2.52194
@@ -976,6 +1004,10 @@
 "Parc Expo|Mulhouse": [
 47.76479,
 7.33591
+],
+"Parc des Princes|Paris": [
+48.84136,
+2.25307
 ],
 "Parc du Colosse|Saint-André": [
 -20.92668,
@@ -1055,6 +1087,7 @@
 -4.48582
 ],
 "Place de la République et quartier des Halles|Paris": null,
+"Place de la République et secteur des Halles|Paris": null,
 "Place de la République|Bordeaux": [
 44.83489,
 -0.57988
@@ -1175,6 +1208,7 @@
 "Rond-point de la Patte d'Oie|Blois": null,
 "Rond-point du Cora|Saint-Avold": null,
 "Ronds points|Rennes": null,
+"Ronds-points|Rennes": null,
 "Rotonde|Aix-en-Provence": [
 43.52562,
 5.44481
@@ -1241,6 +1275,10 @@
 ],
 "Siège du Groupe ADP|Tremblay-en-France": null,
 "Solidarité Femmes 44|Nantes": null,
+"Square André Chénier|Carcassonne": [
+43.21681,
+2.35024
+],
 "Stade de la Mosson|Montpellier": [
 43.62202,
 3.81209
@@ -1302,6 +1340,10 @@
 "Université Rennes 2|Rennes": [
 48.11932,
 -1.7015
+],
+"Université Sorbonne Nouvelle|Paris": [
+48.84747,
+2.34623
 ],
 "Université Toulouse 1 Capitole|Toulouse": [
 43.60728,
@@ -1506,6 +1548,10 @@
 47.46549,
 -0.55869
 ],
+"centre-ville|Angoulême": [
+45.66901,
+0.16578
+],
 "centre-ville|Antibes": [
 43.58577,
 7.11927
@@ -1574,6 +1620,10 @@
 43.60866,
 3.88644
 ],
+"centre-ville|Montélimar": [
+44.5589,
+4.75099
+],
 "centre-ville|Mâcon": null,
 "centre-ville|Nancy": [
 48.68963,
@@ -1591,6 +1641,10 @@
 "centre-ville|Niort": [
 46.31941,
 -0.45468
+],
+"centre-ville|Orléans": [
+47.90129,
+1.906
 ],
 "centre-ville|Pau": [
 43.29147,
@@ -1612,6 +1666,7 @@
 48.11154,
 -1.67907
 ],
+"centre-ville|Romans-sur-Isère": null,
 "centre-ville|Rouen": [
 49.40697,
 1.05032
@@ -2801,6 +2856,10 @@
 "pôle étudiant|Nantes": [
 47.24538,
 -1.55159
+],
+"quai des Belges|Marseille": [
+43.29415,
+5.3744
 ],
 "quartier des Halles et de République|Paris": null,
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
