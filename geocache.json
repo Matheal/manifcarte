@@ -164,6 +164,7 @@
 48.86804,
 2.35468
 ],
+"Cathédrale vers place du souvenir français|Orléans": null,
 "Cathédrale|Orléans": [
 47.90234,
 1.90918
@@ -210,9 +211,17 @@
 47.21484,
 -1.55794
 ],
+"Centre-ville|Pamiers": [
+43.11696,
+1.61002
+],
 "Centre-ville|Pau": [
 43.29147,
 -0.36975
+],
+"Centre-ville|Saint-Nazaire": [
+47.27483,
+-2.19795
 ],
 "Centre-ville|Saint-Étienne": null,
 "Centre-ville|Épinal": [
@@ -573,6 +582,10 @@
 "Le Patio|Strasbourg": [
 48.57812,
 7.76548
+],
+"Le Pâquier|Annecy": [
+45.90187,
+6.13249
 ],
 "Les Arènes|Toulouse": [
 43.59216,
@@ -1641,6 +1654,7 @@
 ],
 "centre-ville|Cholet": null,
 "centre-ville|Clermont-Ferrand": null,
+"centre-ville|Colmar": null,
 "centre-ville|Dijon": [
 47.32355,
 5.04148
@@ -1746,6 +1760,10 @@
 47.27483,
 -2.19795
 ],
+"centre-ville|Saumur": [
+47.25944,
+-0.0787
+],
 "centre-ville|Toulon": [
 43.10166,
 5.88115
@@ -1762,6 +1780,7 @@
 48.30096,
 4.07243
 ],
+"centres-villes|Cholet": null,
 "château du Breuil|Mézidon Vallée d'Auge": null,
 "cité scolaire Beaumont|Redon": [
 47.65578,
@@ -2747,6 +2766,10 @@
 48.57423,
 7.75433
 ],
+"place de la Bastille à place de la Nation|Paris": [
+48.84906,
+2.39738
+],
 "place de la Bastille|Paris": [
 48.85267,
 2.36882
@@ -2970,6 +2993,7 @@
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point Picot|Châlons-en-Champagne": null,
+"rond-point d'Auchan Sud|Poitiers": null,
 "rond-point de Gerzat|Gerzat": [
 45.83771,
 3.14979
