@@ -194,6 +194,11 @@
 49.18288,
 -0.36472
 ],
+"Centre-ville|Dax": null,
+"Centre-ville|Dijon": [
+47.32355,
+5.04148
+],
 "Centre-ville|Foix": null,
 "Centre-ville|Grenoble": [
 45.1902,
@@ -202,6 +207,10 @@
 "Centre-ville|Limoges": [
 45.82468,
 1.26056
+],
+"Centre-ville|Mont-de-Marsan": [
+43.89105,
+-0.49866
 ],
 "Centre-ville|Nancy": [
 48.68963,
@@ -218,6 +227,10 @@
 "Centre-ville|Pau": [
 43.29147,
 -0.36975
+],
+"Centre-ville|Perpignan": [
+42.67859,
+2.94053
 ],
 "Centre-ville|Saint-Nazaire": [
 47.27483,
@@ -826,6 +839,7 @@
 50.6728,
 3.18824
 ],
+"MEDEF|Le Havre": null,
 "Mairie d'Aulnay-sous-Bois|Aulnay-sous-Bois": [
 48.93425,
 2.50006
@@ -1001,6 +1015,10 @@
 "Moudong Nord|Baie-Mahault": [
 16.24462,
 -61.58632
+],
+"Musée Guimet|Paris": [
+48.86538,
+2.29359
 ],
 "Musée d'Orsay|Paris": [
 48.85992,
@@ -1553,6 +1571,7 @@
 -0.557
 ],
 "bourse du travail|Villeurbanne": null,
+"boutique Apple d'Odysseum|Montpellier": null,
 "bâtiment Gabriel|Dijon": [
 47.31597,
 5.06573
@@ -1622,6 +1641,10 @@
 "centre-ville|Angoulême": [
 45.66901,
 0.16578
+],
+"centre-ville|Annecy": [
+45.91566,
+6.09125
 ],
 "centre-ville|Antibes": [
 43.58577,
@@ -1764,6 +1787,10 @@
 47.25944,
 -0.0787
 ],
+"centre-ville|Strasbourg": [
+48.57338,
+7.75234
+],
 "centre-ville|Toulon": [
 43.10166,
 5.88115
@@ -1781,6 +1808,8 @@
 4.07243
 ],
 "centres-villes|Cholet": null,
+"centres-villes|Dax": null,
+"centres-villes|Mont-de-Marsan": null,
 "château du Breuil|Mézidon Vallée d'Auge": null,
 "cité scolaire Beaumont|Redon": [
 47.65578,
@@ -2006,6 +2035,10 @@
 "gare|Lille": [
 50.69454,
 3.1627
+],
+"gare|Mulhouse": [
+47.7506,
+7.29401
 ],
 "giratoire de Lanester|Lanester": [
 47.75973,
@@ -2583,6 +2616,10 @@
 49.49793,
 0.12747
 ],
+"marché Saint-Pierre|Clermont-Ferrand": [
+45.77931,
+3.08336
+],
 "miroir d'eau|Nantes": [
 47.21503,
 -1.54908
@@ -2663,6 +2700,10 @@
 51.03483,
 2.37734
 ],
+"place Jean-Jaurès|Toulouse": [
+43.68403,
+1.31833
+],
 "place Jean-Jaurès|Tours": [
 47.38955,
 0.68912
@@ -2711,6 +2752,10 @@
 "place Vauban|Paris": [
 48.85345,
 2.31158
+],
+"place Verdun|Tarbes": [
+43.23268,
+0.07363
 ],
 "place Victor Hugo au parc Paul Mistral|Grenoble": null,
 "place Victor Hugo|Grenoble": [
@@ -2909,6 +2954,10 @@
 -2.75798
 ],
 "porte de Paris à la place de la République|Lille": null,
+"port|Fort-de-France": [
+14.59596,
+-61.04979
+],
 "port|Vannes": [
 47.65033,
 -2.75857
