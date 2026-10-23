@@ -263,6 +263,7 @@
 45.98325,
 4.74399
 ],
+"De place de la Bastille à place de l'Opéra|Paris": null,
 "Devant la CCI|Brive-la-Gaillarde": null,
 "Donjon de Rouen|Rouen": [
 49.44648,
@@ -1408,6 +1409,10 @@
 "Université de Tours|Tours": [
 47.38366,
 0.67352
+],
+"Université de Troyes|Troyes": [
+48.26908,
+4.0665
 ],
 "Université du Mans|Le Mans": [
 48.00922,
@@ -2841,6 +2846,7 @@
 2.33584
 ],
 "péage du Mans nord|Le Mans": null,
+"péages|Narbonne": null,
 "péage|Le Mans": [
 48.00466,
 0.31253
