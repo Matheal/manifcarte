@@ -959,6 +959,10 @@
 16.24462,
 -61.58632
 ],
+"Musée d'Orsay|Paris": [
+48.85992,
+2.32658
+],
 "Musée du Louvre|Paris": [
 48.86115,
 2.33803
@@ -1129,6 +1133,10 @@
 43.30185,
 5.37475
 ],
+"Porte de Paris|Poitiers": [
+46.59035,
+0.34031
+],
 "Presqu'Ile|Lyon": [
 45.76385,
 4.83444
@@ -1243,6 +1251,10 @@
 2.36388
 ],
 "Saint-Denis Pleyel|Saint-Denis": null,
+"Saint-Martin|Le Mans": [
+47.98591,
+0.20852
+],
 "Saint-Paul|Roanne": [
 46.04278,
 4.07465
@@ -1437,6 +1449,10 @@
 "Zénith|Strasbourg": [
 48.59439,
 7.68921
+],
+"allées Jean Jaurès|Toulouse": [
+43.60686,
+1.45016
 ],
 "arrêt Tourelles Dauphine|Orléans": null,
 "autoroute A10|Tours": [
@@ -1821,6 +1837,7 @@
 "devant la mairie|Étaples": null,
 "devant la préfecture|Blois": null,
 "devant la préfecture|Quimper": null,
+"devant la sous-préfecture|Vendôme": null,
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
@@ -2513,6 +2530,10 @@
 47.27908,
 -2.21509
 ],
+"parc Paul-Mistral|Grenoble": [
+45.18549,
+5.73756
+],
 "parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
 "parvis de la mairie|Montrouge": null,
@@ -2845,6 +2866,7 @@
 48.86099,
 2.33584
 ],
+"péage de l'A85|Romorantin-Lanthenay": null,
 "péage du Mans nord|Le Mans": null,
 "péages|Narbonne": null,
 "péage|Le Mans": [
@@ -2915,7 +2937,9 @@
 "rond-point du Leclerc de Cleunay|Rennes": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "rond-point du péage du Muy|Le Muy": null,
+"ronds-points|Albi": null,
 "ronds-points|Aubenas": null,
+"ronds-points|Gaillac": null,
 "ronds-points|La Valette-du-Var": null,
 "ronds-points|Montélimar": null,
 "rue Lenepveu|Angers": [
@@ -3028,6 +3052,10 @@
 4.82658
 ],
 "université Paris 8|Saint-Denis": null,
+"université Paris Cité|Paris": [
+48.85147,
+2.34109
+],
 "université Rennes|Rennes": [
 48.11938,
 -1.70149
@@ -3065,6 +3093,10 @@
 2.8991
 ],
 "usine Durkopp|Vierzon": null,
+"usine|Blanquefort": [
+44.95311,
+-0.62424
+],
 "voie Jean Taittinger|Reims": [
 49.23975,
 4.03386
