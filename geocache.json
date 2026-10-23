@@ -214,6 +214,7 @@
 43.29147,
 -0.36975
 ],
+"Centre-ville|Saint-Étienne": null,
 "Centre-ville|Épinal": [
 48.19708,
 6.44061
@@ -249,6 +250,10 @@
 "Cimetière de Thiais|Thiais": [
 48.76106,
 2.37649
+],
+"Cité judiciaire|Limoges": [
+45.83174,
+1.25042
 ],
 "Cnews|Paris": [
 48.84412,
@@ -536,6 +541,10 @@
 43.61084,
 3.87659
 ],
+"La Bastide|Carcassonne": [
+43.27391,
+2.3273
+],
 "La Canebière|Marseille": [
 43.29568,
 5.37564
@@ -555,6 +564,10 @@
 "Lauga|Bayonne": [
 43.4815,
 -1.4745
+],
+"Le Corum|Montpellier": [
+43.61317,
+3.88216
 ],
 "Le Madrillet et Pasteur|Mont-Saint-Aignan": null,
 "Le Patio|Strasbourg": [
@@ -1636,6 +1649,10 @@
 45.1902,
 5.71495
 ],
+"centre-ville|La Roche-sur-Yon": [
+46.66885,
+-1.43926
+],
 "centre-ville|Le Havre": null,
 "centre-ville|Le Mans": [
 48.00174,
@@ -1668,6 +1685,10 @@
 "centre-ville|Montélimar": [
 44.5589,
 4.75099
+],
+"centre-ville|Morlaix": [
+48.57798,
+-3.8325
 ],
 "centre-ville|Mulhouse": null,
 "centre-ville|Mâcon": null,
@@ -1736,6 +1757,10 @@
 "centre-ville|Tours": [
 47.38146,
 0.76349
+],
+"centre-ville|Troyes": [
+48.30096,
+4.07243
 ],
 "château du Breuil|Mézidon Vallée d'Auge": null,
 "cité scolaire Beaumont|Redon": [
@@ -2685,6 +2710,10 @@
 48.83094,
 2.35589
 ],
+"place de Bretagne|Rennes": [
+48.10959,
+-1.68384
+],
 "place de Clichy|Clichy": [
 48.88348,
 2.32729
@@ -3042,6 +3071,10 @@
 "sous-préfecture|Thonon-les-Bains": [
 46.37218,
 6.47617
+],
+"square Darcy|Dijon": [
+47.32443,
+5.03201
 ],
 "stade d'Ornano|Caen": [
 49.17949,
