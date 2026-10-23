@@ -24,6 +24,10 @@
 48.86178,
 2.31798
 ],
+"Auchan Longuenesse|Longuenesse": [
+50.73644,
+2.27044
+],
 "Autoroute A69|Castres": null,
 "Autoroute|Bayonne": [
 43.48753,
@@ -144,6 +148,10 @@
 48.09827,
 -1.67498
 ],
+"Carrefour City|Toulouse": [
+43.59046,
+1.43235
+],
 "Carrefour Courtine|Avignon": [
 43.92829,
 4.79335
@@ -201,6 +209,14 @@
 "Centre-ville|Nantes": [
 47.21484,
 -1.55794
+],
+"Centre-ville|Pau": [
+43.29147,
+-0.36975
+],
+"Centre-ville|Épinal": [
+48.19708,
+6.44061
 ],
 "Centre|Strasbourg": [
 48.58263,
@@ -328,6 +344,7 @@
 47.28664,
 -2.21116
 ],
+"Grand Port maritime de Martinique|Fort-de-France": null,
 "Grand Port|Fort-de-France": null,
 "Grand'Place|Lille": [
 50.72271,
@@ -1051,6 +1068,10 @@
 ],
 "Place E. Feuillère (Place des jets d'eau)|Vesoul": null,
 "Place E. Feuillère|Vesoul": null,
+"Place Jean Jaurès|Tours": [
+47.38955,
+0.68912
+],
 "Place Jean Jaurès|Troyes": [
 48.29458,
 4.07018
@@ -1142,6 +1163,8 @@
 4.83444
 ],
 "Presqu'ile et arrondissements concernes|Lyon": null,
+"Presqu'île à la Part-Dieu|Lyon": null,
+"Presqu'île, Vieux-Lyon, 3e et 6e arrondissements|Lyon": null,
 "Presqu'île|Lyon": [
 45.80837,
 4.94258
@@ -1547,6 +1570,7 @@
 49.45883,
 1.06767
 ],
+"campus de l'Iedes|Nogent-sur-Marne": null,
 "campus de l'UBO|Quimper": null,
 "campus des Deux-Lions|Tours": null,
 "campus du Tertre|Nantes": [
@@ -1645,6 +1669,7 @@
 44.5589,
 4.75099
 ],
+"centre-ville|Mulhouse": null,
 "centre-ville|Mâcon": null,
 "centre-ville|Nancy": [
 48.68963,
@@ -2522,6 +2547,10 @@
 48.86115,
 2.33803
 ],
+"palais de justice de Périgueux|Périgueux": [
+45.18657,
+0.72011
+],
 "palais de justice|Grenoble": [
 45.19219,
 5.71113
@@ -2937,6 +2966,10 @@
 "rond-point du Leclerc de Cleunay|Rennes": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "rond-point du péage du Muy|Le Muy": null,
+"rond-point|Albertville": [
+45.65412,
+6.35658
+],
 "ronds-points|Albi": null,
 "ronds-points|Aubenas": null,
 "ronds-points|Gaillac": null,
@@ -3055,6 +3088,10 @@
 "université Paris Cité|Paris": [
 48.85147,
 2.34109
+],
+"université Paul-Valéry|Montpellier": [
+43.62976,
+3.86971
 ],
 "université Rennes|Rennes": [
 48.11938,
