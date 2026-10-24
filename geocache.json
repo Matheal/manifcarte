@@ -58,6 +58,14 @@
 48.85299,
 2.36886
 ],
+"Beaulieu|La Rochelle": [
+46.17683,
+-1.12104
+],
+"Beaulieu|Lorient": [
+47.75534,
+-3.38856
+],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
 "Bourse du Travail|Lyon": [
 45.75921,
@@ -1574,6 +1582,7 @@
 "autoroute A71|Saint-Amand-Montrond": null,
 "autoroute A72|Saint-Étienne": null,
 "autoroute A9|Perpignan": null,
+"autoroute|Saint-Étienne": null,
 "avenue Alsace Lorraine|Grenoble": [
 45.18916,
 5.7218
@@ -1607,6 +1616,10 @@
 "boulevard Delacourtie|Toulouse": [
 43.58397,
 1.4495
+],
+"boulevard Lancastel|Saint-Denis": [
+-20.8751,
+55.45427
 ],
 "boulevard Limbert|Avignon": [
 43.9448,
@@ -2059,6 +2072,10 @@
 "gare Lille Flandres|Lille": [
 50.63638,
 3.07053
+],
+"gare SNCF|Cannes": [
+43.5538,
+7.02165
 ],
 "gare SNCF|Voiron": [
 45.3643,
@@ -2723,6 +2740,10 @@
 ],
 "parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
+"parvis de la gare|Grenoble": [
+45.18488,
+5.78498
+],
 "parvis de la mairie|Montrouge": null,
 "passage Pasteur|Besançon": [
 47.23863,
@@ -3044,6 +3065,7 @@
 43.60374,
 1.428
 ],
+"ponts de Lyon vers la presqu'île|Lyon": null,
 "port de Fort-de-France|Fort-de-France": [
 14.60339,
 -61.06167
@@ -3242,6 +3264,7 @@
 44.84018,
 -0.57827
 ],
+"rue d'Antibes et Croisette|Cannes": null,
 "rue de Béthune|Lille": [
 50.63412,
 3.06361
