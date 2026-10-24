@@ -216,6 +216,10 @@
 45.1902,
 5.71495
 ],
+"Centre-ville|La Roche-sur-Yon": [
+46.66885,
+-1.43926
+],
 "Centre-ville|Limoges": [
 45.82468,
 1.26056
@@ -249,6 +253,10 @@
 -2.19795
 ],
 "Centre-ville|Saint-Étienne": null,
+"Centre-ville|Toulouse": [
+43.63323,
+1.41782
+],
 "Centre-ville|Épinal": [
 48.19708,
 6.44061
@@ -1247,6 +1255,10 @@
 46.59035,
 0.34031
 ],
+"Porte de Vincennes|Paris": [
+48.84734,
+2.40809
+],
 "Presqu'Ile|Lyon": [
 45.76385,
 4.83444
@@ -1693,6 +1705,7 @@
 48.84957,
 2.38612
 ],
+"centre historique|Chambéry": null,
 "centre historique|Rouen": null,
 "centre-ville|Angers": [
 47.46549,
@@ -1743,6 +1756,7 @@
 45.69122,
 5.91236
 ],
+"centre-ville|Cherbourg-en-Cotentin": null,
 "centre-ville|Cholet": null,
 "centre-ville|Clermont-Ferrand": null,
 "centre-ville|Colmar": null,
@@ -2878,6 +2892,10 @@
 45.18895,
 5.72533
 ],
+"place d'Arches|Charleville-Mézières": [
+49.76402,
+4.71883
+],
 "place d'Armes|Valenciennes": [
 50.41175,
 3.51742
@@ -3113,6 +3131,10 @@
 45.90324,
 6.13142
 ],
+"préfecture|Dax": [
+43.70329,
+-1.05636
+],
 "préfecture|Pau": [
 43.29605,
 -0.36948
@@ -3187,6 +3209,7 @@
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point Picot|Châlons-en-Champagne": null,
+"rond-point Pierre-Mendès-France|Quimperlé": null,
 "rond-point d'Auchan Sud|Poitiers": null,
 "rond-point de Gerzat|Gerzat": [
 45.83771,
