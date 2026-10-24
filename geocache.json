@@ -619,6 +619,10 @@
 47.28958,
 -2.2087
 ],
+"Ligne 7|Paris": [
+48.89726,
+2.34119
+],
 "Lille Centre|Lille": [
 50.63195,
 3.06849
@@ -1145,6 +1149,10 @@
 48.29458,
 4.07018
 ],
+"Place Jean Macé|Lyon": [
+45.74631,
+4.84199
+],
 "Place Sainte-Anne|Rennes": [
 48.11442,
 -1.68057
@@ -1214,6 +1222,10 @@
 "Plaine des sports|Saint-Nazaire": [
 47.27269,
 -2.23166
+],
+"Pont-du-Las|Toulon": [
+43.11897,
+5.90045
 ],
 "Port de Papeete|Papeete": [
 -17.52829,
@@ -1556,6 +1568,7 @@
 0.77513
 ],
 "autoroute A71|Saint-Amand-Montrond": null,
+"autoroute A72|Saint-Étienne": null,
 "autoroute A9|Perpignan": null,
 "avenue Alsace Lorraine|Grenoble": [
 45.18916,
@@ -1683,6 +1696,10 @@
 "centre-ville|Avignon": [
 44.01104,
 4.87211
+],
+"centre-ville|Belfort": [
+47.63353,
+6.85378
 ],
 "centre-ville|Besançon": [
 47.24027,
@@ -1817,6 +1834,7 @@
 47.27483,
 -2.19795
 ],
+"centre-ville|Saint-Étienne": null,
 "centre-ville|Saumur": [
 47.25944,
 -0.0787
@@ -1943,6 +1961,7 @@
 "devant la mairie|Brive-la-Gaillarde": null,
 "devant la mairie|Caen": null,
 "devant la mairie|Cannes": null,
+"devant la mairie|Cherbourg-en-Cotentin": null,
 "devant la mairie|Clermont-Ferrand": null,
 "devant la mairie|Creil": null,
 "devant la mairie|Guéret": null,
@@ -2094,6 +2113,7 @@
 45.18811,
 5.72884
 ],
+"hypercentre|Nantes": null,
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
@@ -2433,6 +2453,7 @@
 44.80912,
 -0.64936
 ],
+"lycée Paul Éluard|Saint-Denis": null,
 "lycée Paul-Eluard|Saint-Denis": null,
 "lycée Paul-Guérin|Niort": [
 46.31576,
@@ -2744,6 +2765,10 @@
 45.44127,
 4.38552
 ],
+"place Jean Macé|Lyon": [
+45.74631,
+4.84199
+],
 "place Jean-Bart|Dunkerque": [
 51.03483,
 2.37734
@@ -2760,6 +2785,7 @@
 48.58331,
 7.74596
 ],
+"place Martin Bidourré|Toulon": null,
 "place Massena|Nice": [
 43.69695,
 7.27032
@@ -2801,6 +2827,7 @@
 48.85345,
 2.31158
 ],
+"place Velepeau|Tours": null,
 "place Verdun|Tarbes": [
 43.23268,
 0.07363
@@ -2845,6 +2872,10 @@
 "place de Verdun|La Rochelle": [
 46.18838,
 -1.06308
+],
+"place de Verdun|Pau": [
+43.29947,
+-0.37624
 ],
 "place de l'Amérique Latine|Saint-Nazaire": [
 47.276,
@@ -3065,6 +3096,10 @@
 50.65116,
 3.06238
 ],
+"périphérique|Paris": [
+48.82314,
+2.38142
+],
 "pôle universitaire|Quimper": [
 47.9724,
 -4.09353
@@ -3081,6 +3116,7 @@
 43.29415,
 5.3744
 ],
+"quais et ponts|Lyon": null,
 "quartier des Halles et de République|Paris": null,
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
@@ -3100,6 +3136,10 @@
 1.44575
 ],
 "relais de l'AMF|Auch": null,
+"rocade|Le Mans": [
+47.97748,
+0.21035
+],
 "rond point d'Audincourt|Audincourt": null,
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
@@ -3108,6 +3148,10 @@
 "rond-point de Gerzat|Gerzat": [
 45.83771,
 3.14979
+],
+"rond-point de Lann Sevelin|Lanester": [
+47.77752,
+-3.34485
 ],
 "rond-point de McDonald's|Chalon-sur-Saône": null,
 "rond-point de Pen-ar-C'hleuz|Brest": [
@@ -3128,6 +3172,7 @@
 47.78959,
 7.31523
 ],
+"rond-point du Launay|Morlaix": null,
 "rond-point du Leclerc de Cleunay|Rennes": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "rond-point du péage du Muy|Le Muy": null,
@@ -3220,6 +3265,10 @@
 47.32443,
 5.03201
 ],
+"square Louis-Pergaud|Trappes": [
+48.7833,
+1.98894
+],
 "square de la Jeune|Clermont-Ferrand": null,
 "stade d'Ornano|Caen": [
 49.17949,
@@ -3253,6 +3302,10 @@
 "université Grenoble Alpes|Grenoble": [
 45.19319,
 5.76519
+],
+"université Jean-Moulin|Lyon": [
+45.75207,
+4.83771
 ],
 "université Lyon 2|Lyon": [
 45.75161,
