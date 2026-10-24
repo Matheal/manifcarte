@@ -562,6 +562,7 @@
 44.13421,
 4.08008
 ],
+"L'Antipode|Rennes": null,
 "L'Imperator|Nîmes": null,
 "L'Écusson|Montpellier": [
 43.61084,
@@ -591,6 +592,10 @@
 43.4815,
 -1.4745
 ],
+"Le Barachois|Saint-Denis": [
+-20.87222,
+55.4477
+],
 "Le Corum|Montpellier": [
 43.61317,
 3.88216
@@ -610,6 +615,10 @@
 ],
 "Les Capucins|Thionville": null,
 "Les Six-Croix|Donges": null,
+"Lidl de Trignac|Trignac": [
+47.28958,
+-2.2087
+],
 "Lille Centre|Lille": [
 50.63195,
 3.06849
@@ -896,6 +905,10 @@
 46.74559,
 5.9078
 ],
+"Mairie|Cherbourg-en-Cotentin": [
+49.66071,
+-1.70033
+],
 "Mairie|Châteaubriant": [
 47.72159,
 -1.37601
@@ -993,6 +1006,10 @@
 "Maison du Peuple|Belfort": [
 47.64147,
 6.85137
+],
+"Manufacture des Tabacs|Lyon": [
+45.74803,
+4.86058
 ],
 "Marches du Corum - côté esplanade|Montpellier": null,
 "Marché des États-unis|Lyon": [
@@ -1975,6 +1992,10 @@
 48.10591,
 -1.67643
 ],
+"esplanade de la Résistance|Dinan": [
+48.45387,
+-2.04782
+],
 "esplanade des Fontaines|Montauban": [
 44.01803,
 1.3574
@@ -2130,6 +2151,7 @@
 48.11046,
 -1.67217
 ],
+"jardin national, au kiosque à musique|Albi": null,
 "l'Écusson|Montpellier": [
 43.61084,
 3.87659
@@ -2145,6 +2167,10 @@
 "les Arènes|Toulouse": [
 43.59216,
 1.41803
+],
+"les Villages|Saint-Brieuc": [
+48.51974,
+-2.79454
 ],
 "les boulevards|Toulouse": null,
 "lyc&eacute;es|Caen": null,
@@ -2845,6 +2871,10 @@
 44.84146,
 -0.57038
 ],
+"place de la Bourse|Strasbourg": [
+48.57609,
+7.75348
+],
 "place de la Comédie|Metz": [
 49.12143,
 6.17343
@@ -2975,6 +3005,10 @@
 47.64878,
 -2.75798
 ],
+"porte d'Italie|Paris": [
+48.81909,
+2.35953
+],
 "porte de Paris à la place de la République|Lille": null,
 "port|Fort-de-France": [
 14.59596,
@@ -3018,6 +3052,7 @@
 48.86099,
 2.33584
 ],
+"péage autoroutier|Le Muy": null,
 "péage de l'A85|Romorantin-Lanthenay": null,
 "péage du Mans nord|Le Mans": null,
 "péages|Narbonne": null,
@@ -3037,6 +3072,10 @@
 "pôle étudiant|Nantes": [
 47.24538,
 -1.55159
+],
+"quai d'Aiguillon|Lannion": [
+48.73123,
+-3.46029
 ],
 "quai des Belges|Marseille": [
 43.29415,
@@ -3075,6 +3114,7 @@
 48.41458,
 -4.47953
 ],
+"rond-point de Soyaux|Soyaux": null,
 "rond-point de l'Archer|Soissons": [
 49.36522,
 3.30903
@@ -3100,6 +3140,14 @@
 "ronds-points|Gaillac": null,
 "ronds-points|La Valette-du-Var": null,
 "ronds-points|Montélimar": null,
+"rue Gambetta|Rennes": [
+48.111,
+-1.67456
+],
+"rue Jean Jaurès|Brest": [
+48.39861,
+-4.47326
+],
 "rue Lenepveu|Angers": [
 47.47235,
 -0.55093
