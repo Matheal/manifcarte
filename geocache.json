@@ -1258,6 +1258,10 @@
 47.23371,
 6.023
 ],
+"Préfecture|Bourg-en-Bresse": [
+46.20545,
+5.22503
+],
 "Préfecture|Caen": [
 49.17958,
 -0.36767
@@ -2270,6 +2274,10 @@
 48.59895,
 -3.81765
 ],
+"lycée Courbet|Belfort": [
+47.65401,
+6.85619
+],
 "lycée Cyfflé|Nancy": [
 48.68656,
 6.18211
@@ -2773,6 +2781,10 @@
 51.03483,
 2.37734
 ],
+"place Jean-Jaurès|Saint-Étienne": [
+45.44127,
+4.38552
+],
 "place Jean-Jaurès|Toulouse": [
 43.68403,
 1.31833
@@ -2806,6 +2818,10 @@
 "place Saint-Corentin|Quimper": [
 47.99582,
 -4.10292
+],
+"place Saint-Martin|Le Mans": [
+47.87819,
+0.22715
 ],
 "place Saint-Sulpice|Paris": [
 48.85088,
@@ -2917,6 +2933,10 @@
 "place de la Grande-Boucherie|Strasbourg": [
 48.57996,
 7.75056
+],
+"place de la Libération|Auch": [
+43.64689,
+0.58376
 ],
 "place de la République|Caen": [
 49.18097,
@@ -3140,6 +3160,7 @@
 47.97748,
 0.21035
 ],
+"rocade|Niort": null,
 "rond point d'Audincourt|Audincourt": null,
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
