@@ -140,6 +140,10 @@
 45.19114,
 5.77005
 ],
+"Capitole de Toulouse|Toulouse": [
+43.60738,
+1.43815
+],
 "Capitole|Toulouse": [
 43.60444,
 1.4445
@@ -1090,6 +1094,10 @@
 "Parvis de l'ancien hôtel de ville|Angers": null,
 "Parvis de la gare matabiau|Toulouse": null,
 "Patinoire d'Orléans|Orléans": null,
+"Peyrou|Montpellier": [
+43.61147,
+3.87008
+],
 "Pharo|Marseille": [
 43.29425,
 5.35803
@@ -1318,6 +1326,10 @@
 2.36388
 ],
 "Saint-Denis Pleyel|Saint-Denis": null,
+"Saint-Jean|Lyon": [
+45.7618,
+4.82731
+],
 "Saint-Martin|Le Mans": [
 47.98591,
 0.20852
@@ -1663,6 +1675,10 @@
 -0.65678
 ],
 "centre-ville|Bourg-en-Bresse": null,
+"centre-ville|Bourges": [
+47.08341,
+2.39687
+],
 "centre-ville|Brest": [
 48.38769,
 -4.48009
@@ -1806,6 +1822,10 @@
 "centre-ville|Troyes": [
 48.30096,
 4.07243
+],
+"centre-ville|Vannes": [
+47.65618,
+-2.75726
 ],
 "centres-villes|Cholet": null,
 "centres-villes|Dax": null,
@@ -2045,6 +2065,7 @@
 -3.33086
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
+"hyper-centre|Laval": null,
 "hyper-centre|Perpignan": null,
 "hypercentre-ville|Caen": null,
 "hypercentre|Grenoble": [
@@ -3003,6 +3024,7 @@
 48.00466,
 0.31253
 ],
+"périphérie|Le Mans": null,
 "périphérique|Lille": [
 50.65116,
 3.06238
