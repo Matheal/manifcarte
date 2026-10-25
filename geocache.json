@@ -194,6 +194,7 @@
 5.03869
 ],
 "Centre hospitalier universitaire de Reims|Reims": null,
+"Centre élargi|Montpellier": null,
 "Centre-ville|Bordeaux": [
 44.84113,
 -0.65678
@@ -313,6 +314,10 @@
 "Conservatoire|Boulogne-Billancourt": [
 48.82296,
 2.28971
+],
+"Cours Lafayette|Toulon": [
+43.12095,
+5.93452
 ],
 "Cours de Vincennes|Paris": [
 48.84701,
@@ -1157,6 +1162,10 @@
 ],
 "Place E. Feuillère (Place des jets d'eau)|Vesoul": null,
 "Place E. Feuillère|Vesoul": null,
+"Place Foch|Nantes": [
+47.21913,
+-1.55046
+],
 "Place Jean Jaurès|Tours": [
 47.38955,
 0.68912
@@ -1310,6 +1319,7 @@
 "RN 126|Castres": null,
 "RN 165|Quéven": null,
 "RN 165|Vannes": null,
+"RN165|Lorient": null,
 "RN20|Foix": [
 42.9639,
 1.60538
@@ -1567,6 +1577,10 @@
 0.152
 ],
 "Usine Euroapi|Saint-Aubin-lès-Elbeuf": null,
+"Viaduc de Millau|Millau": [
+44.07998,
+3.02241
+],
 "Vieux-Port|Marseille": [
 43.29458,
 5.36928
@@ -1726,6 +1740,10 @@
 "centre-ville|Avignon": [
 44.01104,
 4.87211
+],
+"centre-ville|Beauvais": [
+49.43377,
+2.08762
 ],
 "centre-ville|Belfort": [
 47.63353,
@@ -3200,6 +3218,10 @@
 1.44575
 ],
 "relais de l'AMF|Auch": null,
+"rocade|La Rochelle": [
+46.16354,
+-1.19405
+],
 "rocade|Le Mans": [
 47.97748,
 0.21035
