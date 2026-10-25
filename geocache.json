@@ -1,4 +1,8 @@
 {
+"35 Avenue Sully-Prudhomme|Châtenay-Malabry": [
+48.76668,
+2.28968
+],
 "4 chemins|Aubervilliers": [
 48.90409,
 2.3907
@@ -471,6 +475,10 @@
 "Hôtel de Ville|Paris": [
 48.85643,
 2.35253
+],
+"Hôtel de Ville|Saint-Nazaire": [
+47.27416,
+-2.21367
 ],
 "Hôtel de ville|Arras": [
 50.29119,
@@ -1609,6 +1617,10 @@
 47.47443,
 0.77513
 ],
+"autoroute A344|Reims": [
+49.21427,
+3.99434
+],
 "autoroute A71|Saint-Amand-Montrond": null,
 "autoroute A72|Saint-Étienne": null,
 "autoroute A9|Perpignan": null,
@@ -1646,6 +1658,10 @@
 "boulevard Delacourtie|Toulouse": [
 43.58397,
 1.4495
+],
+"boulevard Flammarion|Marseille": [
+43.30632,
+5.39409
 ],
 "boulevard Lancastel|Saint-Denis": [
 -20.8751,
@@ -2005,6 +2021,7 @@
 "devant l'hôtel de ville|Lille": null,
 "devant la Mairie|Nîmes": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
+"devant la mairie|Abbeville": null,
 "devant la mairie|Aix-les-Bains": null,
 "devant la mairie|Angoulême": null,
 "devant la mairie|Argentan": null,
@@ -2037,6 +2054,7 @@
 "devant la mairie|Saint-Dié-des-Vosges": null,
 "devant la mairie|Saint-Gilles-Croix-de-Vie": null,
 "devant la mairie|Saint-Laurent-du-Var": null,
+"devant la mairie|Saint-Nazaire": null,
 "devant la mairie|Thaon-les-Vosges": null,
 "devant la mairie|Toul": null,
 "devant la mairie|Tours": null,
@@ -2063,6 +2081,7 @@
 "dépôt de bus|Vitry-sur-Seine": null,
 "dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
 "entrée nord de l'A63|Bayonne": null,
+"espace Bancel|Lyon": null,
 "esplanade De Gaulle|Rennes": [
 48.10591,
 -1.67643
@@ -2693,6 +2712,10 @@
 45.82632,
 1.26025
 ],
+"mairie de Montpellier|Montpellier": [
+43.6603,
+3.91051
+],
 "mairie de Nîmes|Nîmes": [
 43.8367,
 4.36014
@@ -2797,6 +2820,10 @@
 "place Albert 1er|Montpellier": [
 43.61576,
 3.87444
+],
+"place Aristide Briand|Lorient": [
+47.74829,
+-3.36384
 ],
 "place Bellecour|Lyon": [
 45.75766,
@@ -3178,6 +3205,10 @@
 43.70329,
 -1.05636
 ],
+"préfecture|Paris": [
+48.84943,
+2.34835
+],
 "préfecture|Pau": [
 43.29605,
 -0.36948
@@ -3392,12 +3423,14 @@
 49.17949,
 -0.39695
 ],
+"station de métro Charles de Gaulle|Rennes": null,
 "station de métro|Vénissieux": null,
 "supermarché|Longuenesse": null,
 "tour de la Liberté|Saint-Dié-des-Vosges": [
 48.2865,
 6.94737
 ],
+"traversée urbaine Taittinger|Reims": null,
 "traversée urbaine|Reims": null,
 "tribunal de Besançon|Besançon": [
 47.2317,
