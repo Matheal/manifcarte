@@ -115,6 +115,10 @@
 47.8747,
 1.91312
 ],
+"Campo Santo|Orléans": [
+47.90292,
+1.91024
+],
 "Campo Santo|Perpignan": [
 42.70021,
 2.89751
@@ -360,6 +364,7 @@
 47.21932,
 -1.55026
 ],
+"Foire Teillouse|Redon": null,
 "Forum des Halles|Paris": [
 48.86216,
 2.34537
@@ -402,6 +407,10 @@
 ],
 "Grand Port maritime de Martinique|Fort-de-France": null,
 "Grand Port|Fort-de-France": null,
+"Grand place|Roubaix": [
+50.69171,
+3.17464
+],
 "Grand'Place|Lille": [
 50.72271,
 3.1592
@@ -608,6 +617,10 @@
 "La Chevalière|Aix-en-Provence": [
 43.54558,
 5.43026
+],
+"La Guillotière|Lyon": [
+45.7527,
+4.84605
 ],
 "La Hotoie|Amiens": [
 49.89669,
@@ -1384,6 +1397,7 @@
 48.07932,
 -4.30119
 ],
+"Rues Nationale et de Bordeaux|Tours": null,
 "Réformés|Marseille": [
 43.29882,
 5.38592
@@ -1870,6 +1884,10 @@
 46.31941,
 -0.45468
 ],
+"centre-ville|Nîmes": [
+43.81783,
+4.34314
+],
 "centre-ville|Orléans": [
 47.90129,
 1.906
@@ -1968,6 +1986,10 @@
 "commissariat d'Aubervilliers|Aubervilliers": [
 48.91442,
 2.38769
+],
+"commissariat de Besançon|Besançon": [
+47.2324,
+6.02027
 ],
 "commissariat de La Courneuve|La Courneuve": [
 48.92841,
@@ -2227,6 +2249,10 @@
 "hôtel de ville|Montluçon": [
 46.33967,
 2.60753
+],
+"hôtel de ville|Narbonne": [
+43.1831,
+3.00468
 ],
 "hôtel de ville|Orthez": [
 43.48759,
@@ -3054,6 +3080,10 @@
 48.57996,
 7.75056
 ],
+"place de la Liberté|Les Sables-d'Olonne": [
+46.49746,
+-1.78327
+],
 "place de la Libération|Auch": [
 43.64689,
 0.58376
@@ -3307,7 +3337,9 @@
 "rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point Picot|Châlons-en-Champagne": null,
 "rond-point Pierre-Mendès-France|Quimperlé": null,
+"rond-point Taillefer|Gaillac": null,
 "rond-point d'Auchan Sud|Poitiers": null,
+"rond-point d'Auchan|Dieppe": null,
 "rond-point de Gerzat|Gerzat": [
 45.83771,
 3.14979
@@ -3337,6 +3369,7 @@
 ],
 "rond-point du Launay|Morlaix": null,
 "rond-point du Leclerc de Cleunay|Rennes": null,
+"rond-point du McDonald's|Saint-Pierre": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "rond-point du péage du Muy|Le Muy": null,
 "rond-point|Albertville": [
@@ -3538,6 +3571,10 @@
 "usine|Blanquefort": [
 44.95311,
 -0.62424
+],
+"viaduc de Millau|Millau": [
+44.07998,
+3.02241
 ],
 "voie Jean Taittinger|Reims": [
 49.23975,
