@@ -1625,6 +1625,10 @@
 "autoroute A72|Saint-Étienne": null,
 "autoroute A9|Perpignan": null,
 "autoroute|Saint-Étienne": null,
+"avenue Albert-1er-de-Belgique|Grenoble": [
+45.18195,
+5.72825
+],
 "avenue Alsace Lorraine|Grenoble": [
 45.18916,
 5.7218
@@ -2020,7 +2024,9 @@
 "devant l'hôpital de Dax|Dax": null,
 "devant l'hôtel de ville|Lille": null,
 "devant la Mairie|Nîmes": null,
+"devant la mairie d'Amiens|Amiens": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
+"devant la mairie de Creil|Creil": null,
 "devant la mairie|Abbeville": null,
 "devant la mairie|Aix-les-Bains": null,
 "devant la mairie|Angoulême": null,
@@ -2099,6 +2105,7 @@
 43.94782,
 4.8102
 ],
+"fac d'Orléans|Orléans": null,
 "fac de lettres|Brest": null,
 "fac du Mirail|Toulouse": null,
 "facs|Brest": null,
@@ -2684,6 +2691,10 @@
 45.90574,
 6.12292
 ],
+"mairie d'Aubervilliers|Aubervilliers": [
+48.91433,
+2.38157
+],
 "mairie d'Hirson|Hirson": [
 49.92012,
 4.08389
@@ -2978,6 +2989,10 @@
 48.88348,
 2.32729
 ],
+"place de Gaulle|Antibes": [
+43.58033,
+7.12068
+],
 "place de Jaude|Clermont-Ferrand": [
 45.77641,
 3.08214
@@ -3063,6 +3078,10 @@
 "place de la République|Paris": [
 48.86754,
 2.36396
+],
+"place de la République|Poissy": [
+48.92787,
+2.04343
 ],
 "place de la République|Rennes": [
 48.10985,
