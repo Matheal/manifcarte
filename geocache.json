@@ -601,6 +601,10 @@
 43.54558,
 5.43026
 ],
+"La Hotoie|Amiens": [
+49.89669,
+2.28296
+],
 "La Rabine|Vannes": [
 47.65185,
 -2.76108
@@ -1990,6 +1994,7 @@
 48.84703,
 2.40945
 ],
+"cours des 50-Otages|Nantes": null,
 "de Gaulle|Orléans": [
 47.90106,
 1.90284
@@ -2040,6 +2045,7 @@
 "devant la mairie|Épinal": null,
 "devant la mairie|Étaples": null,
 "devant la préfecture|Blois": null,
+"devant la préfecture|Bourg-en-Bresse": null,
 "devant la préfecture|Quimper": null,
 "devant la sous-préfecture|Vendôme": null,
 "devant le Sénat|Paris": null,
@@ -2056,6 +2062,7 @@
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus|Vitry-sur-Seine": null,
 "dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
+"entrée nord de l'A63|Bayonne": null,
 "esplanade De Gaulle|Rennes": [
 48.10591,
 -1.67643
@@ -2246,6 +2253,7 @@
 -2.79454
 ],
 "les boulevards|Toulouse": null,
+"locaux de Bouygues Immobilier|Bayonne": null,
 "lyc&eacute;es|Caen": null,
 "lycee Jeanne-d'Arc|Nancy": [
 48.69269,
@@ -2357,6 +2365,10 @@
 ],
 "lycée Ferdinand Daguin|Mérignac": null,
 "lycée Ferdinand-Daguin|Mérignac": null,
+"lycée Fourcade|Gardanne": [
+43.45615,
+5.47778
+],
 "lycée François Premier|Le Havre": null,
 "lycée François-Truffaut|Challans": [
 46.8534,
@@ -2845,6 +2857,10 @@
 "place Jean-Jaurès|Tours": [
 47.38955,
 0.68912
+],
+"place Jean-Macé|Lyon": [
+45.74631,
+4.84199
 ],
 "place Kléber|Strasbourg": [
 48.58331,
