@@ -2789,6 +2789,7 @@
 5.78498
 ],
 "parvis de la mairie|Montrouge": null,
+"parvis ouest de la gare de Grenoble|Grenoble": null,
 "passage Pasteur|Besançon": [
 47.23863,
 6.02114
@@ -2874,6 +2875,10 @@
 "place Masséna|Nice": [
 43.69695,
 7.27032
+],
+"place Mazagran|Lyon": [
+45.75186,
+4.84322
 ],
 "place René Goblet|Amiens": [
 49.89126,
@@ -3059,6 +3064,10 @@
 "place de la libération|Villefranche-sur-Saône": [
 45.98477,
 4.71697
+],
+"place des Charpennes|Villeurbanne": [
+45.76966,
+4.86602
 ],
 "place des Cordeliers|Annonay": [
 45.2407,
@@ -3338,6 +3347,10 @@
 48.87448,
 2.35616
 ],
+"rue des Maraîchers|Paris": [
+48.8551,
+2.40615
+],
 "rue du Rabodeau|Maxéville": [
 48.70196,
 6.1309
@@ -3401,6 +3414,10 @@
 "tribunal judiciaire|Toulouse": [
 43.59374,
 1.44513
+],
+"tribunal|Lyon": [
+45.76064,
+4.84791
 ],
 "université Bordeaux Montesquieu|Bordeaux": null,
 "université Bordeaux Montesquieu|Pessac": null,
@@ -3513,6 +3530,10 @@
 "École supérieure d'art de Lorraine|Épinal": [
 48.17072,
 6.45303
+],
+"Île de Nantes|Nantes": [
+47.20713,
+-1.54604
 ],
 "Île de Ré|La Rochelle": [
 46.1777,
