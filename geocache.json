@@ -15,6 +15,10 @@
 45.75781,
 4.83201
 ],
+"A72|Saint-Étienne": [
+45.44015,
+4.38731
+],
 "A9|Nîmes": [
 43.81302,
 4.34356
@@ -1333,6 +1337,10 @@
 -0.36948
 ],
 "Pôle juridique et judiciaire|Bordeaux": null,
+"Quai Charles-Ravet|Chambéry": [
+45.56765,
+5.92727
+],
 "Quai Zola|Rennes": [
 48.10986,
 -1.67716
@@ -1456,6 +1464,7 @@
 ],
 "Siège du Groupe ADP|Tremblay-en-France": null,
 "Solidarité Femmes 44|Nantes": null,
+"Sous-Préfecture|Trappes": null,
 "Square André Chénier|Carcassonne": [
 43.21681,
 2.35024
@@ -1816,6 +1825,7 @@
 "centre-ville|Cholet": null,
 "centre-ville|Clermont-Ferrand": null,
 "centre-ville|Colmar": null,
+"centre-ville|Coutances": null,
 "centre-ville|Dijon": [
 47.32355,
 5.04148
@@ -2221,6 +2231,7 @@
 45.18811,
 5.72884
 ],
+"hypercentre|Lyon": null,
 "hypercentre|Nantes": null,
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
@@ -2231,6 +2242,10 @@
 "hôtel de ville|Aix-en-Provence": [
 43.52983,
 5.44724
+],
+"hôtel de ville|Amiens": [
+49.89291,
+2.29543
 ],
 "hôtel de ville|Calais": [
 50.95308,
@@ -2307,6 +2322,10 @@
 "les boulevards|Toulouse": null,
 "locaux de Bouygues Immobilier|Bayonne": null,
 "lyc&eacute;es|Caen": null,
+"lycee Fourcade|Gardanne": [
+43.45615,
+5.47778
+],
 "lycee Jeanne-d'Arc|Nancy": [
 48.69269,
 6.18609
@@ -2822,6 +2841,7 @@
 47.21503,
 -1.54908
 ],
+"monument des 50 Otages|Nantes": null,
 "musée du Louvre|Paris": [
 48.86115,
 2.33803
@@ -2885,6 +2905,10 @@
 "place Foch|Épinal": [
 48.17225,
 6.44776
+],
+"place Granvelle|Besançon": [
+47.23523,
+6.02601
 ],
 "place Guichard|Lyon": [
 45.75917,
@@ -3059,6 +3083,10 @@
 "place de la Bastille|Paris": [
 48.85267,
 2.36882
+],
+"place de la Bataille-de-Stalingrad|Paris": [
+48.88376,
+2.36966
 ],
 "place de la Bourse|Bordeaux": [
 44.84146,
@@ -3348,6 +3376,7 @@
 47.77752,
 -3.34485
 ],
+"rond-point de Margon|Nogent-le-Rotrou": null,
 "rond-point de McDonald's|Chalon-sur-Saône": null,
 "rond-point de Pen-ar-C'hleuz|Brest": [
 48.41458,
@@ -3358,6 +3387,7 @@
 49.36522,
 3.30903
 ],
+"rond-point de l'échangeur A8|Le Muy": null,
 "rond-point de la rocade|Arques": null,
 "rond-point des vaches|Saint-Étienne-du-Rouvray": [
 49.36822,
@@ -3474,6 +3504,10 @@
 "stade d'Ornano|Caen": [
 49.17949,
 -0.39695
+],
+"station Réformés-Canebière|Marseille": [
+43.30024,
+5.38586
 ],
 "station de métro Charles de Gaulle|Rennes": null,
 "station de métro|Vénissieux": null,
