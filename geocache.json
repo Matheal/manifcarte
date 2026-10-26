@@ -1527,6 +1527,10 @@
 43.62202,
 3.81209
 ],
+"Stalingrad|Paris": [
+48.88424,
+2.36707
+],
 "Stanley Tools|Besançon": null,
 "Station Debourg|Lyon": [
 45.73098,
@@ -1730,6 +1734,10 @@
 "avenue Marius-Berroir|Chambéry": [
 45.56564,
 5.93377
+],
+"avenue d'Annecy|Chambéry": [
+45.58896,
+5.91777
 ],
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
@@ -2119,6 +2127,7 @@
 "devant l'hôpital de Dax|Dax": null,
 "devant l'hôtel de ville|Lille": null,
 "devant la Mairie|Nîmes": null,
+"devant la Mairie|Pantin": null,
 "devant la mairie d'Amiens|Amiens": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
 "devant la mairie de Creil|Creil": null,
@@ -2362,6 +2371,10 @@
 "hôtel de ville|Villefontaine": [
 45.60943,
 5.15683
+],
+"hôtel de ville|Villefranche-sur-Saône": [
+45.98786,
+4.71528
 ],
 "hôtel de ville|Épinal": [
 48.19725,
@@ -2838,6 +2851,10 @@
 49.27528,
 -1.14583
 ],
+"mairie de Draguignan|Draguignan": [
+43.53819,
+6.4634
+],
 "mairie de Lille|Lille": [
 50.63275,
 3.07066
@@ -2968,6 +2985,10 @@
 "place Bellecour|Lyon": [
 45.75766,
 4.83243
+],
+"place Carami|Brignoles": [
+43.43377,
+6.1429
 ],
 "place Carnot|Nancy": [
 48.69344,
@@ -3301,6 +3322,10 @@
 47.21335,
 -1.55785
 ],
+"place du Palais de justice|Chambéry": [
+45.56862,
+5.91887
+],
 "place du Peuple|Saint-Étienne": [
 45.43638,
 4.388
@@ -3386,6 +3411,10 @@
 45.90324,
 6.13142
 ],
+"préfecture|Besançon": [
+47.23371,
+6.023
+],
 "préfecture|Dax": [
 43.70329,
 -1.05636
@@ -3469,6 +3498,7 @@
 ],
 "rocade|Niort": null,
 "rond point d'Audincourt|Audincourt": null,
+"rond point de la résistance|Bourges": null,
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point Picot|Châlons-en-Champagne": null,
