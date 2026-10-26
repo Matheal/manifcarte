@@ -24,6 +24,10 @@
 4.34356
 ],
 "Agence régionale de santé|Tours": null,
+"Aire de covoiturage Terrasses de la Sarre|Sarrebourg": [
+48.71852,
+7.04786
+],
 "Amiens nord|Amiens": [
 49.89417,
 2.2957
@@ -219,6 +223,7 @@
 49.18288,
 -0.36472
 ],
+"Centre-ville|Clermont-Ferrand": null,
 "Centre-ville|Dax": null,
 "Centre-ville|Dijon": [
 47.32355,
@@ -376,6 +381,10 @@
 "Gare SNCF|Voiron": [
 45.3643,
 5.59427
+],
+"Gare Saint-Charles|Marseille": [
+43.3038,
+5.38055
 ],
 "Gare Saint-Lazare|Paris": [
 48.87704,
@@ -1527,6 +1536,10 @@
 48.84693,
 2.34503
 ],
+"Université Paul-Valéry|Montpellier": [
+43.63015,
+3.86953
+],
 "Université Rennes 2|Rennes": [
 48.11932,
 -1.7015
@@ -1967,6 +1980,7 @@
 "centres-villes|Cholet": null,
 "centres-villes|Dax": null,
 "centres-villes|Mont-de-Marsan": null,
+"château de Versailles, Opéra de Paris, musée du Louvre|Paris": null,
 "château du Breuil|Mézidon Vallée d'Auge": null,
 "cité scolaire Beaumont|Redon": [
 47.65578,
@@ -2581,6 +2595,10 @@
 45.56405,
 5.93556
 ],
+"lycée Monge|Charleville-Mézières": [
+49.76181,
+4.71271
+],
 "lycée Mounier|Grenoble": [
 45.17919,
 5.73067
@@ -2919,6 +2937,7 @@
 48.39656,
 -4.47909
 ],
+"place J. Jaurès|Tours": null,
 "place Jasmin|Agen": [
 44.20406,
 0.61217
@@ -3487,6 +3506,10 @@
 "sous-préfecture|Dieppe": [
 49.9241,
 1.0781
+],
+"sous-préfecture|Roanne": [
+46.03549,
+4.0703
 ],
 "sous-préfecture|Thonon-les-Bains": [
 46.37218,
