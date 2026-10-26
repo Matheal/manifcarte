@@ -266,6 +266,10 @@
 42.67859,
 2.94053
 ],
+"Centre-ville|Reims": [
+49.25899,
+4.02438
+],
 "Centre-ville|Saint-Nazaire": [
 47.27483,
 -2.19795
@@ -1216,6 +1220,10 @@
 45.74631,
 4.84199
 ],
+"Place Kléber|Strasbourg": [
+48.58331,
+7.74596
+],
 "Place Sainte-Anne|Rennes": [
 48.11442,
 -1.68057
@@ -1235,6 +1243,10 @@
 "Place de Jaude|Clermont-Ferrand": [
 45.77641,
 3.08214
+],
+"Place de Strasbourg|Brest": [
+48.40188,
+-4.46708
 ],
 "Place de la Bastille|Paris": [
 48.85267,
@@ -3015,6 +3027,10 @@
 "place Soult|Castres": [
 43.60397,
 2.2465
+],
+"place Stalingrad|Paris": [
+48.88376,
+2.36966
 ],
 "place Stanislas|Nancy": [
 48.69352,
