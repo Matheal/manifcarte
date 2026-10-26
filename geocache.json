@@ -444,6 +444,10 @@
 48.83635,
 2.36304
 ],
+"Hotel de ville|La Courneuve": [
+48.92742,
+2.39239
+],
 "Hédas|Pau": [
 43.29636,
 -0.37298
@@ -493,6 +497,10 @@
 "Hôtel de Région|Lyon": [
 45.74012,
 4.81946
+],
+"Hôtel de Ville de Saint-Nazaire|Saint-Nazaire": [
+47.27483,
+-2.19795
 ],
 "Hôtel de Ville|Aulnay-sous-Bois": [
 48.93565,
@@ -972,6 +980,10 @@
 47.23683,
 6.02224
 ],
+"Mairie|Boulogne-sur-Mer": [
+50.61922,
+1.64274
+],
 "Mairie|Béziers": [
 43.37085,
 3.2501
@@ -1252,6 +1264,7 @@
 48.83094,
 2.35589
 ],
+"Place d'armes, devant l'Hôtel de ville|Metz": null,
 "Place de Gaulle|Orléans": [
 47.90136,
 1.90267
@@ -1285,6 +1298,10 @@
 "Place de la République|Bordeaux": [
 44.83489,
 -0.57988
+],
+"Place de la République|Issoire": [
+45.54347,
+3.24808
 ],
 "Place de la République|Metz": [
 49.11501,
@@ -1807,6 +1824,10 @@
 48.84957,
 2.38612
 ],
+"centre administratif|Draveil": [
+48.68505,
+2.40858
+],
 "centre historique|Chambéry": null,
 "centre historique|Rouen": null,
 "centre-ville|Angers": [
@@ -2103,6 +2124,7 @@
 "devant la mairie de Creil|Creil": null,
 "devant la mairie|Abbeville": null,
 "devant la mairie|Aix-les-Bains": null,
+"devant la mairie|Angers": null,
 "devant la mairie|Angoulême": null,
 "devant la mairie|Argentan": null,
 "devant la mairie|Avignon": null,
@@ -2250,6 +2272,10 @@
 "gare|Arras": [
 50.28777,
 2.78266
+],
+"gare|Chambéry": [
+45.57021,
+5.9199
 ],
 "gare|Dijon": [
 47.32367,
@@ -2915,6 +2941,10 @@
 45.18549,
 5.73756
 ],
+"parc Richelieu|Calais": [
+50.956,
+1.85195
+],
 "parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
 "parvis de la gare|Grenoble": [
@@ -2980,6 +3010,10 @@
 "place Jasmin|Agen": [
 44.20406,
 0.61217
+],
+"place Jean Jaurès|Castres": [
+43.60542,
+2.24171
 ],
 "place Jean Jaurès|Saint-Étienne": [
 45.44127,
