@@ -968,6 +968,10 @@
 48.93425,
 2.50006
 ],
+"Mairie de Nice|Nice": [
+43.74312,
+7.3137
+],
 "Mairie de Saint-Nazaire|Saint-Nazaire": [
 47.18269,
 -2.14802
@@ -1371,6 +1375,10 @@
 43.11897,
 5.90045
 ],
+"Port de Marseille-Fos|Marseille": [
+43.30363,
+5.36354
+],
 "Port de Papeete|Papeete": [
 -17.52829,
 -149.57593
@@ -1430,6 +1438,7 @@
 43.29605,
 -0.36948
 ],
+"Pôle associatif Polyblosne, 1 boulevard de Yougoslavie|Rennes": null,
 "Pôle juridique et judiciaire|Bordeaux": null,
 "Quai Charles-Ravet|Chambéry": [
 45.56765,
@@ -1808,6 +1817,10 @@
 "boulevard Limbert|Avignon": [
 43.9448,
 4.81602
+],
+"boulevard Victor-Hugo|Lille": [
+50.62265,
+3.06272
 ],
 "boulevard des Coloniaux|Poitiers": null,
 "boulevard du Roi René|Angers": [
@@ -2377,6 +2390,10 @@
 "hôtel de ville|Amiens": [
 49.89291,
 2.29543
+],
+"hôtel de ville|Argenteuil": [
+48.94704,
+2.24984
 ],
 "hôtel de ville|Calais": [
 50.95308,
@@ -3060,6 +3077,10 @@
 45.75766,
 4.83243
 ],
+"place Broglie|Strasbourg": [
+48.58475,
+7.74906
+],
 "place Carami|Brignoles": [
 43.43377,
 6.1429
@@ -3700,6 +3721,7 @@
 48.8551,
 2.40615
 ],
+"rue du Docteur-Émile-Roux|Chalon-sur-Saône": null,
 "rue du Rabodeau|Maxéville": [
 48.70196,
 6.1309
@@ -3732,6 +3754,7 @@
 46.37218,
 6.47617
 ],
+"square Charles-de-Gaule|Toulouse": null,
 "square Darcy|Dijon": [
 47.32443,
 5.03201
