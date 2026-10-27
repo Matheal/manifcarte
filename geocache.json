@@ -92,6 +92,10 @@
 4.38772
 ],
 "Bourse du travail, quais, Victor Hugo, place de la République, Chartreuses, Gamb|Bordeaux": null,
+"Bourse du travail|Paris": [
+48.86527,
+2.36495
+],
 "Bourse du travail|Toulon": [
 43.12921,
 5.92588
@@ -509,6 +513,10 @@
 "Hôtel de Ville|Limoges": [
 45.82675,
 1.26162
+],
+"Hôtel de Ville|Lyon": [
+45.69468,
+4.93565
 ],
 "Hôtel de Ville|Paris": [
 48.85643,
@@ -1187,6 +1195,10 @@
 47.76479,
 7.33591
 ],
+"Parc des Expositions|Perpignan": [
+42.70939,
+2.90493
+],
 "Parc des Princes|Paris": [
 48.84136,
 2.25307
@@ -1356,6 +1368,10 @@
 4.83444
 ],
 "Presqu'ile et arrondissements concernes|Lyon": null,
+"Presqu'ile|Lyon": [
+45.76385,
+4.83444
+],
 "Presqu'île à la Part-Dieu|Lyon": null,
 "Presqu'île, Vieux-Lyon, 3e et 6e arrondissements|Lyon": null,
 "Presqu'île|Lyon": [
@@ -2131,6 +2147,7 @@
 "devant la mairie d'Amiens|Amiens": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
 "devant la mairie de Creil|Creil": null,
+"devant la mairie de Nîmes|Nîmes": null,
 "devant la mairie|Abbeville": null,
 "devant la mairie|Aix-les-Bains": null,
 "devant la mairie|Angers": null,
@@ -2368,6 +2385,10 @@
 45.2663,
 1.77189
 ],
+"hôtel de ville|Vaulx-en-Velin": [
+45.77849,
+4.92017
+],
 "hôtel de ville|Villefontaine": [
 45.60943,
 5.15683
@@ -2375,6 +2396,10 @@
 "hôtel de ville|Villefranche-sur-Saône": [
 45.98786,
 4.71528
+],
+"hôtel de ville|Vénissieux": [
+45.69623,
+4.88313
 ],
 "hôtel de ville|Épinal": [
 48.19725,
@@ -2446,6 +2471,7 @@
 45.89659,
 6.09691
 ],
+"lycée Bertran de Born|Périgueux": null,
 "lycée Bertran-de-Born|Périgueux": null,
 "lycée Bertran|Périgueux": null,
 "lycée Blaise-Pascal|Clermont-Ferrand": [
@@ -2875,6 +2901,10 @@
 47.99626,
 -4.10168
 ],
+"mairie de Soissons|Soissons": [
+49.36674,
+3.39437
+],
 "mairie de Vannes|Vannes": [
 47.65837,
 -2.76093
@@ -2962,6 +2992,7 @@
 50.956,
 1.85195
 ],
+"parvis de l'Hôtel de Ville|Lille": null,
 "parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
 "parvis de la gare|Grenoble": [
@@ -3468,6 +3499,10 @@
 43.29415,
 5.3744
 ],
+"quai des Pêcheurs|Strasbourg": [
+48.58239,
+7.757
+],
 "quais et ponts|Lyon": null,
 "quartier des Halles et de République|Paris": null,
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
@@ -3779,6 +3814,7 @@
 "voies sur berges|Angers": null,
 "zone Horizon|Châteaubriant": null,
 "zone d'activité du Monné|Allonnes": null,
+"zone franche|Bourges": null,
 "École Polytechnique|Palaiseau": [
 48.71279,
 2.21075
