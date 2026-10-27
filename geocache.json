@@ -127,6 +127,10 @@
 50.61292,
 3.03649
 ],
+"CHU de Nantes|Nantes": [
+47.20099,
+-1.55822
+],
 "CNSMDP|Paris": [
 48.88906,
 2.39081
@@ -467,6 +471,10 @@
 "Hôpital Edouard-Herriot|Lyon": [
 45.74347,
 4.88262
+],
+"Hôpital Rangueil|Toulouse": [
+43.56029,
+1.45211
 ],
 "Hôpital Sud|Rennes": [
 48.08299,
@@ -1246,6 +1254,10 @@
 45.75766,
 4.83243
 ],
+"Place Cala|Chelles": [
+48.87706,
+2.58585
+],
 "Place Carnot|Nancy": [
 48.69344,
 6.17785
@@ -1850,6 +1862,7 @@
 "campus de l'Iedes|Nogent-sur-Marne": null,
 "campus de l'UBO|Quimper": null,
 "campus des Deux-Lions|Tours": null,
+"campus des Grands Moulins et prison de la Santé|Paris": null,
 "campus du Tertre|Nantes": [
 47.24872,
 -1.55261
@@ -3014,6 +3027,10 @@
 50.956,
 1.85195
 ],
+"parc de la Pépinière|Nancy": [
+48.69786,
+6.18473
+],
 "parc du Colosse|Saint-André": [
 -20.92668,
 55.66193
@@ -3306,6 +3323,10 @@
 43.64689,
 0.58376
 ],
+"place de la Libération|Dijon": [
+47.32127,
+5.04142
+],
 "place de la République|Caen": [
 49.18097,
 -0.36356
@@ -3313,6 +3334,10 @@
 "place de la République|Dijon": [
 47.32661,
 5.04501
+],
+"place de la République|Haguenau": [
+48.81442,
+7.78967
 ],
 "place de la République|Le Havre": null,
 "place de la République|Lille": [
@@ -3350,6 +3375,10 @@
 "place de la Victoire|Bordeaux": [
 44.83099,
 -0.57233
+],
+"place de la Victoire|Clermont-Ferrand": [
+45.77804,
+3.08556
 ],
 "place de la gare|Colmar": [
 48.07249,
@@ -3816,6 +3845,10 @@
 "université|Perpignan": [
 42.68217,
 2.8991
+],
+"urgences de Rennes|Rennes": [
+48.12968,
+-1.62707
 ],
 "usine Durkopp|Vierzon": null,
 "usine|Blanquefort": [
