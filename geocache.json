@@ -390,6 +390,10 @@
 48.86216,
 2.34537
 ],
+"Fos|Marseille": [
+43.30363,
+5.36354
+],
 "Gare SNCF|Voiron": [
 45.3643,
 5.59427
@@ -1311,6 +1315,10 @@
 44.83489,
 -0.57988
 ],
+"Place de la République|Caen": [
+49.18161,
+-0.36401
+],
 "Place de la République|Issoire": [
 45.54347,
 3.24808
@@ -1509,6 +1517,7 @@
 46.30791,
 -0.43762
 ],
+"Salle 034 – D2 (Descartes)|Lyon": null,
 "Sciences Po Aix|Aix-en-Provence": [
 43.52925,
 5.4357
@@ -1690,6 +1699,10 @@
 0.152
 ],
 "Usine Euroapi|Saint-Aubin-lès-Elbeuf": null,
+"VRU|Chambéry": [
+45.61824,
+5.88495
+],
 "Viaduc de Millau|Millau": [
 44.07998,
 3.02241
@@ -2172,6 +2185,7 @@
 "devant la mairie|Metz": null,
 "devant la mairie|Millau": null,
 "devant la mairie|Montluçon": null,
+"devant la mairie|Nice": null,
 "devant la mairie|Niort": null,
 "devant la mairie|Nîmes": null,
 "devant la mairie|Ploemeur": null,
@@ -2277,6 +2291,10 @@
 "gare d'Hennebont|Hennebont": [
 47.79923,
 -3.28752
+],
+"gare de Lens|Lens": [
+50.42681,
+2.82825
 ],
 "gare de Lyon|Paris": [
 48.84366,
@@ -2992,6 +3010,10 @@
 50.956,
 1.85195
 ],
+"parc du Colosse|Saint-André": [
+-20.92668,
+55.66193
+],
 "parvis de l'Hôtel de Ville|Lille": null,
 "parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
@@ -3020,6 +3042,10 @@
 "place Carami|Brignoles": [
 43.43377,
 6.1429
+],
+"place Carnot|Lyon": [
+45.75071,
+4.82786
 ],
 "place Carnot|Nancy": [
 48.69344,
@@ -3698,6 +3724,7 @@
 6.94737
 ],
 "traversée urbaine Taittinger|Reims": null,
+"traversée urbaine de Reims|Reims": null,
 "traversée urbaine|Reims": null,
 "tribunal de Besançon|Besançon": [
 47.2317,
