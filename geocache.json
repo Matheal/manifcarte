@@ -221,6 +221,7 @@
 45.49153,
 4.48529
 ],
+"Centre Censier|Paris": null,
 "Centre Jean Richepin|Clermont-Ferrand": [
 45.78155,
 3.0854
@@ -483,6 +484,10 @@
 "Hôpital Sud|Rennes": [
 48.08299,
 -1.65303
+],
+"Hôpital Trousseau|Tours": [
+47.35012,
+0.71212
 ],
 "Hôpital d'Albi|Albi": [
 43.88433,
@@ -1097,6 +1102,10 @@
 45.96156,
 -0.98634
 ],
+"Mairie|Roquebrune-Cap-Martin": [
+43.75778,
+7.47372
+],
 "Mairie|Rouen": [
 49.44053,
 1.14479
@@ -1337,6 +1346,10 @@
 48.39072,
 -4.48582
 ],
+"Place de la Liberté|Tours": [
+47.37969,
+0.69323
+],
 "Place de la République et quartier des Halles|Paris": null,
 "Place de la République et secteur des Halles|Paris": null,
 "Place de la République|Bordeaux": [
@@ -1350,6 +1363,10 @@
 "Place de la République|Issoire": [
 45.54347,
 3.24808
+],
+"Place de la République|Lille": [
+50.6313,
+3.06097
 ],
 "Place de la République|Metz": [
 49.11501,
@@ -2052,6 +2069,7 @@
 46.56597,
 0.34954
 ],
+"centre-ville|Quimper": null,
 "centre-ville|Reims": [
 49.25899,
 4.02438
@@ -3160,6 +3178,10 @@
 "place Jean Jaurès|Saint-Étienne": [
 45.44127,
 4.38552
+],
+"place Jean Jaurès|Tours": [
+47.38955,
+0.68912
 ],
 "place Jean Macé|Lyon": [
 45.74631,
