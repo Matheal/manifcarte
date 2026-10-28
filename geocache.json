@@ -119,6 +119,10 @@
 4.88765
 ],
 "CHIMM|Les Mureaux": null,
+"CHU d'Amiens|Amiens": [
+49.90747,
+2.29354
+],
 "CHU de Besançon|Besançon": [
 47.22504,
 5.96219
@@ -1288,6 +1292,10 @@
 48.58331,
 7.74596
 ],
+"Place Saint-Marc|Rouen": [
+49.43868,
+1.10118
+],
 "Place Sainte-Anne|Rennes": [
 48.11442,
 -1.68057
@@ -1952,6 +1960,7 @@
 ],
 "centre-ville|Cherbourg-en-Cotentin": null,
 "centre-ville|Cholet": null,
+"centre-ville|Clermont": null,
 "centre-ville|Clermont-Ferrand": null,
 "centre-ville|Colmar": null,
 "centre-ville|Coutances": null,
@@ -2209,6 +2218,7 @@
 "devant la mairie|Creil": null,
 "devant la mairie|Guéret": null,
 "devant la mairie|Laon": null,
+"devant la mairie|Les Ponts-de-Cé": null,
 "devant la mairie|Lille": null,
 "devant la mairie|Lorient": null,
 "devant la mairie|Lunéville": null,
@@ -2358,6 +2368,10 @@
 "gare|Lille": [
 50.69454,
 3.1627
+],
+"gare|Morlaix": [
+48.50718,
+-3.8823
 ],
 "gare|Mulhouse": [
 47.7506,
@@ -2981,6 +2995,10 @@
 50.61479,
 3.11637
 ],
+"mairie|Limoges": [
+45.82678,
+1.25924
+],
 "mairie|Lorient": [
 47.69669,
 -3.35289
@@ -3243,6 +3261,10 @@
 49.76402,
 4.71883
 ],
+"place d'Armes|Toulon": [
+43.12371,
+5.92902
+],
 "place d'Armes|Valenciennes": [
 50.41175,
 3.51742
@@ -3286,6 +3308,10 @@
 "place de l'Amérique Latine|Saint-Nazaire": [
 47.276,
 -2.20508
+],
+"place de l'Horloge|Avignon": [
+43.97761,
+4.90346
 ],
 "place de l'Hôtel de Ville|Troyes": [
 48.19348,
@@ -3452,6 +3478,10 @@
 "place du Vigan|Albi": [
 43.9273,
 2.14781
+],
+"place du palais de justice|Chambéry": [
+45.56826,
+5.91907
 ],
 "plage de Foncillon|Royan": [
 45.61908,
@@ -3657,6 +3687,7 @@
 "rond-point du Launay|Morlaix": null,
 "rond-point du Leclerc de Cleunay|Rennes": null,
 "rond-point du McDonald's|Saint-Pierre": null,
+"rond-point du Zoom|Laval": null,
 "rond-point du pont de Camélat et préfecture|Agen": null,
 "rond-point du péage du Muy|Le Muy": null,
 "rond-point|Albertville": [
@@ -3742,9 +3773,17 @@
 47.79243,
 1.06669
 ],
+"sous-préfecture|Brignoles": [
+43.40693,
+6.0594
+],
 "sous-préfecture|Dieppe": [
 49.9241,
 1.0781
+],
+"sous-préfecture|Draguignan": [
+43.53847,
+6.4611
 ],
 "sous-préfecture|Roanne": [
 46.03549,
