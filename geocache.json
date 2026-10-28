@@ -96,6 +96,10 @@
 4.38772
 ],
 "Bourse du travail, quais, Victor Hugo, place de la République, Chartreuses, Gamb|Bordeaux": null,
+"Bourse du travail|Angers": [
+47.47372,
+-0.54916
+],
 "Bourse du travail|Paris": [
 48.86527,
 2.36495
@@ -142,6 +146,10 @@
 "CO'Met|Orléans": [
 47.8747,
 1.91312
+],
+"CRA de Vincennes|Paris": [
+48.81898,
+2.4542
 ],
 "Campo Santo|Orléans": [
 47.90292,
@@ -226,6 +234,7 @@
 45.78155,
 3.0854
 ],
+"Centre de rétention de Vincennes|Vincennes": null,
 "Centre hospitalier de Martigues|Martigues": [
 43.41272,
 5.03869
@@ -590,6 +599,10 @@
 "Hôtel de ville|Montluçon": [
 46.33967,
 2.60753
+],
+"Hôtel de ville|Nîmes": [
+43.75763,
+4.31307
 ],
 "Hôtel de ville|Orthez": [
 43.48759,
@@ -1152,6 +1165,10 @@
 45.72999,
 4.86657
 ],
+"Masséna|Nice": [
+43.69775,
+7.27137
+],
 "Matignon|Paris": [
 48.86972,
 2.3112
@@ -1222,6 +1239,10 @@
 "Palais des papes|Avignon": [
 43.95071,
 4.80769
+],
+"Panthéon|Paris": [
+48.84619,
+2.34605
 ],
 "Papillons Blancs|Dunkerque": null,
 "Parc Expo|Mulhouse": [
@@ -1399,6 +1420,10 @@
 "Pont-du-Las|Toulon": [
 43.11897,
 5.90045
+],
+"Port de Bordeaux|Bordeaux": [
+44.83697,
+-0.57807
 ],
 "Port de Marseille-Fos|Marseille": [
 43.30363,
@@ -1610,6 +1635,10 @@
 "Station Debourg|Lyon": [
 45.73098,
 4.8334
+],
+"Station Liane|Boulogne-sur-Mer": [
+50.72053,
+1.60523
 ],
 "Théâtre Debussy, 116 avenue du Général de Gaulle|Maisons-Alfort": [
 48.80129,
@@ -2210,6 +2239,7 @@
 ],
 "devant Barthou|Pau": null,
 "devant des mairies|Saint-Brieuc": null,
+"devant l'hotel de ville|Allonnes": null,
 "devant l'hôpital de Dax|Dax": null,
 "devant l'hôtel de ville|Lille": null,
 "devant la Mairie|Nîmes": null,
