@@ -1,4 +1,8 @@
 {
+"23 rue Lakanal|Montpellier": [
+43.61672,
+3.8782
+],
 "35 Avenue Sully-Prudhomme|Châtenay-Malabry": [
 48.76668,
 2.28968
@@ -555,6 +559,10 @@
 "Hôtel de Ville|Paris": [
 48.85643,
 2.35253
+],
+"Hôtel de Ville|Rennes": [
+48.11103,
+-1.67931
 ],
 "Hôtel de Ville|Saint-Nazaire": [
 47.27416,
@@ -1148,6 +1156,10 @@
 49.89409,
 2.29172
 ],
+"Maison des Arts|Le Plessis-Robinson": [
+48.778,
+2.2538
+],
 "Maison des syndicats|Fort-de-France": [
 14.606,
 -61.06414
@@ -1460,6 +1472,10 @@
 45.80837,
 4.94258
 ],
+"Prison de la Santé|Paris": [
+48.83388,
+2.33974
+],
 "Préfecture|Avignon": [
 43.9484,
 4.80517
@@ -1612,6 +1628,7 @@
 43.52925,
 5.4357
 ],
+"Site de production Bosch|Vendôme": null,
 "Six-Croix|Donges": [
 47.33978,
 -2.09326
@@ -3221,6 +3238,10 @@
 51.03483,
 2.37734
 ],
+"place Jean-Jaurès|Saint-Gaudens": [
+43.10778,
+0.72479
+],
 "place Jean-Jaurès|Saint-Étienne": [
 45.44127,
 4.38552
@@ -3656,6 +3677,10 @@
 "pôle étudiant|Nantes": [
 47.24538,
 -1.55159
+],
+"quai Gambetta|Boulogne-sur-Mer": [
+50.72748,
+1.59889
 ],
 "quai d'Aiguillon|Lannion": [
 48.73123,
