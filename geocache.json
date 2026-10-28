@@ -74,6 +74,10 @@
 48.84906,
 2.39738
 ],
+"Bastille-Nation|Paris": [
+48.84906,
+2.39738
+],
 "Bastille|Paris": [
 48.85299,
 2.36886
@@ -155,6 +159,7 @@
 48.81898,
 2.4542
 ],
+"CRA de Vincennes|Vincennes": null,
 "Campo Santo|Orléans": [
 47.90292,
 1.91024
@@ -466,6 +471,7 @@
 50.69171,
 3.17464
 ],
+"Grand port Nantes Saint-Nazaire|Nantes": null,
 "Grand'Place|Lille": [
 50.72271,
 3.1592
@@ -513,6 +519,10 @@
 "Hôpital de Montauban|Montauban": [
 44.02318,
 1.35092
+],
+"Hôpital de Rangueil|Toulouse": [
+43.55273,
+1.46876
 ],
 "Hôpital de la Pitié-Salpêtrière|Paris": [
 48.83635,
@@ -693,6 +703,10 @@
 43.61084,
 3.87659
 ],
+"La Base|Montpellier": [
+43.60542,
+3.87094
+],
 "La Bastide|Carcassonne": [
 43.27391,
 2.3273
@@ -736,6 +750,10 @@
 "Le Corum|Montpellier": [
 43.61317,
 3.88216
+],
+"Le Gabut|La Rochelle": [
+46.1553,
+-1.15094
 ],
 "Le Madrillet et Pasteur|Mont-Saint-Aignan": null,
 "Le Patio|Strasbourg": [
@@ -1457,6 +1475,8 @@
 48.84734,
 2.40809
 ],
+"Ports|Le Havre": null,
+"Ports|Rouen": null,
 "Presqu'Ile|Lyon": [
 45.76385,
 4.83444
@@ -3024,6 +3044,10 @@
 43.6603,
 3.91051
 ],
+"mairie de Nice|Nice": [
+43.74312,
+7.3137
+],
 "mairie de Nîmes|Nîmes": [
 43.8367,
 4.36014
@@ -3110,6 +3134,10 @@
 "palais de justice de Périgueux|Périgueux": [
 45.18657,
 0.72011
+],
+"palais de justice|Chalon-sur-Saône": [
+46.78501,
+4.85306
 ],
 "palais de justice|Grenoble": [
 45.19219,
@@ -3617,6 +3645,10 @@
 43.9484,
 4.80517
 ],
+"préfecture du Doubs|Besançon": [
+47.23297,
+6.02069
+],
 "préfecture du Val-d'Oise|Cergy": [
 49.03526,
 2.07788
@@ -3654,6 +3686,7 @@
 2.33584
 ],
 "péage autoroutier|Le Muy": null,
+"péage d'Orléans|Orléans": null,
 "péage de l'A85|Romorantin-Lanthenay": null,
 "péage du Mans nord|Le Mans": null,
 "péages|Narbonne": null,
