@@ -48,6 +48,10 @@
 50.73644,
 2.27044
 ],
+"Auchan|Saint-Nazaire": [
+47.25892,
+-2.265
+],
 "Autoroute A69|Castres": null,
 "Autoroute|Bayonne": [
 43.48753,
@@ -1220,6 +1224,10 @@
 16.24462,
 -61.58632
 ],
+"Moudong|Baie-Mahault": [
+16.2408,
+-61.58273
+],
 "Musée Guimet|Paris": [
 48.86538,
 2.29359
@@ -1434,6 +1442,10 @@
 "Place de la Résistance|Quimper": [
 47.99365,
 -4.10549
+],
+"Place de la république|Lille": [
+50.6313,
+3.06097
 ],
 "Place des Terreaux|Lyon": [
 45.76749,
@@ -2144,6 +2156,10 @@
 48.11154,
 -1.67907
 ],
+"centre-ville|Roanne": [
+46.03409,
+4.07255
+],
 "centre-ville|Romans-sur-Isère": null,
 "centre-ville|Rouen": [
 49.40697,
@@ -2468,6 +2484,10 @@
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
 "hyper-centre|Laval": null,
+"hyper-centre|Pau": [
+43.36141,
+-0.38778
+],
 "hyper-centre|Perpignan": null,
 "hypercentre-ville|Caen": null,
 "hypercentre|Grenoble": [
@@ -3475,6 +3495,10 @@
 47.32127,
 5.04142
 ],
+"place de la Republique|Limoges": [
+45.83193,
+1.26019
+],
 "place de la République|Caen": [
 49.18097,
 -0.36356
@@ -3912,6 +3936,7 @@
 48.7833,
 1.98894
 ],
+"square de la Jeune résistance|Clermont-Ferrand": null,
 "square de la Jeune|Clermont-Ferrand": null,
 "square|Trappes": [
 48.77465,
@@ -4006,6 +4031,10 @@
 48.01364,
 0.15905
 ],
+"université|Le Mans": [
+48.01701,
+0.152
+],
 "université|Montpellier": [
 43.61338,
 3.87347
@@ -4055,6 +4084,7 @@
 "zone Horizon|Châteaubriant": null,
 "zone d'activité du Monné|Allonnes": null,
 "zone franche|Bourges": null,
+"zones commerciales|Évreux": null,
 "École Polytechnique|Palaiseau": [
 48.71279,
 2.21075
