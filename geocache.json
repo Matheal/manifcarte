@@ -151,6 +151,10 @@
 47.20099,
 -1.55822
 ],
+"CHU de Rangueil|Toulouse": [
+43.56077,
+1.45309
+],
 "CNSMDP|Paris": [
 48.88906,
 2.39081
@@ -677,6 +681,10 @@
 5.72794
 ],
 "Institut d'urbanisme et géographie alpine|Grenoble": null,
+"Institut du développement social|Canteleu": [
+49.44348,
+1.01624
+],
 "Invalides|Paris": [
 48.86034,
 2.31468
@@ -1455,6 +1463,7 @@
 43.9273,
 2.14781
 ],
+"Place du cirque et croisée des trams|Nantes": null,
 "Plaine des sports|Saint-Nazaire": [
 47.27269,
 -2.23166
@@ -1505,6 +1514,10 @@
 4.94258
 ],
 "Prison de la Santé|Paris": [
+48.83388,
+2.33974
+],
+"Prison de la santé|Paris": [
 48.83388,
 2.33974
 ],
@@ -1709,6 +1722,10 @@
 "Tribunal judiciaire|Bobigny": [
 48.9094,
 2.45007
+],
+"UPEC|Créteil": [
+48.78822,
+2.44392
 ],
 "UPPA|Pau": [
 43.31461,
@@ -3982,6 +3999,10 @@
 ],
 "université Bordeaux Montesquieu|Bordeaux": null,
 "université Bordeaux Montesquieu|Pessac": null,
+"université Bourgogne Europe|Dijon": [
+47.31331,
+5.06886
+],
 "université Grenoble Alpes|Grenoble": [
 45.19319,
 5.76519
