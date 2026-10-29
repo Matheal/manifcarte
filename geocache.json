@@ -330,6 +330,10 @@
 48.19708,
 6.44061
 ],
+"Centre|Reims": [
+49.25899,
+4.02438
+],
 "Centre|Strasbourg": [
 48.58263,
 7.74755
@@ -400,6 +404,7 @@
 4.74399
 ],
 "De place de la Bastille à place de l'Opéra|Paris": null,
+"Depot des Lilas|Les Lilas": null,
 "Devant la CCI|Brive-la-Gaillarde": null,
 "Donjon de Rouen|Rouen": [
 49.44648,
@@ -420,6 +425,10 @@
 "Entre Bastille et Nation|Paris": null,
 "Faculté de lettres|Metz": null,
 "Faculté de lettres|Pau": null,
+"Flâneries|La Roche-sur-Yon": [
+46.69931,
+-1.43091
+],
 "Foch|Nantes": [
 47.21932,
 -1.55026
@@ -688,6 +697,10 @@
 "Invalides|Paris": [
 48.86034,
 2.31468
+],
+"Jardin de la Fontaine|Nîmes": [
+43.83777,
+4.34988
 ],
 "Jardin du Mail|Angers": [
 47.47029,
@@ -1182,6 +1195,10 @@
 49.06041,
 3.84116
 ],
+"Maison de la Culture d'Amiens|Amiens": [
+49.89409,
+2.29172
+],
 "Maison de la Culture|Amiens": [
 49.89409,
 2.29172
@@ -1451,6 +1468,10 @@
 47.99365,
 -4.10549
 ],
+"Place de la Révolution|Besançon": [
+47.24003,
+6.02238
+],
 "Place de la république|Lille": [
 50.6313,
 3.06097
@@ -1488,6 +1509,7 @@
 43.30185,
 5.37475
 ],
+"Porte de Charenton|Charenton-le-Pont": null,
 "Porte de Paris|Poitiers": [
 46.59035,
 0.34031
@@ -1544,6 +1566,10 @@
 "Préfecture|Gap": [
 44.55747,
 6.07598
+],
+"Préfecture|Nantes": [
+47.21976,
+-1.55488
 ],
 "Préfecture|Pau": [
 43.29605,
@@ -2335,6 +2361,7 @@
 "devant la mairie|Clermont-Ferrand": null,
 "devant la mairie|Creil": null,
 "devant la mairie|Guéret": null,
+"devant la mairie|Jarny": null,
 "devant la mairie|Laon": null,
 "devant la mairie|Les Ponts-de-Cé": null,
 "devant la mairie|Lille": null,
@@ -2514,6 +2541,10 @@
 "hypercentre|Lyon": null,
 "hypercentre|Nantes": null,
 "hypermarché de Dillon|Fort-de-France": null,
+"hôpital de Hyères|Hyères": [
+43.03547,
+6.13917
+],
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
@@ -3200,6 +3231,10 @@
 -20.92668,
 55.66193
 ],
+"parc à chaînes|Brest": [
+48.38235,
+-4.48855
+],
 "parvis de l'Hôtel de Ville|Lille": null,
 "parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
@@ -3326,6 +3361,10 @@
 "place Kléber|Strasbourg": [
 48.58331,
 7.74596
+],
+"place Liberté|Les Sables-d'Olonne": [
+46.49746,
+-1.78327
 ],
 "place Martin Bidourré|Toulon": null,
 "place Massena|Nice": [
@@ -3589,9 +3628,17 @@
 50.29126,
 2.7774
 ],
+"place des Merisiers|Trappes": [
+48.77642,
+1.9856
+],
 "place des Otages|Morlaix": [
 48.57798,
 -3.82895
+],
+"place des Quinconces|Bordeaux": [
+44.84569,
+-0.57555
 ],
 "place des Terreaux|Lyon": [
 45.76749,
@@ -3709,6 +3756,10 @@
 "préfecture|Dax": [
 43.70329,
 -1.05636
+],
+"préfecture|La Roche-sur-Yon": [
+46.66805,
+-1.42533
 ],
 "préfecture|Paris": [
 48.84943,
