@@ -279,6 +279,7 @@
 ],
 "Centre hospitalier universitaire de Reims|Reims": null,
 "Centre élargi|Montpellier": null,
+"Centre-ville, Beaulieu, Atlantis, Carquefou|Nantes": null,
 "Centre-ville|Bordeaux": [
 44.84113,
 -0.65678
@@ -1018,6 +1019,10 @@
 47.74947,
 7.34338
 ],
+"Lycée Nelson-Mandela|Nantes": [
+47.20832,
+-1.53354
+],
 "Lycée Ozenne|Toulouse": [
 43.60969,
 1.44185
@@ -1172,6 +1177,10 @@
 "Mairie|Cherbourg-en-Cotentin": [
 49.66071,
 -1.70033
+],
+"Mairie|Cholet": [
+47.06281,
+-0.93831
 ],
 "Mairie|Châteaubriant": [
 47.72159,
@@ -2282,6 +2291,10 @@
 49.10899,
 6.17734
 ],
+"centre-ville|Montauban": [
+43.96679,
+1.33981
+],
 "centre-ville|Montpellier": [
 43.60866,
 3.88644
@@ -2387,6 +2400,10 @@
 "centre-ville|Vannes": [
 47.65618,
 -2.75726
+],
+"centre-ville|Évreux": [
+48.96968,
+1.09576
 ],
 "centres-villes|Cholet": null,
 "centres-villes|Dax": null,
@@ -2534,6 +2551,7 @@
 "devant la mairie|Villers-lès-Nancy": null,
 "devant la mairie|Épinal": null,
 "devant la mairie|Étaples": null,
+"devant la préfecture de Vendée|La Roche-sur-Yon": null,
 "devant la préfecture|Ajaccio": null,
 "devant la préfecture|Blois": null,
 "devant la préfecture|Bourg-en-Bresse": null,
@@ -2674,6 +2692,7 @@
 -3.33086
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
+"hyper-centre|Bourges": null,
 "hyper-centre|Laval": null,
 "hyper-centre|Limoges": null,
 "hyper-centre|Pau": [
@@ -2779,6 +2798,7 @@
 ],
 "intramuros|Avignon": null,
 "jardin national, au kiosque à musique|Albi": null,
+"kiosque|Châtellerault": null,
 "l'Écusson|Montpellier": [
 43.61084,
 3.87659
@@ -4191,6 +4211,10 @@
 ],
 "station de métro Charles de Gaulle|Rennes": null,
 "station de métro|Vénissieux": null,
+"statue de Lamartine|Mâcon": [
+46.30291,
+4.8332
+],
 "supermarché|Longuenesse": null,
 "tour de la Liberté|Saint-Dié-des-Vosges": [
 48.2865,
