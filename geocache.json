@@ -57,6 +57,10 @@
 43.48753,
 -1.44885
 ],
+"Avenue Jean Médecin|Nice": [
+43.70174,
+7.26742
+],
 "Avenue des Gobelins|Paris": [
 48.83423,
 2.35365
@@ -195,6 +199,10 @@
 "Campus Condorcet|Aubervilliers": [
 48.91098,
 2.36602
+],
+"Campus Grands Moulins|Paris": [
+48.8296,
+2.38168
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
 "Campus Pasteur, Mont-Saint-Aignan et Madrillet|Rouen": null,
@@ -656,6 +664,10 @@
 49.38377,
 3.3292
 ],
+"Hôtel de ville|Vannes": [
+47.6587,
+-2.76105
+],
 "Hôtel de ville|Villefontaine": [
 45.60943,
 5.15683
@@ -720,6 +732,10 @@
 -61.58204
 ],
 "Jean Jaures|Toulouse": [
+43.60562,
+1.44848
+],
+"Jean Jaurès|Toulouse": [
 43.60562,
 1.44848
 ],
@@ -1114,6 +1130,10 @@
 49.27528,
 -1.14583
 ],
+"Mairie|Chambéry": [
+45.64781,
+5.86005
+],
 "Mairie|Champagnole": [
 46.74559,
 5.9078
@@ -1349,6 +1369,10 @@
 -20.92668,
 55.66193
 ],
+"Parc à Chaînes|Brest": [
+48.38235,
+-4.48855
+],
 "Parlement Européen|Strasbourg": [
 48.59748,
 7.76989
@@ -1459,6 +1483,10 @@
 47.37969,
 0.69323
 ],
+"Place de la Mairie|Bourg-en-Bresse": [
+46.21107,
+5.32453
+],
 "Place de la République et quartier des Halles|Paris": null,
 "Place de la République et secteur des Halles|Paris": null,
 "Place de la République|Bordeaux": [
@@ -1549,6 +1577,14 @@
 ],
 "Ports|Le Havre": null,
 "Ports|Rouen": null,
+"Port|Bayonne": [
+43.4921,
+-1.3698
+],
+"Port|La Rochelle": [
+46.16237,
+-1.20752
+],
 "Presqu'Ile|Lyon": [
 45.76385,
 4.83444
@@ -1618,6 +1654,10 @@
 48.86186,
 2.31593
 ],
+"RD 906|Chalon-sur-Saône": [
+46.84748,
+4.94554
+],
 "RN 126|Castres": null,
 "RN 165|Quéven": null,
 "RN 165|Vannes": null,
@@ -1646,6 +1686,7 @@
 48.11134,
 -1.68002
 ],
+"Rex Hôtel|Tarbes": null,
 "Richter, Paul-Valéry et faculté de Sciences|Montpellier": null,
 "Rivière-des-Galets|Le Port": [
 -20.96105,
@@ -1739,6 +1780,10 @@
 "Square André Chénier|Carcassonne": [
 43.21681,
 2.35024
+],
+"St Cyprien|Toulouse": [
+43.59833,
+1.43458
 ],
 "Stade de la Beaujoire|Nantes": [
 47.25601,
