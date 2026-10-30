@@ -472,6 +472,10 @@
 48.86216,
 2.34537
 ],
+"Forêt de Chailluz|Besançon": [
+47.29801,
+6.05259
+],
 "Fos|Marseille": [
 43.30363,
 5.36354
@@ -1371,6 +1375,10 @@
 48.94992,
 2.52194
 ],
+"Palais de Justice|Bergerac": [
+44.85357,
+0.48678
+],
 "Palais de Justice|Périgueux": [
 45.18657,
 0.72011
@@ -1556,6 +1564,7 @@
 47.24003,
 6.02238
 ],
+"Place de la grande Rigaudie|Sarlat-la-Canéda": null,
 "Place de la république|Lille": [
 50.6313,
 3.06097
@@ -1608,6 +1617,10 @@
 ],
 "Ports français|Paris": null,
 "Ports|Le Havre": null,
+"Ports|Paris": [
+48.85423,
+2.28756
+],
 "Ports|Rouen": null,
 "Port|Bayonne": [
 43.4921,
@@ -2521,6 +2534,7 @@
 "devant la mairie|Villers-lès-Nancy": null,
 "devant la mairie|Épinal": null,
 "devant la mairie|Étaples": null,
+"devant la préfecture|Ajaccio": null,
 "devant la préfecture|Blois": null,
 "devant la préfecture|Bourg-en-Bresse": null,
 "devant la préfecture|Nantes": null,
@@ -2763,6 +2777,7 @@
 48.11046,
 -1.67217
 ],
+"intramuros|Avignon": null,
 "jardin national, au kiosque à musique|Albi": null,
 "l'Écusson|Montpellier": [
 43.61084,
@@ -3690,6 +3705,10 @@
 1.26019
 ],
 "place de la République et Châtelet-Les Halles|Paris": null,
+"place de la République|Bourgoin-Jallieu": [
+45.58937,
+5.27348
+],
 "place de la République|Caen": [
 49.18097,
 -0.36356
@@ -3710,6 +3729,10 @@
 "place de la République|Marseille": [
 43.33484,
 5.48346
+],
+"place de la République|Orléans": [
+47.9012,
+1.90602
 ],
 "place de la République|Paris": [
 48.86754,
@@ -4153,6 +4176,7 @@
 ],
 "square de la Jeune résistance|Clermont-Ferrand": null,
 "square de la Jeune|Clermont-Ferrand": null,
+"square du lieutenant-colonel René-Génin|Toul": null,
 "square|Trappes": [
 48.77465,
 1.98719
