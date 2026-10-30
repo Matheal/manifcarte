@@ -99,6 +99,10 @@
 2.63923
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
+"Bourse du Travail de Paris|Paris": [
+48.86527,
+2.36495
+],
 "Bourse du Travail|Lyon": [
 45.75921,
 4.84822
@@ -387,6 +391,7 @@
 48.82296,
 2.28971
 ],
+"Cours Gambetta, avenue Garibaldi et avenue Berthelot|Lyon": null,
 "Cours Lafayette|Toulon": [
 43.12095,
 5.93452
@@ -425,6 +430,10 @@
 "Entre Bastille et Nation|Paris": null,
 "Faculté de lettres|Metz": null,
 "Faculté de lettres|Pau": null,
+"Feeling|Belfort": [
+47.66362,
+6.84247
+],
 "Flâneries|La Roche-sur-Yon": [
 46.69931,
 -1.43091
@@ -1003,6 +1012,10 @@
 49.00923,
 1.14106
 ],
+"Lycée Toulouse-Lautrec|Toulouse": [
+43.62671,
+1.44382
+],
 "Lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
@@ -1028,6 +1041,10 @@
 47.18674,
 -1.52138
 ],
+"Lycée des Menuts|Bordeaux": [
+44.83033,
+-0.56355
+],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
 "Lycée professionnel La Ruche|Bordeaux": null,
 "Lycées Léonard de Vinci, Saint-Rémi et Jean-Moulin|Roubaix": null,
@@ -1044,6 +1061,10 @@
 "Mairie de Nice|Nice": [
 43.74312,
 7.3137
+],
+"Mairie de Rennes|Rennes": [
+48.11136,
+-1.6786
 ],
 "Mairie de Saint-Nazaire|Saint-Nazaire": [
 47.18269,
@@ -1282,6 +1303,10 @@
 43.29464,
 5.37414
 ],
+"Opéra de Montpellier|Montpellier": [
+43.64952,
+3.97499
+],
 "Opéra de Paris|Paris": [
 48.87653,
 2.32524
@@ -1485,6 +1510,10 @@
 2.14781
 ],
 "Place du cirque et croisée des trams|Nantes": null,
+"Place du foirail|Mende": [
+44.63363,
+3.47943
+],
 "Plaine des sports|Saint-Nazaire": [
 47.27269,
 -2.23166
@@ -1710,6 +1739,10 @@
 "Square André Chénier|Carcassonne": [
 43.21681,
 2.35024
+],
+"Stade de la Beaujoire|Nantes": [
+47.25601,
+-1.52476
 ],
 "Stade de la Mosson|Montpellier": [
 43.62202,
@@ -1993,6 +2026,10 @@
 7.23787
 ],
 "campus Fonderie|Mulhouse": null,
+"campus Grands Moulins|Paris": [
+48.8296,
+2.38168
+],
 "campus Mailly|Perpignan": [
 42.69793,
 2.89901
@@ -2040,6 +2077,10 @@
 "centre administratif|Draveil": [
 48.68505,
 2.40858
+],
+"centre historique|Avignon": [
+43.95197,
+4.80738
 ],
 "centre historique|Chambéry": null,
 "centre historique|Rouen": null,
@@ -2393,6 +2434,7 @@
 "devant la mairie|Étaples": null,
 "devant la préfecture|Blois": null,
 "devant la préfecture|Bourg-en-Bresse": null,
+"devant la préfecture|Nantes": null,
 "devant la préfecture|Quimper": null,
 "devant la sous-préfecture|Vendôme": null,
 "devant le Sénat|Paris": null,
@@ -2407,7 +2449,9 @@
 "devant les mairies|Nancy": null,
 "devant les mairies|Paris": null,
 "du cinéma REX au pont Michel|Paris": null,
+"dépôt de bus des Lilas|Les Lilas": null,
 "dépôt de bus|Vitry-sur-Seine": null,
+"dépôt de la RATP|Les Lilas": null,
 "dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
 "entrée nord de l'A63|Bayonne": null,
 "espace Bancel|Lyon": null,
@@ -3722,6 +3766,10 @@
 "port|Vannes": [
 47.65033,
 -2.75857
+],
+"prefecture de Nantes|Nantes": [
+47.21976,
+-1.55488
 ],
 "presqu'île|Lyon": [
 45.80837,
