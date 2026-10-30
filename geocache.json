@@ -15,6 +15,14 @@
 47.22003,
 -1.5558
 ],
+"8 rue Sergent Bobillot|Grenoble": [
+45.1824,
+5.72107
+],
+"8ème arrondissement|Lyon": [
+45.73512,
+4.87072
+],
 "A47|Givors": [
 45.58442,
 4.76965
@@ -216,6 +224,7 @@
 45.78316,
 4.87117
 ],
+"Campus de la fac de sciences|Montpellier": null,
 "Campus sud de santé|Amiens": null,
 "Campus|Grenoble": [
 45.19114,
@@ -296,6 +305,10 @@
 "Centre-ville|La Roche-sur-Yon": [
 46.66885,
 -1.43926
+],
+"Centre-ville|Le Mans": [
+48.00174,
+0.20306
 ],
 "Centre-ville|Limoges": [
 45.82468,
@@ -438,6 +451,10 @@
 "Entre Bastille et Nation|Paris": null,
 "Faculté de lettres|Metz": null,
 "Faculté de lettres|Pau": null,
+"Faculté de sciences|Montpellier": [
+43.6321,
+3.86429
+],
 "Feeling|Belfort": [
 47.66362,
 6.84247
@@ -513,6 +530,10 @@
 "Grande Ile|Strasbourg": [
 48.58296,
 7.74783
+],
+"Halles centrales|Rennes": [
+48.10784,
+-1.67932
 ],
 "Hopital de la Pitie-Salpetriere|Paris": [
 48.83635,
@@ -715,6 +736,7 @@
 49.44348,
 1.01624
 ],
+"Institut national des sciences appliquées de Blois|Blois": null,
 "Invalides|Paris": [
 48.86034,
 2.31468
@@ -726,6 +748,10 @@
 "Jardin du Mail|Angers": [
 47.47029,
 -0.54551
+],
+"Jardins de la Fontaine|Nîmes": [
+43.84143,
+4.34973
 ],
 "Jarry|Baie-Mahault": [
 16.24148,
@@ -819,6 +845,7 @@
 1.41803
 ],
 "Les Capucins|Thionville": null,
+"Les Halles de Lyon Paul Bocuse|Lyon": null,
 "Les Six-Croix|Donges": null,
 "Lidl de Trignac|Trignac": [
 47.28958,
@@ -1331,6 +1358,10 @@
 48.87653,
 2.32524
 ],
+"Orléans m|Orléans": [
+47.90273,
+1.90861
+],
 "Orléans td|Orléans": null,
 "Orléans|Orléans": [
 47.90273,
@@ -1575,6 +1606,7 @@
 48.84734,
 2.40809
 ],
+"Ports français|Paris": null,
 "Ports|Le Havre": null,
 "Ports|Rouen": null,
 "Port|Bayonne": [
@@ -1611,6 +1643,10 @@
 "Préfecture|Avignon": [
 43.9484,
 4.80517
+],
+"Préfecture|Belfort": [
+47.63825,
+6.86137
 ],
 "Préfecture|Besançon": [
 47.23371,
@@ -1858,6 +1894,10 @@
 "Université Paris-Panthéon-Assas|Paris": [
 48.84693,
 2.34503
+],
+"Université Paris-Saclay|Gif-sur-Yvette": [
+48.71195,
+2.17153
 ],
 "Université Paul-Valéry|Montpellier": [
 43.63015,
@@ -2122,6 +2162,10 @@
 "centre administratif|Draveil": [
 48.68505,
 2.40858
+],
+"centre de Paris|Paris": [
+48.92991,
+2.35621
 ],
 "centre historique|Avignon": [
 43.95197,
@@ -2617,6 +2661,7 @@
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
 "hyper-centre|Laval": null,
+"hyper-centre|Limoges": null,
 "hyper-centre|Pau": [
 43.36141,
 -0.38778
@@ -3644,6 +3689,7 @@
 45.83193,
 1.26019
 ],
+"place de la République et Châtelet-Les Halles|Paris": null,
 "place de la République|Caen": [
 49.18097,
 -0.36356
@@ -3994,6 +4040,10 @@
 "ronds-points|Gaillac": null,
 "ronds-points|La Valette-du-Var": null,
 "ronds-points|Montélimar": null,
+"rue Dante|Paris": [
+48.85122,
+2.34658
+],
 "rue Gambetta|Rennes": [
 48.111,
 -1.67456
@@ -4079,6 +4129,10 @@
 "sous-préfecture|Draguignan": [
 43.53847,
 6.4611
+],
+"sous-préfecture|Fougères": [
+48.35079,
+-1.20114
 ],
 "sous-préfecture|Roanne": [
 46.03549,
@@ -4247,6 +4301,10 @@
 ],
 "voies sur berges|Angers": null,
 "zone Horizon|Châteaubriant": null,
+"zone commerciale|Longuenesse": [
+50.73484,
+2.27257
+],
 "zone d'activité du Monné|Allonnes": null,
 "zone franche|Bourges": null,
 "zones commerciales|Évreux": null,
