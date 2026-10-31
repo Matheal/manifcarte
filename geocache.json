@@ -307,6 +307,10 @@
 46.66885,
 -1.43926
 ],
+"Centre-ville|La Rochelle": [
+46.15647,
+-1.15559
+],
 "Centre-ville|Le Mans": [
 48.00174,
 0.20306
@@ -456,6 +460,10 @@
 43.6321,
 3.86429
 ],
+"Faubourg Saint-Antoine|Paris": [
+48.85072,
+2.37853
+],
 "Feeling|Belfort": [
 47.66362,
 6.84247
@@ -508,6 +516,10 @@
 "Gare|Amiens": [
 49.89322,
 2.28344
+],
+"Gare|Grenoble": [
+45.08414,
+5.74343
 ],
 "Gare|Lyon": [
 45.7704,
@@ -859,6 +871,10 @@
 ],
 "Les Capucins|Thionville": null,
 "Les Halles de Lyon Paul Bocuse|Lyon": null,
+"Les Réformés|Marseille": [
+43.29876,
+5.38318
+],
 "Les Six-Croix|Donges": null,
 "Lidl de Trignac|Trignac": [
 47.28958,
@@ -1280,6 +1296,10 @@
 43.23332,
 0.0788
 ],
+"Mairie|Trappes": [
+48.77598,
+1.99931
+],
 "Mairie|Épernay": [
 49.06041,
 3.84116
@@ -1605,6 +1625,7 @@
 47.27269,
 -2.23166
 ],
+"Pont urgence, passerelle tribunal|Nantes": null,
 "Pont-du-Las|Toulon": [
 43.11897,
 5.90045
@@ -1713,6 +1734,7 @@
 43.29605,
 -0.36948
 ],
+"Péage d'Orléans|Orléans": null,
 "Pôle associatif Polyblosne, 1 boulevard de Yougoslavie|Rennes": null,
 "Pôle juridique et judiciaire|Bordeaux": null,
 "Quai Charles-Ravet|Chambéry": [
@@ -2037,6 +2059,10 @@
 44.07998,
 3.02241
 ],
+"Vieux Port|La Rochelle": [
+46.15766,
+-1.15198
+],
 "Vieux-Port|Marseille": [
 43.29458,
 5.36928
@@ -2107,6 +2133,7 @@
 2.42569
 ],
 "bouchon de Champagne|Troyes": null,
+"boulevard André Sautel|Angoulême": null,
 "boulevard Delacourtie|Toulouse": [
 43.58397,
 1.4495
@@ -2126,6 +2153,10 @@
 "boulevard Victor-Hugo|Lille": [
 50.62265,
 3.06272
+],
+"boulevard de la Liberté|Rennes": [
+48.10739,
+-1.67905
 ],
 "boulevard des Coloniaux|Poitiers": null,
 "boulevard du Roi René|Angers": [
@@ -2214,6 +2245,7 @@
 ],
 "centre historique|Chambéry": null,
 "centre historique|Rouen": null,
+"centre-ville|Albi": null,
 "centre-ville|Angers": [
 47.46549,
 -0.55869
@@ -2499,6 +2531,7 @@
 3.18689
 ],
 "conseil municipal|Bayonne": null,
+"correspondance ligne 4 / ligne 3|Paris": null,
 "cours Mirabeau|Aix-en-Provence": [
 43.52652,
 5.44716
@@ -2543,6 +2576,7 @@
 "devant la mairie|Brive-la-Gaillarde": null,
 "devant la mairie|Caen": null,
 "devant la mairie|Cannes": null,
+"devant la mairie|Chambéry": null,
 "devant la mairie|Cherbourg-en-Cotentin": null,
 "devant la mairie|Châteaubriant": null,
 "devant la mairie|Clermont-Ferrand": null,
@@ -2702,6 +2736,10 @@
 "gare|Dijon": [
 47.32367,
 5.02803
+],
+"gare|Le Mans": [
+47.99507,
+0.19206
 ],
 "gare|Lille": [
 50.69454,
@@ -3408,6 +3446,10 @@
 45.19219,
 5.71113
 ],
+"palais de justice|Nantes": [
+47.21779,
+-1.56333
+],
 "palais de justice|Saint-Nazaire": [
 47.27908,
 -2.21509
@@ -3480,6 +3522,10 @@
 "place David D'Angers|Béziers": [
 43.34513,
 3.22006
+],
+"place Delille|Clermont-Ferrand": [
+45.78056,
+3.09127
 ],
 "place Deliot|Lille": [
 50.61938,
@@ -3992,9 +4038,17 @@
 43.29605,
 -0.36948
 ],
+"préfecture|Périgueux": [
+45.18126,
+0.72249
+],
 "préfecture|Tours": [
 47.39207,
 0.69218
+],
+"préfecture|Épinal": [
+48.17267,
+6.44896
 ],
 "pyramide du Louvre|Paris": [
 48.86099,
