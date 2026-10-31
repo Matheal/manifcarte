@@ -111,6 +111,10 @@
 2.63923
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
+"Bouffay|Nantes": [
+47.21495,
+-1.55345
+],
 "Bourse du Travail de Paris|Paris": [
 48.86527,
 2.36495
@@ -272,6 +276,7 @@
 45.78155,
 3.0854
 ],
+"Centre de congrès de l'Impérial|Annecy": null,
 "Centre de rétention de Vincennes|Vincennes": null,
 "Centre hospitalier de Martigues|Martigues": [
 43.41272,
@@ -2123,6 +2128,10 @@
 45.75569,
 4.8758
 ],
+"avenue Janvier|Rennes": [
+48.10735,
+-1.67342
+],
 "avenue Jean Moulin|Saint-Denis": null,
 "avenue Jean-Médecin|Nice": [
 43.70339,
@@ -2701,6 +2710,10 @@
 50.63638,
 3.07053
 ],
+"gare Matabiau|Toulouse": [
+43.61155,
+1.45407
+],
 "gare SNCF|Cannes": [
 43.5538,
 7.02165
@@ -2772,6 +2785,7 @@
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
 "hyper-centre|Bourges": null,
+"hyper-centre|Caen": null,
 "hyper-centre|Laval": null,
 "hyper-centre|Limoges": null,
 "hyper-centre|Pau": [
@@ -3698,6 +3712,10 @@
 49.76402,
 4.71883
 ],
+"place d'Argentine|Boulogne-sur-Mer": [
+50.73519,
+1.60318
+],
 "place d'Armes|Toulon": [
 43.12371,
 5.92902
@@ -3953,6 +3971,10 @@
 46.14074,
 -1.171
 ],
+"plage|Saint-Nazaire": [
+47.26756,
+-2.35038
+],
 "pont Chaban-Delmas|Bordeaux": [
 44.85831,
 -0.55178
@@ -4058,6 +4080,10 @@
 "préfecture|Périgueux": [
 45.18126,
 0.72249
+],
+"préfecture|Saint-Brieuc": [
+48.51426,
+-2.76793
 ],
 "préfecture|Tours": [
 47.39207,
@@ -4271,6 +4297,7 @@
 -4.46434
 ],
 "siège de SNCF Réseau|Paris": null,
+"siège de Saint-Étienne Métropole|Saint-Étienne": null,
 "siège de la Région Grand Est|Strasbourg": null,
 "siège de la Région|Strasbourg": null,
 "siège du MEDEF|Lille": null,
