@@ -1624,6 +1624,7 @@
 48.84734,
 2.40809
 ],
+"Ports européens|Marseille": null,
 "Ports français|Paris": null,
 "Ports|Le Havre": null,
 "Ports|Paris": [
@@ -2279,6 +2280,10 @@
 45.82468,
 1.26056
 ],
+"centre-ville|Lorient": [
+47.73723,
+-3.43123
+],
 "centre-ville|Lyon": [
 45.79926,
 4.8479
@@ -2363,6 +2368,10 @@
 "centre-ville|Rouen": [
 49.40697,
 1.05032
+],
+"centre-ville|Saint-Brieuc": [
+48.50765,
+-2.76485
 ],
 "centre-ville|Saint-Denis": [
 -20.88081,
@@ -2553,6 +2562,7 @@
 "devant la mairie|Étaples": null,
 "devant la préfecture de Vendée|La Roche-sur-Yon": null,
 "devant la préfecture|Ajaccio": null,
+"devant la préfecture|Belfort": null,
 "devant la préfecture|Blois": null,
 "devant la préfecture|Bourg-en-Bresse": null,
 "devant la préfecture|Nantes": null,
@@ -3651,6 +3661,10 @@
 43.29947,
 -0.37624
 ],
+"place de Verdun|Tarbes": [
+43.23366,
+0.07384
+],
 "place de l'Amérique Latine|Saint-Nazaire": [
 47.276,
 -2.20508
@@ -3880,6 +3894,10 @@
 14.60339,
 -61.06167
 ],
+"port de Fos-sur-Mer|Fos-sur-Mer": [
+43.46255,
+4.83834
+],
 "port de Papeete|Papeete": [
 -17.52829,
 -149.57593
@@ -3892,10 +3910,15 @@
 48.81909,
 2.35953
 ],
+"porte de Charenton|Charenton-le-Pont": null,
 "porte de Paris à la place de la République|Lille": null,
 "port|Fort-de-France": [
 14.59596,
 -61.04979
+],
+"port|Saint-Nazaire": [
+47.27483,
+-2.19795
 ],
 "port|Vannes": [
 47.65033,
