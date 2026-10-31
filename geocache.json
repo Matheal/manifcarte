@@ -870,6 +870,10 @@
 1.41803
 ],
 "Les Capucins|Thionville": null,
+"Les Coteaux|Mulhouse": [
+47.73494,
+7.29744
+],
 "Les Halles de Lyon Paul Bocuse|Lyon": null,
 "Les Réformés|Marseille": [
 43.29876,
@@ -1651,6 +1655,10 @@
 2.40718
 ],
 "Porte de Charenton|Charenton-le-Pont": null,
+"Porte de Charenton|Paris": [
+48.83306,
+2.40119
+],
 "Porte de Paris|Poitiers": [
 46.59035,
 0.34031
@@ -1786,6 +1794,10 @@
 "Rivière-des-Galets|Le Port": [
 -20.96105,
 55.31949
+],
+"Rocade|Le Mans": [
+47.97866,
+0.21342
 ],
 "Rond point du Casino|Boulogne-sur-Mer": null,
 "Rond-point Picot|Châlons-en-Champagne": null,
@@ -2245,6 +2257,7 @@
 ],
 "centre historique|Chambéry": null,
 "centre historique|Rouen": null,
+"centre ville|Le Havre": null,
 "centre-ville|Albi": null,
 "centre-ville|Angers": [
 47.46549,
@@ -3196,6 +3209,10 @@
 "lycée Saint-Cricq|Pau": [
 43.29909,
 -0.35908
+],
+"lycée Saint-Exupéry|Créteil": [
+48.78346,
+2.46258
 ],
 "lycée Saint-Exupéry|Marseille": [
 43.34733,
@@ -4155,6 +4172,10 @@
 ],
 "rond-point de l'échangeur A8|Le Muy": null,
 "rond-point de la rocade|Arques": null,
+"rond-point des Flâneries|La Roche-sur-Yon": [
+46.6975,
+-1.43138
+],
 "rond-point des vaches|Saint-Étienne-du-Rouvray": [
 49.36822,
 1.11144
@@ -4242,6 +4263,7 @@
 ],
 "rue située à l'arrière du café Blondel|Metz": null,
 "rues adjacentes à la place de la République|Paris": null,
+"rues commerçantes|Épinal": null,
 "salle de la Bourse|Strasbourg": null,
 "services de l'Éducation nationale|Niort": null,
 "shop park Phare de l'Europe|Brest": [
@@ -4337,6 +4359,10 @@
 "tribunal|Lyon": [
 45.76064,
 4.84791
+],
+"tunnel de la Croix-Rousse|Lyon": [
+45.77366,
+4.82296
 ],
 "université Bordeaux Montesquieu|Bordeaux": null,
 "université Bordeaux Montesquieu|Pessac": null,
