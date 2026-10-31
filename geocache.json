@@ -536,6 +536,10 @@
 48.58296,
 7.74783
 ],
+"Guitard|Le Puy-en-Velay": [
+45.04017,
+3.90617
+],
 "Halles centrales|Rennes": [
 48.10784,
 -1.67932
@@ -815,6 +819,10 @@
 "La Rotonde|Aix-en-Provence": [
 43.52629,
 5.44542
+],
+"La Rotonde|Marseille": [
+43.30165,
+5.38586
 ],
 "Lauga|Bayonne": [
 43.4815,
@@ -1296,6 +1304,7 @@
 47.64147,
 6.85137
 ],
+"Manufacture des Tabacs à Jean-Macé|Lyon": null,
 "Manufacture des Tabacs|Lyon": [
 45.74803,
 4.86058
@@ -1460,6 +1469,7 @@
 48.69344,
 6.17785
 ],
+"Place Des Grès|Trappes": null,
 "Place E. Feuillère (Place des jets d'eau)|Vesoul": null,
 "Place E. Feuillère|Vesoul": null,
 "Place Foch|Nantes": [
@@ -1614,6 +1624,10 @@
 "Porte d'Aix|Marseille": [
 43.30185,
 5.37475
+],
+"Porte de Bagnolet|Paris": [
+48.8646,
+2.40718
 ],
 "Porte de Charenton|Charenton-le-Pont": null,
 "Porte de Paris|Poitiers": [
@@ -1857,6 +1871,10 @@
 2.36707
 ],
 "Stanley Tools|Besançon": null,
+"Station Bastille|Paris": [
+48.85299,
+2.36886
+],
 "Station Debourg|Lyon": [
 45.73098,
 4.8334
