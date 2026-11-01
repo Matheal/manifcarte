@@ -2288,6 +2288,10 @@
 ],
 "campus sud de santé|Amiens": null,
 "campus universitaire|Toulon": null,
+"campus|Besançon": [
+47.21691,
+5.96289
+],
 "carrefour du centenaire|Chambéry": null,
 "cathédrale de Metz|Metz": [
 49.12027,
@@ -2755,6 +2759,7 @@
 7.26758
 ],
 "fac|Brest": null,
+"foire de la Colombette|Toulouse": null,
 "forum des entreprises de Phelma|Grenoble": null,
 "galerie marchande Les Capucins|Thionville": null,
 "gare Lille Flandres|Lille": [
@@ -3448,6 +3453,10 @@
 "mairie de Vannes|Vannes": [
 47.65837,
 -2.76093
+],
+"mairie du 8ème arrondissement|Lyon": [
+45.73518,
+4.8728
 ],
 "mairie du VIIIe arrondissement|Lyon": null,
 "mairie|Bayonne": [
