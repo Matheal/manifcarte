@@ -115,6 +115,14 @@
 47.21495,
 -1.55345
 ],
+"Boulevard Carnot|Aix-en-Provence": [
+43.52842,
+5.45479
+],
+"Boulevard du Roi René|Aix-en-Provence": [
+43.52391,
+5.447
+],
 "Bourse du Travail de Paris|Paris": [
 48.86527,
 2.36495
@@ -510,6 +518,7 @@
 49.89322,
 2.28344
 ],
+"Gare de Châtelet-Les Halles|Paris": null,
 "Gare de Lyon|Paris": [
 48.84468,
 2.37377
@@ -1761,6 +1770,10 @@
 "Quai d'Orsay|Paris": [
 48.86186,
 2.31593
+],
+"Quai des Allobroges|Chambéry": [
+45.57141,
+5.91678
 ],
 "RD 906|Chalon-sur-Saône": [
 46.84748,
@@ -4497,6 +4510,10 @@
 ],
 "voies sur berges|Angers": null,
 "zone Horizon|Châteaubriant": null,
+"zone commerciale de Beaulieu|La Rochelle": [
+46.17663,
+-1.11306
+],
 "zone commerciale|Longuenesse": [
 50.73484,
 2.27257
