@@ -490,6 +490,7 @@
 -1.55026
 ],
 "Foire Teillouse|Redon": null,
+"Foire gastronomique|Dijon": null,
 "Forum des Halles|Paris": [
 48.86216,
 2.34537
@@ -566,6 +567,7 @@
 45.04017,
 3.90617
 ],
+"Halles Biltoki|Angers": null,
 "Halles centrales|Rennes": [
 48.10784,
 -1.67932
@@ -1393,6 +1395,10 @@
 48.86115,
 2.33803
 ],
+"Mérignac Soleil|Mérignac": [
+44.83114,
+-0.6568
+],
 "Nanterre-Université|Nanterre": [
 48.90105,
 2.21336
@@ -2157,6 +2163,10 @@
 "avenue d'Annecy|Chambéry": [
 45.58896,
 5.91777
+],
+"avenue de Laon|Reims": [
+49.27984,
+4.01381
 ],
 "avenue de l'Amiral Collet|Toulon": [
 43.12886,
@@ -3468,6 +3478,7 @@
 45.77931,
 3.08336
 ],
+"marge du centre-ville|Laval": null,
 "miroir d'eau|Nantes": [
 47.21503,
 -1.54908
@@ -4025,6 +4036,10 @@
 "porte d'Italie|Paris": [
 48.81909,
 2.35953
+],
+"porte de Bagnolet|Bagnolet": [
+48.86221,
+2.41379
 ],
 "porte de Charenton|Charenton-le-Pont": null,
 "porte de Paris à la place de la République|Lille": null,
