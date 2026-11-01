@@ -119,6 +119,10 @@
 43.52842,
 5.45479
 ],
+"Boulevard Sully|La Roche-sur-Yon": [
+46.68405,
+-1.43045
+],
 "Boulevard du Roi René|Aix-en-Provence": [
 43.52391,
 5.447
@@ -2134,6 +2138,7 @@
 43.60686,
 1.45016
 ],
+"allées de Villote|Foix": null,
 "arrêt Tourelles Dauphine|Orléans": null,
 "autoroute A10|Tours": [
 47.47443,
@@ -2229,6 +2234,7 @@
 47.31597,
 5.06573
 ],
+"café de la poste|Ivry-sur-Seine": null,
 "campus 1 et 2|Caen": [
 49.19187,
 -0.30335
@@ -2305,6 +2311,10 @@
 ],
 "centre historique|Chambéry": null,
 "centre historique|Rouen": null,
+"centre hospitalier|Dax": [
+43.71164,
+-1.04023
+],
 "centre ville|Le Havre": null,
 "centre-ville|Albi": null,
 "centre-ville|Angers": [
@@ -2571,6 +2581,7 @@
 -20.88633,
 55.45245
 ],
+"commissariat du 5e arrondissement, 4 rue de la Montagne St-Geneviève|Paris": null,
 "commissariat|Besançon": [
 47.2324,
 6.02027
@@ -2692,6 +2703,7 @@
 ],
 "devant les mairies|Nancy": null,
 "devant les mairies|Paris": null,
+"devant turbomeca|Tarnos": null,
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus des Lilas|Les Lilas": null,
 "dépôt de bus|Vitry-sur-Seine": null,
@@ -3491,6 +3503,7 @@
 49.49793,
 0.12747
 ],
+"marches de la cathédrale|Le Puy-en-Velay": null,
 "marché Saint-Pierre|Clermont-Ferrand": [
 45.77931,
 3.08336
@@ -3952,6 +3965,10 @@
 48.07249,
 7.34658
 ],
+"place de la gare|Metz": [
+49.11086,
+6.17143
+],
 "place de la libération|Villefranche-sur-Saône": [
 45.98477,
 4.71697
@@ -4354,6 +4371,7 @@
 "siège de la Région Grand Est|Strasbourg": null,
 "siège de la Région|Strasbourg": null,
 "siège du MEDEF|Lille": null,
+"sous les Nefs|Nantes": null,
 "sous-préfecture de Vendôme|Vendôme": [
 47.79243,
 1.06669
