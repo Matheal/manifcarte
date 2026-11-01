@@ -156,6 +156,7 @@
 47.31711,
 -2.21982
 ],
+"Bâtiment Facteur Cheval|Évry-Courcouronnes": null,
 "CCAS|Amiens": null,
 "CCI de Brive|Brive-la-Gaillarde": null,
 "CCVA|Villeurbanne": [
@@ -344,6 +345,10 @@
 47.21484,
 -1.55794
 ],
+"Centre-ville|Nîmes": [
+43.81783,
+4.34314
+],
 "Centre-ville|Pamiers": [
 43.11696,
 1.61002
@@ -389,6 +394,8 @@
 44.44898,
 1.43431
 ],
+"Chambre du Commerce et de l'industrie|Saint-Étienne": null,
+"Champ de la Foire|Roanne": null,
 "Champs-Elysées|Paris": [
 48.87076,
 2.30533
@@ -461,6 +468,7 @@
 "Dépôt bus d'Asnières|Asnières-sur-Seine": null,
 "Dépôt bus de Pleyel|Saint-Denis": null,
 "Dépôts bus de Pleyel et Asnières|Paris": null,
+"ENS de Lyon, salle 034 – D2 (Descartes)|Lyon": null,
 "Eaux-ClaireS|Grenoble": [
 45.17666,
 5.70895
@@ -1683,6 +1691,10 @@
 46.59035,
 0.34031
 ],
+"Porte de Saint Ouen|Paris": [
+48.89716,
+2.32884
+],
 "Porte de Vincennes|Paris": [
 48.84734,
 2.40809
@@ -1725,6 +1737,10 @@
 "Prison de la santé|Paris": [
 48.83388,
 2.33974
+],
+"Préfecture|Ajaccio": [
+41.91977,
+8.73688
 ],
 "Préfecture|Avignon": [
 43.9484,
@@ -3421,6 +3437,7 @@
 47.65837,
 -2.76093
 ],
+"mairie du VIIIe arrondissement|Lyon": null,
 "mairie|Bayonne": [
 43.48305,
 -1.55847
@@ -3681,6 +3698,10 @@
 49.89126,
 2.30232
 ],
+"place Royale|Nantes": [
+47.2145,
+-1.55872
+],
 "place République|Perpignan": [
 42.76941,
 2.87367
@@ -3809,6 +3830,10 @@
 0.10926
 ],
 "place de l'Opéra|Toulon": null,
+"place de l'hôtel de ville|Paris": [
+48.85645,
+2.3509
+],
 "place de l'Étoile|Strasbourg": [
 48.57423,
 7.75433
