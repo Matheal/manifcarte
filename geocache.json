@@ -11,6 +11,10 @@
 48.90409,
 2.3907
 ],
+"5 Rue de l'Épée|Lyon": [
+45.75683,
+4.84336
+],
 "50 otages|Nantes": [
 47.22003,
 -1.5558
@@ -289,6 +293,10 @@
 45.78155,
 3.0854
 ],
+"Centre de Paris|Paris": [
+48.92991,
+2.35621
+],
 "Centre de congrès de l'Impérial|Annecy": null,
 "Centre de rétention de Vincennes|Vincennes": null,
 "Centre hospitalier de Martigues|Martigues": [
@@ -432,6 +440,10 @@
 "Cnews|Paris": [
 48.84412,
 2.27601
+],
+"Collège Lavoisier|Pantin": [
+48.88845,
+2.41793
 ],
 "Conseil des prud'hommes de montpellier|Montpellier": null,
 "Conservatoire d'Orléans|Orléans": [
@@ -590,6 +602,10 @@
 48.10784,
 -1.67932
 ],
+"Haute école des arts du Rhin|Strasbourg": [
+48.58245,
+7.75905
+],
 "Hopital de la Pitie-Salpetriere|Paris": [
 48.83635,
 2.36304
@@ -656,6 +672,10 @@
 ],
 "Hôtel L'Imperator|Nîmes": null,
 "Hôtel L'Impérator|Nîmes": null,
+"Hôtel de Police|Grenoble": [
+45.1934,
+5.73615
+],
 "Hôtel de Région|Lyon": [
 45.74012,
 4.81946
@@ -849,6 +869,10 @@
 "La Chevalière|Aix-en-Provence": [
 43.54558,
 5.43026
+],
+"La Faïencerie|Creil": [
+49.25924,
+2.47318
 ],
 "La Guillotière|Lyon": [
 45.7527,
@@ -1067,6 +1091,11 @@
 "Lycée Jean-Baptiste-Dumas|Alès": [
 44.13009,
 4.07548
+],
+"Lycée Jeanne-d'Arc et Lycée Chopin|Nancy": null,
+"Lycée Jeanne-d'Arc|Nancy": [
+48.69269,
+6.18609
 ],
 "Lycée Jules-Lesven|Brest": [
 48.40644,
@@ -1431,6 +1460,10 @@
 16.2408,
 -61.58273
 ],
+"Mucem|Marseille": [
+43.29673,
+5.36103
+],
 "Musée Guimet|Paris": [
 48.86538,
 2.29359
@@ -1591,6 +1624,10 @@
 "Place Kléber|Strasbourg": [
 48.58331,
 7.74596
+],
+"Place Napoléon|Cherbourg-en-Cotentin": [
+49.64243,
+-1.62343
 ],
 "Place Saint-Marc|Rouen": [
 49.43868,
@@ -1977,6 +2014,10 @@
 "Siège du Groupe ADP|Tremblay-en-France": null,
 "Solidarité Femmes 44|Nantes": null,
 "Sous-Préfecture|Trappes": null,
+"Sous-préfecture|Draguignan": [
+43.53847,
+6.4611
+],
 "Square André Chénier|Carcassonne": [
 43.21681,
 2.35024
@@ -2099,6 +2140,10 @@
 43.9497,
 4.81602
 ],
+"Université de Bourgogne-Europe|Dijon": [
+47.31331,
+5.06886
+],
 "Université de Bourgogne|Dijon": [
 47.31331,
 5.06886
@@ -2144,6 +2189,10 @@
 0.67352
 ],
 "Université de Troyes|Troyes": [
+48.26908,
+4.0665
+],
+"Université de technologie de Troyes|Troyes": [
 48.26908,
 4.0665
 ],
@@ -2287,6 +2336,7 @@
 47.31597,
 5.06573
 ],
+"bâtiment Henri Poincaré|Vandœuvre-lès-Nancy": null,
 "café de la poste|Ivry-sur-Seine": null,
 "campus 1 et 2|Caen": [
 49.19187,
@@ -2639,6 +2689,10 @@
 -20.88633,
 55.45245
 ],
+"commissariat des Lilas|Les Lilas": [
+48.88245,
+2.41483
+],
 "commissariat du 5e arrondissement, 4 rue de la Montagne St-Geneviève|Paris": null,
 "commissariat|Besançon": [
 47.2324,
@@ -2662,6 +2716,14 @@
 ],
 "conseil municipal|Bayonne": null,
 "correspondance ligne 4 / ligne 3|Paris": null,
+"cours Guynemer|Compiègne": [
+49.41979,
+2.82432
+],
+"cours Jean Jaurès|Avignon": [
+43.94479,
+4.80552
+],
 "cours Mirabeau|Aix-en-Provence": [
 43.52652,
 5.44716
@@ -2739,6 +2801,7 @@
 "devant la mairie|Toul": null,
 "devant la mairie|Tours": null,
 "devant la mairie|Vence": null,
+"devant la mairie|Villejuif": null,
 "devant la mairie|Villers-lès-Nancy": null,
 "devant la mairie|Épinal": null,
 "devant la mairie|Épinay-sur-Seine": null,
@@ -3006,6 +3069,7 @@
 ],
 "intramuros|Avignon": null,
 "jardin national, au kiosque à musique|Albi": null,
+"kiosque du jardin des Prébendes|Tours": null,
 "kiosque|Châtellerault": null,
 "l'Écusson|Montpellier": [
 43.61084,
@@ -3074,6 +3138,10 @@
 "lycée Bertran de Born|Périgueux": null,
 "lycée Bertran-de-Born|Périgueux": null,
 "lycée Bertran|Périgueux": null,
+"lycée Bichat|Lunéville": [
+48.59679,
+6.50905
+],
 "lycée Blaise-Pascal|Clermont-Ferrand": [
 45.77534,
 3.09427
@@ -3097,6 +3165,10 @@
 "lycée Camille-Pissarro|Pontoise": [
 49.05589,
 2.09001
+],
+"lycée Chaptal|Paris": [
+48.88129,
+2.31991
 ],
 "lycée Charles Péguy|Orléans": [
 47.88872,
@@ -3151,11 +3223,19 @@
 43.67084,
 7.1486
 ],
+"lycée Etienne Mimard|Saint-Étienne": [
+45.43713,
+4.39638
+],
 "lycée Ferdinand Daguin|Mérignac": null,
 "lycée Ferdinand-Daguin|Mérignac": null,
 "lycée Fourcade|Gardanne": [
 43.45615,
 5.47778
+],
+"lycée Franklin-Roosevelt|Reims": [
+49.2631,
+4.02639
 ],
 "lycée François Premier|Le Havre": null,
 "lycée François-Truffaut|Challans": [
@@ -3174,6 +3254,10 @@
 45.53319,
 4.60543
 ],
+"lycée Grandmont|Tours": [
+47.36061,
+0.70224
+],
 "lycée Guillaume-le-Conquérant|Lillebonne": null,
 "lycée Henri-Loritz|Nancy": [
 48.69074,
@@ -3190,6 +3274,14 @@
 "lycée Jacques Decour|Paris": [
 48.88191,
 2.34325
+],
+"lycée Jean Monnet|Montpellier": [
+43.62398,
+3.83451
+],
+"lycée Jean Moulin|Albertville": [
+45.6742,
+6.38923
 ],
 "lycée Jean Moulin|Béziers": [
 43.34117,
@@ -3411,6 +3503,14 @@
 46.06966,
 6.31367
 ],
+"lycée de Cachan|Cachan": [
+48.79344,
+2.32514
+],
+"lycée de Cornouaille|Quimper": [
+47.99343,
+-4.11315
+],
 "lycée de Saint-Denis|Saint-Denis": [
 -20.88768,
 55.47012
@@ -3534,6 +3634,10 @@
 4.8728
 ],
 "mairie du VIIIe arrondissement|Lyon": null,
+"mairie|Avranches": [
+48.63375,
+-1.2573
+],
 "mairie|Bayonne": [
 43.48305,
 -1.55847
@@ -3546,6 +3650,7 @@
 47.29126,
 5.10211
 ],
+"mairie|Granville": null,
 "mairie|Laon": [
 49.5275,
 3.54084
@@ -3574,6 +3679,10 @@
 "mairie|Poitiers": [
 46.51086,
 0.35061
+],
+"mairie|Saint-Lô": [
+49.22862,
+-1.13656
 ],
 "mairie|Vesoul": [
 47.61144,
@@ -3742,6 +3851,10 @@
 43.60542,
 2.24171
 ],
+"place Jean Jaurès|Lyon": [
+45.73754,
+4.83731
+],
 "place Jean Jaurès|Saint-Étienne": [
 45.44127,
 4.38552
@@ -3777,6 +3890,10 @@
 "place Jean-Macé|Lyon": [
 45.74631,
 4.84199
+],
+"place Jeanne Hachette|Beauvais": [
+49.43018,
+2.08291
 ],
 "place Kléber|Strasbourg": [
 48.58331,
@@ -3831,6 +3948,10 @@
 "place Soult|Castres": [
 43.60397,
 2.2465
+],
+"place St Nicolas|Coutances": [
+49.04918,
+-1.44407
 ],
 "place Stalingrad|Paris": [
 48.88376,
@@ -4112,6 +4233,10 @@
 "place du Palais de justice|Chambéry": [
 45.56862,
 5.91887
+],
+"place du Panthéon|Paris": [
+48.84645,
+2.34489
 ],
 "place du Peuple|Saint-Étienne": [
 45.43638,
