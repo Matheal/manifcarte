@@ -337,6 +337,10 @@
 45.82468,
 1.26056
 ],
+"Centre-ville|Marseille": [
+43.27471,
+5.4236
+],
 "Centre-ville|Mont-de-Marsan": [
 43.89105,
 -0.49866
@@ -382,6 +386,7 @@
 48.19708,
 6.44061
 ],
+"Centres commerciaux Créteil Soleil, Belle Épine, La Vache Noire, Bercy 2|Créteil": null,
 "Centre|Reims": [
 49.25899,
 4.02438
@@ -479,6 +484,7 @@
 ],
 "Elysée et Matignon|Paris": null,
 "Entre Bastille et Nation|Paris": null,
+"Esplanade des chaussonières|Fougères": null,
 "Faculté de lettres|Metz": null,
 "Faculté de lettres|Pau": null,
 "Faculté de sciences|Montpellier": [
@@ -1088,6 +1094,7 @@
 6.01913
 ],
 "Lycée Paul Eluard|Saint-Denis": null,
+"Lycée Paul Éluard|Saint-Denis": null,
 "Lycée Paul-Eluard|Saint-Denis": null,
 "Lycée Paul-Éluard|Montreuil": null,
 "Lycée Paul-Éluard|Saint-Denis": null,
@@ -1418,6 +1425,10 @@
 "Nantes Université|Nantes": [
 47.24546,
 -1.55199
+],
+"Nantes-Brest|Quimperlé": [
+47.86722,
+-3.58842
 ],
 "Nation|Paris": [
 48.84768,
@@ -1801,6 +1812,7 @@
 45.57141,
 5.91678
 ],
+"Quatre-voies Nantes-Brest|Quimperlé": null,
 "RD 906|Chalon-sur-Saône": [
 46.84748,
 4.94554
@@ -2199,6 +2211,10 @@
 ],
 "bouchon de Champagne|Troyes": null,
 "boulevard André Sautel|Angoulême": null,
+"boulevard André Sautel|La Rochelle": [
+46.16901,
+-1.12985
+],
 "boulevard Delacourtie|Toulouse": [
 43.58397,
 1.4495
@@ -2687,6 +2703,7 @@
 "devant la mairie|Vence": null,
 "devant la mairie|Villers-lès-Nancy": null,
 "devant la mairie|Épinal": null,
+"devant la mairie|Épinay-sur-Seine": null,
 "devant la mairie|Étaples": null,
 "devant la préfecture de Vendée|La Roche-sur-Yon": null,
 "devant la préfecture|Ajaccio": null,
@@ -2736,6 +2753,10 @@
 "fac de lettres|Brest": null,
 "fac du Mirail|Toulouse": null,
 "facs|Brest": null,
+"faculte de sciences|Montpellier": [
+43.6321,
+3.86429
+],
 "faculté de Sciences|Montpellier": [
 43.6321,
 3.86429
@@ -3401,6 +3422,10 @@
 "mairie d'Hirson|Hirson": [
 49.92012,
 4.08389
+],
+"mairie d'arrondissement|Lyon": [
+45.75328,
+4.82687
 ],
 "mairie de Brest|Brest": [
 48.3913,
@@ -4219,7 +4244,12 @@
 7.757
 ],
 "quais et ponts|Lyon": null,
+"quais|Lannion": [
+48.73133,
+-3.46086
+],
 "quartier des Halles et de République|Paris": null,
+"quatre-voies de Nantes à Brest|Quimperlé": null,
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
 0.24084
@@ -4251,6 +4281,7 @@
 "rond point de la résistance|Bourges": null,
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
+"rond-point MacDo|Saint-Pierre": null,
 "rond-point Picot|Châlons-en-Champagne": null,
 "rond-point Pierre-Mendès-France|Quimperlé": null,
 "rond-point Taillefer|Gaillac": null,
@@ -4259,6 +4290,10 @@
 "rond-point de Gerzat|Gerzat": [
 45.83771,
 3.14979
+],
+"rond-point de Kerustum|Quimper": [
+47.97926,
+-4.09468
 ],
 "rond-point de Lann Sevelin|Lanester": [
 47.77752,
@@ -4381,6 +4416,10 @@
 "siège de la Région|Strasbourg": null,
 "siège du MEDEF|Lille": null,
 "sous les Nefs|Nantes": null,
+"sous-préfecture de Roanne|Roanne": [
+46.03551,
+4.06935
+],
 "sous-préfecture de Vendôme|Vendôme": [
 47.79243,
 1.06669
@@ -4547,6 +4586,7 @@
 -1.62707
 ],
 "usine Durkopp|Vierzon": null,
+"usine Speichim|Montluçon": null,
 "usine|Blanquefort": [
 44.95311,
 -0.62424
