@@ -964,13 +964,29 @@
 47.65485,
 -2.09309
 ],
+"Lycée Bellevue|Le Mans": [
+48.01278,
+0.2034
+],
+"Lycée Bellevue|Toulouse": [
+43.56235,
+1.46042
+],
 "Lycée Berthelot|Châtellerault": [
 46.81544,
 0.54077
 ],
+"Lycée Bichat|Lunéville": [
+48.59679,
+6.50905
+],
 "Lycée Blaise-Pascal|Clermont-Ferrand": [
 45.77534,
 3.09427
+],
+"Lycée Brequigny|Rennes": [
+48.08408,
+-1.69204
 ],
 "Lycée Charles Péguy|Orléans": [
 47.88872,
@@ -1008,6 +1024,10 @@
 50.61484,
 3.07842
 ],
+"Lycée François 1er|Le Havre": [
+49.4961,
+0.11446
+],
 "Lycée Galilée|Gennevilliers": [
 48.92146,
 2.3042
@@ -1031,6 +1051,10 @@
 "Lycée Hélène-Boucher|Paris": [
 48.84831,
 2.40717
+],
+"Lycée Hénaff|Bagnolet": [
+48.87546,
+2.43011
 ],
 "Lycée Jean Macé|Rennes": [
 48.11709,
@@ -1069,6 +1093,7 @@
 -0.52647
 ],
 "Lycée Louis Berthollet|Annecy": null,
+"Lycée Malherbe et Lycée Fresnel|Caen": null,
 "Lycée Malherbe|Caen": [
 49.17512,
 -0.3724
@@ -1122,6 +1147,10 @@
 "Lycée Sainte-Anne|Brest": [
 48.39662,
 -4.49073
+],
+"Lycée Sophie Germain|Paris": [
+48.85471,
+2.35768
 ],
 "Lycée Sédar Senghor|Évreux": [
 49.00923,
@@ -1467,6 +1496,10 @@
 "Palais de Justice|Périgueux": [
 45.18657,
 0.72011
+],
+"Palais de justice|Chambéry": [
+45.56862,
+5.91887
 ],
 "Palais des papes|Avignon": [
 43.95071,
@@ -1840,6 +1873,10 @@
 "Rectorat|Toulouse": [
 43.57765,
 1.44575
+],
+"Rennes 2|Rennes": [
+48.11425,
+-1.65008
 ],
 "Rennes|Rennes": [
 48.11134,
@@ -2296,6 +2333,7 @@
 ],
 "campus de l'Iedes|Nogent-sur-Marne": null,
 "campus de l'UBO|Quimper": null,
+"campus de lettres|Limoges": null,
 "campus des Deux-Lions|Tours": null,
 "campus des Grands Moulins et prison de la Santé|Paris": null,
 "campus du Tertre|Nantes": [
@@ -3008,6 +3046,10 @@
 47.15575,
 -1.67994
 ],
+"lycée Ampère|Lyon": [
+45.76584,
+4.83746
+],
 "lycée Antoine-Bourdelle|Montauban": [
 44.01459,
 1.36873
@@ -3085,6 +3127,10 @@
 43.83544,
 4.35722
 ],
+"lycée Daumier|Marseille": [
+43.26148,
+5.38737
+],
 "lycée David d'Angers|Angers": [
 47.46625,
 -0.54443
@@ -3152,6 +3198,10 @@
 "lycée Jean Vigo|Millau": [
 44.09423,
 3.05518
+],
+"lycée Jean-Baptiste Dumas|Alès": [
+44.13009,
+4.07548
 ],
 "lycée Jean-Baptiste-Dumas|Alès": [
 44.13009,
@@ -3610,6 +3660,10 @@
 43.61576,
 3.87444
 ],
+"place Aristide Briand|Cambrai": [
+50.17587,
+3.23467
+],
 "place Aristide Briand|Lorient": [
 47.74829,
 -3.36384
@@ -3679,6 +3733,10 @@
 "place Jasmin|Agen": [
 44.20406,
 0.61217
+],
+"place Jean Bart|Dunkerque": [
+51.03483,
+2.37734
 ],
 "place Jean Jaurès|Castres": [
 43.60542,
@@ -3819,6 +3877,14 @@
 "place d'Italie|Paris": [
 48.83094,
 2.35589
+],
+"place d'armes|Douai": [
+50.36755,
+3.08274
+],
+"place d'armes|Valenciennes": [
+50.41175,
+3.51742
 ],
 "place de Bretagne|Rennes": [
 48.10959,
@@ -4119,6 +4185,10 @@
 ],
 "porte de Charenton|Charenton-le-Pont": null,
 "porte de Paris à la place de la République|Lille": null,
+"porte de Paris|Lille": [
+50.62962,
+3.06899
+],
 "port|Fort-de-France": [
 14.59596,
 -61.04979
