@@ -135,6 +135,7 @@
 48.86527,
 2.36495
 ],
+"Bourse du Travail|Aulnay-sous-Bois": null,
 "Bourse du Travail|Lyon": [
 45.75921,
 4.84822
@@ -221,6 +222,10 @@
 49.19503,
 -0.36526
 ],
+"Campus 1|Caen": [
+49.1925,
+-0.36428
+],
 "Campus Carlone|Nice": [
 43.69269,
 7.23787
@@ -236,6 +241,10 @@
 "Campus Lettres et IUT Charlemagne|Nancy": null,
 "Campus Pasteur, Mont-Saint-Aignan et Madrillet|Rouen": null,
 "Campus de Jussieu|Paris": null,
+"Campus de Saint-Denis|Saint-Denis": [
+-20.90005,
+55.48587
+],
 "Campus de Sciences Po Menton|Menton": null,
 "Campus de Sciences Po|Menton": null,
 "Campus de Villejean|Rennes": [
@@ -247,6 +256,11 @@
 4.87117
 ],
 "Campus de la fac de sciences|Montpellier": null,
+"Campus des Grands Moulins|Paris": [
+48.8296,
+2.38168
+],
+"Campus et lycée Marie-Curie|Strasbourg": null,
 "Campus sud de santé|Amiens": null,
 "Campus|Grenoble": [
 45.19114,
@@ -524,6 +538,10 @@
 "Feeling|Belfort": [
 47.66362,
 6.84247
+],
+"Ferme de l'Horloge|Gennevilliers": [
+48.93366,
+2.30015
 ],
 "Flâneries|La Roche-sur-Yon": [
 46.69931,
@@ -908,6 +926,10 @@
 43.30165,
 5.38586
 ],
+"La Soucoupe|Saint-Nazaire": [
+47.27132,
+-2.22949
+],
 "Lauga|Bayonne": [
 43.4815,
 -1.4745
@@ -1014,6 +1036,7 @@
 46.81544,
 0.54077
 ],
+"Lycée Bertran-de-Born|Périgueux": null,
 "Lycée Bichat|Lunéville": [
 48.59679,
 6.50905
@@ -1106,6 +1129,10 @@
 43.62424,
 3.83483
 ],
+"Lycée Jean-Baptiste Dumas|Alès": [
+44.13009,
+4.07548
+],
 "Lycée Jean-Baptiste-Dumas|Alès": [
 44.13009,
 4.07548
@@ -1113,6 +1140,10 @@
 "Lycée Jean-Macé|Vitry-sur-Seine": [
 48.80224,
 2.3999
+],
+"Lycée Jean-Moulin|Saint-Brieuc": [
+48.52339,
+-2.78978
 ],
 "Lycée Jeanne-d'Arc et Lycée Chopin|Nancy": null,
 "Lycée Jeanne-d'Arc|Nancy": [
@@ -2243,6 +2274,10 @@
 48.00922,
 0.15787
 ],
+"Université|La Rochelle": [
+46.13869,
+-1.14539
+],
 "Université|Le Mans": [
 48.01684,
 0.152
@@ -3006,6 +3041,10 @@
 -3.33086
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
+"gymnase Japy|Paris": [
+48.85577,
+2.38213
+],
 "hyper-centre|Bourges": null,
 "hyper-centre|Caen": null,
 "hyper-centre|Laval": null,
@@ -3239,6 +3278,10 @@
 47.65401,
 6.85619
 ],
+"lycée Curie|Menton": [
+43.77646,
+7.48527
+],
 "lycée Cyfflé|Nancy": [
 48.68656,
 6.18211
@@ -3375,6 +3418,10 @@
 47.1927,
 -0.99278
 ],
+"lycée Kastler|Bordeaux": [
+44.80149,
+-0.59734
+],
 "lycée La Herdrie|Basse-Goulaine": [
 47.19787,
 -1.45287
@@ -3462,6 +3509,7 @@
 44.80912,
 -0.64936
 ],
+"lycée Paul Eluard|Saint-Denis": null,
 "lycée Paul Éluard|Saint-Denis": null,
 "lycée Paul-Eluard|Saint-Denis": null,
 "lycée Paul-Guérin|Niort": [
@@ -3804,6 +3852,10 @@
 48.38235,
 -4.48855
 ],
+"parvis Joséphine Baker|La Courneuve": [
+48.93001,
+2.37856
+],
 "parvis de l'Hôtel de Ville|Lille": null,
 "parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
@@ -3975,6 +4027,10 @@
 "place Royale|Nantes": [
 47.2145,
 -1.55872
+],
+"place Royale|Pau": [
+43.2945,
+-0.37082
 ],
 "place République|Perpignan": [
 42.76941,
@@ -4561,6 +4617,7 @@
 49.36522,
 3.30903
 ],
+"rond-point de l'autoroute|Saint-Gaudens": null,
 "rond-point de l'échangeur A8|Le Muy": null,
 "rond-point de la rocade|Arques": null,
 "rond-point des Flâneries|La Roche-sur-Yon": [
@@ -4665,6 +4722,7 @@
 "siège de Saint-Étienne Métropole|Saint-Étienne": null,
 "siège de la Région Grand Est|Strasbourg": null,
 "siège de la Région|Strasbourg": null,
+"siège de la SNCF|Saint-Denis": null,
 "siège du MEDEF|Lille": null,
 "sous les Nefs|Nantes": null,
 "sous-préfecture de Roanne|Roanne": [
@@ -4815,6 +4873,10 @@
 "université du Mans|Le Mans": [
 48.01364,
 0.15905
+],
+"université|La Rochelle": [
+46.13869,
+-1.14539
 ],
 "université|Le Mans": [
 48.01701,
