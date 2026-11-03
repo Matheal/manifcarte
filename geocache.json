@@ -115,6 +115,7 @@
 2.63923
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
+"Bibliothèques UT2J|Toulouse": null,
 "Bouffay|Nantes": [
 47.21495,
 -1.55345
@@ -433,6 +434,10 @@
 "Chambre d'agriculture du Lot|Cahors": [
 44.44898,
 1.43431
+],
+"Chambre de métiers et de l'artisanat du Morbihan|Vannes": [
+47.65172,
+-2.79008
 ],
 "Chambre du Commerce et de l'industrie|Saint-Étienne": null,
 "Champ de foire|Bourg-en-Bresse": [
@@ -1125,6 +1130,10 @@
 48.11709,
 -1.67045
 ],
+"Lycée Jean Macé|Vitry-sur-Seine": [
+48.80224,
+2.3999
+],
 "Lycée Jean Monnet|Montpellier": [
 43.62424,
 3.83483
@@ -1238,6 +1247,10 @@
 49.00923,
 1.14106
 ],
+"Lycée Thiers|Marseille": [
+43.29757,
+5.38308
+],
 "Lycée Toulouse-Lautrec|Toulouse": [
 43.62671,
 1.44382
@@ -1274,6 +1287,7 @@
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
 "Lycée professionnel La Ruche|Bordeaux": null,
 "Lycées Clémenceau, Joffre et Jean Monnet|Montpellier": null,
+"Lycées Lacassagne et Lumière|Lyon": null,
 "Lycées Léonard de Vinci, Saint-Rémi et Jean-Moulin|Roubaix": null,
 "Lycées Rimbaud et Latécoère|Istres": null,
 "Lycée|Belley": [
@@ -1292,6 +1306,10 @@
 "Mairie de Nice|Nice": [
 43.74312,
 7.3137
+],
+"Mairie de Perpignan|Perpignan": [
+42.69941,
+2.8945
 ],
 "Mairie de Rennes|Rennes": [
 48.11136,
@@ -1678,6 +1696,10 @@
 "Place Foch|Nantes": [
 47.21913,
 -1.55046
+],
+"Place Jean Jaurès|Lyon": [
+45.73754,
+4.83731
 ],
 "Place Jean Jaurès|Tours": [
 47.38955,
@@ -2076,6 +2098,7 @@
 43.52925,
 5.4357
 ],
+"Secteur Joliverie|Nantes": null,
 "Site de production Bosch|Vendôme": null,
 "Six-Croix|Donges": [
 47.33978,
@@ -2083,6 +2106,10 @@
 ],
 "Siège du Groupe ADP|Tremblay-en-France": null,
 "Solidarité Femmes 44|Nantes": null,
+"Sorbonne|Paris": [
+48.8491,
+2.34531
+],
 "Sous-Préfecture|Trappes": null,
 "Sous-préfecture|Draguignan": [
 43.53847,
@@ -2132,6 +2159,10 @@
 "Tour Eiffel|Paris": [
 48.85826,
 2.2945
+],
+"Tribunal de Belfort|Belfort": [
+47.63949,
+6.86166
 ],
 "Tribunal de Lyon|Lyon": [
 45.76189,
@@ -2475,6 +2506,10 @@
 47.21691,
 5.96289
 ],
+"campus|Strasbourg": [
+48.56988,
+7.77117
+],
 "carrefour du centenaire|Chambéry": null,
 "cathédrale de Metz|Metz": [
 49.12027,
@@ -2492,6 +2527,7 @@
 48.92991,
 2.35621
 ],
+"centre de régulation des appels du SAMU|Saint-Brieuc": null,
 "centre historique|Avignon": [
 43.95197,
 4.80738
@@ -2600,6 +2636,7 @@
 43.27471,
 5.4236
 ],
+"centre-ville|Maubeuge": null,
 "centre-ville|Metz": [
 49.10899,
 6.17734
@@ -2910,8 +2947,13 @@
 "dépôt de bus|Vitry-sur-Seine": null,
 "dépôt de la RATP|Les Lilas": null,
 "dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
+"entre la place Jean-Jaurès et la Manufacture des Tabacs|Montpellier": null,
 "entrée nord de l'A63|Bayonne": null,
 "espace Bancel|Lyon": null,
+"esplanade Charles|Rennes": [
+48.10548,
+-1.67684
+],
 "esplanade De Gaulle|Rennes": [
 48.10591,
 -1.67643
@@ -3406,6 +3448,10 @@
 48.69269,
 6.18609
 ],
+"lycée Joachim|Angers": [
+47.47587,
+-0.5467
+],
 "lycée Joseph-Loth|Pontivy": [
 48.06598,
 -2.96372
@@ -3465,6 +3511,10 @@
 49.88922,
 2.30308
 ],
+"lycée Magendie|Bordeaux": [
+44.82729,
+-0.58465
+],
 "lycée Malraux|Biarritz": [
 43.48559,
 -1.54672
@@ -3476,6 +3526,10 @@
 "lycée Marguerite-de-Navarre|Alençon": [
 48.40908,
 0.0911
+],
+"lycée Marie-Curie|Strasbourg": [
+48.57724,
+7.77236
 ],
 "lycée Marquette|Pont-à-Mousson": [
 48.90593,
@@ -3571,6 +3625,10 @@
 48.88867,
 2.46667
 ],
+"lycée Toulouse-Lautrec|Toulouse": [
+43.62665,
+1.44344
+],
 "lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
@@ -3647,6 +3705,7 @@
 4.0293
 ],
 "lycées Jacques-Dolle et Léonard-de-Vinci|Antibes": null,
+"lycées|Strasbourg": null,
 "lycée|Gennevilliers": [
 48.92146,
 2.3042
@@ -4362,6 +4421,10 @@
 45.56826,
 5.91907
 ],
+"place du promenoir|Villefranche-sur-Saône": [
+45.98477,
+4.71697
+],
 "plage de Foncillon|Royan": [
 45.61908,
 -1.03384
@@ -4556,6 +4619,10 @@
 3.06495
 ],
 "quartier des Halles et de République|Paris": null,
+"quartier du Panthéon|Paris": [
+48.84701,
+2.34377
+],
 "quatre-voies de Nantes à Brest|Quimperlé": null,
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
