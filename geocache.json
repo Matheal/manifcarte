@@ -235,6 +235,7 @@
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
 "Campus Pasteur, Mont-Saint-Aignan et Madrillet|Rouen": null,
+"Campus de Jussieu|Paris": null,
 "Campus de Sciences Po Menton|Menton": null,
 "Campus de Sciences Po|Menton": null,
 "Campus de Villejean|Rennes": [
@@ -289,9 +290,17 @@
 4.48529
 ],
 "Centre Censier|Paris": null,
+"Centre Jean Monnet|Saint-Genis-Pouilly": [
+46.24483,
+6.02217
+],
 "Centre Jean Richepin|Clermont-Ferrand": [
 45.78155,
 3.0854
+],
+"Centre culturel|Oyonnax": [
+46.26091,
+5.64641
 ],
 "Centre de Paris|Paris": [
 48.92991,
@@ -412,6 +421,10 @@
 1.43431
 ],
 "Chambre du Commerce et de l'industrie|Saint-Étienne": null,
+"Champ de foire|Bourg-en-Bresse": [
+46.20821,
+5.23017
+],
 "Champ de la Foire|Roanne": null,
 "Champs-Elysées|Paris": [
 48.87076,
@@ -503,6 +516,7 @@
 43.6321,
 3.86429
 ],
+"Faculté du Tertre|Nantes": null,
 "Faubourg Saint-Antoine|Paris": [
 48.85072,
 2.37853
@@ -1024,6 +1038,10 @@
 43.60216,
 3.87353
 ],
+"Lycée Condorcet|Paris": [
+48.87484,
+2.32763
+],
 "Lycée Cornouaille|Quimper": [
 47.99012,
 -4.12386
@@ -1091,6 +1109,10 @@
 "Lycée Jean-Baptiste-Dumas|Alès": [
 44.13009,
 4.07548
+],
+"Lycée Jean-Macé|Vitry-sur-Seine": [
+48.80224,
+2.3999
 ],
 "Lycée Jeanne-d'Arc et Lycée Chopin|Nancy": null,
 "Lycée Jeanne-d'Arc|Nancy": [
@@ -1220,8 +1242,13 @@
 ],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
 "Lycée professionnel La Ruche|Bordeaux": null,
+"Lycées Clémenceau, Joffre et Jean Monnet|Montpellier": null,
 "Lycées Léonard de Vinci, Saint-Rémi et Jean-Moulin|Roubaix": null,
 "Lycées Rimbaud et Latécoère|Istres": null,
+"Lycée|Belley": [
+45.76152,
+5.69166
+],
 "Léonard de Vinci|Roubaix": [
 50.6728,
 3.18824
@@ -1356,6 +1383,10 @@
 43.93658,
 4.32251
 ],
+"Mairie|Oyonnax": [
+46.25763,
+5.6556
+],
 "Mairie|Poitiers": [
 46.51084,
 0.41258
@@ -1396,6 +1427,10 @@
 "Mairie|Trappes": [
 48.77598,
 1.99931
+],
+"Mairie|Villeneuve-sur-Lot": [
+44.46993,
+0.73097
 ],
 "Mairie|Épernay": [
 49.06041,
@@ -1504,6 +1539,10 @@
 "Opéra de Montpellier|Montpellier": [
 43.64952,
 3.97499
+],
+"Opéra de Nice|Nice": [
+43.69542,
+7.2725
 ],
 "Opéra de Paris|Paris": [
 48.87653,
@@ -2092,6 +2131,10 @@
 47.24546,
 -1.55199
 ],
+"Université Bordeaux-Montaigne|Pessac": [
+44.79494,
+-0.61737
+],
 "Université Bourgogne Europe|Dijon": [
 47.31331,
 5.06886
@@ -2330,6 +2373,7 @@
 47.46804,
 -0.557
 ],
+"bourse du travail|Saint-Denis": null,
 "bourse du travail|Villeurbanne": null,
 "boutique Apple d'Odysseum|Montpellier": null,
 "bâtiment Gabriel|Dijon": [
@@ -3135,6 +3179,10 @@
 45.89659,
 6.09691
 ],
+"lycée Bergson|Paris": [
+48.8812,
+2.37763
+],
 "lycée Bertran de Born|Périgueux": null,
 "lycée Bertran-de-Born|Périgueux": null,
 "lycée Bertran|Périgueux": null,
@@ -3218,6 +3266,10 @@
 "lycée Douanier Rousseau|Laval": [
 48.07198,
 -0.76138
+],
+"lycée Edouard Herriot|Lyon": [
+45.76539,
+4.84517
 ],
 "lycée Escoffier|Cagnes-sur-Mer": [
 43.67084,
@@ -4442,6 +4494,10 @@
 "quais|Lannion": [
 48.73133,
 -3.46086
+],
+"quartier de Moulins|Lille": [
+50.61938,
+3.06495
 ],
 "quartier des Halles et de République|Paris": null,
 "quatre-voies de Nantes à Brest|Quimperlé": null,
