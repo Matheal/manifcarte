@@ -1,72 +1,73 @@
 {
- "gdelt_last": "20261104023000",
+ "gdelt_last": "20261104164500",
  "sources": {
   "google_news": {
-   "ok": false,
-   "at": "2026-11-04T02:21:52.122737+00:00",
-   "error": "503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=manifestation+Nancy+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
-   "last_ok": "2026-11-03T16:43:58.376668+00:00"
+   "ok": true,
+   "at": "2026-11-04T17:39:33.392125+00:00",
+   "last_ok": "2026-11-04T17:39:33.392125+00:00",
+   "fetched": 1861,
+   "added": 763
   },
   "rss": {
    "ok": true,
-   "at": "2026-11-04T02:21:52.122737+00:00",
-   "last_ok": "2026-11-04T02:21:52.122737+00:00",
-   "fetched": 224,
-   "added": 68
+   "at": "2026-11-04T17:39:33.392125+00:00",
+   "last_ok": "2026-11-04T17:39:33.392125+00:00",
+   "fetched": 221,
+   "added": 116
   },
   "mastodon": {
    "ok": true,
-   "at": "2026-11-04T02:21:52.122737+00:00",
-   "last_ok": "2026-11-04T02:21:52.122737+00:00",
-   "fetched": 368,
-   "added": 12
+   "at": "2026-11-04T17:39:33.392125+00:00",
+   "last_ok": "2026-11-04T17:39:33.392125+00:00",
+   "fetched": 356,
+   "added": 43
   },
   "gdelt": {
    "ok": true,
-   "at": "2026-11-04T02:21:52.122737+00:00",
-   "last_ok": "2026-11-04T02:21:52.122737+00:00",
+   "at": "2026-11-04T17:39:33.392125+00:00",
+   "last_ok": "2026-11-04T17:39:33.392125+00:00",
    "fetched": 28,
-   "added": 28
+   "added": 27
   },
   "ai": {
    "ok": false,
-   "at": "2026-11-04T02:21:52.122737+00:00",
+   "at": "2026-11-04T17:39:33.392125+00:00",
    "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
    "last_ok": "2026-11-03T16:43:58.376668+00:00"
   },
   "moderation": {
    "ok": true,
-   "at": "2026-11-04T02:21:52.122737+00:00",
-   "last_ok": "2026-11-04T02:21:52.122737+00:00",
+   "at": "2026-11-04T17:39:33.392125+00:00",
+   "last_ok": "2026-11-04T17:39:33.392125+00:00",
    "fetched": 5,
    "added": 2,
    "pending": 0
   },
   "demosphere": {
    "ok": true,
-   "at": "2026-11-04T02:21:52.122737+00:00",
-   "last_ok": "2026-11-04T02:21:52.122737+00:00",
-   "fetched": 5,
-   "added": 1
+   "at": "2026-11-04T17:39:33.392125+00:00",
+   "last_ok": "2026-11-04T17:39:33.392125+00:00",
+   "fetched": 8,
+   "added": 2
   },
   "mobilizon": {
    "ok": true,
-   "at": "2026-11-04T02:21:52.122737+00:00",
-   "last_ok": "2026-11-04T02:21:52.122737+00:00",
-   "fetched": 30,
-   "added": 1
+   "at": "2026-11-04T17:39:33.392125+00:00",
+   "last_ok": "2026-11-04T17:39:33.392125+00:00",
+   "fetched": 32,
+   "added": 3
   },
   "bluesky": {
    "ok": true,
-   "at": "2026-11-04T02:21:52.122737+00:00",
-   "last_ok": "2026-11-04T02:21:52.122737+00:00",
-   "fetched": 396,
-   "added": 223
+   "at": "2026-11-04T17:39:33.392125+00:00",
+   "last_ok": "2026-11-04T17:39:33.392125+00:00",
+   "fetched": 394,
+   "added": 301
   }
  },
  "ai": {
   "day": "2026-11-04",
-  "calls_today": 11,
+  "calls_today": 29,
   "model": "gemini-3.5-flash-lite"
  },
  "moderation": {
@@ -78,5 +79,5 @@
    "5": "cancelled"
   }
  },
- "gnews_cursor": 120
+ "gnews_cursor": 40
 }

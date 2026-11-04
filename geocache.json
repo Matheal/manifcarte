@@ -90,10 +90,15 @@
 55.4464
 ],
 "Bassin de Lacq|Pau": null,
+"Bastide Saint-Louis|Carcassonne": [
+43.21821,
+2.35178
+],
 "Bastille à Nation|Paris": [
 48.84906,
 2.39738
 ],
+"Bastille-Concorde|Paris": null,
 "Bastille-Nation|Paris": [
 48.84906,
 2.39738
@@ -380,6 +385,10 @@
 "Centre-ville|Mont-de-Marsan": [
 43.89105,
 -0.49866
+],
+"Centre-ville|Montpellier": [
+43.60866,
+3.88644
 ],
 "Centre-ville|Nancy": [
 48.68963,
@@ -813,6 +822,10 @@
 "Hôtel de ville|Épinal": [
 48.19725,
 6.44073
+],
+"IRTS Nancy|Nancy": [
+48.7048,
+6.15837
 ],
 "IRTS|Montpellier": [
 43.60139,
@@ -1306,6 +1319,7 @@
 "Lycées Clémenceau, Joffre et Jean Monnet|Montpellier": null,
 "Lycées Lacassagne et Lumière|Lyon": null,
 "Lycées Léonard de Vinci, Saint-Rémi et Jean-Moulin|Roubaix": null,
+"Lycées René Cassin et Couffignal|Strasbourg": null,
 "Lycées Rimbaud et Latécoère|Istres": null,
 "Lycée|Belley": [
 45.76152,
@@ -1316,6 +1330,10 @@
 3.18824
 ],
 "MEDEF|Le Havre": null,
+"Mac Val|Vitry-sur-Seine": [
+48.79316,
+2.38786
+],
 "Mairie d'Aulnay-sous-Bois|Aulnay-sous-Bois": [
 48.93425,
 2.50006
@@ -1527,6 +1545,10 @@
 45.74803,
 4.86058
 ],
+"Manufacture des œillets|Ivry-sur-Seine": [
+48.80945,
+2.39119
+],
 "Marches du Corum - côté esplanade|Montpellier": null,
 "Marché des États-unis|Lyon": [
 45.72999,
@@ -1659,6 +1681,10 @@
 "Parc des Princes|Paris": [
 48.84136,
 2.25307
+],
+"Parc des expositions du Bourget|Le Bourget": [
+48.9431,
+2.42524
 ],
 "Parc du Colosse|Saint-André": [
 -20.92668,
@@ -1841,6 +1867,10 @@
 "Place des Terreaux|Lyon": [
 45.76749,
 4.83349
+],
+"Place du Maréchal Leclerc|Angers": [
+47.47128,
+-0.54493
 ],
 "Place du Vigan|Albi": [
 43.9273,
@@ -2082,6 +2112,10 @@
 "République|Paris": [
 48.86789,
 2.36388
+],
+"Saint-Cyprien|Toulouse": [
+43.59833,
+1.43458
 ],
 "Saint-Denis Pleyel|Saint-Denis": null,
 "Saint-Jean|Lyon": [
@@ -2389,6 +2423,7 @@
 45.18916,
 5.7218
 ],
+"avenue Alsace-Lorraine Vienne|Grenoble": null,
 "avenue Carnot|Clermont-Ferrand": [
 45.77622,
 3.09703
@@ -2440,6 +2475,7 @@
 43.30632,
 5.39409
 ],
+"boulevard Jean-Jaurès|Nîmes": null,
 "boulevard Lancastel|Saint-Denis": [
 -20.8751,
 55.45427
@@ -2854,6 +2890,10 @@
 ],
 "conseil municipal|Bayonne": null,
 "correspondance ligne 4 / ligne 3|Paris": null,
+"cours Fauriel|Saint-Étienne": [
+45.42822,
+4.40077
+],
 "cours Guynemer|Compiègne": [
 49.41979,
 2.82432
@@ -2890,6 +2930,7 @@
 "devant l'hôtel de ville|Lille": null,
 "devant la Mairie|Nîmes": null,
 "devant la Mairie|Pantin": null,
+"devant la gare|Charleville-Mézières": null,
 "devant la mairie d'Amiens|Amiens": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
 "devant la mairie de Creil|Creil": null,
@@ -3000,6 +3041,10 @@
 "faculte de sciences|Montpellier": [
 43.6321,
 3.86429
+],
+"faculté Jean Monnet|Sceaux": [
+48.78203,
+2.28554
 ],
 "faculté de Sciences|Montpellier": [
 43.6321,
@@ -3282,6 +3327,10 @@
 -2.2338
 ],
 "lycée Au|Gennevilliers": null,
+"lycée Baggio|Lille": [
+50.61683,
+3.06727
+],
 "lycée Baudelaire|Annecy": [
 45.89659,
 6.09691
@@ -3321,6 +3370,14 @@
 49.05589,
 2.09001
 ],
+"lycée Carcouët|Nantes": [
+47.22966,
+-1.59393
+],
+"lycée Champollion|Grenoble": [
+45.18804,
+5.72465
+],
 "lycée Chaptal|Paris": [
 48.88129,
 2.31991
@@ -3338,6 +3395,10 @@
 2.4904
 ],
 "lycée Chopin|Nancy": null,
+"lycée Clemenceau|Nantes": [
+47.21907,
+-1.54534
+],
 "lycée Corbière|Morlaix": [
 48.59895,
 -3.81765
@@ -3577,6 +3638,10 @@
 49.76181,
 4.71271
 ],
+"lycée Montesquieu|Bordeaux": [
+44.85077,
+-0.58218
+],
 "lycée Mounier|Grenoble": [
 45.17919,
 5.73067
@@ -3670,6 +3735,10 @@
 "lycée Victor-Grignard|Cherbourg-en-Cotentin": [
 49.63894,
 -1.62965
+],
+"lycée Yves Leborgne|Sainte-Anne": [
+16.24746,
+-61.36037
 ],
 "lycée Zola|Rennes": [
 48.10941,
@@ -4092,6 +4161,7 @@
 48.58331,
 7.74596
 ],
+"place Lazarre Goujon|Villeurbanne": null,
 "place Liberté|Les Sables-d'Olonne": [
 46.49746,
 -1.78327
@@ -4104,6 +4174,10 @@
 "place Masséna|Nice": [
 43.69695,
 7.27032
+],
+"place Max Rouquette|Montpellier": [
+43.6118,
+3.86761
 ],
 "place Mazagran|Lyon": [
 45.75186,
@@ -4149,6 +4223,10 @@
 "place St Nicolas|Coutances": [
 49.04918,
 -1.44407
+],
+"place St-Sauveur|Caen": [
+49.1828,
+-0.36901
 ],
 "place Stalingrad|Paris": [
 48.88376,
@@ -4447,6 +4525,10 @@
 43.9273,
 2.14781
 ],
+"place du champ de foire|Roanne": [
+46.04614,
+4.07104
+],
 "place du palais de justice|Chambéry": [
 45.56826,
 5.91907
@@ -4537,6 +4619,7 @@
 ],
 "près du rond-point de Poitiers Sud|Poitiers": null,
 "préfecture d'Agen|Agen": null,
+"préfecture d'Ajaccio|Ajaccio": null,
 "préfecture d'Avignon|Avignon": [
 43.9484,
 4.80517
