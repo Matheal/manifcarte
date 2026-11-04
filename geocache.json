@@ -132,6 +132,10 @@
 43.52391,
 5.447
 ],
+"Boulevards|Toulouse": [
+43.60606,
+1.44775
+],
 "Bourse du Travail de Paris|Paris": [
 48.86527,
 2.36495
@@ -745,6 +749,7 @@
 47.27416,
 -2.21367
 ],
+"Hôtel de police, boulevard de la Tour d'Auvergne|Rennes": null,
 "Hôtel de ville|Arras": [
 50.29119,
 2.77713
@@ -960,6 +965,10 @@
 48.57812,
 7.76548
 ],
+"Le Phare|Chambéry": [
+45.58367,
+5.8997
+],
 "Le Pâquier|Annecy": [
 45.90187,
 6.13249
@@ -1146,6 +1155,10 @@
 44.13009,
 4.07548
 ],
+"Lycée Jean-Jaurès|Montreuil": [
+48.8636,
+2.44682
+],
 "Lycée Jean-Macé|Vitry-sur-Seine": [
 48.80224,
 2.3999
@@ -1258,6 +1271,10 @@
 "Lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
+],
+"Lycée Victor-Hugo|Paris": [
+48.85767,
+2.36273
 ],
 "Lycée Voltaire et Gauguin|Orléans": null,
 "Lycée d'Opunohu|Moorea-Maiao": [
@@ -1651,6 +1668,10 @@
 48.38235,
 -4.48855
 ],
+"Paris Event Center, La Villette|Paris": [
+48.89872,
+2.38864
+],
 "Parlement Européen|Strasbourg": [
 48.59748,
 7.76989
@@ -1901,6 +1922,7 @@
 45.76385,
 4.83444
 ],
+"Presqu'île et place Bellecour|Lyon": null,
 "Presqu'île à la Part-Dieu|Lyon": null,
 "Presqu'île, Vieux-Lyon, 3e et 6e arrondissements|Lyon": null,
 "Presqu'île|Lyon": [
@@ -3227,6 +3249,10 @@
 48.69269,
 6.18609
 ],
+"lycée Adolphe Cherioux|Villejuif": [
+48.78061,
+2.37207
+],
 "lycée Albert-Camus|Nantes": [
 47.20446,
 -1.6091
@@ -3709,6 +3735,10 @@
 "lycée|Gennevilliers": [
 48.92146,
 2.3042
+],
+"lycée|Rennes": [
+48.11665,
+-1.67937
 ],
 "magasin Castorama|Antibes": null,
 "magasin d'Antibes|Antibes": null,
