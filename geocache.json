@@ -3011,6 +3011,7 @@
 "dépôt de la RATP|Les Lilas": null,
 "dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
 "entre la place Jean-Jaurès et la Manufacture des Tabacs|Montpellier": null,
+"entrepôt Geodis, port de Gennevilliers|Gennevilliers": null,
 "entrée nord de l'A63|Bayonne": null,
 "espace Bancel|Lyon": null,
 "esplanade Charles|Rennes": [
@@ -3335,6 +3336,10 @@
 45.89659,
 6.09691
 ],
+"lycée Bellevue|Toulouse": [
+43.56003,
+1.46074
+],
 "lycée Bergson|Paris": [
 48.8812,
 2.37763
@@ -3414,6 +3419,10 @@
 "lycée Cyfflé|Nancy": [
 48.68656,
 6.18211
+],
+"lycée César Baggio|Lille": [
+50.61683,
+3.06727
 ],
 "lycée Daudet|Nîmes": [
 43.83544,
@@ -3530,6 +3539,10 @@
 "lycée Jean-Jacques Rousseau|Sarcelles": [
 48.99326,
 2.38502
+],
+"lycée Jean-Perrin|Rezé": [
+47.18174,
+-1.56041
 ],
 "lycée Jeanne-d'Arc|Nancy": [
 48.69269,
@@ -3699,6 +3712,10 @@
 "lycée Simone Weil|Pantin": [
 48.89315,
 2.41039
+],
+"lycée Sophie-Germain|Paris": [
+48.85471,
+2.35768
 ],
 "lycée St Exupéry|Créteil": [
 48.78346,
@@ -4286,6 +4303,10 @@
 48.10959,
 -1.68384
 ],
+"place de Catalogne|Perpignan": [
+42.76756,
+2.87594
+],
 "place de Clichy|Clichy": [
 48.88348,
 2.32729
@@ -4374,6 +4395,10 @@
 "place de la Comédie|Montpellier": [
 43.60869,
 3.87992
+],
+"place de la Concorde|Paris": [
+48.86557,
+2.32122
 ],
 "place de la Grande-Boucherie|Strasbourg": [
 48.57996,
