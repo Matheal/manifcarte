@@ -2488,6 +2488,10 @@
 43.9448,
 4.81602
 ],
+"boulevard Léon-Blum|Brest": [
+48.40489,
+-4.48509
+],
 "boulevard Victor-Hugo|Lille": [
 50.62265,
 3.06272
@@ -3452,6 +3456,10 @@
 48.07198,
 -0.76138
 ],
+"lycée Douanier-Rousseau|Laval": [
+48.07198,
+-0.76138
+],
 "lycée Edouard Herriot|Lyon": [
 45.76539,
 4.84517
@@ -3547,6 +3555,14 @@
 "lycée Jean-Jacques Rousseau|Sarcelles": [
 48.99326,
 2.38502
+],
+"lycée Jean-Jaurès|Montreuil": [
+48.8636,
+2.44682
+],
+"lycée Jean-Jaurès|Rennes": [
+48.09195,
+-1.68802
 ],
 "lycée Jean-Perrin|Rezé": [
 47.18174,
@@ -3682,6 +3698,7 @@
 46.31576,
 -0.44119
 ],
+"lycée Paul-Louis Courrier|Tours": null,
 "lycée Paul-Valéry|Sète": [
 43.40162,
 3.69259
@@ -3703,6 +3720,10 @@
 "lycée Romain-Rolland|Ivry-sur-Seine": [
 48.80122,
 2.39424
+],
+"lycée Roosevelt|Reims": [
+49.2631,
+4.02639
 ],
 "lycée Rosa-Parks|Saint-Denis": null,
 "lycée Saint-Cricq|Pau": [
@@ -4474,6 +4495,10 @@
 48.5865,
 7.75493
 ],
+"place de la Résistance|Quimper": [
+47.99385,
+-4.10422
+],
 "place de la Révolution|Besançon": [
 47.24003,
 6.02238
@@ -4542,6 +4567,7 @@
 45.56862,
 5.91887
 ],
+"place du Palais|Albertville": null,
 "place du Panthéon|Paris": [
 48.84645,
 2.34489
@@ -4629,6 +4655,10 @@
 "porte de Paris|Lille": [
 50.62962,
 3.06899
+],
+"porte de Vincennes|Vincennes": [
+48.84734,
+2.40809
 ],
 "port|Fort-de-France": [
 14.59596,
