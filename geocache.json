@@ -336,7 +336,12 @@
 43.41272,
 5.03869
 ],
+"Centre hospitalier intercommunale de Castres-Mazamet|Castres": null,
 "Centre hospitalier universitaire de Reims|Reims": null,
+"Centre social Renée Lods|Audincourt": [
+47.48728,
+6.8255
+],
 "Centre élargi|Montpellier": null,
 "Centre-ville, Beaulieu, Atlantis, Carquefou|Nantes": null,
 "Centre-ville|Bordeaux": [
@@ -2562,6 +2567,10 @@
 "campus de lettres|Limoges": null,
 "campus des Deux-Lions|Tours": null,
 "campus des Grands Moulins et prison de la Santé|Paris": null,
+"campus du Saulcy|Metz": [
+49.11994,
+6.16135
+],
 "campus du Tertre|Nantes": [
 47.24872,
 -1.55261
@@ -3463,6 +3472,10 @@
 "lycée Douanier-Rousseau|Laval": [
 48.07198,
 -0.76138
+],
+"lycée Dupuy|Lorient": [
+47.74579,
+-3.37045
 ],
 "lycée Edouard Herriot|Lyon": [
 45.76539,
@@ -4569,6 +4582,7 @@
 44.84569,
 -0.57555
 ],
+"place des Réformés|Marseille": null,
 "place des Terreaux|Lyon": [
 45.76749,
 4.83349
