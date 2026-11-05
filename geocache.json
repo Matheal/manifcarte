@@ -3448,6 +3448,10 @@
 47.46625,
 -0.54443
 ],
+"lycée Denis Papin|La Courneuve": [
+48.92839,
+2.38689
+],
 "lycée Descartes|Tours": [
 47.39187,
 0.68921
@@ -3503,6 +3507,10 @@
 45.53319,
 4.60543
 ],
+"lycée Georges-Sand|Domont": [
+49.03016,
+2.34086
+],
 "lycée Grandmont|Tours": [
 47.36061,
 0.70224
@@ -3519,6 +3527,10 @@
 "lycée Hélène-Boucher|Paris": [
 48.84831,
 2.40717
+],
+"lycée Jacques Amyot|Melun": [
+48.5466,
+2.66095
 ],
 "lycée Jacques Decour|Paris": [
 48.88191,
@@ -3749,6 +3761,11 @@
 "lycée St Exupéry|Créteil": [
 48.78346,
 2.46258
+],
+"lycée Suger|Saint-Denis": null,
+"lycée Sévigné|Tourcoing": [
+50.73123,
+3.16393
 ],
 "lycée Thiers|Marseille": [
 43.29757,
@@ -4495,6 +4512,7 @@
 48.5865,
 7.75493
 ],
+"place de la République|Vincennes": null,
 "place de la Résistance|Quimper": [
 47.99385,
 -4.10422
@@ -4607,6 +4625,10 @@
 "plage|Saint-Nazaire": [
 47.26756,
 -2.35038
+],
+"pont Battant|Besançon": [
+47.23997,
+6.02019
 ],
 "pont Chaban-Delmas|Bordeaux": [
 44.85831,
