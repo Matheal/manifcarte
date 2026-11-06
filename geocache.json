@@ -1873,6 +1873,10 @@
 45.76749,
 4.83349
 ],
+"Place du 8 Septembre|Besançon": [
+47.23806,
+6.02447
+],
 "Place du Maréchal Leclerc|Angers": [
 47.47128,
 -0.54493
@@ -2171,6 +2175,10 @@
 ],
 "Siège du Groupe ADP|Tremblay-en-France": null,
 "Solidarité Femmes 44|Nantes": null,
+"Sorbonne-Université|Paris": [
+48.83799,
+2.36112
+],
 "Sorbonne|Paris": [
 48.8491,
 2.34531
@@ -2844,6 +2852,7 @@
 -2.09402
 ],
 "cité scolaire Paul-Valéry|Sète": null,
+"cité scolaire Wallon|Aubervilliers": null,
 "cité scolaire de Saint-Nazaire|Saint-Nazaire": [
 47.27392,
 -2.22329
@@ -3384,6 +3393,10 @@
 45.7714,
 4.87728
 ],
+"lycée Bréquigny|Rennes": [
+48.08408,
+-1.69204
+],
 "lycée Camille-Claudel|Caen": [
 49.20402,
 -0.3851
@@ -3458,6 +3471,10 @@
 -0.54443
 ],
 "lycée Denis Papin|La Courneuve": [
+48.92839,
+2.38689
+],
+"lycée Denis-Papin|La Courneuve": [
 48.92839,
 2.38689
 ],
@@ -4154,6 +4171,10 @@
 "place Déliot|Lille": [
 50.61938,
 3.06743
+],
+"place Foch|Nantes": [
+47.21968,
+-1.54999
 ],
 "place Foch|Épinal": [
 48.17225,
