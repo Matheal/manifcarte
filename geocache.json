@@ -1472,6 +1472,10 @@
 43.93658,
 4.32251
 ],
+"Mairie|Orléans": [
+47.83224,
+1.96886
+],
 "Mairie|Oyonnax": [
 46.25763,
 5.6556
@@ -1499,6 +1503,10 @@
 "Mairie|Saint-Brieuc": [
 48.40768,
 -2.81823
+],
+"Mairie|Saint-Denis": [
+-20.89607,
+55.44632
 ],
 "Mairie|Saint-Lô": [
 49.22862,
@@ -3367,6 +3375,10 @@
 45.89659,
 6.09691
 ],
+"lycée Becquerel|Tours": [
+47.3763,
+0.73274
+],
 "lycée Bellevue|Toulouse": [
 43.56003,
 1.46074
@@ -3503,6 +3515,10 @@
 45.76539,
 4.84517
 ],
+"lycée Edouard-Herriot|Lyon": [
+45.76539,
+4.84517
+],
 "lycée Escoffier|Cagnes-sur-Mer": [
 43.67084,
 7.1486
@@ -3575,6 +3591,10 @@
 "lycée Jacques-Monod|Saint-Jean-de-Braye": [
 47.91066,
 1.96789
+],
+"lycée Jaurès|Montreuil": [
+48.8636,
+2.44682
 ],
 "lycée Jean Monnet|Montpellier": [
 43.62398,
@@ -4104,6 +4124,10 @@
 "palais de justice|Saint-Nazaire": [
 47.27908,
 -2.21509
+],
+"parc Pasteur|Orléans": [
+47.90768,
+1.90996
 ],
 "parc Paul-Mistral|Grenoble": [
 45.18549,
@@ -5149,6 +5173,10 @@
 "université Bordeaux Montesquieu|Bordeaux": null,
 "université Bordeaux Montesquieu|Pessac": null,
 "université Bourgogne Europe|Dijon": [
+47.31331,
+5.06886
+],
+"université Bourgogne-Europe|Dijon": [
 47.31331,
 5.06886
 ],
