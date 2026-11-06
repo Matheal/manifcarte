@@ -121,6 +121,7 @@
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
 "Bibliothèques UT2J|Toulouse": null,
+"Bouffay ou place Bretagne|Nantes": null,
 "Bouffay|Nantes": [
 47.21495,
 -1.55345
@@ -308,6 +309,10 @@
 "Cathédrale|Orléans": [
 47.90234,
 1.90918
+],
+"Centrale Nantes|Nantes": [
+47.24924,
+-1.54788
 ],
 "Centre 2|Saint-Étienne": [
 45.49153,
@@ -605,6 +610,10 @@
 2.28344
 ],
 "Gare de Châtelet-Les Halles|Paris": null,
+"Gare de Grenoble|Grenoble": [
+45.19025,
+5.71493
+],
 "Gare de Lyon|Paris": [
 48.84468,
 2.37377
@@ -3366,6 +3375,10 @@
 47.27281,
 -2.2338
 ],
+"lycée Audiberti|Antibes": [
+43.57389,
+7.11728
+],
 "lycée Au|Gennevilliers": null,
 "lycée Baggio|Lille": [
 50.61683,
@@ -3571,6 +3584,10 @@
 48.69074,
 6.19228
 ],
+"lycée Henri-Poincaré|Nancy": [
+48.69099,
+6.17866
+],
 "lycée Hélène Boucher|Paris": [
 48.84831,
 2.40717
@@ -3647,6 +3664,10 @@
 "lycée Joachim|Angers": [
 47.47587,
 -0.5467
+],
+"lycée Joffre|Montpellier": [
+43.61166,
+3.88659
 ],
 "lycée Joseph-Loth|Pontivy": [
 48.06598,
@@ -3867,6 +3888,10 @@
 49.63894,
 -1.62965
 ],
+"lycée Voillaume|Aulnay-sous-Bois": [
+48.9449,
+2.50846
+],
 "lycée Yves Leborgne|Sainte-Anne": [
 16.24746,
 -61.36037
@@ -3933,6 +3958,10 @@
 "lycée professionnel Gustave Eiffel|Reims": [
 49.27513,
 4.0293
+],
+"lycée Édouard-Herriot|Lyon": [
+45.76539,
+4.84517
 ],
 "lycées Jacques-Dolle et Léonard-de-Vinci|Antibes": null,
 "lycées|Strasbourg": null,
@@ -4378,6 +4407,10 @@
 "place Stanislas|Nancy": [
 48.69352,
 6.18329
+],
+"place Sébastopol|Lille": [
+50.62881,
+3.05756
 ],
 "place Vauban|Paris": [
 48.85345,
@@ -5046,6 +5079,14 @@
 "rue de Dôle|Besançon": [
 47.23591,
 6.01339
+],
+"rue de Rivoli|Paris": [
+48.85518,
+2.36141
+],
+"rue de Zurich|Strasbourg": [
+48.58143,
+7.75638
 ],
 "rue de la Fidélité|Paris": [
 48.87448,
