@@ -2101,6 +2101,10 @@
 47.27516,
 -2.20579
 ],
+"Rue Saint-Antoine|Paris": [
+48.85386,
+2.36523
+],
 "Rue de Créqui|Lyon": [
 45.76437,
 4.84691
@@ -2570,6 +2574,7 @@
 49.45883,
 1.06767
 ],
+"campus de l'Esplanade|Strasbourg": null,
 "campus de l'Iedes|Nogent-sur-Marne": null,
 "campus de l'UBO|Quimper": null,
 "campus de lettres|Limoges": null,
@@ -3562,9 +3567,14 @@
 48.5466,
 2.66095
 ],
+"lycée Jacques Audiberti|Antibes": null,
 "lycée Jacques Decour|Paris": [
 48.88191,
 2.34325
+],
+"lycée Jacques-Monod|Saint-Jean-de-Braye": [
+47.91066,
+1.96789
 ],
 "lycée Jean Monnet|Montpellier": [
 43.62398,
@@ -3705,6 +3715,10 @@
 43.24022,
 5.37744
 ],
+"lycée Maurice-Genevoix|Ingré": [
+47.92068,
+1.83027
+],
 "lycée Michelis|Amiens": [
 49.88933,
 2.30352
@@ -3758,6 +3772,10 @@
 "lycée Queneau|Yvetot": [
 49.61151,
 0.77027
+],
+"lycée Roland Garros|Le Tampon": [
+-21.27412,
+55.51968
 ],
 "lycée Romain-Rolland|Ivry-sur-Seine": [
 48.80122,
@@ -3882,6 +3900,10 @@
 "lycée du Pays de Retz|Pornic": [
 47.12143,
 -2.08662
+],
+"lycée du Val|Domont": [
+49.02995,
+2.33937
 ],
 "lycée polyvalent Mermoz|Montpellier": [
 43.61107,
@@ -4496,10 +4518,15 @@
 47.32127,
 5.04142
 ],
+"place de la Nation|Paris": [
+48.84837,
+2.39587
+],
 "place de la Republique|Limoges": [
 45.83193,
 1.26019
 ],
+"place de la RÃ©publique|Paris": null,
 "place de la République et Châtelet-Les Halles|Paris": null,
 "place de la République|Bourgoin-Jallieu": [
 45.58937,
@@ -5273,6 +5300,10 @@
 "à la mairie|Dijon": [
 47.42931,
 4.94428
+],
+"école Clément-Roassal|Nice": [
+43.70826,
+7.2584
 ],
 "école du Schluthfeld|Strasbourg": [
 48.56781,
