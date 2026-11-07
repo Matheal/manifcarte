@@ -722,6 +722,10 @@
 43.28957,
 5.40348
 ],
+"Hôpital du Mans|Le Mans": [
+48.01541,
+0.17774
+],
 "Hôpital Édouard-Herriot|Lyon": [
 45.74347,
 4.88262
@@ -1161,6 +1165,10 @@
 "Lycée Hénaff|Bagnolet": [
 48.87546,
 2.43011
+],
+"Lycée Jaurès|Montreuil": [
+48.8636,
+2.44682
 ],
 "Lycée Jean Macé|Rennes": [
 48.11709,
@@ -1747,6 +1755,10 @@
 43.61576,
 3.87444
 ],
+"Place Aristide Briand|Nantes": [
+47.21732,
+-1.56264
+],
 "Place Bellecour|Lyon": [
 45.75766,
 4.83243
@@ -2169,6 +2181,10 @@
 -0.43762
 ],
 "Salle 034 – D2 (Descartes)|Lyon": null,
+"Sanofi|Ploërmel": [
+47.93087,
+-2.36765
+],
 "Sciences Po Aix|Aix-en-Provence": [
 43.52925,
 5.4357
@@ -2883,6 +2899,10 @@
 16.25081,
 -61.28766
 ],
+"collège Jules Verne|Buxerolles": [
+46.59543,
+0.35676
+],
 "collège Lakanal|Aubagne": [
 43.28589,
 5.58259
@@ -3308,6 +3328,7 @@
 48.11046,
 -1.67217
 ],
+"inspection du travail|Grenoble": null,
 "intramuros|Avignon": null,
 "jardin national, au kiosque à musique|Albi": null,
 "kiosque du jardin des Prébendes|Tours": null,
@@ -3839,6 +3860,10 @@
 43.34733,
 5.35523
 ],
+"lycée Saint-Sernin|Toulouse": [
+43.60969,
+1.44185
+],
 "lycée Simone Weil|Pantin": [
 48.89315,
 2.41039
@@ -4129,6 +4154,10 @@
 -1.54908
 ],
 "monument des 50 Otages|Nantes": null,
+"musée d'art contemporain|Vitry-sur-Seine": [
+48.79316,
+2.38786
+],
 "musée du Louvre|Paris": [
 48.86115,
 2.33803
@@ -4700,6 +4729,7 @@
 47.21335,
 -1.55785
 ],
+"place du Maréchal de Tassigny|Strasbourg": null,
 "place du Palais de justice|Chambéry": [
 45.56862,
 5.91887
@@ -5294,6 +5324,7 @@
 48.12968,
 -1.62707
 ],
+"usine Bluebus|Quimper": null,
 "usine Durkopp|Vierzon": null,
 "usine Speichim|Montluçon": null,
 "usine|Blanquefort": [
