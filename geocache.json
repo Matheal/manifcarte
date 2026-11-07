@@ -849,6 +849,10 @@
 43.60139,
 3.83105
 ],
+"IUT Lyon 1|Villeurbanne": [
+45.76639,
+4.88504
+],
 "IUT de Dijon|Dijon": [
 47.30993,
 5.06876
@@ -2661,6 +2665,10 @@
 ],
 "centre ville|Le Havre": null,
 "centre-ville|Albi": null,
+"centre-ville|Amiens": [
+49.89379,
+2.29406
+],
 "centre-ville|Angers": [
 47.46549,
 -0.55869
@@ -3233,11 +3241,13 @@
 ],
 "hyper-centre|Perpignan": null,
 "hypercentre-ville|Caen": null,
+"hypercentre|Clermont-Ferrand": null,
 "hypercentre|Grenoble": [
 45.18811,
 5.72884
 ],
 "hypercentre|Lyon": null,
+"hypercentre|Marseille": null,
 "hypercentre|Nantes": null,
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Hyères|Hyères": [
@@ -4688,6 +4698,10 @@
 49.11086,
 6.17143
 ],
+"place de la liberté|Brest": [
+48.39072,
+-4.48582
+],
 "place de la libération|Villefranche-sur-Saône": [
 45.98477,
 4.71697
@@ -5093,6 +5107,10 @@
 44.8397,
 -0.57415
 ],
+"rue Solférino|Lille": [
+50.62682,
+3.06316
+],
 "rue Trachel|Nice": [
 43.70628,
 7.26188
@@ -5372,6 +5390,7 @@
 48.71279,
 2.21075
 ],
+"École Supérieure d'Art d'Aix-en-Provence|Aix-en-Provence": null,
 "École des Mines|Paris": null,
 "École des Mines|Saint-Étienne": [
 45.42388,
