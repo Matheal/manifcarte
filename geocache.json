@@ -522,6 +522,10 @@
 48.84701,
 2.41082
 ],
+"Croix de Pierre|Rouen": [
+49.44458,
+1.10639
+],
 "Cultura|Saint-Doulchard": [
 47.11771,
 2.37701
@@ -552,6 +556,10 @@
 "Elysée et Matignon|Paris": null,
 "Entre Bastille et Nation|Paris": null,
 "Esplanade des chaussonières|Fougères": null,
+"Esplanade|Metz": [
+49.0837,
+6.2438
+],
 "Faculté de lettres|Metz": null,
 "Faculté de lettres|Pau": null,
 "Faculté de sciences|Montpellier": [
@@ -2444,6 +2452,10 @@
 44.07998,
 3.02241
 ],
+"Victoire|Bordeaux": [
+44.83062,
+-0.57262
+],
 "Vieux Port|La Rochelle": [
 46.15766,
 -1.15198
@@ -2566,6 +2578,10 @@
 "boulevard du Roi René|Angers": [
 47.46804,
 -0.557
+],
+"boulevard|Rennes": [
+48.10395,
+-1.66932
 ],
 "bourse du travail|Saint-Denis": null,
 "bourse du travail|Villeurbanne": null,
@@ -3154,6 +3170,7 @@
 3.86429
 ],
 "facultés|Tours": null,
+"faculté|Caen": null,
 "faculté|Nice": [
 43.71701,
 7.26758
@@ -3261,6 +3278,7 @@
 ],
 "hypercentre|Lyon": null,
 "hypercentre|Marseille": null,
+"hypercentre|Nancy": null,
 "hypercentre|Nantes": null,
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Hyères|Hyères": [
@@ -3363,6 +3381,10 @@
 "l'écusson|Montpellier": [
 43.61084,
 3.87659
+],
+"la Canebière|Marseille": [
+43.29568,
+5.37564
 ],
 "la Rotonde|Aix-en-Provence": [
 43.52629,
@@ -4415,6 +4437,10 @@
 45.75186,
 4.84322
 ],
+"place Notre Dame|Poitiers": [
+46.58283,
+0.34267
+],
 "place René Goblet|Amiens": [
 49.89126,
 2.30232
@@ -4735,6 +4761,10 @@
 45.98477,
 4.71697
 ],
+"place de-Lattre-de-Tassigny|Strasbourg": [
+48.60631,
+7.74677
+],
 "place des Charpennes|Villeurbanne": [
 45.76966,
 4.86602
@@ -5036,6 +5066,7 @@
 1.44575
 ],
 "relais de l'AMF|Auch": null,
+"rocade Est|Dijon": null,
 "rocade|La Rochelle": [
 46.16354,
 -1.19405
