@@ -626,6 +626,10 @@
 49.89322,
 2.28344
 ],
+"Gare|Angoulême": [
+45.64349,
+0.1082
+],
 "Gare|Grenoble": [
 45.08414,
 5.74343
@@ -1341,6 +1345,10 @@
 -0.56355
 ],
 "Lycée privé Saint-Dominique|Saint-Herblain": null,
+"Lycée professionnel Denis-Papin|La Courneuve": [
+48.92839,
+2.38689
+],
 "Lycée professionnel La Ruche|Bordeaux": null,
 "Lycées Clémenceau, Joffre et Jean Monnet|Montpellier": null,
 "Lycées Lacassagne et Lumière|Lyon": null,
@@ -2635,6 +2643,10 @@
 48.56988,
 7.77117
 ],
+"carrefour Tourny|Limoges": [
+45.83211,
+1.26175
+],
 "carrefour du centenaire|Chambéry": null,
 "cathédrale de Metz|Metz": [
 49.12027,
@@ -3041,6 +3053,7 @@
 "devant la mairie|Nice": null,
 "devant la mairie|Niort": null,
 "devant la mairie|Nîmes": null,
+"devant la mairie|Orléans": null,
 "devant la mairie|Ploemeur": null,
 "devant la mairie|Poitiers": null,
 "devant la mairie|Quimper": null,
@@ -3972,6 +3985,10 @@
 47.18674,
 -1.52138
 ],
+"lycée des Catalins|Montélimar": [
+44.57109,
+4.759
+],
 "lycée du Bois-d'Amour|Poitiers": [
 46.55258,
 0.30968
@@ -4266,6 +4283,10 @@
 48.69344,
 6.17785
 ],
+"place Darche|Longwy": [
+49.52403,
+5.76345
+],
 "place Darcy|Dijon": [
 47.3236,
 5.03283
@@ -4426,6 +4447,10 @@
 "place Sainte-Anne|Rennes": [
 48.11442,
 -1.68057
+],
+"place Sebastopol|Lille": [
+50.62921,
+3.05738
 ],
 "place Soult|Castres": [
 43.60397,
@@ -4649,6 +4674,10 @@
 43.33484,
 5.48346
 ],
+"place de la République|Nancy": [
+48.68863,
+6.17629
+],
 "place de la République|Orléans": [
 47.9012,
 1.90602
@@ -4826,6 +4855,10 @@
 "port de Vannes|Vannes": [
 47.64878,
 -2.75798
+],
+"porte d'Aix|Marseille": [
+43.30185,
+5.37475
 ],
 "porte d'Italie|Paris": [
 48.81909,
