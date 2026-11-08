@@ -544,6 +544,10 @@
 45.98325,
 4.74399
 ],
+"DSDEN 73|Chambéry": [
+45.56369,
+5.91727
+],
 "De place de la Bastille à place de l'Opéra|Paris": null,
 "Depot des Lilas|Les Lilas": null,
 "Devant la CCI|Brive-la-Gaillarde": null,
@@ -968,6 +972,10 @@
 "La Canebière|Marseille": [
 43.29568,
 5.37564
+],
+"La Carmagnole|Montpellier": [
+43.60735,
+3.86806
 ],
 "La Chevalière|Aix-en-Provence": [
 43.54558,
@@ -1832,6 +1840,10 @@
 45.73754,
 4.83731
 ],
+"Place Jean Jaurès|Montpellier": [
+43.60985,
+3.87782
+],
 "Place Jean Jaurès|Tours": [
 47.38955,
 0.68912
@@ -2687,6 +2699,10 @@
 43.71498,
 7.26264
 ],
+"campus de Caen|Caen": [
+49.19187,
+-0.30335
+],
 "campus de Paris-Saclay|Gif-sur-Yvette": [
 48.71125,
 2.1624
@@ -2986,6 +3002,7 @@
 47.65578,
 -2.09402
 ],
+"cité scolaire Kerichen-La Pérouse|Brest": null,
 "cité scolaire Paul-Valéry|Sète": null,
 "cité scolaire Wallon|Aubervilliers": null,
 "cité scolaire de Saint-Nazaire|Saint-Nazaire": [
@@ -3027,6 +3044,10 @@
 "commissariat de Saint-Denis|Saint-Denis": [
 -20.88633,
 55.45245
+],
+"commissariat de police|Clermont-Ferrand": [
+45.78775,
+3.10769
 ],
 "commissariat des Lilas|Les Lilas": [
 48.88245,
@@ -5233,6 +5254,10 @@
 "rue Lenepveu|Angers": [
 47.47235,
 -0.55093
+],
+"rue Magenta|Poitiers": [
+46.57729,
+0.33907
 ],
 "rue Saint Georges|Nancy": [
 48.69239,
