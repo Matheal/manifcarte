@@ -1146,6 +1146,10 @@
 47.39187,
 0.68921
 ],
+"Lycée Edouard Herriot|Lyon": [
+45.76539,
+4.84517
+],
 "Lycée Faidherbe|Lille": [
 50.61484,
 3.07842
@@ -1875,6 +1879,10 @@
 46.21107,
 5.32453
 ],
+"Place de la Nation|Paris": [
+48.84837,
+2.39587
+],
 "Place de la République et quartier des Halles|Paris": null,
 "Place de la République et secteur des Halles|Paris": null,
 "Place de la République|Bordeaux": [
@@ -2097,6 +2105,7 @@
 "RN 165|Quéven": null,
 "RN 165|Vannes": null,
 "RN165|Lorient": null,
+"RN174 et A84|Saint-Lô": null,
 "RN20|Foix": [
 42.9639,
 1.60538
@@ -2204,6 +2213,10 @@
 "Sanofi|Ploërmel": [
 47.93087,
 -2.36765
+],
+"Saxe-Gambetta|Lyon": [
+45.75328,
+4.84668
 ],
 "Sciences Po Aix|Aix-en-Provence": [
 43.52925,
@@ -2502,6 +2515,10 @@
 5.7218
 ],
 "avenue Alsace-Lorraine Vienne|Grenoble": null,
+"avenue Berthelot|Lyon": [
+45.74117,
+4.85444
+],
 "avenue Carnot|Clermont-Ferrand": [
 45.77622,
 3.09703
@@ -2921,6 +2938,7 @@
 "centres-villes|Mont-de-Marsan": null,
 "château de Versailles, Opéra de Paris, musée du Louvre|Paris": null,
 "château du Breuil|Mézidon Vallée d'Auge": null,
+"cité scolaire Auguste Renoir|Limoges": null,
 "cité scolaire Beaumont|Redon": [
 47.65578,
 -2.09402
