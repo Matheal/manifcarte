@@ -682,6 +682,10 @@
 45.04017,
 3.90617
 ],
+"Halle aux Grains|Toulouse": [
+43.59985,
+1.45443
+],
 "Halles Biltoki|Angers": null,
 "Halles centrales|Rennes": [
 48.10784,
@@ -1981,6 +1985,10 @@
 -17.52829,
 -149.57593
 ],
+"Port-Bourgenay|Talmont-Saint-Hilaire": [
+46.44402,
+-1.67033
+],
 "Porte d'Aix|Marseille": [
 43.30185,
 5.37475
@@ -2501,6 +2509,7 @@
 48.59439,
 7.68921
 ],
+"agence Néosoft|Limoges": null,
 "allées Jean Jaurès|Toulouse": [
 43.60686,
 1.45016
@@ -3068,8 +3077,10 @@
 "devant la gare|Charleville-Mézières": null,
 "devant la mairie d'Amiens|Amiens": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
+"devant la mairie d'Orléans|Orléans": null,
 "devant la mairie de Creil|Creil": null,
 "devant la mairie de Nîmes|Nîmes": null,
+"devant la mairie de Saint-Denis|Saint-Denis": null,
 "devant la mairie|Abbeville": null,
 "devant la mairie|Aix-les-Bains": null,
 "devant la mairie|Angers": null,
@@ -5447,6 +5458,7 @@
 ],
 "usine Bluebus|Quimper": null,
 "usine Durkopp|Vierzon": null,
+"usine Schaeffler|Foix": null,
 "usine Speichim|Montluçon": null,
 "usine|Blanquefort": [
 44.95311,
@@ -5530,6 +5542,10 @@
 "école du Schluthfeld|Strasbourg": [
 48.56781,
 7.74915
+],
+"école maternelle|Nice": [
+43.81839,
+7.18978
 ],
 "écoles primaires|Saint-Joseph": null
 }
