@@ -125,6 +125,7 @@
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
 "Bibliothèques UT2J|Toulouse": null,
+"Bluebus|Ergué-Gabéric": null,
 "Bonlieu|Annecy": [
 45.90197,
 6.12699
@@ -1086,6 +1087,10 @@
 47.25162,
 -1.61086
 ],
+"Lycée Aristide Briand|Évreux": [
+49.01645,
+1.15621
+],
 "Lycée Aristide-Briand|Saint-Nazaire": [
 47.27281,
 -2.2338
@@ -1122,6 +1127,10 @@
 "Lycée Brequigny|Rennes": [
 48.08408,
 -1.69204
+],
+"Lycée Charles Baudelaire|Annecy": [
+45.89661,
+6.09507
 ],
 "Lycée Charles Péguy|Orléans": [
 47.88872,
@@ -1776,6 +1785,10 @@
 "Parvis de l'ancien hôtel de ville|Angers": null,
 "Parvis de la gare matabiau|Toulouse": null,
 "Patinoire d'Orléans|Orléans": null,
+"Paul Deschanel|Paris": [
+48.84,
+2.32548
+],
 "Peyrou|Montpellier": [
 43.61147,
 3.87008
@@ -2054,6 +2067,10 @@
 48.83388,
 2.33974
 ],
+"Promenade d'Agde|Agde": [
+43.31405,
+3.47219
+],
 "Préfecture|Ajaccio": [
 41.91977,
 8.73688
@@ -2311,6 +2328,10 @@
 "Station Liane|Boulogne-sur-Mer": [
 50.72053,
 1.60523
+],
+"Table de Jeanne-Marie (65 rue Febvotte)|Tours": [
+47.37766,
+0.68892
 ],
 "Théâtre Debussy, 116 avenue du Général de Gaulle|Maisons-Alfort": [
 48.80129,
@@ -3330,6 +3351,10 @@
 "hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
 5.7816
+],
+"hôpital du Mans|Le Mans": [
+48.01541,
+0.17774
 ],
 "hôpital|Le Mans": [
 48.01359,
@@ -5054,6 +5079,10 @@
 "périphérique|Lille": [
 50.65116,
 3.06238
+],
+"périphérique|Nantes": [
+47.20283,
+-1.62196
 ],
 "périphérique|Paris": [
 48.82314,
