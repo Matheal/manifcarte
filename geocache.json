@@ -48,6 +48,10 @@
 48.71852,
 7.04786
 ],
+"Aix-Marseille université|Aix-en-Provence": [
+43.52591,
+5.4141
+],
 "Amiens nord|Amiens": [
 49.89417,
 2.2957
@@ -121,6 +125,10 @@
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
 "Bibliothèques UT2J|Toulouse": null,
+"Bonlieu|Annecy": [
+45.90197,
+6.12699
+],
 "Bouffay ou place Bretagne|Nantes": null,
 "Bouffay|Nantes": [
 47.21495,
@@ -480,6 +488,7 @@
 47.21946,
 5.95573
 ],
+"Chez Cicor|Douarnenez": null,
 "Château des Ducs|Chambéry": [
 45.56546,
 5.91643
@@ -1885,6 +1894,10 @@
 ],
 "Place de la République et quartier des Halles|Paris": null,
 "Place de la République et secteur des Halles|Paris": null,
+"Place de la République|Auch": [
+43.64635,
+0.58502
+],
 "Place de la République|Bordeaux": [
 44.83489,
 -0.57988
@@ -3307,6 +3320,10 @@
 49.53765,
 5.7816
 ],
+"hôpital|Le Mans": [
+48.01359,
+0.17546
+],
 "hôtel de luxe L'Impérator|Nîmes": null,
 "hôtel de ville|Aix-en-Provence": [
 43.52983,
@@ -3800,6 +3817,10 @@
 6.19165
 ],
 "lycée Louis-Berthollet|Annecy": null,
+"lycée Lumière|Lyon": [
+45.73681,
+4.86184
+],
 "lycée Léonard de Vinci|Montpellier": [
 43.62757,
 3.82389
