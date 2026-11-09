@@ -1,4 +1,8 @@
 {
+"156 boulevard Louis Blanc|La Roche-sur-Yon": [
+46.6756,
+-1.43516
+],
 "23 rue Lakanal|Montpellier": [
 43.61672,
 3.8782
@@ -93,6 +97,7 @@
 43.65982,
 7.21375
 ],
+"BFMTV|Paris": null,
 "Barachois|Saint-Denis": [
 -20.87448,
 55.4464
@@ -114,6 +119,10 @@
 "Bastille|Paris": [
 48.85299,
 2.36886
+],
+"Battant|Besançon": [
+47.24095,
+6.01969
 ],
 "Beaulieu|La Rochelle": [
 46.17683,
@@ -1308,6 +1317,10 @@
 47.74947,
 7.34338
 ],
+"Lycée Méditerranée|La Ciotat": [
+43.19154,
+5.61362
+],
 "Lycée Nelson-Mandela|Nantes": [
 47.20832,
 -1.53354
@@ -1651,6 +1664,10 @@
 45.72999,
 4.86657
 ],
+"Marseilleveyre|Marseille": [
+43.22328,
+5.37187
+],
 "Masséna|Nice": [
 43.69775,
 7.27137
@@ -1720,6 +1737,10 @@
 "Ombrière du Vieux-Port|Marseille": [
 43.29464,
 5.37414
+],
+"Opéra Grand Avignon|Avignon": [
+43.94975,
+4.80533
 ],
 "Opéra de Montpellier|Montpellier": [
 43.64952,
@@ -2784,6 +2805,7 @@
 43.71164,
 -1.04023
 ],
+"centre social Chorier-Berriat|Grenoble": null,
 "centre ville|Le Havre": null,
 "centre-ville|Albi": null,
 "centre-ville|Amiens": [
@@ -3399,6 +3421,10 @@
 0.17546
 ],
 "hôtel de luxe L'Impérator|Nîmes": null,
+"hôtel de police|Nancy": [
+48.68808,
+6.1937
+],
 "hôtel de ville|Aix-en-Provence": [
 43.52983,
 5.44724
@@ -3741,6 +3767,10 @@
 "lycée Gabriel-Fauré|Foix": [
 42.9618,
 1.60488
+],
+"lycée George Sand|Domont": [
+49.03005,
+2.34092
 ],
 "lycée Georges Clemenceau|Reims": [
 49.25025,
@@ -5623,6 +5653,10 @@
 "école du Schluthfeld|Strasbourg": [
 48.56781,
 7.74915
+],
+"école maternelle Clément-Roassal|Nice": [
+43.70826,
+7.2584
 ],
 "école maternelle|Nice": [
 43.81839,
