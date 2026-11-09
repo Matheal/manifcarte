@@ -27,6 +27,10 @@
 45.73512,
 4.87072
 ],
+"A13|Paris": [
+48.8535,
+2.34839
+],
 "A47|Givors": [
 45.58442,
 4.76965
@@ -147,6 +151,7 @@
 43.52391,
 5.447
 ],
+"Boulevards|Narbonne": null,
 "Boulevards|Toulouse": [
 43.60606,
 1.44775
@@ -420,6 +425,10 @@
 "Centre-ville|Nîmes": [
 43.81783,
 4.34314
+],
+"Centre-ville|Orléans": [
+47.90129,
+1.906
 ],
 "Centre-ville|Pamiers": [
 43.11696,
@@ -1200,6 +1209,10 @@
 -17.54668,
 -149.57727
 ],
+"Lycée Henri Loritz|Nancy": [
+48.69074,
+6.19228
+],
 "Lycée Henri Wallon|Aubervilliers": [
 48.91147,
 2.38871
@@ -1757,6 +1770,10 @@
 "Parc Expo|Mulhouse": [
 47.76479,
 7.33591
+],
+"Parc Pasteur|Orléans": [
+47.908,
+1.91302
 ],
 "Parc des Expositions|Perpignan": [
 42.70939,
@@ -3462,6 +3479,10 @@
 -1.67217
 ],
 "inspection du travail|Grenoble": null,
+"internat de Kérichen|Brest": [
+48.40484,
+-4.4843
+],
 "intramuros|Avignon": null,
 "jardin national, au kiosque à musique|Albi": null,
 "kiosque du jardin des Prébendes|Tours": null,
@@ -3763,6 +3784,7 @@
 48.88191,
 2.34325
 ],
+"lycée Jacques-Audiberti|Antibes": null,
 "lycée Jacques-Monod|Saint-Jean-de-Braye": [
 47.91066,
 1.96789
@@ -4966,6 +4988,10 @@
 1.428
 ],
 "ponts de Lyon vers la presqu'île|Lyon": null,
+"port Marseille-Fos|Marseille": [
+43.30363,
+5.36354
+],
 "port de Fort-de-France|Fort-de-France": [
 14.60339,
 -61.06167
@@ -5396,6 +5422,7 @@
 4.8332
 ],
 "supermarché|Longuenesse": null,
+"tour administrative|Tulle": null,
 "tour de la Liberté|Saint-Dié-des-Vosges": [
 48.2865,
 6.94737
