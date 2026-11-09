@@ -566,6 +566,7 @@
 45.56369,
 5.91727
 ],
+"DSDEN|Tulle": null,
 "De place de la Bastille à place de l'Opéra|Paris": null,
 "Depot des Lilas|Les Lilas": null,
 "Devant la CCI|Brive-la-Gaillarde": null,
@@ -1099,6 +1100,10 @@
 "Lumière|La Ciotat": [
 43.18683,
 5.61789
+],
+"Lycée Albert-Camus|Firminy": [
+45.38834,
+4.28148
 ],
 "Lycée Albert-Camus|Nantes": [
 47.20446,
@@ -1689,6 +1694,7 @@
 45.44154,
 4.41537
 ],
+"Monument pour la Paix, place de la Paix|Allonnes": null,
 "Moudong Nord|Baie-Mahault": [
 16.24462,
 -61.58632
@@ -2031,6 +2037,10 @@
 47.27269,
 -2.23166
 ],
+"Polytech Tours|Tours": [
+47.36509,
+0.6849
+],
 "Pont urgence, passerelle tribunal|Nantes": null,
 "Pont-du-Las|Toulon": [
 43.11897,
@@ -2180,6 +2190,7 @@
 48.86186,
 2.31593
 ],
+"Quai de la Sinne|Colmar": null,
 "Quai des Allobroges|Chambéry": [
 45.57141,
 5.91678
@@ -2311,6 +2322,7 @@
 5.4357
 ],
 "Sciences Po Menton|Menton": null,
+"Sciences Po Strasbourg|Strasbourg": null,
 "Sciences Po|Caen": [
 49.18411,
 -0.36755
@@ -2729,6 +2741,7 @@
 50.61833,
 3.05382
 ],
+"campus Ocellia Grenoble|Grenoble": null,
 "campus Tertre|Nantes": [
 47.24734,
 -1.5506
@@ -3097,6 +3110,10 @@
 47.2324,
 6.02027
 ],
+"commissariat|Clermont-Ferrand": [
+45.76766,
+3.14161
+],
 "commissariat|Dunkerque": [
 51.01293,
 2.30648
@@ -3114,6 +3131,7 @@
 3.18689
 ],
 "conseil municipal|Bayonne": null,
+"conseil régional|Metz": null,
 "correspondance ligne 4 / ligne 3|Paris": null,
 "cours Fauriel|Saint-Étienne": [
 45.42822,
@@ -3144,6 +3162,7 @@
 2.40945
 ],
 "cours des 50-Otages|Nantes": null,
+"croisement boulevard de la République et avenue Jean Jaurès|Saint-Malo": null,
 "de Gaulle|Orléans": [
 47.90106,
 1.90284
@@ -3232,6 +3251,7 @@
 ],
 "devant les mairies|Nancy": null,
 "devant les mairies|Paris": null,
+"devant les réformés|Marseille": null,
 "devant turbomeca|Tarnos": null,
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus des Lilas|Les Lilas": null,
@@ -3644,6 +3664,10 @@
 47.22966,
 -1.59393
 ],
+"lycée Cassini|Clermont": [
+49.38448,
+2.408
+],
 "lycée Champollion|Grenoble": [
 45.18804,
 5.72465
@@ -4002,6 +4026,10 @@
 44.80912,
 -0.64936
 ],
+"lycée Pasteur|Strasbourg": [
+48.57428,
+7.73882
+],
 "lycée Paul Eluard|Saint-Denis": null,
 "lycée Paul Éluard|Saint-Denis": null,
 "lycée Paul-Eluard|Saint-Denis": null,
@@ -4023,6 +4051,10 @@
 "lycée Pergaud|Besançon": [
 47.26463,
 6.04246
+],
+"lycée Poincaré|Nancy": [
+48.69099,
+6.17866
 ],
 "lycée Queneau|Yvetot": [
 49.61151,
@@ -4350,6 +4382,7 @@
 47.21503,
 -1.54908
 ],
+"monument aux morts des frères Martel|La Roche-sur-Yon": null,
 "monument des 50 Otages|Nantes": null,
 "musée d'art contemporain|Vitry-sur-Seine": [
 48.79316,
@@ -4436,6 +4469,10 @@
 "place Bellecour|Lyon": [
 45.75766,
 4.83243
+],
+"place Bonet|Alençon": [
+48.43143,
+0.09463
 ],
 "place Broglie|Strasbourg": [
 48.58475,
@@ -4873,6 +4910,10 @@
 7.75493
 ],
 "place de la République|Vincennes": null,
+"place de la Résistance|Blois": [
+47.5861,
+1.33599
+],
 "place de la Résistance|Quimper": [
 47.99385,
 -4.10422
@@ -4900,6 +4941,10 @@
 "place de la gare|Metz": [
 49.11086,
 6.17143
+],
+"place de la gare|Rennes": [
+48.10308,
+-1.67263
 ],
 "place de la liberté|Brest": [
 48.39072,
@@ -5430,6 +5475,10 @@
 48.7833,
 1.98894
 ],
+"square de la Bourse|Mulhouse": [
+47.74509,
+7.34254
+],
 "square de la Jeune résistance|Clermont-Ferrand": null,
 "square de la Jeune|Clermont-Ferrand": null,
 "square du lieutenant-colonel René-Génin|Toul": null,
@@ -5626,6 +5675,7 @@
 48.86093,
 2.33097
 ],
+"École du travail social|Échirolles": null,
 "École polytechnique|Palaiseau": [
 48.71279,
 2.21075
@@ -5661,6 +5711,10 @@
 "école maternelle|Nice": [
 43.81839,
 7.18978
+],
+"école supérieure d'art et design Le Havre-Rouen|Le Havre": [
+49.49766,
+0.13225
 ],
 "écoles primaires|Saint-Joseph": null
 }
