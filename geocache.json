@@ -372,6 +372,10 @@
 ],
 "Centre élargi|Montpellier": null,
 "Centre-ville, Beaulieu, Atlantis, Carquefou|Nantes": null,
+"Centre-ville|Besançon": [
+47.24027,
+6.02002
+],
 "Centre-ville|Bordeaux": [
 44.84113,
 -0.65678
@@ -496,6 +500,10 @@
 ],
 "Champ de la Foire|Roanne": null,
 "Champs-Elysées|Paris": [
+48.87076,
+2.30533
+],
+"Champs-Élysées|Paris": [
 48.87076,
 2.30533
 ],
@@ -1364,6 +1372,10 @@
 43.34733,
 5.35523
 ],
+"Lycée Saint-John Perse|Pau": [
+43.32,
+-0.36196
+],
 "Lycée Sainte-Anne|Brest": [
 48.39662,
 -4.49073
@@ -1916,6 +1928,10 @@
 48.11442,
 -1.68057
 ],
+"Place Simone Veil|La Roche-sur-Yon": [
+46.67219,
+-1.42476
+],
 "Place d'Arc|Orléans": [
 47.90814,
 1.90598
@@ -2216,6 +2232,10 @@
 "Raffinerie de Normandie|Le Havre": [
 49.48802,
 0.24084
+],
+"Rambuteau|Paris": [
+48.86176,
+2.35379
 ],
 "Rectorat|Dijon": [
 47.3185,
@@ -2762,6 +2782,10 @@
 49.45883,
 1.06767
 ],
+"campus de Villejean|Rennes": [
+48.11874,
+-1.70215
+],
 "campus de l'Esplanade|Strasbourg": null,
 "campus de l'Iedes|Nogent-sur-Marne": null,
 "campus de l'UBO|Quimper": null,
@@ -3172,6 +3196,7 @@
 "devant l'hotel de ville|Allonnes": null,
 "devant l'hôpital de Dax|Dax": null,
 "devant l'hôtel de ville|Lille": null,
+"devant la DSDEN place Bonet|Alençon": null,
 "devant la Mairie|Nîmes": null,
 "devant la Mairie|Pantin": null,
 "devant la gare|Charleville-Mézières": null,
@@ -3253,6 +3278,10 @@
 "devant les mairies|Paris": null,
 "devant les réformés|Marseille": null,
 "devant turbomeca|Tarnos": null,
+"direction académique|Saint-Brieuc": [
+48.48782,
+-2.74884
+],
 "du cinéma REX au pont Michel|Paris": null,
 "dépôt de bus des Lilas|Les Lilas": null,
 "dépôt de bus|Vitry-sur-Seine": null,
@@ -3285,6 +3314,7 @@
 ],
 "fac d'Orléans|Orléans": null,
 "fac de lettres|Brest": null,
+"fac de sciences / rond-point de la saucisse|Montpellier": null,
 "fac du Mirail|Toulouse": null,
 "facs|Brest": null,
 "faculte de sciences|Montpellier": [
@@ -3317,6 +3347,10 @@
 "faculté|Nice": [
 43.71701,
 7.26758
+],
+"fac|Avignon": [
+43.94782,
+4.8102
 ],
 "fac|Brest": null,
 "foire de la Colombette|Toulouse": null,
@@ -3404,6 +3438,7 @@
 48.85577,
 2.38213
 ],
+"gymnase de l'Amicale laïque|Saint-Brieuc": null,
 "hyper-centre|Bourges": null,
 "hyper-centre|Caen": null,
 "hyper-centre|Laval": null,
@@ -4285,6 +4320,10 @@
 43.6603,
 3.91051
 ],
+"mairie de Nanterre|Nanterre": [
+48.892,
+2.20717
+],
 "mairie de Nice|Nice": [
 43.74312,
 7.3137
@@ -4521,6 +4560,10 @@
 "place Foch|Épinal": [
 48.17225,
 6.44776
+],
+"place Garibaldi|Nice": [
+43.70112,
+7.28027
 ],
 "place Granvelle|Besançon": [
 47.23523,
@@ -5067,6 +5110,7 @@
 43.30363,
 5.36354
 ],
+"port de Dégrad-des-Cannes|Remire-Montjoly": null,
 "port de Fort-de-France|Fort-de-France": [
 14.60339,
 -61.06167
@@ -5716,5 +5760,6 @@
 49.49766,
 0.13225
 ],
-"écoles primaires|Saint-Joseph": null
+"écoles primaires|Saint-Joseph": null,
+"établissement François-Mauriac|Bordeaux": null
 }
