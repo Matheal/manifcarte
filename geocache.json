@@ -936,6 +936,7 @@
 1.07208
 ],
 "Inspection académique de Haute-Corse|Bastia": null,
+"Inspection académique|Toulon": null,
 "Institut Agro de Montpellier|Montpellier": [
 43.61832,
 3.85543
@@ -3753,6 +3754,10 @@
 47.21907,
 -1.54534
 ],
+"lycée Colbert|Lorient": [
+47.74532,
+-3.38271
+],
 "lycée Corbière|Morlaix": [
 48.59895,
 -3.81765
@@ -4238,6 +4243,10 @@
 47.47074,
 -0.59143
 ],
+"lycée d'Annecy|Annecy": [
+45.90602,
+6.12872
+],
 "lycée d'Antibes|Antibes": [
 43.59258,
 7.11573
@@ -4610,6 +4619,10 @@
 48.17225,
 6.44776
 ],
+"place François|Cognac": [
+45.69316,
+-0.325
+],
 "place Garibaldi|Nice": [
 43.70112,
 7.28027
@@ -4930,6 +4943,10 @@
 48.86557,
 2.32122
 ],
+"place de la Gare|Rennes": [
+48.10308,
+-1.67263
+],
 "place de la Grande-Boucherie|Strasbourg": [
 48.57996,
 7.75056
@@ -5086,6 +5103,10 @@
 "place des Terreaux|Lyon": [
 45.76749,
 4.83349
+],
+"place du 1er mai|Clermont-Ferrand": [
+45.78635,
+3.09892
 ],
 "place du Capitole|Toulouse": [
 43.6044,
