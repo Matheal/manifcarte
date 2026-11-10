@@ -137,6 +137,10 @@
 2.63923
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
+"Bibliothèque universitaire|Grenoble": [
+45.20179,
+5.74489
+],
 "Bibliothèques UT2J|Toulouse": null,
 "Bluebus|Ergué-Gabéric": null,
 "Bonlieu|Annecy": [
@@ -3085,6 +3089,10 @@
 47.27392,
 -2.22329
 ],
+"cité scolaire|Saint-Nazaire": [
+47.2759,
+-2.22965
+],
 "collège Alexandre Macal|Saint-François": [
 16.25081,
 -61.28766
@@ -3921,6 +3929,10 @@
 "lycée Jean-Jaurès|Rennes": [
 48.09195,
 -1.68802
+],
+"lycée Jean-Monnet|Yzeure": [
+46.56739,
+3.35729
 ],
 "lycée Jean-Perrin|Rezé": [
 47.18174,
