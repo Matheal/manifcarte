@@ -795,6 +795,10 @@
 47.27549,
 -2.21719
 ],
+"Hôtel Dieu|Nantes": [
+47.21186,
+-1.55337
+],
 "Hôtel Imperator|Nîmes": [
 43.83855,
 4.35272
@@ -1439,6 +1443,10 @@
 2.38689
 ],
 "Lycée professionnel La Ruche|Bordeaux": null,
+"Lycée Émile-Zola|Aix-en-Provence": [
+43.51076,
+5.45977
+],
 "Lycées Clémenceau, Joffre et Jean Monnet|Montpellier": null,
 "Lycées Lacassagne et Lumière|Lyon": null,
 "Lycées Léonard de Vinci, Saint-Rémi et Jean-Moulin|Roubaix": null,
@@ -2681,6 +2689,10 @@
 43.12886,
 5.92335
 ],
+"avenue des Frères-Lumière|Lyon": [
+45.74561,
+4.86447
+],
 "avenue du Général de Gaulle|Maisons-Alfort": [
 48.80704,
 2.42569
@@ -2819,6 +2831,7 @@
 1.26175
 ],
 "carrefour du centenaire|Chambéry": null,
+"caserne de Lille Bouvines|Lille": null,
 "cathédrale de Metz|Metz": [
 49.12027,
 6.17663
@@ -3643,6 +3656,10 @@
 47.27281,
 -2.2338
 ],
+"lycée Aristide-Briand|Évreux": [
+49.01642,
+1.1534
+],
 "lycée Audiberti|Antibes": [
 43.57389,
 7.11728
@@ -3812,6 +3829,10 @@
 45.43713,
 4.39638
 ],
+"lycée Evariste Galois|Noisy-le-Grand": [
+48.84519,
+2.54005
+],
 "lycée Ferdinand Daguin|Mérignac": null,
 "lycée Ferdinand-Daguin|Mérignac": null,
 "lycée Feyder|Épinay-sur-Seine": [
@@ -3834,6 +3855,10 @@
 "lycée Gabriel-Fauré|Foix": [
 42.9618,
 1.60488
+],
+"lycée Gaston-Bachelard|Chelles": [
+48.88234,
+2.61138
 ],
 "lycée George Sand|Domont": [
 49.03005,
@@ -3996,6 +4021,10 @@
 48.69118,
 6.19165
 ],
+"lycée Louis-Armand|Villefranche-sur-Saône": [
+45.99943,
+4.70481
+],
 "lycée Louis-Berthollet|Annecy": null,
 "lycée Lumière|Lyon": [
 45.73681,
@@ -4044,6 +4073,10 @@
 "lycée Maurice-Genevoix|Ingré": [
 47.92068,
 1.83027
+],
+"lycée Mermoz|Montpellier": [
+43.61107,
+3.89235
 ],
 "lycée Michelis|Amiens": [
 49.88933,
@@ -4196,6 +4229,10 @@
 "lycée Zola|Rennes": [
 48.10941,
 -1.6751
+],
+"lycée d'Aix|Aix-en-Provence": [
+43.52742,
+5.45768
 ],
 "lycée d'Angers|Angers": [
 47.47074,
@@ -4656,6 +4693,10 @@
 7.74596
 ],
 "place Lazarre Goujon|Villeurbanne": null,
+"place Leclerc|Angers": [
+47.47128,
+-0.54493
+],
 "place Liberté|Les Sables-d'Olonne": [
 46.49746,
 -1.78327
@@ -4912,6 +4953,10 @@
 "place de la Republique|Limoges": [
 45.83193,
 1.26019
+],
+"place de la Republique|Paris": [
+48.86754,
+2.36396
 ],
 "place de la RÃ©publique|Paris": null,
 "place de la République et Châtelet-Les Halles|Paris": null,
@@ -5308,6 +5353,10 @@
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
 0.24084
+],
+"rectorat de Reims|Reims": [
+49.2444,
+4.04107
 ],
 "rectorat et centre-ville|Dijon": null,
 "rectorat|Dijon": [
