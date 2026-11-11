@@ -578,10 +578,17 @@
 45.56369,
 5.91727
 ],
+"DSDEN du Tarn-et-Garonne|Montauban": null,
+"DSDEN|Foix": [
+42.96115,
+1.60555
+],
+"DSDEN|Montauban": null,
 "DSDEN|Tulle": null,
 "De place de la Bastille à place de l'Opéra|Paris": null,
 "Depot des Lilas|Les Lilas": null,
 "Devant la CCI|Brive-la-Gaillarde": null,
+"Direction des services départementaux de l'Education nationale|Orléans": null,
 "Donjon de Rouen|Rouen": [
 49.44648,
 1.09439
@@ -1203,6 +1210,10 @@
 "Lycée Cyfflé|Nancy": [
 48.68656,
 6.18211
+],
+"Lycée Cézanne|Aix-en-Provence": [
+43.53506,
+5.4593
 ],
 "Lycée Daudet|Nîmes": [
 43.83544,
@@ -2721,6 +2732,10 @@
 43.9448,
 4.81602
 ],
+"boulevard Louis-Blanc|Montpellier": [
+43.61463,
+3.8799
+],
 "boulevard Léon-Blum|Brest": [
 48.40489,
 -4.48509
@@ -3286,6 +3301,7 @@
 "devant la préfecture|Bourg-en-Bresse": null,
 "devant la préfecture|Nantes": null,
 "devant la préfecture|Quimper": null,
+"devant la préfecture|Épinal": null,
 "devant la sous-préfecture|Vendôme": null,
 "devant le Sénat|Paris": null,
 "devant le lycée|Saint-Denis": null,
@@ -3309,6 +3325,7 @@
 "dépôt de bus|Vitry-sur-Seine": null,
 "dépôt de la RATP|Les Lilas": null,
 "dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
+"entre la place Garibaldi et la place Masséna|Nice": null,
 "entre la place Jean-Jaurès et la Manufacture des Tabacs|Montpellier": null,
 "entrepôt Geodis, port de Gennevilliers|Gennevilliers": null,
 "entrée nord de l'A63|Bayonne": null,
@@ -3460,6 +3477,7 @@
 48.85577,
 2.38213
 ],
+"gymnase Sophie-Germain|Paris": null,
 "gymnase de l'Amicale laïque|Saint-Brieuc": null,
 "hyper-centre|Bourges": null,
 "hyper-centre|Caen": null,
@@ -3581,6 +3599,7 @@
 48.11046,
 -1.67217
 ],
+"inspection académique|Toulon": null,
 "inspection du travail|Grenoble": null,
 "internat de Kérichen|Brest": [
 48.40484,
@@ -3617,6 +3636,10 @@
 "les boulevards|Toulouse": null,
 "locaux de Bouygues Immobilier|Bayonne": null,
 "lyc&eacute;es|Caen": null,
+"lycee Colbert|Lorient": [
+47.74532,
+-3.38271
+],
 "lycee Fourcade|Gardanne": [
 43.45615,
 5.47778
@@ -4166,6 +4189,7 @@
 48.78346,
 2.46258
 ],
+"lycée Saint-Exupéry|Lyon": null,
 "lycée Saint-Exupéry|Marseille": [
 43.34733,
 5.35523
@@ -5383,6 +5407,10 @@
 "rectorat|Dijon": [
 47.3185,
 5.03424
+],
+"rectorat|Limoges": [
+45.83524,
+1.25592
 ],
 "rectorat|Rennes": [
 48.11945,
