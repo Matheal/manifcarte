@@ -1404,6 +1404,10 @@
 43.32,
 -0.36196
 ],
+"Lycée Saint-Sernin|Toulouse": [
+43.60331,
+1.43892
+],
 "Lycée Sainte-Anne|Brest": [
 48.39662,
 -4.49073
@@ -2211,6 +2215,10 @@
 44.55747,
 6.07598
 ],
+"Préfecture|La Roche-sur-Yon": [
+46.66805,
+-1.42533
+],
 "Préfecture|Nantes": [
 47.21976,
 -1.55488
@@ -2222,6 +2230,10 @@
 "Préfecture|Poitiers": [
 46.58379,
 0.3372
+],
+"Préfecture|Rouen": [
+49.44627,
+1.08232
 ],
 "Péage d'Orléans|Orléans": null,
 "Pôle associatif Polyblosne, 1 boulevard de Yougoslavie|Rennes": null,
@@ -2414,6 +2426,11 @@
 43.21681,
 2.35024
 ],
+"Square Diedrichs|Bourgoin-Jallieu": [
+45.59004,
+5.27422
+],
+"Square du Général De Gaulle|Mulhouse": null,
 "St Cyprien|Toulouse": [
 43.59833,
 1.43458
@@ -5086,6 +5103,10 @@
 48.5865,
 7.75493
 ],
+"place de la République|Vendôme": [
+47.79107,
+1.06751
+],
 "place de la République|Vincennes": null,
 "place de la Résistance|Blois": [
 47.5861,
@@ -5399,6 +5420,10 @@
 "pôle étudiant|Nantes": [
 47.24538,
 -1.55159
+],
+"quai Augagneur|Lyon": [
+45.76203,
+4.84106
 ],
 "quai Gambetta|Boulogne-sur-Mer": [
 50.72748,
