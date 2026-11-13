@@ -566,6 +566,10 @@
 2.28971
 ],
 "Cours Gambetta, avenue Garibaldi et avenue Berthelot|Lyon": null,
+"Cours Guynemer|Compiègne": [
+49.42239,
+2.82978
+],
 "Cours Lafayette|Toulon": [
 43.12095,
 5.93452
@@ -717,6 +721,10 @@
 "Gare|Saint-Nazaire": [
 47.28664,
 -2.21116
+],
+"Gare|Tours": [
+47.38982,
+0.69438
 ],
 "Grand Port maritime de Martinique|Fort-de-France": null,
 "Grand Port|Fort-de-France": null,
@@ -1033,6 +1041,7 @@
 ],
 "L'Antipode|Rennes": null,
 "L'Imperator|Nîmes": null,
+"L'Orientis|Lorient": null,
 "L'Écusson|Montpellier": [
 43.61084,
 3.87659
@@ -1114,6 +1123,10 @@
 "Le Phare|Chambéry": [
 45.58367,
 5.8997
+],
+"Le Port|Vannes": [
+47.65337,
+-2.7588
 ],
 "Le Pâquier|Annecy": [
 45.90187,
@@ -1984,6 +1997,10 @@
 45.74631,
 4.84199
 ],
+"Place Jeanne Hachette|Beauvais": [
+49.43018,
+2.08291
+],
 "Place Kléber|Strasbourg": [
 48.58331,
 7.74596
@@ -2275,6 +2292,10 @@
 46.66805,
 -1.42533
 ],
+"Préfecture|Lyon": [
+45.76135,
+4.84464
+],
 "Préfecture|Nantes": [
 47.21976,
 -1.55488
@@ -2486,6 +2507,7 @@
 45.59004,
 5.27422
 ],
+"Square Langlier|Pontivy": null,
 "Square du Général De Gaulle|Mulhouse": null,
 "St Cyprien|Toulouse": [
 43.59833,
@@ -2620,6 +2642,10 @@
 "Université d'Avignon|Avignon": [
 43.9497,
 4.81602
+],
+"Université de Besançon|Besançon": [
+47.24798,
+5.98968
 ],
 "Université de Bordeaux|Bordeaux": [
 44.7979,
@@ -3510,6 +3536,10 @@
 43.61155,
 1.45407
 ],
+"gare Montparnasse|Paris": [
+48.84006,
+2.31911
+],
 "gare SNCF|Cannes": [
 43.5538,
 7.02165
@@ -4003,6 +4033,10 @@
 46.8534,
 -1.87021
 ],
+"lycée Fébus|Orthez": [
+43.49114,
+-0.76602
+],
 "lycée Gabriel-Fauré|Foix": [
 42.9618,
 1.60488
@@ -4378,6 +4412,10 @@
 "lycée Truffaut|Challans": [
 46.8534,
 -1.87021
+],
+"lycée Vaugelas|Chambéry": [
+45.56775,
+5.91741
 ],
 "lycée Victor Hugo|Colomiers": [
 43.61588,
