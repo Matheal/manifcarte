@@ -60,6 +60,10 @@
 43.52591,
 5.4141
 ],
+"Ajaccio|Ajaccio": [
+41.9264,
+8.7376
+],
 "Amiens nord|Amiens": [
 49.89417,
 2.2957
@@ -544,6 +548,10 @@
 48.88845,
 2.41793
 ],
+"Collège de France|Paris": [
+48.84932,
+2.34616
+],
 "Conseil des prud'hommes de montpellier|Montpellier": null,
 "Conservatoire d'Orléans|Orléans": [
 47.83827,
@@ -728,6 +736,10 @@
 "Guitard|Le Puy-en-Velay": [
 45.04017,
 3.90617
+],
+"HEAR|Strasbourg": [
+48.58245,
+7.75905
 ],
 "Halle aux Grains|Toulouse": [
 43.59985,
@@ -929,9 +941,17 @@
 48.7048,
 6.15837
 ],
+"IRTS de Nancy|Nancy": [
+48.7048,
+6.15837
+],
 "IRTS|Montpellier": [
 43.60139,
 3.83105
+],
+"IRTS|Nancy": [
+48.7048,
+6.15837
 ],
 "IUT Lyon 1|Villeurbanne": [
 45.76639,
@@ -1086,6 +1106,7 @@
 -1.15094
 ],
 "Le Madrillet et Pasteur|Mont-Saint-Aignan": null,
+"Le Motor|Toulouse": null,
 "Le Patio|Strasbourg": [
 48.57812,
 7.76548
@@ -1329,6 +1350,7 @@
 48.69269,
 6.18609
 ],
+"Lycée Jules-Le-Cesne|Le Havre": null,
 "Lycée Jules-Lesven|Brest": [
 48.40644,
 -4.48091
@@ -1498,6 +1520,10 @@
 "Mac Val|Vitry-sur-Seine": [
 48.79316,
 2.38786
+],
+"Mairie d'Aubervilliers|Aubervilliers": [
+48.91343,
+2.38057
 ],
 "Mairie d'Aulnay-sous-Bois|Aulnay-sous-Bois": [
 48.93425,
@@ -2209,6 +2235,10 @@
 43.31405,
 3.47219
 ],
+"Préfecture du Rhône|Lyon": [
+45.76044,
+4.84332
+],
 "Préfecture|Ajaccio": [
 41.91977,
 8.73688
@@ -2489,6 +2519,10 @@
 "Table de Jeanne-Marie (65 rue Febvotte)|Tours": [
 47.37766,
 0.68892
+],
+"Technopôle Brest-Iroise|Brest": [
+48.35844,
+-4.56752
 ],
 "Théâtre Debussy, 116 avenue du Général de Gaulle|Maisons-Alfort": [
 48.80129,
@@ -3183,6 +3217,10 @@
 47.27392,
 -2.22329
 ],
+"cité scolaire internationale Jacques-Chirac|Marseille": [
+43.31586,
+5.3679
+],
 "cité scolaire|Saint-Nazaire": [
 47.2759,
 -2.22965
@@ -3717,6 +3755,10 @@
 48.69269,
 6.18609
 ],
+"lycee Millet|Cherbourg-en-Cotentin": [
+49.63978,
+-1.64232
+],
 "lycée Adolphe Cherioux|Villejuif": [
 48.78061,
 2.37207
@@ -3940,6 +3982,10 @@
 ],
 "lycée Ferdinand Daguin|Mérignac": null,
 "lycée Ferdinand-Daguin|Mérignac": null,
+"lycée Fesch|Ajaccio": [
+41.91788,
+8.73359
+],
 "lycée Feyder|Épinay-sur-Seine": [
 48.95486,
 2.32199
@@ -4179,6 +4225,10 @@
 "lycée Marseilleveyre|Marseille": [
 43.24022,
 5.37744
+],
+"lycée Maurice Ravel|Paris": [
+48.84793,
+2.40847
 ],
 "lycée Maurice-Genevoix|Ingré": [
 47.92068,
@@ -4531,6 +4581,10 @@
 43.48305,
 -1.55847
 ],
+"mairie|Châteaubriant": [
+47.72159,
+-1.37601
+],
 "mairie|Creil": [
 49.26116,
 2.47305
@@ -4605,6 +4659,10 @@
 48.86115,
 2.33803
 ],
+"médiathèque de Saint-Lô|Saint-Lô": [
+49.1261,
+-1.16644
+],
 "métro Jean-Jaurès|Toulouse": null,
 "palais de justice de Périgueux|Périgueux": [
 45.18657,
@@ -4666,6 +4724,10 @@
 "passage Pasteur|Besançon": [
 47.23863,
 6.02114
+],
+"passage Vendôme|Paris": [
+48.86632,
+2.36401
 ],
 "place Albert 1er|Montpellier": [
 43.61576,
@@ -5576,6 +5638,7 @@
 "rond-point de l'autoroute|Saint-Gaudens": null,
 "rond-point de l'échangeur A8|Le Muy": null,
 "rond-point de la rocade|Arques": null,
+"rond-point de la route de Paris|Argentan": null,
 "rond-point des Flâneries|La Roche-sur-Yon": [
 46.6975,
 -1.43138
@@ -5764,6 +5827,10 @@
 4.8332
 ],
 "supermarché|Longuenesse": null,
+"théâtre des Deux rives|Rouen": [
+49.44656,
+1.10057
+],
 "tour administrative|Tulle": null,
 "tour de la Liberté|Saint-Dié-des-Vosges": [
 48.2865,
