@@ -191,6 +191,10 @@
 47.47372,
 -0.54916
 ],
+"Bourse du travail|Lyon": [
+45.75921,
+4.84822
+],
 "Bourse du travail|Paris": [
 48.86527,
 2.36495
@@ -1899,6 +1903,10 @@
 47.908,
 1.91302
 ],
+"Parc Ronsard|Vendôme": [
+47.7928,
+1.06653
+],
 "Parc des Expositions|Perpignan": [
 42.70939,
 2.90493
@@ -2420,6 +2428,10 @@
 50.63219,
 3.0603
 ],
+"République-Nation|Paris": [
+48.84839,
+2.39591
+],
 "République|Lille": [
 50.59842,
 3.09845
@@ -2570,6 +2582,10 @@
 "Tribunal judiciaire|Bobigny": [
 48.9094,
 2.45007
+],
+"UFR SLHS|Besançon": [
+47.23368,
+6.02552
 ],
 "UPEC|Créteil": [
 48.78822,
@@ -2926,6 +2942,10 @@
 43.71498,
 7.26264
 ],
+"campus Villejean|Rennes": [
+48.11938,
+-1.70149
+],
 "campus de Caen|Caen": [
 49.19187,
 -0.30335
@@ -3056,6 +3076,10 @@
 49.18288,
 -0.36472
 ],
+"centre-ville|Chalon-sur-Saône": [
+46.78176,
+4.86018
+],
 "centre-ville|Chambéry": [
 45.69122,
 5.91236
@@ -3074,6 +3098,7 @@
 45.1902,
 5.71495
 ],
+"centre-ville|La Baule-Escoublac": null,
 "centre-ville|La Roche-sur-Yon": [
 46.66885,
 -1.43926
@@ -3258,6 +3283,10 @@
 "collège Jaurès|Montfermeil": [
 48.89735,
 2.55925
+],
+"collège Jean-Dasté|Saint-Étienne": [
+45.42869,
+4.4215
 ],
 "collège Jules Verne|Buxerolles": [
 46.59543,
@@ -3626,6 +3655,7 @@
 ],
 "hyper-centre|Perpignan": null,
 "hypercentre-ville|Caen": null,
+"hypercentre|Annecy": null,
 "hypercentre|Clermont-Ferrand": null,
 "hypercentre|Grenoble": [
 45.18811,
@@ -3635,6 +3665,7 @@
 "hypercentre|Marseille": null,
 "hypercentre|Nancy": null,
 "hypercentre|Nantes": null,
+"hypercentre|Rennes": null,
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Hyères|Hyères": [
 43.03547,
@@ -4425,6 +4456,7 @@
 49.63894,
 -1.62965
 ],
+"lycée Victor-Hugo|Poitiers": null,
 "lycée Voillaume|Aulnay-sous-Bois": [
 48.9449,
 2.50846
@@ -4746,6 +4778,10 @@
 48.38235,
 -4.48855
 ],
+"parking-relais du Jas de Bouffan|Aix-en-Provence": [
+43.53052,
+5.41632
+],
 "parvis Joséphine Baker|La Courneuve": [
 48.93001,
 2.37856
@@ -4917,6 +4953,10 @@
 49.43018,
 2.08291
 ],
+"place Joffre|Rouen": [
+49.43519,
+1.0867
+],
 "place Kléber|Strasbourg": [
 48.58331,
 7.74596
@@ -4975,6 +5015,10 @@
 "place Saint-Martin|Le Mans": [
 47.87819,
 0.22715
+],
+"place Saint-Pierre|Caen": [
+49.18378,
+-0.36121
 ],
 "place Saint-Sulpice|Paris": [
 48.85088,
@@ -5375,6 +5419,10 @@
 45.98477,
 4.71697
 ],
+"place saint Goery|Épinal": [
+48.174,
+6.45043
+],
 "plage de Foncillon|Royan": [
 45.61908,
 -1.03384
@@ -5609,6 +5657,10 @@
 4.04107
 ],
 "rectorat et centre-ville|Dijon": null,
+"rectorat|Aix-en-Provence": [
+43.52258,
+5.44798
+],
 "rectorat|Dijon": [
 47.3185,
 5.03424
