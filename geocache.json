@@ -536,6 +536,10 @@
 48.84412,
 2.27601
 ],
+"Collège Jean-Dasté|Saint-Étienne": [
+45.42869,
+4.4215
+],
 "Collège Lavoisier|Pantin": [
 48.88845,
 2.41793
@@ -824,6 +828,10 @@
 49.12461,
 6.17612
 ],
+"Hôtel de Ville de Paris|Paris": [
+48.85643,
+2.35253
+],
 "Hôtel de Ville de Saint-Nazaire|Saint-Nazaire": [
 47.27483,
 -2.19795
@@ -966,6 +974,7 @@
 1.01624
 ],
 "Institut national des sciences appliquées de Blois|Blois": null,
+"Invalides à place d'Italie|Paris": null,
 "Invalides|Paris": [
 48.86034,
 2.31468
@@ -1370,6 +1379,7 @@
 43.60969,
 1.44185
 ],
+"Lycée Pablo-Neruda|Saint-Égrève": null,
 "Lycée Pasteur|Besançon": [
 47.23765,
 6.01913
@@ -1972,11 +1982,19 @@
 47.90814,
 1.90598
 ],
+"Place d'Armes|Le Havre": [
+49.50661,
+0.17745
+],
 "Place d'Italie|Paris": [
 48.83094,
 2.35589
 ],
 "Place d'armes, devant l'Hôtel de ville|Metz": null,
+"Place d'armes|Harfleur": [
+49.50472,
+0.20074
+],
 "Place de Gaulle|Orléans": [
 47.90136,
 1.90267
@@ -2064,6 +2082,10 @@
 50.6313,
 3.06097
 ],
+"Place des Invalides|Paris": [
+48.85869,
+2.32258
+],
 "Place des Terreaux|Lyon": [
 45.76749,
 4.83349
@@ -2088,6 +2110,10 @@
 "Plaine des sports|Saint-Nazaire": [
 47.27269,
 -2.23166
+],
+"Point de convergence|Strasbourg": [
+48.57807,
+7.75334
 ],
 "Polytech Tours|Tours": [
 47.36509,
@@ -2561,6 +2587,10 @@
 43.9497,
 4.81602
 ],
+"Université de Bordeaux|Bordeaux": [
+44.7979,
+-0.61727
+],
 "Université de Bourgogne-Europe|Dijon": [
 47.31331,
 5.06886
@@ -2708,6 +2738,10 @@
 "avenue Janvier|Rennes": [
 48.10735,
 -1.67342
+],
+"avenue Jean Jaurès|Paris": [
+48.88906,
+2.39081
 ],
 "avenue Jean Moulin|Saint-Denis": null,
 "avenue Jean-Médecin|Nice": [
@@ -3719,6 +3753,10 @@
 49.01642,
 1.1534
 ],
+"lycée Arthur-Varoquaux|Tomblaine": [
+48.69707,
+6.21865
+],
 "lycée Audiberti|Antibes": [
 43.57389,
 7.11728
@@ -3750,6 +3788,10 @@
 "lycée Bichat|Lunéville": [
 48.59679,
 6.50905
+],
+"lycée Blaise Pascal|Clermont-Ferrand": [
+45.77534,
+3.09427
 ],
 "lycée Blaise-Pascal|Clermont-Ferrand": [
 45.77534,
@@ -4030,6 +4072,7 @@
 47.18174,
 -1.56041
 ],
+"lycée Jean-XXIII|Montigny-lès-Metz": null,
 "lycée Jeanne-d'Arc|Nancy": [
 48.69269,
 6.18609
@@ -5040,6 +5083,7 @@
 47.32127,
 5.04142
 ],
+"place de la Mairie|Aubervilliers": null,
 "place de la Nation|Paris": [
 48.84837,
 2.39587
@@ -5496,6 +5540,10 @@
 "rond point de la résistance|Bourges": null,
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
+"rond-point Kennedy|Saint-Raphaël": [
+43.42429,
+6.76417
+],
 "rond-point MacDo|Saint-Pierre": null,
 "rond-point Picot|Châlons-en-Champagne": null,
 "rond-point Pierre-Mendès-France|Quimperlé": null,
@@ -5786,6 +5834,10 @@
 "université Rennes|Rennes": [
 48.11938,
 -1.70149
+],
+"université Versailles-Saint-Quentin|Versailles": [
+48.79967,
+2.14123
 ],
 "université catholique|Lille": [
 50.63217,
