@@ -537,6 +537,10 @@
 45.56546,
 5.91643
 ],
+"Châtelet les Halles|Paris": [
+48.86251,
+2.34645
+],
 "Cimetière de Thiais|Thiais": [
 48.76106,
 2.37649
@@ -1792,6 +1796,10 @@
 43.22328,
 5.37187
 ],
+"Marseille|Marseille": [
+43.2964,
+5.37779
+],
 "Masséna|Nice": [
 43.69775,
 7.27137
@@ -2592,6 +2600,10 @@
 43.69563,
 7.26779
 ],
+"Toison d'Or|Dijon": [
+47.35537,
+5.0523
+],
 "Tour Eiffel|Paris": [
 48.85826,
 2.2945
@@ -3057,6 +3069,10 @@
 -1.04023
 ],
 "centre social Chorier-Berriat|Grenoble": null,
+"centre ville|Dijon": [
+47.32355,
+5.04148
+],
 "centre ville|Le Havre": null,
 "centre-ville|Albi": null,
 "centre-ville|Amiens": [
@@ -3295,6 +3311,10 @@
 "centres-villes|Dax": null,
 "centres-villes|Mont-de-Marsan": null,
 "centres-villes|Quimper": null,
+"château d'Angers|Angers": [
+47.47007,
+-0.56007
+],
 "château de Versailles, Opéra de Paris, musée du Louvre|Paris": null,
 "château du Breuil|Mézidon Vallée d'Auge": null,
 "cité scolaire Auguste Renoir|Limoges": null,
@@ -3620,6 +3640,10 @@
 "gare SNCF|Voiron": [
 45.3643,
 5.59427
+],
+"gare d'Annecy|Annecy": [
+45.90204,
+6.12179
 ],
 "gare d'Auch|Auch": [
 43.64727,
@@ -4759,6 +4783,10 @@
 49.49793,
 0.12747
 ],
+"maison des syndicats|Reims": [
+49.25467,
+4.04084
+],
 "marches de la cathédrale|Le Puy-en-Velay": null,
 "marché Saint-Pierre|Clermont-Ferrand": [
 45.77931,
@@ -4849,6 +4877,10 @@
 ],
 "parvis de la mairie|Montrouge": null,
 "parvis ouest de la gare de Grenoble|Grenoble": null,
+"passage Baco|Nantes": [
+47.21396,
+-1.55022
+],
 "passage Pasteur|Besançon": [
 47.23863,
 6.02114
@@ -4928,6 +4960,10 @@
 "place François|Cognac": [
 45.69316,
 -0.325
+],
+"place Gaillard|Clermont-Ferrand": [
+45.78032,
+3.08284
 ],
 "place Garibaldi|Nice": [
 43.70112,
@@ -5241,6 +5277,7 @@
 44.84146,
 -0.57038
 ],
+"place de la Bourse|Mulhouse": null,
 "place de la Bourse|Strasbourg": [
 48.57609,
 7.75348
@@ -5329,6 +5366,10 @@
 49.11501,
 6.17262
 ],
+"place de la République|Mulhouse": [
+47.7603,
+7.28171
+],
 "place de la République|Nancy": [
 48.68863,
 6.17629
@@ -5410,6 +5451,7 @@
 48.60631,
 7.74677
 ],
+"place des Arceaux|Montpellier": null,
 "place des Charpennes|Villeurbanne": [
 45.76966,
 4.86602
@@ -5438,6 +5480,10 @@
 "place des Terreaux|Lyon": [
 45.76749,
 4.83349
+],
+"place du 11-Novembre|Laval": [
+48.07102,
+-0.7725
 ],
 "place du 1er mai|Clermont-Ferrand": [
 45.78635,
@@ -5945,6 +5991,10 @@
 48.35079,
 -1.20114
 ],
+"sous-préfecture|Pontarlier": [
+46.90366,
+6.35395
+],
 "sous-préfecture|Roanne": [
 46.03549,
 4.0703
@@ -6007,6 +6057,10 @@
 "tribunal de Bobigny|Bobigny": [
 48.9094,
 2.45007
+],
+"tribunal de Montpellier|Montpellier": [
+43.61221,
+3.8707
 ],
 "tribunal judiciaire|Grenoble": [
 45.19193,
