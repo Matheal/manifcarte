@@ -755,6 +755,10 @@
 47.38982,
 0.69438
 ],
+"Gourvily|Quimper": [
+48.01491,
+-4.08245
+],
 "Grand Port maritime de Martinique|Fort-de-France": null,
 "Grand Port|Fort-de-France": null,
 "Grand place|Roubaix": [
@@ -2535,6 +2539,10 @@
 47.93087,
 -2.36765
 ],
+"Sans Souci|Lyon": [
+45.74756,
+4.86523
+],
 "Saxe-Gambetta|Lyon": [
 45.75328,
 4.84668
@@ -2655,6 +2663,10 @@
 "Tribunal judiciaire|Bobigny": [
 48.9094,
 2.45007
+],
+"Tribunal|Ajaccio": [
+41.93981,
+8.74611
 ],
 "UFR SLHS|Besançon": [
 47.23368,
@@ -2863,6 +2875,7 @@
 1.44913
 ],
 "allées de Villote|Foix": null,
+"amphi D1|Grenoble": null,
 "arrêt Tourelles Dauphine|Orléans": null,
 "autoroute A10|Tours": [
 47.47443,
@@ -3350,6 +3363,10 @@
 "centres-villes|Dax": null,
 "centres-villes|Mont-de-Marsan": null,
 "centres-villes|Quimper": null,
+"centre|Annecy": [
+45.93699,
+6.07841
+],
 "château d'Angers|Angers": [
 47.47007,
 -0.56007
@@ -3777,6 +3794,7 @@
 "hypercentre|Marseille": null,
 "hypercentre|Nancy": null,
 "hypercentre|Nantes": null,
+"hypercentre|Poitiers": null,
 "hypercentre|Rennes": null,
 "hypercentre|Saint-Nazaire": null,
 "hypermarché de Dillon|Fort-de-France": null,
@@ -4211,6 +4229,10 @@
 0.70224
 ],
 "lycée Guillaume-le-Conquérant|Lillebonne": null,
+"lycée Gutenberg|Créteil": [
+48.77035,
+2.47184
+],
 "lycée Henri-Loritz|Nancy": [
 48.69074,
 6.19228
@@ -5541,6 +5563,14 @@
 43.6044,
 1.44335
 ],
+"place du Centenaire|Chambéry": [
+45.56844,
+5.92105
+],
+"place du Château|Chambéry": [
+45.56478,
+5.91895
+],
 "place du Commerce|Nantes": [
 47.21335,
 -1.55785
@@ -5921,6 +5951,7 @@
 "ronds-points|Gaillac": null,
 "ronds-points|La Valette-du-Var": null,
 "ronds-points|Montélimar": null,
+"ronds-points|Quimperlé": null,
 "rue Amiral Linois|Brest": [
 48.38496,
 -4.49178
@@ -6119,6 +6150,7 @@
 43.61221,
 3.8707
 ],
+"tribunal et gendarmerie|Niort": null,
 "tribunal judiciaire|Grenoble": [
 45.19193,
 5.71135
