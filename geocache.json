@@ -615,6 +615,7 @@
 ],
 "DSDEN|Montauban": null,
 "DSDEN|Tulle": null,
+"De Jean-Jaurès à Arnaud Bernard|Toulouse": null,
 "De place de la Bastille à place de l'Opéra|Paris": null,
 "Depot des Lilas|Les Lilas": null,
 "Devant la CCI|Brive-la-Gaillarde": null,
@@ -2095,6 +2096,10 @@
 47.37969,
 0.69323
 ],
+"Place de la Libération|Auch": [
+43.64689,
+0.58376
+],
 "Place de la Mairie|Bourg-en-Bresse": [
 46.21107,
 5.32453
@@ -2729,6 +2734,10 @@
 49.38492,
 1.07208
 ],
+"Université de Strasbourg|Strasbourg": [
+48.58315,
+7.77287
+],
 "Université de Toulon|Toulon": [
 43.13541,
 6.01616
@@ -2991,6 +3000,7 @@
 "campus de l'Esplanade|Strasbourg": null,
 "campus de l'Iedes|Nogent-sur-Marne": null,
 "campus de l'UBO|Quimper": null,
+"campus de la Fonderie|Mulhouse": null,
 "campus de lettres|Limoges": null,
 "campus des Deux-Lions|Tours": null,
 "campus des Grands Moulins et prison de la Santé|Paris": null,
@@ -3101,6 +3111,10 @@
 "centre-ville|Caen": [
 49.18288,
 -0.36472
+],
+"centre-ville|Carcassonne": [
+43.21176,
+2.34797
 ],
 "centre-ville|Chalon-sur-Saône": [
 46.78176,
@@ -3280,6 +3294,7 @@
 "centres-villes|Cholet": null,
 "centres-villes|Dax": null,
 "centres-villes|Mont-de-Marsan": null,
+"centres-villes|Quimper": null,
 "château de Versailles, Opéra de Paris, musée du Louvre|Paris": null,
 "château du Breuil|Mézidon Vallée d'Auge": null,
 "cité scolaire Auguste Renoir|Limoges": null,
@@ -3514,6 +3529,7 @@
 "dépôt de bus|Vitry-sur-Seine": null,
 "dépôt de la RATP|Les Lilas": null,
 "dépôt pétrolier de Vern-sur-Seiche|Vern-sur-Seiche": null,
+"entre République et Nation|Paris": null,
 "entre la place Garibaldi et la place Masséna|Nice": null,
 "entre la place Jean-Jaurès et la Manufacture des Tabacs|Montpellier": null,
 "entrepôt Geodis, port de Gennevilliers|Gennevilliers": null,
@@ -3661,6 +3677,10 @@
 "gare|Mulhouse": [
 47.7506,
 7.29401
+],
+"gare|Tours": [
+47.38982,
+0.69438
 ],
 "giratoire de Lanester|Lanester": [
 47.75973,
@@ -3831,6 +3851,7 @@
 -2.79454
 ],
 "les boulevards|Toulouse": null,
+"local Solidaires|Marseille": null,
 "locaux de Bouygues Immobilier|Bayonne": null,
 "lyc&eacute;es|Caen": null,
 "lycee Colbert|Lorient": [
@@ -5260,6 +5281,10 @@
 47.32127,
 5.04142
 ],
+"place de la Libération|Villefranche-sur-Saône": [
+45.98477,
+4.71697
+],
 "place de la Mairie|Aubervilliers": null,
 "place de la Nation|Paris": [
 48.84837,
@@ -5299,6 +5324,10 @@
 "place de la République|Marseille": [
 43.33484,
 5.48346
+],
+"place de la République|Metz": [
+49.11501,
+6.17262
 ],
 "place de la République|Nancy": [
 48.68863,
@@ -5364,6 +5393,10 @@
 "place de la gare|Rennes": [
 48.10308,
 -1.67263
+],
+"place de la gare|Sarrebourg": [
+48.73809,
+7.05283
 ],
 "place de la liberté|Brest": [
 48.39072,
