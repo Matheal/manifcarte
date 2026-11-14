@@ -64,6 +64,10 @@
 41.9264,
 8.7376
 ],
+"All. Salengro|Clermont-l'Hérault": [
+43.62682,
+3.43472
+],
 "Amiens nord|Amiens": [
 49.89417,
 2.2957
@@ -174,6 +178,7 @@
 43.60606,
 1.44775
 ],
+"Bourse du T.|Béziers": null,
 "Bourse du Travail de Paris|Paris": [
 48.86527,
 2.36495
@@ -183,6 +188,7 @@
 45.75921,
 4.84822
 ],
+"Bourse du Travail|Narbonne": null,
 "Bourse du Travail|Saint-Étienne": [
 45.43315,
 4.38772
@@ -199,6 +205,10 @@
 "Bourse du travail|Paris": [
 48.86527,
 2.36495
+],
+"Bourse du travail|Saint-Étienne": [
+45.43315,
+4.38772
 ],
 "Bourse du travail|Toulon": [
 43.12921,
@@ -1328,6 +1338,11 @@
 -17.54668,
 -149.57727
 ],
+"Lycée Gutemberg|Créteil": null,
+"Lycée Gutenberg|Créteil": [
+48.77035,
+2.47184
+],
 "Lycée Henri Loritz|Nancy": [
 48.69074,
 6.19228
@@ -1588,6 +1603,10 @@
 50.21177,
 1.77825
 ],
+"Mairie|Agde": [
+43.3129,
+3.47748
+],
 "Mairie|Amiens": [
 49.81571,
 2.20312
@@ -1822,6 +1841,10 @@
 4.41537
 ],
 "Monument pour la Paix, place de la Paix|Allonnes": null,
+"Motte Rouge|Nantes": [
+47.22781,
+-1.55409
+],
 "Moudong Nord|Baie-Mahault": [
 16.24462,
 -61.58632
@@ -2055,6 +2078,10 @@
 46.67219,
 -1.42476
 ],
+"Place Sébastopol|Lille": [
+50.62881,
+3.05756
+],
 "Place d'Arc|Orléans": [
 47.90814,
 1.90598
@@ -2075,6 +2102,10 @@
 "Place de Gaulle|Orléans": [
 47.90136,
 1.90267
+],
+"Place de Genève|Chambéry": [
+45.56705,
+5.91907
 ],
 "Place de Jaude|Clermont-Ferrand": [
 45.77641,
@@ -2220,6 +2251,10 @@
 "Port-Bourgenay|Talmont-Saint-Hilaire": [
 46.44402,
 -1.67033
+],
+"Portail des Jacobins|Carcassonne": [
+43.21086,
+2.35251
 ],
 "Porte d'Aix|Marseille": [
 43.30185,
@@ -2815,6 +2850,10 @@
 7.68921
 ],
 "agence Néosoft|Limoges": null,
+"allées Jean Jaures|Toulouse": [
+43.60588,
+1.44913
+],
 "allées Jean Jaurès|Toulouse": [
 43.60686,
 1.45016
@@ -3717,6 +3756,7 @@
 ],
 "gymnase Sophie-Germain|Paris": null,
 "gymnase de l'Amicale laïque|Saint-Brieuc": null,
+"hotel de ville|Le Perreux-sur-Marne": null,
 "hyper-centre|Bourges": null,
 "hyper-centre|Caen": null,
 "hyper-centre|Laval": null,
@@ -4472,6 +4512,10 @@
 "lycée Saint-Exupéry|Marseille": [
 43.34733,
 5.35523
+],
+"lycée Saint-John-Perse|Pau": [
+43.32,
+-0.36196
 ],
 "lycée Saint-Sernin|Toulouse": [
 43.60969,
@@ -5282,6 +5326,10 @@
 48.57609,
 7.75348
 ],
+"place de la Boussinière|Le Mans": [
+48.00731,
+0.18914
+],
 "place de la Comédie|Lyon": [
 45.7677,
 4.83604
@@ -5569,6 +5617,10 @@
 1.428
 ],
 "ponts de Lyon vers la presqu'île|Lyon": null,
+"ponts du Rhône|Lyon": [
+45.78813,
+4.89824
+],
 "port Marseille-Fos|Marseille": [
 43.30363,
 5.36354
@@ -5814,6 +5866,7 @@
 "rond-point Taillefer|Gaillac": null,
 "rond-point d'Auchan Sud|Poitiers": null,
 "rond-point d'Auchan|Dieppe": null,
+"rond-point de Beauregard|Le Mans": null,
 "rond-point de Gerzat|Gerzat": [
 45.83771,
 3.14979
@@ -5868,6 +5921,10 @@
 "ronds-points|Gaillac": null,
 "ronds-points|La Valette-du-Var": null,
 "ronds-points|Montélimar": null,
+"rue Amiral Linois|Brest": [
+48.38496,
+-4.49178
+],
 "rue Barla|Nice": [
 43.70087,
 7.28628
