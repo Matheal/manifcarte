@@ -141,6 +141,7 @@
 2.63923
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
+"Bibliothèque de l'université Paris 8|Paris": null,
 "Bibliothèque universitaire|Grenoble": [
 45.20179,
 5.74489
@@ -234,6 +235,10 @@
 "CHU de Nantes|Nantes": [
 47.20099,
 -1.55822
+],
+"CHU de Poitiers|Poitiers": [
+46.55927,
+0.38141
 ],
 "CHU de Rangueil|Toulouse": [
 43.56077,
@@ -544,6 +549,10 @@
 48.84412,
 2.27601
 ],
+"Collège Jaurès|Montfermeil": [
+48.89735,
+2.55925
+],
 "Collège Jean-Dasté|Saint-Étienne": [
 45.42869,
 4.4215
@@ -552,6 +561,7 @@
 48.88845,
 2.41793
 ],
+"Collège Sylviane Telchid|Baie-Mahault": null,
 "Collège de France|Paris": [
 48.84932,
 2.34616
@@ -774,6 +784,9 @@
 48.92742,
 2.39239
 ],
+"Hyper centre commerçant|La Baule-Escoublac": null,
+"Hyper centre commerçant|Nantes": null,
+"Hyper centre commerçant|Saint-Nazaire": null,
 "Hédas|Pau": [
 43.29636,
 -0.37298
@@ -1285,6 +1298,10 @@
 "Lycée Edouard Herriot|Lyon": [
 45.76539,
 4.84517
+],
+"Lycée Emmanuel-Mounier|Grenoble": [
+45.17919,
+5.73067
 ],
 "Lycée Faidherbe|Lille": [
 50.61484,
@@ -2288,6 +2305,10 @@
 49.17958,
 -0.36767
 ],
+"Préfecture|Chambéry": [
+45.56454,
+5.91782
+],
 "Préfecture|Clermont-Ferrand": [
 45.77595,
 3.08404
@@ -2587,6 +2608,7 @@
 47.23368,
 6.02552
 ],
+"UFR Sciences du langage, humanités et sociétés|Besançon": null,
 "UPEC|Créteil": [
 48.78822,
 2.44392
@@ -2775,6 +2797,10 @@
 "allées Jean Jaurès|Toulouse": [
 43.60686,
 1.45016
+],
+"allées Jean-Jaurès|Toulouse": [
+43.60588,
+1.44913
 ],
 "allées de Villote|Foix": null,
 "arrêt Tourelles Dauphine|Orléans": null,
@@ -3461,6 +3487,7 @@
 "devant la préfecture|Belfort": null,
 "devant la préfecture|Blois": null,
 "devant la préfecture|Bourg-en-Bresse": null,
+"devant la préfecture|Lyon": null,
 "devant la préfecture|Nantes": null,
 "devant la préfecture|Quimper": null,
 "devant la préfecture|Épinal": null,
@@ -3543,6 +3570,7 @@
 43.6321,
 3.86429
 ],
+"faculté du Mirail|Toulouse": null,
 "facultés|Tours": null,
 "faculté|Caen": null,
 "faculté|Nice": [
@@ -3666,6 +3694,7 @@
 "hypercentre|Nancy": null,
 "hypercentre|Nantes": null,
 "hypercentre|Rennes": null,
+"hypercentre|Saint-Nazaire": null,
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Hyères|Hyères": [
 43.03547,
@@ -4754,6 +4783,10 @@
 47.27908,
 -2.21509
 ],
+"palais de justice|Toulon": [
+43.1258,
+5.925
+],
 "parc Pasteur|Orléans": [
 47.90768,
 1.90996
@@ -5756,6 +5789,10 @@
 "ronds-points|Gaillac": null,
 "ronds-points|La Valette-du-Var": null,
 "ronds-points|Montélimar": null,
+"rue Barla|Nice": [
+43.70087,
+7.28628
+],
 "rue Dante|Paris": [
 48.85122,
 2.34658
@@ -5836,6 +5873,7 @@
 ],
 "rue située à l'arrière du café Blondel|Metz": null,
 "rues adjacentes à la place de la République|Paris": null,
+"rues commerçantes|La Baule-Escoublac": null,
 "rues commerçantes|Épinal": null,
 "salle de la Bourse|Strasbourg": null,
 "services de l'Éducation nationale|Niort": null,
@@ -6123,6 +6161,10 @@
 "école Clément-Roassal|Nice": [
 43.70826,
 7.2584
+],
+"école de la Ligne|Le Tampon": [
+-21.29443,
+55.50205
 ],
 "école du Schluthfeld|Strasbourg": [
 48.56781,
