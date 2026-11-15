@@ -31,6 +31,10 @@
 45.73512,
 4.87072
 ],
+"A10|Tours": [
+47.39005,
+0.68893
+],
 "A13|Paris": [
 48.8535,
 2.34839
@@ -145,6 +149,7 @@
 2.63923
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
+"Bibliothèque de Paris 8|Saint-Denis": null,
 "Bibliothèque de l'université Paris 8|Paris": null,
 "Bibliothèque universitaire|Grenoble": [
 45.20179,
@@ -652,6 +657,10 @@
 ],
 "Elysée et Matignon|Paris": null,
 "Entre Bastille et Nation|Paris": null,
+"Esplanade de la Fraternité|Brest": [
+48.38984,
+-4.49992
+],
 "Esplanade des chaussonières|Fougères": null,
 "Esplanade|Metz": [
 49.0837,
@@ -1113,6 +1122,10 @@
 "La Hotoie|Amiens": [
 49.89669,
 2.28296
+],
+"La Plaine|Marseille": [
+43.29509,
+5.38656
 ],
 "La Rabine|Vannes": [
 47.65185,
@@ -2634,6 +2647,10 @@
 "Technopôle Brest-Iroise|Brest": [
 48.35844,
 -4.56752
+],
+"Technopôle de Brest Iroise|Brest": [
+48.36061,
+-4.56656
 ],
 "Théâtre Debussy, 116 avenue du Général de Gaulle|Maisons-Alfort": [
 48.80129,
@@ -5721,6 +5738,10 @@
 43.9484,
 4.80517
 ],
+"préfecture de La Roche-sur-Yon|La Roche-sur-Yon": [
+46.66691,
+-1.42716
+],
 "préfecture du Doubs|Besançon": [
 47.23297,
 6.02069
@@ -6054,6 +6075,7 @@
 "siège de la Région|Strasbourg": null,
 "siège de la SNCF|Saint-Denis": null,
 "siège du MEDEF|Lille": null,
+"skatepark|Saint-Nazaire": null,
 "sous les Nefs|Nantes": null,
 "sous-préfecture de Roanne|Roanne": [
 46.03551,
@@ -6337,6 +6359,10 @@
 "école Clément-Roassal|Nice": [
 43.70826,
 7.2584
+],
+"école de la Ligne d'Équerre|Le Tampon": [
+-21.29675,
+55.56173
 ],
 "école de la Ligne|Le Tampon": [
 -21.29443,
