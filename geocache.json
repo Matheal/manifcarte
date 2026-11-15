@@ -76,6 +76,10 @@
 49.89417,
 2.2957
 ],
+"Aquarium de Saint-Malo|Saint-Malo": [
+48.6219,
+-1.99365
+],
 "Assemblée nationale|Paris": [
 48.86178,
 2.31798
@@ -744,6 +748,10 @@
 45.64349,
 0.1082
 ],
+"Gare|Calais": [
+50.90191,
+1.81144
+],
 "Gare|Grenoble": [
 45.08414,
 5.74343
@@ -778,6 +786,10 @@
 "Grand'Place|Lille": [
 50.72271,
 3.1592
+],
+"Grand-Place|Cambrai": [
+50.05754,
+3.1529
 ],
 "Grande Ile|Strasbourg": [
 48.58296,
@@ -1927,6 +1939,10 @@
 48.87653,
 2.32524
 ],
+"Opéra|Nice": [
+43.69542,
+7.2725
+],
 "Orléans m|Orléans": [
 47.90273,
 1.90861
@@ -2051,6 +2067,10 @@
 47.21913,
 -1.55046
 ],
+"Place Jean Bart|Dunkerque": [
+51.03442,
+2.37756
+],
 "Place Jean Jaurès|Lyon": [
 45.73754,
 4.83731
@@ -2106,6 +2126,10 @@
 "Place d'Armes|Le Havre": [
 49.50661,
 0.17745
+],
+"Place d'Armes|Valenciennes": [
+50.41175,
+3.51742
 ],
 "Place d'Italie|Paris": [
 48.83094,
@@ -2227,6 +2251,10 @@
 47.47128,
 -0.54493
 ],
+"Place du Président Édouard Herriot|Paris": [
+48.86087,
+2.3191
+],
 "Place du Vigan|Albi": [
 43.9273,
 2.14781
@@ -2285,6 +2313,10 @@
 "Porte de Charenton|Paris": [
 48.83306,
 2.40119
+],
+"Porte de Paris|Lille": [
+50.62962,
+3.06899
 ],
 "Porte de Paris|Poitiers": [
 46.59035,
@@ -2660,6 +2692,10 @@
 43.69563,
 7.26779
 ],
+"Théâtre des Arts|Rouen": [
+49.43959,
+1.08953
+],
 "Toison d'Or|Dijon": [
 47.35537,
 5.0523
@@ -2841,6 +2877,10 @@
 "Université|Le Mans": [
 48.01684,
 0.152
+],
+"Université|Strasbourg": [
+48.58274,
+7.76387
 ],
 "Usine Euroapi|Saint-Aubin-lès-Elbeuf": null,
 "VRU|Chambéry": [
@@ -3936,6 +3976,10 @@
 "la Canebière|Marseille": [
 43.29568,
 5.37564
+],
+"la Doutre|Angers": [
+47.47514,
+-0.56162
 ],
 "la Rotonde|Aix-en-Provence": [
 43.52629,
@@ -5298,6 +5342,10 @@
 "place de Milan|Lyon": [
 45.76201,
 4.85852
+],
+"place de Nantes|Nantes": [
+47.24546,
+-1.55199
 ],
 "place de Résistance|Quimper": [
 47.99373,
