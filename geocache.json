@@ -1531,6 +1531,10 @@
 48.85471,
 2.35768
 ],
+"Lycée Suger|Paris": [
+48.85279,
+2.34111
+],
 "Lycée Sédar Senghor|Évreux": [
 49.00923,
 1.14106
@@ -1823,6 +1827,10 @@
 -61.06414
 ],
 "Maison du Peuple|Belfort": [
+47.64147,
+6.85137
+],
+"Maison du peuple|Belfort": [
 47.64147,
 6.85137
 ],
@@ -2277,6 +2285,10 @@
 0.6849
 ],
 "Pont urgence, passerelle tribunal|Nantes": null,
+"Pont-Neuf|Poitiers": [
+46.57397,
+0.35614
+],
 "Pont-du-Las|Toulon": [
 43.11897,
 5.90045
@@ -3178,6 +3190,10 @@
 -1.04023
 ],
 "centre social Chorier-Berriat|Grenoble": null,
+"centre ville|Annecy": [
+45.91566,
+6.09125
+],
 "centre ville|Dijon": [
 47.32355,
 5.04148
@@ -3690,6 +3706,7 @@
 4.8102
 ],
 "fac d'Orléans|Orléans": null,
+"fac de Lettres|Brest": null,
 "fac de lettres|Brest": null,
 "fac de sciences / rond-point de la saucisse|Montpellier": null,
 "fac du Mirail|Toulouse": null,
@@ -4236,6 +4253,10 @@
 ],
 "lycée Ferdinand Daguin|Mérignac": null,
 "lycée Ferdinand-Daguin|Mérignac": null,
+"lycée Fernand Léger|Ivry-sur-Seine": [
+48.80868,
+2.3779
+],
 "lycée Fesch|Ajaccio": [
 41.91788,
 8.73359
