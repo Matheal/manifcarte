@@ -1111,6 +1111,10 @@
 43.27391,
 2.3273
 ],
+"La Boucle|Besançon": [
+47.24087,
+6.02374
+],
 "La Canebière|Marseille": [
 43.29568,
 5.37564
@@ -1310,6 +1314,10 @@
 "Lycée Clemenceau|Montpellier": [
 43.60216,
 3.87353
+],
+"Lycée Condorcet|Montreuil": [
+48.85819,
+2.44544
 ],
 "Lycée Condorcet|Paris": [
 48.87484,
@@ -3612,6 +3620,7 @@
 "devant la mairie|Châteaubriant": null,
 "devant la mairie|Clermont-Ferrand": null,
 "devant la mairie|Creil": null,
+"devant la mairie|Douarnenez": null,
 "devant la mairie|Guéret": null,
 "devant la mairie|Jarny": null,
 "devant la mairie|Laon": null,
@@ -3709,6 +3718,7 @@
 "fac de Lettres|Brest": null,
 "fac de lettres|Brest": null,
 "fac de sciences / rond-point de la saucisse|Montpellier": null,
+"fac des lettres|Limoges": null,
 "fac du Mirail|Toulouse": null,
 "facs|Brest": null,
 "faculte de sciences|Montpellier": [
@@ -3750,6 +3760,10 @@
 "fac|Brest": null,
 "foire de la Colombette|Toulouse": null,
 "forum des entreprises de Phelma|Grenoble": null,
+"forêt de Blancpignon|Anglet": [
+43.51696,
+-1.49617
+],
 "galerie marchande Les Capucins|Thionville": null,
 "gare Lille Flandres|Lille": [
 50.63638,
@@ -3859,6 +3873,7 @@
 "hyper-centre|Perpignan": null,
 "hypercentre-ville|Caen": null,
 "hypercentre|Annecy": null,
+"hypercentre|Caen": null,
 "hypercentre|Clermont-Ferrand": null,
 "hypercentre|Grenoble": [
 45.18811,
@@ -6428,6 +6443,10 @@
 "école Clément-Roassal|Nice": [
 43.70826,
 7.2584
+],
+"école Paul-Frantz|Saint-Genis-Laval": [
+45.67917,
+4.78523
 ],
 "école de la Ligne d'Équerre|Le Tampon": [
 -21.29675,
