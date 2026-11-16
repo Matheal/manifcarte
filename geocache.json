@@ -638,6 +638,7 @@
 ],
 "DSDEN|Montauban": null,
 "DSDEN|Tulle": null,
+"Dans un rayon de 100 mètres autour de certains établissements|Paris": null,
 "De Jean-Jaurès à Arnaud Bernard|Toulouse": null,
 "De place de la Bastille à place de l'Opéra|Paris": null,
 "Depot des Lilas|Les Lilas": null,
@@ -850,6 +851,10 @@
 "Hôpital d'Albi|Albi": [
 43.88433,
 2.03504
+],
+"Hôpital de Martigues|Martigues": [
+43.41272,
+5.03869
 ],
 "Hôpital de Mont-Saint-Martin|Mont-Saint-Martin": [
 49.53765,
@@ -1253,6 +1258,10 @@
 "Lycée Appert|Orvault": [
 47.25162,
 -1.61086
+],
+"Lycée Argouges|Grenoble": [
+45.17658,
+5.74534
 ],
 "Lycée Aristide Briand|Évreux": [
 49.01645,
@@ -2222,6 +2231,10 @@
 45.54347,
 3.24808
 ],
+"Place de la République|Le Mans": [
+48.00412,
+0.19617
+],
 "Place de la République|Lille": [
 50.6313,
 3.06097
@@ -2846,6 +2859,10 @@
 49.18908,
 -0.36313
 ],
+"Université de Cergy|Cergy": [
+49.03944,
+2.07556
+],
 "Université de Lorraine|Nancy": [
 48.68386,
 6.19419
@@ -2889,6 +2906,10 @@
 "Université du Mans|Le Mans": [
 48.00922,
 0.15787
+],
+"Université|Cergy": [
+49.03944,
+2.07556
 ],
 "Université|La Rochelle": [
 46.13869,
@@ -3860,6 +3881,7 @@
 -3.33086
 ],
 "giratoire du Heckenwald|Saint-Avold": null,
+"groupe scolaire Victor Hugo|La Seyne-sur-Mer": null,
 "gymnase Japy|Paris": [
 48.85577,
 2.38213
@@ -4566,6 +4588,10 @@
 5.73067
 ],
 "lycée Nelson Mandela|Nantes": [
+47.20832,
+-1.53354
+],
+"lycée Nelson-Mandela|Nantes": [
 47.20832,
 -1.53354
 ],
@@ -5834,6 +5860,10 @@
 "préfecture du Doubs|Besançon": [
 47.23297,
 6.02069
+],
+"préfecture du Mans|Le Mans": [
+48.00084,
+0.19724
 ],
 "préfecture du Val-d'Oise|Cergy": [
 49.03526,
