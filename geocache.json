@@ -3052,6 +3052,10 @@
 2.39081
 ],
 "avenue Jean Moulin|Saint-Denis": null,
+"avenue Jean Médecin|Nice": [
+43.70351,
+7.26629
+],
 "avenue Jean-Médecin|Nice": [
 43.70339,
 7.26612
@@ -4354,6 +4358,10 @@
 48.84519,
 2.54005
 ],
+"lycée Fauriel|Saint-Étienne": [
+45.43697,
+4.39441
+],
 "lycée Ferdinand Daguin|Mérignac": null,
 "lycée Ferdinand-Daguin|Mérignac": null,
 "lycée Fernand Léger|Ivry-sur-Seine": [
@@ -4532,6 +4540,10 @@
 "lycée Kastler|Bordeaux": [
 44.80149,
 -0.59734
+],
+"lycée Kerneuzec|Quimperlé": [
+47.88424,
+-3.55689
 ],
 "lycée La Herdrie|Basse-Goulaine": [
 47.19787,
@@ -4817,6 +4829,10 @@
 "lycée d'Antibes|Antibes": [
 43.59258,
 7.11573
+],
+"lycée d'Ingré|Ingré": [
+47.92068,
+1.83027
 ],
 "lycée de Bonneville|Bonneville": [
 46.06966,
@@ -5584,6 +5600,10 @@
 "place de la Grande-Boucherie|Strasbourg": [
 48.57996,
 7.75056
+],
+"place de la Liberté|Brest": [
+48.39072,
+-4.48582
 ],
 "place de la Liberté|Les Sables-d'Olonne": [
 46.49746,
@@ -6575,6 +6595,10 @@
 "école Paul-Frantz|Saint-Genis-Laval": [
 45.67917,
 4.78523
+],
+"école Rabelais-Richelieu|Amboise": [
+47.40993,
+0.98843
 ],
 "école de la Ligne d'Équerre|Le Tampon": [
 -21.29675,
