@@ -215,6 +215,7 @@
 48.86527,
 2.36495
 ],
+"Bourse du travail|Saint-Denis": null,
 "Bourse du travail|Saint-Étienne": [
 45.43315,
 4.38772
@@ -233,6 +234,7 @@
 ],
 "Bâtiment Facteur Cheval|Évry-Courcouronnes": null,
 "CCAS|Amiens": null,
+"CCC OD|Tours": null,
 "CCI de Brive|Brive-la-Gaillarde": null,
 "CCVA|Villeurbanne": [
 45.76761,
@@ -615,6 +617,10 @@
 48.84701,
 2.41082
 ],
+"Cours de la république|Le Havre": [
+49.49332,
+0.12459
+],
 "Croix de Pierre|Rouen": [
 49.44458,
 1.10639
@@ -676,6 +682,10 @@
 "Faculté de sciences|Montpellier": [
 43.6321,
 3.86429
+],
+"Faculté des Lettres et Sciences Humaines|Limoges": [
+45.81758,
+1.23054
 ],
 "Faculté du Tertre|Nantes": null,
 "Faubourg Saint-Antoine|Paris": [
@@ -1493,6 +1503,10 @@
 43.19154,
 5.61362
 ],
+"Lycée Nelson Mandela|Nantes": [
+47.20832,
+-1.53354
+],
 "Lycée Nelson-Mandela|Nantes": [
 47.20832,
 -1.53354
@@ -2128,6 +2142,10 @@
 49.64243,
 -1.62343
 ],
+"Place Saint Michel|Bourgoin-Jallieu": [
+45.58934,
+5.27816
+],
 "Place Saint-Marc|Rouen": [
 49.43868,
 1.10118
@@ -2165,6 +2183,10 @@
 49.50472,
 0.20074
 ],
+"Place de Bretagne|Rennes": [
+48.10959,
+-1.68384
+],
 "Place de Gaulle|Orléans": [
 47.90136,
 1.90267
@@ -2193,6 +2215,10 @@
 43.60869,
 3.87992
 ],
+"Place de la Gare|Grenoble": [
+45.19034,
+5.71527
+],
 "Place de la Liberté|Brest": [
 48.39072,
 -4.48582
@@ -2208,6 +2234,10 @@
 "Place de la Mairie|Bourg-en-Bresse": [
 46.21107,
 5.32453
+],
+"Place de la Mairie|Ploërmel": [
+47.92922,
+-2.3968
 ],
 "Place de la Nation|Paris": [
 48.84837,
@@ -2725,6 +2755,10 @@
 43.69563,
 7.26779
 ],
+"Théâtre de Verre|Châteaubriant": [
+47.71807,
+-1.37407
+],
 "Théâtre des Arts|Rouen": [
 49.43959,
 1.08953
@@ -2960,6 +2994,7 @@
 7.68921
 ],
 "agence Néosoft|Limoges": null,
+"allée Salengro|Clermont-l'Hérault": null,
 "allées Jean Jaures|Toulouse": [
 43.60588,
 1.44913
@@ -3093,6 +3128,10 @@
 "boulevard|Rennes": [
 48.10395,
 -1.66932
+],
+"bourse du travail|Béziers": [
+43.34557,
+3.21973
 ],
 "bourse du travail|Saint-Denis": null,
 "bourse du travail|Villeurbanne": null,
@@ -3583,6 +3622,10 @@
 45.42822,
 4.40077
 ],
+"cours Gambetta|Montpellier": [
+43.60895,
+3.86706
+],
 "cours Guynemer|Compiègne": [
 49.41979,
 2.82432
@@ -3688,6 +3731,7 @@
 "devant la préfecture|Lyon": null,
 "devant la préfecture|Nantes": null,
 "devant la préfecture|Quimper": null,
+"devant la préfecture|Sarcelles": null,
 "devant la préfecture|Épinal": null,
 "devant la sous-préfecture|Vendôme": null,
 "devant le Sénat|Paris": null,
@@ -3771,6 +3815,10 @@
 43.6321,
 3.86429
 ],
+"faculté des Lettres et Sciences Humaines|Limoges": [
+45.81758,
+1.23054
+],
 "faculté des Lettres|Limoges": [
 45.81758,
 1.23054
@@ -3793,6 +3841,7 @@
 43.51696,
 -1.49617
 ],
+"foyer municipal Henri Barbusse|Roussillon": null,
 "front de mer|Saint-Nazaire": null,
 "galerie marchande Les Capucins|Thionville": null,
 "gare Lille Flandres|Lille": [
@@ -3839,6 +3888,10 @@
 "gare du Mans|Le Mans": [
 47.99532,
 0.19219
+],
+"gare routière|Voiron": [
+45.36464,
+5.59343
 ],
 "gare|Angers": [
 47.46436,
@@ -4633,6 +4686,10 @@
 47.26463,
 6.04246
 ],
+"lycée Pierre-Gilles-de-Gennes|Paris": [
+48.83639,
+2.35692
+],
 "lycée Poincaré|Nancy": [
 48.69099,
 6.17866
@@ -4919,6 +4976,10 @@
 4.8728
 ],
 "mairie du VIIIe arrondissement|Lyon": null,
+"mairie|Agde": [
+43.31245,
+3.47893
+],
 "mairie|Avranches": [
 48.63375,
 -1.2573
@@ -5106,6 +5167,10 @@
 "place Bellecour|Lyon": [
 45.75766,
 4.83243
+],
+"place Bilange|Saumur": [
+47.2609,
+-0.07651
 ],
 "place Bonet|Alençon": [
 48.43143,
@@ -5347,6 +5412,10 @@
 "place Sébastopol|Lille": [
 50.62881,
 3.05756
+],
+"place Travot|Cholet": [
+47.06172,
+-0.88013
 ],
 "place Vauban|Paris": [
 48.85345,
@@ -5657,9 +5726,17 @@
 48.39072,
 -4.48582
 ],
+"place de la liberté|Vendôme": [
+47.79374,
+1.07021
+],
 "place de la libération|Villefranche-sur-Saône": [
 45.98477,
 4.71697
+],
+"place de la nation|Sarcelles": [
+48.96144,
+2.32604
 ],
 "place de-Lattre-de-Tassigny|Strasbourg": [
 48.60631,
