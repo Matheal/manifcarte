@@ -643,6 +643,10 @@
 1.60555
 ],
 "DSDEN|Montauban": null,
+"DSDEN|Rennes": [
+48.1103,
+-1.67189
+],
 "DSDEN|Tulle": null,
 "Dans un rayon de 100 mètres autour de certains établissements|Paris": null,
 "De Jean-Jaurès à Arnaud Bernard|Toulouse": null,
@@ -1541,6 +1545,10 @@
 47.36498,
 -1.94068
 ],
+"Lycée Romain Rolland|Ivry-sur-Seine": [
+48.80122,
+2.39424
+],
 "Lycée Rosa-Parks|Saint-Denis": null,
 "Lycée Saint-Cricq|Pau": [
 43.29909,
@@ -1853,6 +1861,7 @@
 49.89409,
 2.29172
 ],
+"Maison de retraite de la Loire|Saint-Étienne": null,
 "Maison des Arts|Le Plessis-Robinson": [
 48.778,
 2.2538
@@ -2018,6 +2027,10 @@
 "Palais de justice|Chambéry": [
 45.56862,
 5.91887
+],
+"Palais de la Mutualité|Lyon": [
+45.75679,
+4.84136
 ],
 "Palais des papes|Avignon": [
 43.95071,
@@ -2587,6 +2600,10 @@
 0.21342
 ],
 "Rond point du Casino|Boulogne-sur-Mer": null,
+"Rond-Point des Champs-Élysées|Paris": [
+48.86957,
+2.30859
+],
 "Rond-point Picot|Châlons-en-Champagne": null,
 "Rond-point de Troyalac'h|Quimper": null,
 "Rond-point de la Patte d'Oie|Blois": null,
@@ -3181,6 +3198,7 @@
 48.8296,
 2.38168
 ],
+"campus Lettres et Sciences Humaines|Nancy": null,
 "campus Mailly|Perpignan": [
 42.69793,
 2.89901
@@ -3806,6 +3824,7 @@
 ],
 "fac d'Orléans|Orléans": null,
 "fac de Lettres|Brest": null,
+"fac de lettres|Besançon": null,
 "fac de lettres|Brest": null,
 "fac de sciences / rond-point de la saucisse|Montpellier": null,
 "fac des lettres|Limoges": null,
@@ -4109,6 +4128,10 @@
 "l'écusson|Montpellier": [
 43.61084,
 3.87659
+],
+"la Boucle|Besançon": [
+47.24087,
+6.02374
 ],
 "la Canebière|Marseille": [
 43.29568,
