@@ -1310,6 +1310,10 @@
 45.77534,
 3.09427
 ],
+"Lycée Bourdelle|Montauban": [
+44.01459,
+1.36873
+],
 "Lycée Brequigny|Rennes": [
 48.08408,
 -1.69204
@@ -1982,6 +1986,10 @@
 43.69542,
 7.2725
 ],
+"Orléans cathédrale|Orléans": [
+47.90189,
+1.91038
+],
 "Orléans m|Orléans": [
 47.90273,
 1.90861
@@ -1998,6 +2006,10 @@
 "Palais de Justice|Bergerac": [
 44.85357,
 0.48678
+],
+"Palais de Justice|Le Havre": [
+49.49261,
+0.11794
 ],
 "Palais de Justice|Périgueux": [
 45.18657,
@@ -2062,6 +2074,7 @@
 ],
 "Parvis de l'ancien hôtel de ville|Angers": null,
 "Parvis de la gare matabiau|Toulouse": null,
+"Parvis du lycée Jean-Jacques Rousseau|Sarcelles": null,
 "Patinoire d'Orléans|Orléans": null,
 "Paul Deschanel|Paris": [
 48.84,
@@ -2705,6 +2718,10 @@
 5.27422
 ],
 "Square Langlier|Pontivy": null,
+"Square Lenglier|Pontivy": [
+48.06318,
+-2.96764
+],
 "Square du Général De Gaulle|Mulhouse": null,
 "St Cyprien|Toulouse": [
 43.59833,
@@ -4460,6 +4477,10 @@
 47.91066,
 1.96789
 ],
+"lycée Jacques-Prévert|Savenay": [
+47.36454,
+-1.9406
+],
 "lycée Jaurès|Montreuil": [
 48.8636,
 2.44682
@@ -5459,6 +5480,10 @@
 45.18895,
 5.72533
 ],
+"place Viète|Fontenay-le-Comte": [
+46.4675,
+-0.80901
+],
 "place d'Arches|Charleville-Mézières": [
 49.76402,
 4.71883
@@ -5833,6 +5858,7 @@
 45.56862,
 5.91887
 ],
+"place du Palais des Papes|Avignon": null,
 "place du Palais|Albertville": null,
 "place du Panthéon|Paris": [
 48.84645,
@@ -6340,6 +6366,10 @@
 "sous-préfecture|Fougères": [
 48.35079,
 -1.20114
+],
+"sous-préfecture|Millau": [
+44.10263,
+3.07644
 ],
 "sous-préfecture|Pontarlier": [
 46.90366,
