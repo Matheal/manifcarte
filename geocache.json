@@ -84,6 +84,10 @@
 48.6219,
 -1.99365
 ],
+"Arnaud-Bernard|Toulouse": [
+43.61054,
+1.43951
+],
 "Assemblée nationale|Paris": [
 48.86178,
 2.31798
@@ -379,6 +383,10 @@
 "Centrale Nantes|Nantes": [
 47.24924,
 -1.54788
+],
+"CentraleSupélec|Gif-sur-Yvette": [
+48.71034,
+2.16765
 ],
 "Centre 2|Saint-Étienne": [
 45.49153,
@@ -2708,6 +2716,10 @@
 45.75328,
 4.84668
 ],
+"ScapAlsace|Colmar": [
+48.11281,
+7.37989
+],
 "Sciences Po Aix|Aix-en-Provence": [
 43.52925,
 5.4357
@@ -2791,6 +2803,10 @@
 "Station Liane|Boulogne-sur-Mer": [
 50.72053,
 1.60523
+],
+"Sénat|Paris": [
+48.84854,
+2.33778
 ],
 "Table de Jeanne-Marie (65 rue Febvotte)|Tours": [
 47.37766,
@@ -2883,6 +2899,7 @@
 45.75161,
 4.83726
 ],
+"Université Paris 8|Saint-Denis": null,
 "Université Paris-Panthéon-Assas|Paris": [
 48.84693,
 2.34503
@@ -5613,6 +5630,10 @@
 "place de Gaulle|Antibes": [
 43.58033,
 7.12068
+],
+"place de Genève|Chambéry": [
+45.56705,
+5.91907
 ],
 "place de Jaude|Clermont-Ferrand": [
 45.77641,
