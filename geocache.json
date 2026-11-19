@@ -1470,6 +1470,10 @@
 48.52339,
 -2.78978
 ],
+"Lycée Jean-Perrin|Rezé": [
+47.18174,
+-1.56041
+],
 "Lycée Jeanne-d'Arc et Lycée Chopin|Nancy": null,
 "Lycée Jeanne-d'Arc|Nancy": [
 48.69269,
@@ -1923,6 +1927,10 @@
 "Mindin|Saint-Brevin-les-Pins": [
 47.26709,
 -2.16747
+],
+"Ministère de l'Intérieur|Paris": [
+48.87197,
+2.31735
 ],
 "Miroir d'eau|Nantes": [
 47.21503,
@@ -3294,6 +3302,7 @@
 49.12027,
 6.17663
 ],
+"centrale d'achat de Leclerc|Reims": null,
 "centre Assas|Paris": [
 48.84957,
 2.38612
@@ -3634,6 +3643,10 @@
 47.2324,
 6.02027
 ],
+"commissariat de Forbach|Forbach": [
+49.18888,
+6.90211
+],
 "commissariat de La Courneuve|La Courneuve": [
 48.92841,
 2.39014
@@ -3654,6 +3667,10 @@
 "commissariat|Besançon": [
 47.2324,
 6.02027
+],
+"commissariat|Brest": [
+48.389,
+-4.4863
 ],
 "commissariat|Clermont-Ferrand": [
 45.76766,
@@ -6660,6 +6677,10 @@
 "zone d'activité du Monné|Allonnes": null,
 "zone franche|Bourges": null,
 "zones commerciales|Évreux": null,
+"École Barbey|Bordeaux": [
+44.82802,
+-0.56352
+],
 "École Polytechnique|Palaiseau": [
 48.71279,
 2.21075
@@ -6740,5 +6761,9 @@
 0.13225
 ],
 "écoles primaires|Saint-Joseph": null,
+"écoles|Rennes": [
+48.11607,
+-1.60773
+],
 "établissement François-Mauriac|Bordeaux": null
 }
