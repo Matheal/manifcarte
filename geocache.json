@@ -68,6 +68,10 @@
 41.9264,
 8.7376
 ],
+"Albert 1er|Montpellier": [
+43.61617,
+3.8744
+],
 "All. Salengro|Clermont-l'Hérault": [
 43.62682,
 3.43472
@@ -265,6 +269,7 @@
 43.56077,
 1.45309
 ],
+"CHU|Nantes": null,
 "CNSMDP|Paris": [
 48.88906,
 2.39081
@@ -670,6 +675,7 @@
 45.17666,
 5.70895
 ],
+"Elysée et Beauvau|Paris": null,
 "Elysée et Matignon|Paris": null,
 "Entre Bastille et Nation|Paris": null,
 "Esplanade de la Fraternité|Brest": [
@@ -681,6 +687,7 @@
 49.0837,
 6.2438
 ],
+"Faculté de lettres|Besançon": null,
 "Faculté de lettres|Metz": null,
 "Faculté de lettres|Pau": null,
 "Faculté de sciences|Montpellier": [
@@ -1507,6 +1514,10 @@
 47.74947,
 7.34338
 ],
+"Lycée Montgrand|Marseille": [
+43.29115,
+5.37868
+],
 "Lycée Méditerranée|La Ciotat": [
 43.19154,
 5.61362
@@ -2023,6 +2034,10 @@
 "Palais de Justice|Périgueux": [
 45.18657,
 0.72011
+],
+"Palais de justice d'Angers|Angers": [
+47.47066,
+-0.54305
 ],
 "Palais de justice|Chambéry": [
 45.56862,
@@ -3180,6 +3195,7 @@
 5.06573
 ],
 "bâtiment Henri Poincaré|Vandœuvre-lès-Nancy": null,
+"bâtiment de la présidence de l'Université de Strasbourg|Strasbourg": null,
 "café de la poste|Ivry-sur-Seine": null,
 "campus 1 et 2|Caen": [
 49.19187,
@@ -3200,6 +3216,10 @@
 2.38168
 ],
 "campus Lettres et Sciences Humaines|Nancy": null,
+"campus Lettres|Nancy": [
+48.69577,
+6.16739
+],
 "campus Mailly|Perpignan": [
 42.69793,
 2.89901
@@ -3690,6 +3710,7 @@
 48.84703,
 2.40945
 ],
+"cours des 50 otages|Nantes": null,
 "cours des 50-Otages|Nantes": null,
 "croisement boulevard de la République et avenue Jean Jaurès|Saint-Malo": null,
 "de Gaulle|Orléans": [
@@ -3801,6 +3822,10 @@
 "entre la place Jean-Jaurès et la Manufacture des Tabacs|Montpellier": null,
 "entrepôt Geodis, port de Gennevilliers|Gennevilliers": null,
 "entrée nord de l'A63|Bayonne": null,
+"escalier Denis Papin|Blois": [
+47.58784,
+1.33341
+],
 "espace Bancel|Lyon": null,
 "esplanade Charles|Rennes": [
 48.10548,
@@ -3917,6 +3942,10 @@
 47.79923,
 -3.28752
 ],
+"gare de La Roche-sur-Yon|La Roche-sur-Yon": [
+46.77022,
+-1.50786
+],
 "gare de Lens|Lens": [
 50.42681,
 2.82825
@@ -3926,6 +3955,10 @@
 2.37449
 ],
 "gare de Montbéliard, av. des Alliés|Montbéliard": null,
+"gare de béthune|Béthune": [
+50.52135,
+2.64055
+],
 "gare du Mans|Le Mans": [
 47.99532,
 0.19219
@@ -5129,6 +5162,10 @@
 3.08336
 ],
 "marge du centre-ville|Laval": null,
+"ministère de l'Intérieur|Paris": [
+48.87197,
+2.31735
+],
 "miroir d'eau|Nantes": [
 47.21503,
 -1.54908
@@ -6482,6 +6519,10 @@
 "tribunal|Lyon": [
 45.76064,
 4.84791
+],
+"tribunal|Saint-Brieuc": [
+48.50873,
+-2.75187
 ],
 "tunnel de la Croix-Rousse|Lyon": [
 45.77366,
