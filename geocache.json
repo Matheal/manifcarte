@@ -328,6 +328,7 @@
 2.38168
 ],
 "Campus Lettres et IUT Charlemagne|Nancy": null,
+"Campus Lettres et Sciences Humaines|Nancy": null,
 "Campus Pasteur, Mont-Saint-Aignan et Madrillet|Rouen": null,
 "Campus de Jussieu|Paris": null,
 "Campus de Saint-Denis|Saint-Denis": [
@@ -566,6 +567,10 @@
 48.87076,
 2.30533
 ],
+"Chantiers Navals|Nantes": [
+47.20912,
+-1.56837
+],
 "Chateaucreux|Saint-Étienne": [
 45.44297,
 4.40058
@@ -748,6 +753,10 @@
 "Fos|Marseille": [
 43.30363,
 5.36354
+],
+"Gare Maritime|Nantes": [
+47.20559,
+-1.57307
 ],
 "Gare SNCF|Voiron": [
 45.3643,
@@ -3159,6 +3168,10 @@
 43.70351,
 7.26629
 ],
+"avenue Jean-Jaurès|Reims": [
+49.25778,
+4.04025
+],
 "avenue Jean-Médecin|Nice": [
 43.70339,
 7.26612
@@ -4940,6 +4953,10 @@
 47.90513,
 7.21287
 ],
+"lycée Théodore Monod|Antony": [
+48.73532,
+2.30597
+],
 "lycée Théodore Monod|Noisy-le-Sec": [
 48.88867,
 2.46667
@@ -5066,6 +5083,7 @@
 ],
 "lycées Jacques-Dolle et Léonard-de-Vinci|Antibes": null,
 "lycées|Chelles": null,
+"lycées|Le Mans": null,
 "lycées|Strasbourg": null,
 "lycées|Toulouse": null,
 "lycée|Gennevilliers": [
@@ -5547,6 +5565,10 @@
 49.89126,
 2.30232
 ],
+"place Roland|Thionville": [
+49.36473,
+6.1719
+],
 "place Royale|Nantes": [
 47.2145,
 -1.55872
@@ -5604,6 +5626,7 @@
 48.69352,
 6.18329
 ],
+"place Stan|Nancy": null,
 "place Sébastopol|Lille": [
 50.62881,
 3.05756
@@ -6651,6 +6674,10 @@
 "université Lyon|Lyon": [
 45.72978,
 4.82658
+],
+"université Marie|Besançon": [
+47.2483,
+5.98941
 ],
 "université Paris 8|Saint-Denis": null,
 "université Paris Cité|Paris": [
