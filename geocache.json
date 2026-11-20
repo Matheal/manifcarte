@@ -55,6 +55,10 @@
 45.44015,
 4.38731
 ],
+"A7|Marseille": [
+43.35799,
+5.36477
+],
 "A9|Nîmes": [
 43.81302,
 4.34356
@@ -431,6 +435,8 @@
 6.8255
 ],
 "Centre élargi|Montpellier": null,
+"Centre-ville et Beaulieu|Nantes": null,
+"Centre-ville jusqu'à la gare|Dijon": null,
 "Centre-ville, Beaulieu, Atlantis, Carquefou|Nantes": null,
 "Centre-ville|Besançon": [
 47.24027,
@@ -474,6 +480,10 @@
 "Centre-ville|Limoges": [
 45.82468,
 1.26056
+],
+"Centre-ville|Lyon": [
+45.79926,
+4.8479
 ],
 "Centre-ville|Marseille": [
 43.27471,
@@ -1308,6 +1318,10 @@
 47.15575,
 -1.67994
 ],
+"Lycée André-Argouges|Grenoble": [
+45.17658,
+5.74534
+],
 "Lycée Anne-Sophie Pic|Toulon": null,
 "Lycée Appert|Orvault": [
 47.25162,
@@ -1645,6 +1659,10 @@
 "Lycée Tristan-Corbière|Morlaix": [
 48.59895,
 -3.81765
+],
+"Lycée Vaucanson|Grenoble": [
+45.17093,
+5.70843
 ],
 "Lycée Victor-Hugo|Paris": [
 48.85767,
@@ -2153,6 +2171,10 @@
 48.84,
 2.32548
 ],
+"Petite France|Strasbourg": [
+48.58136,
+7.74218
+],
 "Peyrou|Montpellier": [
 43.61147,
 3.87008
@@ -2191,6 +2213,10 @@
 "Place Foch|Nantes": [
 47.21913,
 -1.55046
+],
+"Place Jacques Bainville|Paris": [
+48.85869,
+2.32258
 ],
 "Place Jean Bart|Dunkerque": [
 51.03442,
@@ -4844,6 +4870,10 @@
 47.20832,
 -1.53354
 ],
+"lycée Ozenne|Toulouse": [
+43.60969,
+1.44185
+],
 "lycée Pape-Clément|Pessac": [
 44.80912,
 -0.64936
@@ -5341,6 +5371,10 @@
 2.37856
 ],
 "parvis de l'Hôtel de Ville|Lille": null,
+"parvis de l'Hôtel de Ville|Paris": [
+48.85294,
+2.35005
+],
 "parvis de l'hôtel de Ville|Grenoble": null,
 "parvis de l'hôtel de ville|La Seyne-sur-Mer": null,
 "parvis de la gare|Grenoble": [
@@ -5985,6 +6019,7 @@
 45.2407,
 4.67245
 ],
+"place des Halles|Angoulême": null,
 "place des Héros|Arras": [
 50.29126,
 2.7774
@@ -6433,6 +6468,10 @@
 43.70087,
 7.28628
 ],
+"rue Boileau|Nantes": [
+47.21438,
+-1.56054
+],
 "rue Dante|Paris": [
 48.85122,
 2.34658
@@ -6540,6 +6579,10 @@
 "sous-préfecture|Brignoles": [
 43.40693,
 6.0594
+],
+"sous-préfecture|Béziers": [
+43.34591,
+3.21796
 ],
 "sous-préfecture|Dieppe": [
 49.9241,
