@@ -3,6 +3,10 @@
 46.6756,
 -1.43516
 ],
+"21 Rue du Loup|Bordeaux": [
+44.83804,
+-0.57264
+],
 "23 rue Lakanal|Montpellier": [
 43.61672,
 3.8782
@@ -241,6 +245,10 @@
 -2.21982
 ],
 "Bâtiment Facteur Cheval|Évry-Courcouronnes": null,
+"CAF de Vendée|La Roche-sur-Yon": [
+46.67358,
+-1.43532
+],
 "CCAS|Amiens": null,
 "CCC OD|Tours": null,
 "CCI de Brive|Brive-la-Gaillarde": null,
@@ -1036,6 +1044,10 @@
 48.19725,
 6.44073
 ],
+"INHA|Paris": [
+48.86653,
+2.33911
+],
 "IRTS Nancy|Nancy": [
 48.7048,
 6.15837
@@ -1063,6 +1075,10 @@
 "IUT de Lannion|Lannion": [
 48.75799,
 -3.45142
+],
+"IUT de Mont-Saint-Aignan|Mont-Saint-Aignan": [
+49.45955,
+1.06987
 ],
 "IUT, Enssat, lycée Félix-Le-Dantec|Lannion": null,
 "Ikea|Villiers-sur-Marne": [
@@ -1473,6 +1489,10 @@
 "Lycée Jean-Macé|Vitry-sur-Seine": [
 48.80224,
 2.3999
+],
+"Lycée Jean-Monnet|Montpellier": [
+43.62424,
+3.83483
 ],
 "Lycée Jean-Moulin|Saint-Brieuc": [
 48.52339,
@@ -2972,6 +2992,10 @@
 49.03944,
 2.07556
 ],
+"Université de Lille|Lille": [
+50.62857,
+3.12596
+],
 "Université de Lorraine|Nancy": [
 48.68386,
 6.19419
@@ -2987,6 +3011,10 @@
 "Université de Perpignan|Perpignan": [
 42.68217,
 2.8991
+],
+"Université de Poitiers|Poitiers": [
+46.56848,
+0.38386
 ],
 "Université de Rouen|Rouen": [
 49.38492,
@@ -3315,6 +3343,7 @@
 ],
 "carrefour du centenaire|Chambéry": null,
 "caserne de Lille Bouvines|Lille": null,
+"caserne des pompiers|Coutances": null,
 "cathédrale de Metz|Metz": [
 49.12027,
 6.17663
@@ -3327,6 +3356,10 @@
 "centre administratif|Draveil": [
 48.68505,
 2.40858
+],
+"centre de Lyon|Lyon": [
+45.69976,
+4.92092
 ],
 "centre de Paris|Paris": [
 48.92991,
@@ -3668,6 +3701,7 @@
 48.92841,
 2.39014
 ],
+"commissariat de Lorient|Lorient": null,
 "commissariat de Saint-Denis|Saint-Denis": [
 -20.88633,
 55.45245
@@ -3701,6 +3735,7 @@
 48.73142,
 -3.45163
 ],
+"commissariat|Lorient": null,
 "commissariat|Paris": [
 48.88086,
 2.36629
@@ -4534,6 +4569,10 @@
 0.70224
 ],
 "lycée Guillaume-le-Conquérant|Lillebonne": null,
+"lycée Gustave-Flaubert|Rouen": [
+49.45141,
+1.12151
+],
 "lycée Gutenberg|Créteil": [
 48.77035,
 2.47184
@@ -4937,6 +4976,10 @@
 "lycée Yves Leborgne|Sainte-Anne": [
 16.24746,
 -61.36037
+],
+"lycée Yves-Thépot|Quimper": [
+47.98781,
+-4.08809
 ],
 "lycée Zola|Rennes": [
 48.10941,
@@ -5491,6 +5534,10 @@
 "place Mazagran|Lyon": [
 45.75186,
 4.84322
+],
+"place New York|Angoulême": [
+45.64773,
+0.15427
 ],
 "place Notre Dame|Poitiers": [
 46.58283,
@@ -6267,6 +6314,10 @@
 1.44575
 ],
 "relais de l'AMF|Auch": null,
+"restaurant O Panda|Rivesaltes": [
+42.77512,
+2.90759
+],
 "rocade Est|Dijon": null,
 "rocade|La Rochelle": [
 46.16354,
@@ -6291,6 +6342,10 @@
 "rond-point Taillefer|Gaillac": null,
 "rond-point d'Auchan Sud|Poitiers": null,
 "rond-point d'Auchan|Dieppe": null,
+"rond-point d'Océanis|Saint-Nazaire": [
+47.25684,
+-2.26908
+],
 "rond-point de Beauregard|Le Mans": null,
 "rond-point de Gerzat|Gerzat": [
 45.83771,

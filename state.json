@@ -1,72 +1,77 @@
 {
- "gdelt_last": "20261119230000",
+ "gdelt_last": "20261120044500",
  "sources": {
   "google_news": {
-   "ok": false,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "error": "429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=appel+%C3%A0+manifester+when%3A7d&hl=fr&gl=FR&ceid=FR%3Afr",
-   "last_ok": "2026-11-19T17:23:55.361343+00:00"
+   "ok": true,
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00",
+   "fetched": 892,
+   "added": 56
   },
   "rss": {
    "ok": true,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "last_ok": "2026-11-19T23:46:07.814201+00:00",
-   "fetched": 144,
-   "added": 35
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00",
+   "fetched": 146,
+   "added": 13
   },
   "mastodon": {
    "ok": true,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "last_ok": "2026-11-19T23:46:07.814201+00:00",
-   "fetched": 348,
-   "added": 8
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00",
+   "fetched": 343,
+   "added": 1
   },
   "gdelt": {
    "ok": true,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "last_ok": "2026-11-19T23:46:07.814201+00:00",
-   "fetched": 34,
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00",
+   "fetched": 30,
    "added": 30
   },
   "ai": {
-   "ok": false,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "error": "503 Server Error: Service Unavailable for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent",
-   "last_ok": "2026-11-19T08:12:02.322805+00:00"
+   "ok": true,
+   "analyzed": 300,
+   "pending": 8184,
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "fetched": 300,
+   "added": 300,
+   "model": "gemini-3.5-flash-lite",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00"
   },
   "moderation": {
    "ok": true,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "last_ok": "2026-11-19T23:46:07.814201+00:00",
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00",
    "fetched": 5,
    "added": 2,
    "pending": 0
   },
   "demosphere": {
    "ok": true,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "last_ok": "2026-11-19T23:46:07.814201+00:00",
-   "fetched": 10,
-   "added": 0
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00",
+   "fetched": 12,
+   "added": 2
   },
   "mobilizon": {
    "ok": true,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "last_ok": "2026-11-19T23:46:07.814201+00:00",
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00",
    "fetched": 37,
-   "added": 2
+   "added": 0
   },
   "bluesky": {
    "ok": true,
-   "at": "2026-11-19T23:46:07.814201+00:00",
-   "last_ok": "2026-11-19T23:46:07.814201+00:00",
-   "fetched": 289,
-   "added": 107
+   "at": "2026-11-20T04:58:02.705494+00:00",
+   "last_ok": "2026-11-20T04:58:02.705494+00:00",
+   "fetched": 284,
+   "added": 11
   }
  },
  "ai": {
   "day": "2026-11-20",
-  "calls_today": 19,
+  "calls_today": 49,
   "model": "gemini-3.5-flash-lite"
  },
  "moderation": {
@@ -78,5 +83,5 @@
    "5": "cancelled"
   }
  },
- "gnews_cursor": 80
+ "gnews_cursor": 120
 }
