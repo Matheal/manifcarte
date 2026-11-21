@@ -711,6 +711,7 @@
 "Elysée et Matignon|Paris": null,
 "Entre Bastille et Nation|Paris": null,
 "Entre Chantiers Navals et le Miroir d'Eau|Bordeaux": null,
+"Entre Duchesse Anne et Foch|Nantes": null,
 "Esplanade de la Fraternité|Brest": [
 48.38984,
 -4.49992
@@ -2423,6 +2424,10 @@
 "Place des Invalides|Paris": [
 48.85869,
 2.32258
+],
+"Place des Salins|Clermont-Ferrand": [
+45.77089,
+3.08217
 ],
 "Place des Terreaux|Lyon": [
 45.76749,
@@ -4963,6 +4968,10 @@
 48.08838,
 -1.64243
 ],
+"lycée Roger-Claustres|Clermont-Ferrand": [
+45.79581,
+3.08718
+],
 "lycée Roland Garros|Le Tampon": [
 -21.27412,
 55.51968
@@ -6123,6 +6132,10 @@
 ],
 "place du Palais des Papes|Avignon": null,
 "place du Palais|Albertville": null,
+"place du Palais|Chambéry": [
+45.56826,
+5.91907
+],
 "place du Panthéon|Paris": [
 48.84645,
 2.34489
@@ -6183,6 +6196,10 @@
 "pont d'Avesnières|Laval": [
 48.05995,
 -0.76156
+],
+"pont d'Avignon|Avignon": [
+43.95375,
+4.80509
 ],
 "pont des Catalans|Toulouse": [
 43.60374,
@@ -6443,6 +6460,7 @@
 "rocade|Niort": null,
 "rond point d'Audincourt|Audincourt": null,
 "rond point de la résistance|Bourges": null,
+"rond point|Audincourt": null,
 "rond-point Gayeulles|Rennes": [
 48.12758,
 -1.65156
