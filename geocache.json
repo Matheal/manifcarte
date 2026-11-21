@@ -701,6 +701,7 @@
 "Dépôt bus d'Asnières|Asnières-sur-Seine": null,
 "Dépôt bus de Pleyel|Saint-Denis": null,
 "Dépôts bus de Pleyel et Asnières|Paris": null,
+"EFS|Quimper": null,
 "ENS de Lyon, salle 034 – D2 (Descartes)|Lyon": null,
 "Eaux-ClaireS|Grenoble": [
 45.17666,
@@ -709,6 +710,7 @@
 "Elysée et Beauvau|Paris": null,
 "Elysée et Matignon|Paris": null,
 "Entre Bastille et Nation|Paris": null,
+"Entre Chantiers Navals et le Miroir d'Eau|Bordeaux": null,
 "Esplanade de la Fraternité|Brest": [
 48.38984,
 -4.49992
@@ -1249,6 +1251,10 @@
 -1.15094
 ],
 "Le Madrillet et Pasteur|Mont-Saint-Aignan": null,
+"Le Marais|Paris": [
+48.86038,
+2.36074
+],
 "Le Motor|Toulouse": null,
 "Le Patio|Strasbourg": [
 48.57812,
@@ -2254,6 +2260,10 @@
 49.64243,
 -1.62343
 ],
+"Place République|Rennes": [
+48.10986,
+-1.67815
+],
 "Place Saint Michel|Bourgoin-Jallieu": [
 45.58934,
 5.27816
@@ -2322,6 +2332,10 @@
 "Place de la Bourse|Bordeaux": [
 44.84146,
 -0.57038
+],
+"Place de la Comédie|Lyon": [
+45.7677,
+4.83604
 ],
 "Place de la Comédie|Montpellier": [
 43.60869,
@@ -2446,6 +2460,10 @@
 "Polytech Tours|Tours": [
 47.36509,
 0.6849
+],
+"Pont Pasteur|Rennes": [
+48.11004,
+-1.67399
 ],
 "Pont urgence, passerelle tribunal|Nantes": null,
 "Pont-Neuf|Poitiers": [
@@ -3160,6 +3178,7 @@
 "autoroute A72|Saint-Étienne": null,
 "autoroute A9|Perpignan": null,
 "autoroute|Saint-Étienne": null,
+"autour de lycées et universités|Paris": null,
 "avenue Albert-1er-de-Belgique|Grenoble": [
 45.18195,
 5.72825
@@ -3418,6 +3437,10 @@
 "centre hospitalier|Lens": [
 50.4496,
 2.808
+],
+"centre hospitalier|Paray-le-Monial": [
+46.46419,
+4.10997
 ],
 "centre social Chorier-Berriat|Grenoble": null,
 "centre ville|Annecy": [
@@ -3745,6 +3768,10 @@
 -20.88633,
 55.45245
 ],
+"commissariat de Vitry|Vitry-sur-Seine": [
+48.78751,
+2.39013
+],
 "commissariat de police|Clermont-Ferrand": [
 45.78775,
 3.10769
@@ -3785,6 +3812,10 @@
 ],
 "conseil municipal|Bayonne": null,
 "conseil régional|Metz": null,
+"conservatoire|Nantes": [
+47.20671,
+-1.53304
+],
 "correspondance ligne 4 / ligne 3|Paris": null,
 "cours Fauriel|Saint-Étienne": [
 45.42822,
@@ -3985,6 +4016,10 @@
 48.84315,
 2.33534
 ],
+"faculté de sciences|Lorient": [
+47.74758,
+-3.39382
+],
 "faculté de sciences|Montpellier": [
 43.6321,
 3.86429
@@ -4127,6 +4162,10 @@
 ],
 "gymnase Sophie-Germain|Paris": null,
 "gymnase de l'Amicale laïque|Saint-Brieuc": null,
+"halle Iraty|Biarritz": [
+43.46421,
+-1.53599
+],
 "hotel de ville|Le Perreux-sur-Marne": null,
 "hyper-centre|Bourges": null,
 "hyper-centre|Caen": null,
@@ -5322,6 +5361,10 @@
 46.78501,
 4.85306
 ],
+"palais de justice|Chambéry": [
+45.56862,
+5.91887
+],
 "palais de justice|Grenoble": [
 45.19219,
 5.71113
@@ -5466,6 +5509,10 @@
 "place Foch|Épinal": [
 48.17225,
 6.44776
+],
+"place Franklin|Mulhouse": [
+47.7512,
+7.33342
 ],
 "place François|Cognac": [
 45.69316,
@@ -5706,6 +5753,10 @@
 "place d'Armes|Valenciennes": [
 50.41175,
 3.51742
+],
+"place d'Austerlitz|Strasbourg": [
+48.57796,
+7.75336
 ],
 "place d'Italie|Paris": [
 48.83094,
@@ -6249,6 +6300,10 @@
 46.66805,
 -1.42533
 ],
+"préfecture|Montpellier": [
+43.61143,
+3.87653
+],
 "préfecture|Paris": [
 48.84943,
 2.34835
@@ -6388,6 +6443,10 @@
 "rocade|Niort": null,
 "rond point d'Audincourt|Audincourt": null,
 "rond point de la résistance|Bourges": null,
+"rond-point Gayeulles|Rennes": [
+48.12758,
+-1.65156
+],
 "rond-point Guéna|Périgueux": null,
 "rond-point Jeanne-Rose|Le Creusot": null,
 "rond-point Kennedy|Saint-Raphaël": [
@@ -6491,6 +6550,10 @@
 "rue Magenta|Poitiers": [
 46.57729,
 0.33907
+],
+"rue Mégevand|Besançon": [
+47.23571,
+6.02385
 ],
 "rue Saint Georges|Nancy": [
 48.69239,
@@ -6600,6 +6663,10 @@
 44.10263,
 3.07644
 ],
+"sous-préfecture|Narbonne": [
+43.18434,
+3.00924
+],
 "sous-préfecture|Pontarlier": [
 46.90366,
 6.35395
@@ -6684,6 +6751,7 @@
 45.76064,
 4.84791
 ],
+"tribunal|Metz": null,
 "tribunal|Saint-Brieuc": [
 48.50873,
 -2.75187
