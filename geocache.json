@@ -641,6 +641,10 @@
 2.34616
 ],
 "Conseil des prud'hommes de montpellier|Montpellier": null,
+"Conseil départemental|Niort": [
+46.33156,
+-0.46067
+],
 "Conservatoire d'Orléans|Orléans": [
 47.83827,
 1.93715
@@ -1685,6 +1689,10 @@
 48.59895,
 -3.81765
 ],
+"Lycée Utrillo|Stains": [
+48.9532,
+2.36996
+],
 "Lycée Vaucanson|Grenoble": [
 45.17093,
 5.70843
@@ -2228,6 +2236,7 @@
 48.87706,
 2.58585
 ],
+"Place Carnot|Besançon": null,
 "Place Carnot|Nancy": [
 48.69344,
 6.17785
@@ -3319,6 +3328,10 @@
 "boulevard Victor-Hugo|Lille": [
 50.62265,
 3.06272
+],
+"boulevard Vincent-Gâche|Nantes": [
+47.20613,
+-1.54569
 ],
 "boulevard de la Liberté|Rennes": [
 48.10739,
@@ -5480,6 +5493,10 @@
 5.78498
 ],
 "parvis de la mairie|Montrouge": null,
+"parvis du tribunal de Paris|Paris": [
+48.89524,
+2.31083
+],
 "parvis ouest de la gare de Grenoble|Grenoble": null,
 "passage Baco|Nantes": [
 47.21396,
@@ -5564,6 +5581,10 @@
 "place Foch|Épinal": [
 48.17225,
 6.44776
+],
+"place Fontette|Caen": [
+49.18208,
+-0.37069
 ],
 "place Franklin|Mulhouse": [
 47.7512,
@@ -6226,6 +6247,10 @@
 47.26756,
 -2.35038
 ],
+"pont Arago|Perpignan": [
+42.7027,
+2.88528
+],
 "pont Battant|Besançon": [
 47.23997,
 6.02019
@@ -6318,6 +6343,10 @@
 "presqu'île|Lyon": [
 45.80837,
 4.94258
+],
+"promenade des Anglais|Nice": [
+43.68599,
+7.23748
 ],
 "près du Corum|Montpellier": null,
 "près du rond-point de Poitiers Sud|Poitiers": null,
@@ -6445,10 +6474,15 @@
 48.58239,
 7.757
 ],
+"quais de l'Odet|Quimper": null,
 "quais et ponts|Lyon": null,
 "quais|Lannion": [
 48.73133,
 -3.46086
+],
+"quais|Quimper": [
+47.99528,
+-4.10024
 ],
 "quartier de Moulins|Lille": [
 50.61938,
@@ -6771,6 +6805,7 @@
 43.30024,
 5.38586
 ],
+"station Total|Quimper": null,
 "station de métro Charles de Gaulle|Rennes": null,
 "station de métro|Vénissieux": null,
 "statue de Lamartine|Mâcon": [
