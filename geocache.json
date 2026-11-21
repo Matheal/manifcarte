@@ -190,6 +190,7 @@
 43.52842,
 5.45479
 ],
+"Boulevard Foch et place Gustave-Rivet|Grenoble": null,
 "Boulevard Sully|La Roche-sur-Yon": [
 46.68405,
 -1.43045
@@ -299,6 +300,10 @@
 2.4542
 ],
 "CRA de Vincennes|Vincennes": null,
+"Calandreta de Pau|Pau": [
+43.30114,
+-0.36753
+],
 "Campo Santo|Orléans": [
 47.90292,
 1.91024
@@ -505,6 +510,10 @@
 47.21484,
 -1.55794
 ],
+"Centre-ville|Nice": [
+43.69534,
+7.27454
+],
 "Centre-ville|Nîmes": [
 43.81783,
 4.34314
@@ -601,6 +610,10 @@
 "Cimetière de Thiais|Thiais": [
 48.76106,
 2.37649
+],
+"Cité des Congrès|Nantes": [
+47.21371,
+-1.54502
 ],
 "Cité judiciaire|Limoges": [
 45.83174,
@@ -703,6 +716,7 @@
 "Dépôts bus de Pleyel et Asnières|Paris": null,
 "EFS|Quimper": null,
 "ENS de Lyon, salle 034 – D2 (Descartes)|Lyon": null,
+"ENSA Paris-Est|Paris": null,
 "Eaux-ClaireS|Grenoble": [
 45.17666,
 5.70895
@@ -1165,6 +1179,10 @@
 4.08008
 ],
 "Jean-Jaures|Toulouse": [
+43.60562,
+1.44848
+],
+"Jean-Jaurès|Toulouse": [
 43.60562,
 1.44848
 ],
@@ -2657,6 +2675,10 @@
 5.91678
 ],
 "Quatre-voies Nantes-Brest|Quimperlé": null,
+"Quinconces|Bordeaux": [
+44.84549,
+-0.57407
+],
 "RD 906|Chalon-sur-Saône": [
 46.84748,
 4.94554
@@ -3170,6 +3192,10 @@
 ],
 "allées de Villote|Foix": null,
 "amphi D1|Grenoble": null,
+"anneau de vitesse|Grenoble": [
+45.18443,
+5.73667
+],
 "arrêt Tourelles Dauphine|Orléans": null,
 "autoroute A10|Tours": [
 47.47443,
@@ -3256,6 +3282,14 @@
 "boulevard André Sautel|La Rochelle": [
 46.16901,
 -1.12985
+],
+"boulevard Briand|Nantes": [
+47.25361,
+-1.51619
+],
+"boulevard Carnot|Angers": [
+47.4737,
+-0.54524
 ],
 "boulevard Delacourtie|Toulouse": [
 43.58397,
@@ -3507,6 +3541,10 @@
 48.38769,
 -4.48009
 ],
+"centre-ville|Brignoles": [
+43.28971,
+6.13738
+],
 "centre-ville|Caen": [
 49.18288,
 -0.36472
@@ -3541,6 +3579,10 @@
 "centre-ville|La Roche-sur-Yon": [
 46.66885,
 -1.43926
+],
+"centre-ville|La Rochelle": [
+46.15117,
+-1.1549
 ],
 "centre-ville|Le Havre": null,
 "centre-ville|Le Mans": [
@@ -5382,6 +5424,10 @@
 47.21779,
 -1.56333
 ],
+"palais de justice|Paris": [
+48.85566,
+2.34505
+],
 "palais de justice|Saint-Nazaire": [
 47.27908,
 -2.21509
@@ -6812,6 +6858,10 @@
 "université Paris Cité|Paris": [
 48.85147,
 2.34109
+],
+"université Paul Valéry|Montpellier": [
+43.63015,
+3.86953
 ],
 "université Paul-Valéry|Montpellier": [
 43.62976,
