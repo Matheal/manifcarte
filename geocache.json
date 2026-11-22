@@ -1273,6 +1273,10 @@
 46.1553,
 -1.15094
 ],
+"Le Liberté|Rennes": [
+48.10691,
+-1.67687
+],
 "Le Madrillet et Pasteur|Mont-Saint-Aignan": null,
 "Le Marais|Paris": [
 48.86038,
@@ -2953,6 +2957,10 @@
 48.85826,
 2.2945
 ],
+"Tribunal Administratif|Toulouse": [
+43.61216,
+1.45159
+],
 "Tribunal de Belfort|Belfort": [
 47.63949,
 6.86166
@@ -3459,6 +3467,7 @@
 6.17663
 ],
 "centrale d'achat de Leclerc|Reims": null,
+"centrale d'achat et d'approvisionnement Lecasud|Le Luc": null,
 "centre Assas|Paris": [
 48.84957,
 2.38612
@@ -3995,6 +4004,7 @@
 "devant la préfecture|Épinal": null,
 "devant la sous-préfecture|Vendôme": null,
 "devant le Sénat|Paris": null,
+"devant le conseil départemental|Niort": null,
 "devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
 "devant les mairies|Chambéry": null,
@@ -4246,6 +4256,7 @@
 ],
 "hypercentre|Lyon": null,
 "hypercentre|Marseille": null,
+"hypercentre|Montpellier": null,
 "hypercentre|Nancy": null,
 "hypercentre|Nantes": null,
 "hypercentre|Poitiers": null,
@@ -6837,6 +6848,10 @@
 43.61221,
 3.8707
 ],
+"tribunal de Pontoise|Pontoise": [
+49.05247,
+2.10048
+],
 "tribunal et gendarmerie|Niort": null,
 "tribunal judiciaire|Grenoble": [
 45.19193,
@@ -7087,5 +7102,9 @@
 48.11607,
 -1.60773
 ],
-"établissement François-Mauriac|Bordeaux": null
+"établissement François-Mauriac|Bordeaux": null,
+"île de Nantes|Nantes": [
+47.20713,
+-1.54604
+]
 }
