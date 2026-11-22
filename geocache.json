@@ -64,6 +64,10 @@
 4.34356
 ],
 "Agence régionale de santé|Tours": null,
+"Airbus|Toulouse": [
+43.65275,
+1.35678
+],
 "Aire de covoiturage Terrasses de la Sarre|Sarrebourg": [
 48.71852,
 7.04786
@@ -129,6 +133,10 @@
 43.65982,
 7.21375
 ],
+"Aéroport de Nice|Nice": [
+43.66242,
+7.20163
+],
 "BFMTV|Paris": null,
 "Barachois|Saint-Denis": [
 -20.87448,
@@ -169,6 +177,10 @@
 2.63923
 ],
 "Bellevue jusqu'au lycée Sud|Le Mans": null,
+"Bercy|Paris": [
+48.8392,
+2.38285
+],
 "Bibliothèque de Paris 8|Saint-Denis": null,
 "Bibliothèque de l'université Paris 8|Paris": null,
 "Bibliothèque universitaire|Grenoble": [
@@ -4266,6 +4278,7 @@
 "hypercentre|Poitiers": null,
 "hypercentre|Rennes": null,
 "hypercentre|Saint-Nazaire": null,
+"hypercentre|Toulouse": null,
 "hypermarché de Dillon|Fort-de-France": null,
 "hôpital de Hyères|Hyères": [
 43.03547,
@@ -5733,6 +5746,10 @@
 46.58283,
 0.34267
 ],
+"place Notre-Dame|Grenoble": [
+45.19278,
+5.73151
+],
 "place René Goblet|Amiens": [
 49.89126,
 2.30232
@@ -7044,6 +7061,10 @@
 "École supérieure d'art de Lorraine|Épinal": [
 48.17072,
 6.45303
+],
+"Écusson|Montpellier": [
+43.61084,
+3.87659
 ],
 "Île de Nantes|Nantes": [
 47.20713,
