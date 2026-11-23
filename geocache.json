@@ -3,6 +3,10 @@
 46.6756,
 -1.43516
 ],
+"20 avenue Youri Gagarine|Vitry-sur-Seine": [
+48.78751,
+2.39013
+],
 "21 Rue du Loup|Bordeaux": [
 44.83804,
 -0.57264
@@ -1265,6 +1269,10 @@
 49.89669,
 2.28296
 ],
+"La Parole Errante, 9 rue François Debergue|Montreuil": [
+48.85827,
+2.43917
+],
 "La Plaine|Marseille": [
 43.29509,
 5.38656
@@ -1742,6 +1750,10 @@
 2.36273
 ],
 "Lycée Voltaire et Gauguin|Orléans": null,
+"Lycée Yves-Thépot|Quimper": [
+47.98781,
+-4.08809
+],
 "Lycée d'Opunohu|Moorea-Maiao": [
 -17.52869,
 -149.83878
@@ -2027,6 +2039,10 @@
 ],
 "Manufacture des Tabacs à Jean-Macé|Lyon": null,
 "Manufacture des Tabacs|Lyon": [
+45.74803,
+4.86058
+],
+"Manufacture des tabacs|Lyon": [
 45.74803,
 4.86058
 ],
@@ -2836,6 +2852,7 @@
 48.86789,
 2.36388
 ],
+"SERMAC|Fort-de-France": null,
 "Saint-Cyprien|Toulouse": [
 43.59833,
 1.43458
@@ -2896,6 +2913,10 @@
 ],
 "Secteur Joliverie|Nantes": null,
 "Site de production Bosch|Vendôme": null,
+"Site pétrochimique|Berre-l'Étang": [
+43.50223,
+5.19102
+],
 "Six-Croix|Donges": [
 47.33978,
 -2.09326
@@ -3983,6 +4004,7 @@
 "devant la mairie de Nîmes|Nîmes": null,
 "devant la mairie de Saint-Denis|Saint-Denis": null,
 "devant la mairie|Abbeville": null,
+"devant la mairie|Aix-en-Provence": null,
 "devant la mairie|Aix-les-Bains": null,
 "devant la mairie|Angers": null,
 "devant la mairie|Angoulême": null,
@@ -5260,6 +5282,7 @@
 49.02995,
 2.33937
 ],
+"lycée et collège de Bandrélé|Bandrele": null,
 "lycée polyvalent Mermoz|Montpellier": [
 43.61107,
 3.89235
@@ -6904,6 +6927,7 @@
 49.05247,
 2.10048
 ],
+"tribunal de Périgueux|Périgueux": null,
 "tribunal et gendarmerie|Niort": null,
 "tribunal judiciaire|Grenoble": [
 45.19193,
