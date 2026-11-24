@@ -23,6 +23,10 @@
 48.90409,
 2.3907
 ],
+"42 rue Paul Duez|Lille": [
+50.63179,
+3.07526
+],
 "5 Rue de l'Épée|Lyon": [
 45.75683,
 4.84336
@@ -767,6 +771,14 @@
 49.0837,
 6.2438
 ],
+"Fac des Tanneurs|Tours": [
+47.39596,
+0.6806
+],
+"Faculté Jean Monnet|Sceaux": [
+48.78203,
+2.28554
+],
 "Faculté de Droit|Rennes": [
 48.11793,
 -1.66978
@@ -980,6 +992,10 @@
 "Hôpital de Rangueil|Toulouse": [
 43.55273,
 1.46876
+],
+"Hôpital de la Cavale Blanche|Brest": [
+48.4012,
+-4.52826
 ],
 "Hôpital de la Pitié-Salpêtrière|Paris": [
 48.83635,
@@ -1457,6 +1473,10 @@
 48.08408,
 -1.69204
 ],
+"Lycée Chaptal|Paris": [
+48.88129,
+2.31991
+],
 "Lycée Charles Baudelaire|Annecy": [
 45.89661,
 6.09507
@@ -1516,6 +1536,10 @@
 "Lycée Faidherbe|Lille": [
 50.61484,
 3.07842
+],
+"Lycée Faÿs|Villeurbanne": [
+45.7621,
+4.90381
 ],
 "Lycée François 1er|Le Havre": [
 49.4961,
@@ -2122,6 +2146,7 @@
 44.83114,
 -0.6568
 ],
+"Métro Jean-Jaurès|Toulouse": null,
 "Nanterre-Université|Nanterre": [
 48.90105,
 2.21336
@@ -2800,6 +2825,7 @@
 47.97866,
 0.21342
 ],
+"Rond Point de l'Egalité|Nanterre": null,
 "Rond point du Casino|Boulogne-sur-Mer": null,
 "Rond-Point des Champs-Élysées|Paris": [
 48.86957,
@@ -2897,6 +2923,7 @@
 ],
 "Sciences Po Menton|Menton": null,
 "Sciences Po Strasbourg|Strasbourg": null,
+"Sciences Po Toulouse|Toulouse": null,
 "Sciences Po|Caen": [
 49.18411,
 -0.36755
@@ -3030,6 +3057,10 @@
 "Tribunal de Lyon|Lyon": [
 45.76189,
 4.82801
+],
+"Tribunal judiciaire de Lyon|Lyon": [
+45.76064,
+4.84791
 ],
 "Tribunal judiciaire de Paris|Paris": null,
 "Tribunal judiciaire|Bobigny": [
@@ -3862,6 +3893,10 @@
 "collège Jaurès|Montfermeil": [
 48.89735,
 2.55925
+],
+"collège Jean Moulin|Aubervilliers": [
+48.90775,
+2.39162
 ],
 "collège Jean-Dasté|Saint-Étienne": [
 45.42869,
@@ -4986,6 +5021,10 @@
 44.82729,
 -0.58465
 ],
+"lycée Malherbe|Caen": [
+49.17512,
+-0.3724
+],
 "lycée Malraux|Biarritz": [
 43.48559,
 -1.54672
@@ -5129,6 +5168,10 @@
 4.02639
 ],
 "lycée Rosa-Parks|Saint-Denis": null,
+"lycée Saint-Charles|Marseille": [
+43.30527,
+5.39132
+],
 "lycée Saint-Cricq|Pau": [
 43.29909,
 -0.35908
@@ -5303,6 +5346,10 @@
 "lycée Édouard-Herriot|Lyon": [
 45.76539,
 4.84517
+],
+"lycée Élisa Lemonnier|Paris": [
+48.83585,
+2.41066
 ],
 "lycées Jacques-Dolle et Léonard-de-Vinci|Antibes": null,
 "lycées|Chelles": null,
@@ -6809,12 +6856,14 @@
 "rues adjacentes à la place de la République|Paris": null,
 "rues commerçantes|La Baule-Escoublac": null,
 "rues commerçantes|Épinal": null,
+"salle Voltaire|Aix-en-Provence": null,
 "salle de la Bourse|Strasbourg": null,
 "services de l'Éducation nationale|Niort": null,
 "shop park Phare de l'Europe|Brest": [
 48.40802,
 -4.46434
 ],
+"site d'Airbus|Blagnac": null,
 "siège de SNCF Réseau|Paris": null,
 "siège de Saint-Étienne Métropole|Saint-Étienne": null,
 "siège de la Région Grand Est|Strasbourg": null,
