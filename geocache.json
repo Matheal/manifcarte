@@ -35,6 +35,10 @@
 47.22003,
 -1.5558
 ],
+"59 boulevard Macdonald|Paris": [
+48.89557,
+2.39342
+],
 "8 rue Sergent Bobillot|Grenoble": [
 45.1824,
 5.72107
@@ -1206,6 +1210,7 @@
 48.86034,
 2.31468
 ],
+"Issanka|Montpellier": null,
 "Jardin de la Fontaine|Nîmes": [
 43.83777,
 4.34988
@@ -1399,6 +1404,7 @@
 43.18683,
 5.61789
 ],
+"Lyc&&e Jean-Monnet|Montpellier": null,
 "Lycée Albert-Camus|Firminy": [
 45.38834,
 4.28148
@@ -2554,6 +2560,7 @@
 47.47128,
 -0.54493
 ],
+"Place du Panth&&on|Paris": null,
 "Place du Président Édouard Herriot|Paris": [
 48.86087,
 2.3191
@@ -4209,6 +4216,10 @@
 45.81758,
 1.23054
 ],
+"faculté des Tanneurs|Tours": [
+47.3964,
+0.68191
+],
 "faculté du Mirail|Toulouse": null,
 "facultés|Tours": null,
 "faculté|Caen": null,
@@ -5863,6 +5874,10 @@
 49.89126,
 2.30232
 ],
+"place René-Cassin|Draguignan": [
+43.53752,
+6.46291
+],
 "place Roland|Thionville": [
 49.36473,
 6.1719
@@ -7103,6 +7118,7 @@
 -1.62707
 ],
 "usine Bluebus|Quimper": null,
+"usine Bosch|Vendôme": null,
 "usine Durkopp|Vierzon": null,
 "usine Schaeffler|Foix": null,
 "usine Speichim|Montluçon": null,
