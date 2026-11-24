@@ -1848,6 +1848,10 @@
 48.93425,
 2.50006
 ],
+"Mairie d'Orléans|Orléans": [
+47.90262,
+1.90899
+],
 "Mairie de Nice|Nice": [
 43.74312,
 7.3137
@@ -2009,6 +2013,7 @@
 49.44053,
 1.14479
 ],
+"Mairie|Saint-Avé": null,
 "Mairie|Saint-Brieuc": [
 48.40768,
 -2.81823
@@ -5217,6 +5222,7 @@
 2.46258
 ],
 "lycée Suger|Saint-Denis": null,
+"lycée Suzanne|Vincennes": null,
 "lycée Sévigné|Tourcoing": [
 50.73123,
 3.16393
@@ -7209,6 +7215,10 @@
 "à la mairie|Dijon": [
 47.42931,
 4.94428
+],
+"école Achille-Payeur|Sainte-Savine": [
+48.29351,
+4.05705
 ],
 "école Clément-Roassal|Nice": [
 43.70826,
