@@ -112,6 +112,10 @@
 43.61054,
 1.43951
 ],
+"Assemblée Nationale|Paris": [
+48.86178,
+2.31798
+],
 "Assemblée nationale|Paris": [
 48.86178,
 2.31798
@@ -205,6 +209,10 @@
 45.90197,
 6.12699
 ],
+"Bosch|Vendôme": [
+47.77904,
+1.075
+],
 "Bouffay ou place Bretagne|Nantes": null,
 "Bouffay|Nantes": [
 47.21495,
@@ -280,6 +288,10 @@
 ],
 "CCAS|Amiens": null,
 "CCC OD|Tours": null,
+"CCCOD|Tours": [
+47.39569,
+0.68523
+],
 "CCI de Brive|Brive-la-Gaillarde": null,
 "CCVA|Villeurbanne": [
 45.76761,
@@ -836,6 +848,10 @@
 "Gare Maritime|Nantes": [
 47.20559,
 -1.57307
+],
+"Gare Part-Dieu|Lyon": [
+45.76161,
+4.85744
 ],
 "Gare SNCF|Voiron": [
 45.3643,
@@ -2941,6 +2957,10 @@
 -0.36755
 ],
 "Sciences Po|Menton": null,
+"Sciences Po|Nancy": [
+48.68254,
+6.19048
+],
 "Sciences Po|Paris": [
 48.8539,
 2.32902
@@ -3585,6 +3605,7 @@
 48.68505,
 2.40858
 ],
+"centre d'encaissement des Finances publiques|Rennes": null,
 "centre de Lyon|Lyon": [
 45.69976,
 4.92092
@@ -3613,6 +3634,7 @@
 4.10997
 ],
 "centre social Chorier-Berriat|Grenoble": null,
+"centre unique d'encaissement|Rennes": null,
 "centre ville|Annecy": [
 45.91566,
 6.09125
@@ -5222,6 +5244,7 @@
 2.46258
 ],
 "lycée Suger|Saint-Denis": null,
+"lycée Suzanne-et-Michel Serres|Vincennes": null,
 "lycée Suzanne|Vincennes": null,
 "lycée Sévigné|Tourcoing": [
 50.73123,
@@ -5522,6 +5545,7 @@
 46.51086,
 0.35061
 ],
+"mairie|Saint-Avé": null,
 "mairie|Saint-Lô": [
 49.22862,
 -1.13656
@@ -6385,6 +6409,10 @@
 46.04614,
 4.07104
 ],
+"place du château|Chambéry": [
+45.56478,
+5.91895
+],
 "place du palais de justice|Chambéry": [
 45.56826,
 5.91907
@@ -6887,6 +6915,7 @@
 "site d'Airbus|Blagnac": null,
 "siège de SNCF Réseau|Paris": null,
 "siège de Saint-Étienne Métropole|Saint-Étienne": null,
+"siège de Suez|Puteaux": null,
 "siège de la Région Grand Est|Strasbourg": null,
 "siège de la Région|Strasbourg": null,
 "siège de la SNCF|Saint-Denis": null,
@@ -6989,6 +7018,7 @@
 "traversée urbaine Taittinger|Reims": null,
 "traversée urbaine de Reims|Reims": null,
 "traversée urbaine|Reims": null,
+"tribunal d'Alençon|Alençon": null,
 "tribunal de Besançon|Besançon": [
 47.2317,
 6.02511
@@ -7098,6 +7128,10 @@
 "université du Mans|Le Mans": [
 48.01364,
 0.15905
+],
+"universités|Lyon": [
+45.75153,
+4.83645
 ],
 "université|La Rochelle": [
 46.13869,
@@ -7212,6 +7246,7 @@
 48.8535,
 2.34839
 ],
+"à côté de l'église de l'Albinque|Castres": null,
 "à la mairie|Dijon": [
 47.42931,
 4.94428
