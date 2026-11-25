@@ -1678,6 +1678,10 @@
 44.86798,
 -0.52647
 ],
+"Lycée Louis Armand|Chambéry": [
+45.59497,
+5.92028
+],
 "Lycée Louis Berthollet|Annecy": null,
 "Lycée Malherbe et Lycée Fresnel|Caen": null,
 "Lycée Malherbe|Caen": [
@@ -1790,6 +1794,10 @@
 "Lycée Vaucanson|Grenoble": [
 45.17093,
 5.70843
+],
+"Lycée Vaugelas|Chambéry": [
+45.56775,
+5.91741
 ],
 "Lycée Victor-Hugo|Paris": [
 48.85767,
@@ -4214,6 +4222,7 @@
 48.78203,
 2.28554
 ],
+"faculté de Lettres|Besançon": null,
 "faculté de Sciences|Montpellier": [
 43.6321,
 3.86429
@@ -4788,6 +4797,10 @@
 "lycée Edouard-Herriot|Lyon": [
 45.76539,
 4.84517
+],
+"lycée Emile Zola|Aix-en-Provence": [
+43.51076,
+5.45977
 ],
 "lycée Escoffier|Cagnes-sur-Mer": [
 43.67084,
@@ -6099,6 +6112,10 @@
 "place de l'Hôtel-de-Ville|Le Havre": [
 49.49284,
 0.10926
+],
+"place de l'Hôtel|Chalon-sur-Saône": [
+46.78079,
+4.85273
 ],
 "place de l'Opéra|Toulon": null,
 "place de l'hôtel de ville|Paris": [
