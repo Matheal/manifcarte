@@ -223,6 +223,10 @@
 5.45479
 ],
 "Boulevard Foch et place Gustave-Rivet|Grenoble": null,
+"Boulevard Saint-Michel|Paris": [
+48.84285,
+2.33839
+],
 "Boulevard Sully|La Roche-sur-Yon": [
 46.68405,
 -1.43045
@@ -1367,6 +1371,10 @@
 "Le Phare|Chambéry": [
 45.58367,
 5.8997
+],
+"Le Pharo|Marseille": [
+43.2913,
+5.35949
 ],
 "Le Port|Vannes": [
 47.65337,
@@ -3402,6 +3410,7 @@
 43.70339,
 7.26612
 ],
+"avenue Ledru Rollin|Lyon": null,
 "avenue Marius-Berroir|Chambéry": [
 45.56564,
 5.93377
@@ -3960,6 +3969,7 @@
 45.65673,
 4.9012
 ],
+"commissariat central|Toulon": null,
 "commissariat d'Aubervilliers|Aubervilliers": [
 48.91442,
 2.38769
@@ -5567,6 +5577,10 @@
 47.61144,
 6.21526
 ],
+"maison d'arrêt de Saint-Brieuc|Saint-Brieuc": [
+48.50838,
+-2.75006
+],
 "maison des syndicats|Chalon-sur-Saône": [
 46.78685,
 4.85899
@@ -5724,6 +5738,10 @@
 "place Bonet|Alençon": [
 48.43143,
 0.09463
+],
+"place Brigouleix|Tulle": [
+45.26409,
+1.7673
 ],
 "place Broglie|Strasbourg": [
 48.58475,
@@ -5901,6 +5919,7 @@
 45.75186,
 4.84322
 ],
+"place Mazas|Lyon": null,
 "place New York|Angoulême": [
 45.64773,
 0.15427
@@ -6471,6 +6490,7 @@
 1.89554
 ],
 "pont autoroutier de Givors|Givors": null,
+"pont d'Austerlitz|Lyon": null,
 "pont d'Avesnières|Laval": [
 48.05995,
 -0.76156
@@ -7061,6 +7081,10 @@
 "tribunal judiciaire|Toulouse": [
 43.59374,
 1.44513
+],
+"tribunal|Arras": [
+50.28999,
+2.77592
 ],
 "tribunal|Lyon": [
 45.76064,
