@@ -659,6 +659,7 @@
 48.76106,
 2.37649
 ],
+"Cité Jaune|Angers": null,
 "Cité des Congrès|Nantes": [
 47.21371,
 -1.54502
@@ -683,11 +684,13 @@
 48.88845,
 2.41793
 ],
+"Collège Pierre de Geyter|Saint-Denis": null,
 "Collège Sylviane Telchid|Baie-Mahault": null,
 "Collège de France|Paris": [
 48.84932,
 2.34616
 ],
+"Commissariat central|Strasbourg": null,
 "Conseil des prud'hommes de montpellier|Montpellier": null,
 "Conseil départemental|Niort": [
 46.33156,
@@ -776,6 +779,10 @@
 "Ecusson|Montpellier": [
 43.61084,
 3.87659
+],
+"Ehpad|Saint-André": [
+-20.95337,
+55.65366
 ],
 "Elysée et Beauvau|Paris": null,
 "Elysée et Matignon|Paris": null,
@@ -1697,6 +1704,10 @@
 49.17512,
 -0.3724
 ],
+"Lycée Marie-Curie|Échirolles": [
+45.14597,
+5.71817
+],
 "Lycée Mendès-France|La Roche-sur-Yon": [
 46.66724,
 -1.44738
@@ -1724,6 +1735,10 @@
 "Lycée Ozenne|Toulouse": [
 43.60969,
 1.44185
+],
+"Lycée Pablo-Neruda|Saint-Martin-d'Hères": [
+45.17425,
+5.76167
 ],
 "Lycée Pablo-Neruda|Saint-Égrève": null,
 "Lycée Pasteur|Besançon": [
@@ -1772,6 +1787,7 @@
 48.39662,
 -4.49073
 ],
+"Lycée Sonia Francius|Saint-Laurent-du-Maroni": null,
 "Lycée Sophie Germain|Paris": [
 48.85471,
 2.35768
@@ -1856,6 +1872,7 @@
 "Lycées Léonard de Vinci, Saint-Rémi et Jean-Moulin|Roubaix": null,
 "Lycées René Cassin et Couffignal|Strasbourg": null,
 "Lycées Rimbaud et Latécoère|Istres": null,
+"Lycées Vaucanson, Mounier, Les Eaux-Claires, Champollion, Argouges, Stendhal, Lo|Grenoble": null,
 "Lycée|Belley": [
 45.76152,
 5.69166
@@ -1884,6 +1901,10 @@
 "Mairie d'Orléans|Orléans": [
 47.90262,
 1.90899
+],
+"Mairie de Montreuil|Montreuil": [
+48.8626,
+2.44157
 ],
 "Mairie de Nice|Nice": [
 43.74312,
@@ -2097,6 +2118,10 @@
 14.606,
 -61.06414
 ],
+"Maison du Don|Quimper": [
+47.98434,
+-4.09713
+],
 "Maison du Peuple|Belfort": [
 47.64147,
 6.85137
@@ -2148,6 +2173,10 @@
 "Ministère de l'Intérieur|Paris": [
 48.87197,
 2.31735
+],
+"Miroir d'Eau|Nantes": [
+47.21503,
+-1.54908
 ],
 "Miroir d'eau|Nantes": [
 47.21503,
@@ -2589,6 +2618,10 @@
 "Place des Terreaux|Lyon": [
 45.76749,
 4.83349
+],
+"Place du 1er Mai|Clermont-Ferrand": [
+45.78635,
+3.09892
 ],
 "Place du 8 Septembre|Besançon": [
 47.23806,
@@ -3186,6 +3219,10 @@
 "Université Toulouse Capitole|Toulouse": [
 43.60738,
 1.43815
+],
+"Université Toulouse Jean Jaurès|Toulouse": [
+43.57838,
+1.401
 ],
 "Université Toulouse-Jean-Jaurès|Toulouse": [
 43.57838,
@@ -3912,6 +3949,10 @@
 45.93699,
 6.07841
 ],
+"centre|Lille": [
+50.63133,
+3.07468
+],
 "château d'Angers|Angers": [
 47.47007,
 -0.56007
@@ -3983,6 +4024,10 @@
 49.18888,
 6.90211
 ],
+"commissariat de Grenoble|Grenoble": [
+45.1649,
+5.73104
+],
 "commissariat de La Courneuve|La Courneuve": [
 48.92841,
 2.39014
@@ -3991,6 +4036,10 @@
 "commissariat de Saint-Denis|Saint-Denis": [
 -20.88633,
 55.45245
+],
+"commissariat de Saint-Dié-des-Vosges|Saint-Dié-des-Vosges": [
+48.28769,
+6.94035
 ],
 "commissariat de Vitry|Vitry-sur-Seine": [
 48.78751,
@@ -4005,6 +4054,10 @@
 2.41483
 ],
 "commissariat du 5e arrondissement, 4 rue de la Montagne St-Geneviève|Paris": null,
+"commissariat|Angers": [
+47.48571,
+-0.52306
+],
 "commissariat|Besançon": [
 47.2324,
 6.02027
@@ -4012,6 +4065,18 @@
 "commissariat|Brest": [
 48.389,
 -4.4863
+],
+"commissariat|Carcassonne": [
+43.20582,
+2.3299
+],
+"commissariat|Chalon-sur-Saône": [
+46.7879,
+4.84969
+],
+"commissariat|Cherbourg-en-Cotentin": [
+49.6388,
+-1.61711
 ],
 "commissariat|Clermont-Ferrand": [
 45.76766,
@@ -4026,6 +4091,10 @@
 -3.45163
 ],
 "commissariat|Lorient": null,
+"commissariat|Niort": [
+46.32445,
+-0.46464
+],
 "commissariat|Paris": [
 48.88086,
 2.36629
@@ -4033,6 +4102,10 @@
 "commissariat|Roubaix": [
 50.69009,
 3.18689
+],
+"commissariat|Thouars": [
+46.98327,
+-0.22347
 ],
 "conseil municipal|Bayonne": null,
 "conseil régional|Metz": null,
@@ -4160,6 +4233,7 @@
 "devant la préfecture|Épinal": null,
 "devant la sous-préfecture|Vendôme": null,
 "devant le Sénat|Paris": null,
+"devant le commissariat|Dijon": null,
 "devant le conseil départemental|Niort": null,
 "devant le lycée|Saint-Denis": null,
 "devant le tribunal|Foix": null,
@@ -4209,6 +4283,7 @@
 1.3574
 ],
 "esplanade des tanneurs|Tours": null,
+"esplanade du métro Jean-Jaurès|Toulouse": null,
 "fac d'Avignon|Avignon": [
 43.94782,
 4.8102
@@ -4437,6 +4512,10 @@
 49.53765,
 5.7816
 ],
+"hôpital de Montauban|Montauban": [
+44.02318,
+1.35092
+],
 "hôpital du Mans|Le Mans": [
 48.01541,
 0.17774
@@ -4447,6 +4526,7 @@
 ],
 "hôtel de l'Impérator|Nîmes": null,
 "hôtel de luxe L'Impérator|Nîmes": null,
+"hôtel de police|Clermont-Ferrand": null,
 "hôtel de police|Nancy": [
 48.68808,
 6.1937
@@ -5244,6 +5324,10 @@
 4.02639
 ],
 "lycée Rosa-Parks|Saint-Denis": null,
+"lycée Saint Exupéry|Créteil": [
+48.78346,
+2.46258
+],
 "lycée Saint-Charles|Marseille": [
 43.30527,
 5.39132
@@ -5749,6 +5833,10 @@
 "place Aristide Briand|Lorient": [
 47.74829,
 -3.36384
+],
+"place Arnaud Bernard|Toulouse": [
+43.61087,
+1.439
 ],
 "place Bellecour|Lyon": [
 45.75766,
@@ -6591,6 +6679,7 @@
 47.65033,
 -2.75857
 ],
+"poste des Quatre chemins|Pantin": null,
 "prefecture de Nantes|Nantes": [
 47.21976,
 -1.55488
@@ -6752,6 +6841,10 @@
 "raffinerie de Normandie|Gonfreville-l'Orcher": [
 49.48802,
 0.24084
+],
+"rectorat de Paris|Paris": [
+48.88455,
+2.39763
 ],
 "rectorat de Reims|Reims": [
 49.2444,
@@ -7083,6 +7176,10 @@
 "traversée urbaine Taittinger|Reims": null,
 "traversée urbaine de Reims|Reims": null,
 "traversée urbaine|Reims": null,
+"tribunal administratif|Toulouse": [
+43.61216,
+1.45159
+],
 "tribunal d'Alençon|Alençon": null,
 "tribunal de Besançon|Besançon": [
 47.2317,
