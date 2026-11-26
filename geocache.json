@@ -1346,6 +1346,7 @@
 48.0877,
 -1.65431
 ],
+"Le Corbusier/Croix de Rezé|Rezé": null,
 "Le Corum|Montpellier": [
 43.61317,
 3.88216
@@ -4644,6 +4645,10 @@
 50.61683,
 3.06727
 ],
+"lycée Balzac|Tours": [
+47.38722,
+0.68728
+],
 "lycée Baudelaire|Annecy": [
 45.89659,
 6.09691
@@ -4887,6 +4892,10 @@
 49.03016,
 2.34086
 ],
+"lycée Gimond|Aubenas": [
+44.61945,
+4.38269
+],
 "lycée Grandmont|Tours": [
 47.36061,
 0.70224
@@ -4900,6 +4909,7 @@
 48.77035,
 2.47184
 ],
+"lycée Henri-Laurens|Saint-Vallier": null,
 "lycée Henri-Loritz|Nancy": [
 48.69074,
 6.19228
@@ -4925,6 +4935,7 @@
 48.88191,
 2.34325
 ],
+"lycée Jacques Feyder|Bobigny": null,
 "lycée Jacques-Audiberti|Antibes": null,
 "lycée Jacques-Monod|Saint-Jean-de-Braye": [
 47.91066,
@@ -4977,6 +4988,10 @@
 "lycée Jean-Jaurès|Rennes": [
 48.09195,
 -1.68802
+],
+"lycée Jean-Macé|Rennes": [
+48.11709,
+-1.67045
 ],
 "lycée Jean-Mermoz|Montpellier": [
 43.61166,
@@ -5273,6 +5288,10 @@
 50.73123,
 3.16393
 ],
+"lycée Talensac|Nantes": [
+47.2222,
+-1.55842
+],
 "lycée Thiers|Marseille": [
 43.29757,
 5.38308
@@ -5413,6 +5432,10 @@
 "lycée Élisa Lemonnier|Paris": [
 48.83585,
 2.41066
+],
+"lycée Émile-Zola|Aix-en-Provence": [
+43.51076,
+5.45977
 ],
 "lycées Jacques-Dolle et Léonard-de-Vinci|Antibes": null,
 "lycées|Chelles": null,
@@ -6112,6 +6135,11 @@
 43.23366,
 0.07384
 ],
+"place de l'Albinque|Castres": [
+43.60942,
+2.23688
+],
+"place de l'Albin|Castres": null,
 "place de l'Amérique Latine|Saint-Nazaire": [
 47.276,
 -2.20508
@@ -7299,6 +7327,10 @@
 "école Clément-Roassal|Nice": [
 43.70826,
 7.2584
+],
+"école Célestin-Freinet|Achères": [
+48.96121,
+2.06179
 ],
 "école Henri Bassis|Champigny-sur-Marne": [
 48.81082,
