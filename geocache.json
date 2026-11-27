@@ -1123,6 +1123,7 @@
 -2.21367
 ],
 "Hôtel de police, boulevard de la Tour d'Auvergne|Rennes": null,
+"Hôtel de police|Le Havre": null,
 "Hôtel de ville|Arras": [
 50.29119,
 2.77713
@@ -1138,6 +1139,10 @@
 "Hôtel de ville|Colmar": [
 48.08738,
 7.27796
+],
+"Hôtel de ville|Le Havre": [
+49.49435,
+0.10951
 ],
 "Hôtel de ville|Lille": [
 50.61957,
@@ -2138,6 +2143,10 @@
 48.778,
 2.2538
 ],
+"Maison des femmes|Besançon": [
+47.25588,
+6.01716
+],
 "Maison des syndicats|Fort-de-France": [
 14.606,
 -61.06414
@@ -2922,6 +2931,10 @@
 47.3185,
 5.03424
 ],
+"Rectorat|Grenoble": [
+45.18767,
+5.73742
+],
 "Rectorat|Toulouse": [
 43.57765,
 1.44575
@@ -3236,6 +3249,10 @@
 47.31331,
 5.06886
 ],
+"Université Jean-Jaurès|Toulouse": [
+43.57838,
+1.401
+],
 "Université Lyon 2|Lyon": [
 45.75161,
 4.83726
@@ -3385,6 +3402,7 @@
 48.58274,
 7.76387
 ],
+"Usine Bosch|Vendôme": null,
 "Usine Euroapi|Saint-Aubin-lès-Elbeuf": null,
 "VRU|Chambéry": [
 45.61824,
@@ -4170,6 +4188,10 @@
 "commissariat|Thouars": [
 46.98327,
 -0.22347
+],
+"commissariat|Tours": [
+47.39145,
+0.6863
 ],
 "conseil municipal|Bayonne": null,
 "conseil régional|Metz": null,
@@ -5070,6 +5092,10 @@
 48.77035,
 2.47184
 ],
+"lycée Guy Mollet|Arras": [
+50.28048,
+2.79558
+],
 "lycée Henri-Laurens|Saint-Vallier": null,
 "lycée Henri-Loritz|Nancy": [
 48.69074,
@@ -5722,6 +5748,10 @@
 49.26116,
 2.47305
 ],
+"mairie|Dax": [
+43.58642,
+-0.9611
+],
 "mairie|Dijon": [
 47.29126,
 5.10211
@@ -5885,6 +5915,7 @@
 45.18488,
 5.78498
 ],
+"parvis de la mairie|Mont-de-Marsan": null,
 "parvis de la mairie|Montrouge": null,
 "parvis du tribunal de Paris|Paris": [
 48.89524,
@@ -7087,6 +7118,10 @@
 47.23571,
 6.02385
 ],
+"rue Nationale|Lille": [
+50.63548,
+3.05892
+],
 "rue Saint Georges|Nancy": [
 48.69239,
 6.18761
@@ -7566,6 +7601,10 @@
 "école élémentaire Jean Beaudoin|Chécy": [
 47.89176,
 2.02621
+],
+"école élémentaire Pierre-de-Coubertin|Avignon": [
+43.93084,
+4.84654
 ],
 "écoles primaires|Saint-Joseph": null,
 "écoles|Rennes": [
