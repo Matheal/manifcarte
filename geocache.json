@@ -822,6 +822,10 @@
 48.11793,
 -1.66978
 ],
+"Faculté de Limoges|Limoges": [
+45.81319,
+1.23455
+],
 "Faculté de lettres|Besançon": null,
 "Faculté de lettres|Metz": null,
 "Faculté de lettres|Pau": null,
@@ -2576,6 +2580,10 @@
 47.92922,
 -2.3968
 ],
+"Place de la Motte|Châteaubriant": [
+47.71839,
+-1.37798
+],
 "Place de la Nation|Paris": [
 48.84837,
 2.39587
@@ -2685,6 +2693,10 @@
 48.11004,
 -1.67399
 ],
+"Pont du 8 mai 1945|Pornic": [
+47.11484,
+-2.0986
+],
 "Pont urgence, passerelle tribunal|Nantes": null,
 "Pont-Neuf|Poitiers": [
 46.57397,
@@ -2782,6 +2794,10 @@
 "Prison de la santé|Paris": [
 48.83388,
 2.33974
+],
+"Prison des Baumettes|Marseille": [
+43.23248,
+5.41474
 ],
 "Promenade d'Agde|Agde": [
 43.31405,
@@ -2901,6 +2917,7 @@
 48.86176,
 2.35379
 ],
+"Rd Pt Oudairie|La Roche-sur-Yon": null,
 "Rectorat|Dijon": [
 47.3185,
 5.03424
@@ -3001,6 +3018,10 @@
 "Sainte Soline|Niort": [
 46.30791,
 -0.43762
+],
+"Sainte-Anne|Brest": [
+48.36237,
+-4.55404
 ],
 "Salle 034 – D2 (Descartes)|Lyon": null,
 "Sanofi|Ploërmel": [
@@ -3653,6 +3674,7 @@
 49.11994,
 6.16135
 ],
+"campus du Tertre et de la Lombarderie|Nantes": null,
 "campus du Tertre|Nantes": [
 47.24872,
 -1.55261
@@ -4498,6 +4520,10 @@
 47.7506,
 7.29401
 ],
+"gare|Saint-Nazaire": [
+47.28664,
+-2.21116
+],
 "gare|Tours": [
 47.38982,
 0.69438
@@ -4830,6 +4856,10 @@
 "lycée Camille-Claudel|Caen": [
 49.20402,
 -0.3851
+],
+"lycée Camille-Jullian|Bordeaux": [
+44.84558,
+-0.59054
 ],
 "lycée Camille-Pissarro|Pontoise": [
 49.05589,
@@ -6815,6 +6845,7 @@
 48.17267,
 6.44896
 ],
+"présidence de l'Université|Limoges": null,
 "pyramide du Louvre|Paris": [
 48.86099,
 2.33584
@@ -7531,6 +7562,10 @@
 "école supérieure d'art et design Le Havre-Rouen|Le Havre": [
 49.49766,
 0.13225
+],
+"école élémentaire Jean Beaudoin|Chécy": [
+47.89176,
+2.02621
 ],
 "écoles primaires|Saint-Joseph": null,
 "écoles|Rennes": [
