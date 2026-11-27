@@ -104,6 +104,7 @@
 49.89417,
 2.2957
 ],
+"Amphi Pacault|Lyon": null,
 "Aquarium de Saint-Malo|Saint-Malo": [
 48.6219,
 -1.99365
@@ -383,6 +384,7 @@
 "Campus Lettres et IUT Charlemagne|Nancy": null,
 "Campus Lettres et Sciences Humaines|Nancy": null,
 "Campus Pasteur, Mont-Saint-Aignan et Madrillet|Rouen": null,
+"Campus de Carlone|Nice": null,
 "Campus de Jussieu|Paris": null,
 "Campus de Saint-Denis|Saint-Denis": [
 -20.90005,
@@ -691,6 +693,10 @@
 2.34616
 ],
 "Commissariat central|Strasbourg": null,
+"Commissariat|Boulogne-sur-Mer": [
+50.72097,
+1.6058
+],
 "Conseil des prud'hommes de montpellier|Montpellier": null,
 "Conseil départemental|Niort": [
 46.33156,
@@ -741,6 +747,10 @@
 45.56369,
 5.91727
 ],
+"DSDEN de Bobigny|Bobigny": [
+48.9095,
+2.45394
+],
 "DSDEN du Tarn-et-Garonne|Montauban": null,
 "DSDEN|Foix": [
 42.96115,
@@ -757,6 +767,7 @@
 "De place de la Bastille à place de l'Opéra|Paris": null,
 "Depot des Lilas|Les Lilas": null,
 "Devant la CCI|Brive-la-Gaillarde": null,
+"Devant plusieurs lycées|Lyon": null,
 "Direction des services départementaux de l'Education nationale|Orléans": null,
 "Donjon de Rouen|Rouen": [
 49.44648,
@@ -802,6 +813,7 @@
 47.39596,
 0.6806
 ],
+"Faculte de lettres de Carlone|Nice": null,
 "Faculté Jean Monnet|Sceaux": [
 48.78203,
 2.28554
@@ -972,6 +984,10 @@
 "Haute école des arts du Rhin|Strasbourg": [
 48.58245,
 7.75905
+],
+"Hopital d'Hyeres|Hyères": [
+43.03547,
+6.13917
 ],
 "Hopital de la Pitie-Salpetriere|Paris": [
 48.83635,
@@ -1473,6 +1489,10 @@
 "Lycée Auguste-Brizeux|Quimper": [
 47.99384,
 -4.11159
+],
+"Lycée Balzac|Tours": [
+47.38722,
+0.68728
 ],
 "Lycée Beaumont|Redon": [
 47.65485,
@@ -2305,6 +2325,10 @@
 "Palais des papes|Avignon": [
 43.95071,
 4.80769
+],
+"Palais universitaire|Strasbourg": [
+48.5848,
+7.76259
 ],
 "Panthéon|Paris": [
 48.84619,
@@ -3179,6 +3203,10 @@
 47.24546,
 -1.55199
 ],
+"Université Bordeaux Montaigne|Pessac": [
+44.79494,
+-0.61737
+],
 "Université Bordeaux-Montaigne|Pessac": [
 44.79494,
 -0.61737
@@ -3661,6 +3689,7 @@
 2.40858
 ],
 "centre d'encaissement des Finances publiques|Rennes": null,
+"centre d'encaissement|Rennes": null,
 "centre de Lyon|Lyon": [
 45.69976,
 4.92092
@@ -3995,6 +4024,10 @@
 45.42869,
 4.4215
 ],
+"collège Joliot Curie|Stains": [
+48.95612,
+2.38629
+],
 "collège Jules Verne|Buxerolles": [
 46.59543,
 0.35676
@@ -4012,6 +4045,7 @@
 4.9012
 ],
 "commissariat central|Toulon": null,
+"commissariat central|Toulouse": null,
 "commissariat d'Aubervilliers|Aubervilliers": [
 48.91442,
 2.38769
@@ -4033,6 +4067,10 @@
 2.39014
 ],
 "commissariat de Lorient|Lorient": null,
+"commissariat de Rennes|Rennes": [
+48.10625,
+-1.68658
+],
 "commissariat de Saint-Denis|Saint-Denis": [
 -20.88633,
 55.45245
@@ -4091,6 +4129,10 @@
 -3.45163
 ],
 "commissariat|Lorient": null,
+"commissariat|Metz": [
+49.11847,
+6.22984
+],
 "commissariat|Niort": [
 46.32445,
 -0.46464
@@ -4520,13 +4562,22 @@
 48.01541,
 0.17774
 ],
+"hôpital et l'Ehpad|Hyères": null,
 "hôpital|Le Mans": [
 48.01359,
 0.17546
 ],
 "hôtel de l'Impérator|Nîmes": null,
 "hôtel de luxe L'Impérator|Nîmes": null,
+"hôtel de police de Nancy|Nancy": [
+48.68808,
+6.1937
+],
 "hôtel de police|Clermont-Ferrand": null,
+"hôtel de police|Lyon": [
+45.75202,
+4.86258
+],
 "hôtel de police|Nancy": [
 48.68808,
 6.1937
@@ -6863,6 +6914,10 @@
 45.83524,
 1.25592
 ],
+"rectorat|Paris": [
+48.88455,
+2.39763
+],
 "rectorat|Rennes": [
 48.11945,
 -1.67437
@@ -7299,6 +7354,10 @@
 45.75153,
 4.83645
 ],
+"université|Avignon": [
+43.94954,
+4.8193
+],
 "université|La Rochelle": [
 46.13869,
 -1.14539
@@ -7326,6 +7385,10 @@
 "usine Bluebus|Quimper": null,
 "usine Bosch|Vendôme": null,
 "usine Durkopp|Vierzon": null,
+"usine Lu|Nantes": [
+47.21929,
+-1.52197
+],
 "usine Schaeffler|Foix": null,
 "usine Speichim|Montluçon": null,
 "usine|Blanquefort": [
