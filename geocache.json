@@ -1300,6 +1300,10 @@
 43.60562,
 1.44848
 ],
+"Jeanne d'Arc|Toulouse": [
+43.60911,
+1.44513
+],
 "L'Antipode|Rennes": null,
 "L'Imperator|Nîmes": null,
 "L'Orientis|Lorient": null,
@@ -2295,6 +2299,7 @@
 43.69542,
 7.2725
 ],
+"Orly et Roissy|Paris": null,
 "Orléans cathédrale|Orléans": [
 47.90189,
 1.91038
@@ -2364,6 +2369,10 @@
 "Parc des Expositions|Perpignan": [
 42.70939,
 2.90493
+],
+"Parc des Glacis|Besançon": [
+47.24548,
+6.022
 ],
 "Parc des Princes|Paris": [
 48.84136,
@@ -2643,6 +2652,10 @@
 "Place de la Révolution|Besançon": [
 47.24003,
 6.02238
+],
+"Place de la Victoire|Bordeaux": [
+44.83099,
+-0.57233
 ],
 "Place de la grande Rigaudie|Sarlat-la-Canéda": null,
 "Place de la république|Lille": [
@@ -3163,6 +3176,10 @@
 48.36061,
 -4.56656
 ],
+"Terres Sainville|Fort-de-France": [
+14.61086,
+-61.07194
+],
 "Théâtre Debussy, 116 avenue du Général de Gaulle|Maisons-Alfort": [
 48.80129,
 2.43026
@@ -3440,6 +3457,7 @@
 48.59439,
 7.68921
 ],
+"accueil de jour de l'hôpital de Douai|Douai": null,
 "agence Néosoft|Limoges": null,
 "allée Salengro|Clermont-l'Hérault": null,
 "allées Jean Jaures|Toulouse": [
@@ -4218,6 +4236,10 @@
 43.94479,
 4.80552
 ],
+"cours Léopold|Nancy": [
+48.69545,
+6.17518
+],
 "cours Mirabeau|Aix-en-Provence": [
 43.52652,
 5.44716
@@ -4530,6 +4552,10 @@
 47.32367,
 5.02803
 ],
+"gare|Grenoble": [
+45.08414,
+5.74343
+],
 "gare|Le Mans": [
 47.99507,
 0.19206
@@ -4721,6 +4747,7 @@
 -4.4843
 ],
 "intramuros|Avignon": null,
+"jardin Anglès|Draguignan": null,
 "jardin national, au kiosque à musique|Albi": null,
 "kiosque du jardin des Prébendes|Tours": null,
 "kiosque|Châtellerault": null,
@@ -4735,6 +4762,10 @@
 "la Boucle|Besançon": [
 47.24087,
 6.02374
+],
+"la Brèche|Niort": [
+46.32289,
+-0.45849
 ],
 "la Canebière|Marseille": [
 43.29568,
@@ -6129,6 +6160,10 @@
 "place Leclerc|Angers": [
 47.47128,
 -0.54493
+],
+"place Leclerc|Besançon": [
+47.24236,
+6.01494
 ],
 "place Liberté|Les Sables-d'Olonne": [
 46.49746,
@@ -7616,6 +7651,10 @@
 0.13225
 ],
 "école élémentaire Jean Beaudoin|Chécy": [
+47.89176,
+2.02621
+],
+"école élémentaire Jean-Beaudoin|Chécy": [
 47.89176,
 2.02621
 ],
