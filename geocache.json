@@ -75,6 +75,7 @@
 43.81302,
 4.34356
 ],
+"Aeroports de Paris|Paris": null,
 "Agence régionale de santé|Tours": null,
 "Airbus|Toulouse": [
 43.65275,
@@ -3592,6 +3593,7 @@
 47.20613,
 -1.54569
 ],
+"boulevard d'Angleterre / conseil départemental|La Roche-sur-Yon": null,
 "boulevard de la Liberté|Rennes": [
 48.10739,
 -1.67905
@@ -4247,6 +4249,7 @@
 "devant la DSDEN place Bonet|Alençon": null,
 "devant la Mairie|Nîmes": null,
 "devant la Mairie|Pantin": null,
+"devant la gare|Annecy": null,
 "devant la gare|Charleville-Mézières": null,
 "devant la mairie d'Amiens|Amiens": null,
 "devant la mairie d'Argenteuil|Argenteuil": null,
@@ -4312,6 +4315,7 @@
 "devant la préfecture|Belfort": null,
 "devant la préfecture|Blois": null,
 "devant la préfecture|Bourg-en-Bresse": null,
+"devant la préfecture|Charleville-Mézières": null,
 "devant la préfecture|Lyon": null,
 "devant la préfecture|Nantes": null,
 "devant la préfecture|Quimper": null,
@@ -4566,6 +4570,7 @@
 43.46421,
 -1.53599
 ],
+"halle d'Iraty|Biarritz": null,
 "hotel de ville|Le Perreux-sur-Marne": null,
 "hyper-centre|Bourges": null,
 "hyper-centre|Caen": null,
@@ -5575,6 +5580,10 @@
 "lycée de Saint-Denis|Saint-Denis": [
 -20.88768,
 55.47012
+],
+"lycée de Vincennes|Vincennes": [
+48.84918,
+2.44853
 ],
 "lycée de l'Harteloire|Brest": [
 48.39354,
@@ -6852,6 +6861,10 @@
 43.61143,
 3.87653
 ],
+"préfecture|Nancy": [
+48.69325,
+6.18466
+],
 "préfecture|Paris": [
 48.84943,
 2.34835
@@ -7331,6 +7344,10 @@
 "tribunal|Arras": [
 50.28999,
 2.77592
+],
+"tribunal|Guéret": [
+46.16879,
+1.87263
 ],
 "tribunal|Lyon": [
 45.76064,
